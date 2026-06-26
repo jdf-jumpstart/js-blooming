@@ -1,0 +1,258 @@
+import Link from "next/link";
+
+const pillars = [
+  { title: "Collaboration", body: "Decisions made with the patient, not handed down to them." },
+  { title: "Patient Autonomy", body: "The patient sets the direction. The physician helps them get there." },
+  { title: "Education", body: "Plain explanations that leave people more informed than they came in." },
+  { title: "Access", body: "A direct line to your provider, when you actually need it." },
+  { title: "Prevention", body: "Catching things early and building health, not just treating illness." },
+  { title: "Trust", body: "The same physician over years, who stands behind every visit." },
+];
+
+const services = [
+  {
+    icon: "◌",
+    title: "Preventive Care",
+    body: "Annual wellness exams, health screenings, vaccinations, and proactive planning for the years ahead.",
+  },
+  {
+    icon: "◌",
+    title: "Chronic Condition Management",
+    body: "Ongoing, attentive care for diabetes, hypertension, thyroid disease, high cholesterol, and more.",
+  },
+  {
+    icon: "◌",
+    title: "Same-Day Acute Care",
+    body: "When something comes up, you get seen. No waiting weeks for the next available slot.",
+  },
+  {
+    icon: "◌",
+    title: "Nutrition & Lifestyle",
+    body: "Practical guidance on the things that actually move health over a lifetime — food, movement, sleep, habits.",
+  },
+  {
+    icon: "◌",
+    title: "Mental Health Support",
+    body: "Basic evaluation and support for anxiety, depression, and stress. Referral coordination when more is needed.",
+  },
+  {
+    icon: "◌",
+    title: "Direct Physician Access",
+    body: "Text, call, or email your doctor. No phone trees, no gatekeepers, no waiting rooms.",
+  },
+];
+
+const steps = [
+  { number: "01", title: "Choose your membership", body: "Pick the plan that fits your household. Cancel anytime." },
+  { number: "02", title: "Meet your physician", body: "A proper first visit — unhurried — to understand your full picture." },
+  { number: "03", title: "Access care when you need it", body: "Same-day visits, direct messaging, and a doctor who actually knows you." },
+];
+
+export default function Home() {
+  return (
+    <>
+      {/* Hero */}
+      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-24 md:py-32">
+        <div className="max-w-6xl mx-auto px-6 md:px-11">
+          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-6">
+            Concierge Primary Care · Baltimore
+          </div>
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] leading-[1.0] tracking-[-0.015em] text-5xl md:text-7xl lg:text-8xl mb-8 max-w-4xl">
+            Primary care with the time to actually know you.
+          </h1>
+          <p className="font-[family-name:var(--font-cormorant)] italic text-[#6E7F62] text-2xl md:text-3xl mb-8">
+            Your Health. Your Way.
+          </p>
+          <p className="text-[#2B2329] text-base md:text-lg leading-relaxed max-w-2xl mb-10">
+            Blooming Health is a membership-based primary care practice in Baltimore. Fewer patients, longer visits, and a physician who is available when you need them — not just when the schedule allows.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href="/membership"
+              className="inline-flex items-center justify-center bg-[#4A2A43] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#3a1f34] transition-colors duration-200"
+            >
+              See how membership works
+            </Link>
+            <Link
+              href="/about"
+              className="inline-flex items-center justify-center border border-[#4A2A43] text-[#4A2A43] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#4A2A43] hover:text-[#F6F2E9] transition-colors duration-200"
+            >
+              About the practice
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* What is this */}
+      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
+          <div>
+            <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
+              The model
+            </div>
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
+              A guide, not a gatekeeper.
+            </h2>
+            <p className="font-[family-name:var(--font-cormorant)] font-[500] text-[#2B2329] text-xl md:text-2xl leading-[1.45] mb-6">
+              We built Blooming Health because good medicine takes time, and we were tired of practices that do not give it.
+            </p>
+            <p className="text-[#2B2329] text-[15px] leading-relaxed mb-4">
+              The model is straightforward. A low monthly membership fee replaces the insurance billing cycle for primary care. You get unlimited office visits, direct access to your physician by phone, text, or email, and appointments that are not capped at ten minutes.
+            </p>
+            <p className="text-[#2B2329] text-[15px] leading-relaxed">
+              It is worth being clear about what this is not. It is not functional medicine. It is not a spa. It is modern primary care organized around one honest idea — a meaningful relationship between a patient and a physician who has the time to know them.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 gap-px bg-[rgba(36,28,32,0.14)] border border-[rgba(36,28,32,0.14)] rounded-md overflow-hidden">
+            {pillars.map((p) => (
+              <div key={p.title} className="bg-[#F6F2E9] px-6 py-5">
+                <h4 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[18px] mb-1">
+                  {p.title}
+                </h4>
+                <p className="text-[13.5px] text-[#2B2329]">{p.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services overview */}
+      <section className="bg-[#1B2A45] border-b border-[rgba(246,242,233,0.12)] py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6 md:px-11">
+          <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-5">
+            What we cover
+          </div>
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-4 max-w-xl">
+            Primary care that actually covers the ground.
+          </h2>
+          <p className="text-[#C9CDD3] text-[15px] max-w-xl mb-14">
+            Membership includes comprehensive primary care — from annual physicals to same-day sick visits to chronic disease management. All in one flat monthly fee.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(246,242,233,0.1)]">
+            {services.map((s) => (
+              <div key={s.title} className="bg-[#1B2A45] p-7 hover:bg-[#243555] transition-colors duration-200">
+                <div className="w-8 h-8 rounded-full border border-[#889A7C] mb-5" />
+                <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[18px] mb-3">
+                  {s.title}
+                </h3>
+                <p className="text-[#C9CDD3] text-[14px] leading-relaxed">{s.body}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10">
+            <Link
+              href="/services"
+              className="inline-flex items-center text-[#889A7C] text-[12px] tracking-[0.18em] uppercase font-[500] hover:text-[#F6F2E9] transition-colors duration-200"
+            >
+              Full list of services →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="bg-[#F1EADD] border-b border-[rgba(36,28,32,0.14)] py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6 md:px-11">
+          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
+            How it works
+          </div>
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-14 max-w-xl">
+            Simple to join. Simple to use.
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {steps.map((s) => (
+              <div key={s.number}>
+                <div className="font-[family-name:var(--font-fraunces)] text-[#C9CDD3] text-5xl mb-5 leading-none">
+                  {s.number}
+                </div>
+                <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-xl mb-3">
+                  {s.title}
+                </h3>
+                <p className="text-[#2B2329] text-[14.5px] leading-relaxed">{s.body}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-14">
+            <Link
+              href="/membership"
+              className="inline-flex items-center justify-center bg-[#4A2A43] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#3a1f34] transition-colors duration-200"
+            >
+              View membership plans
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Quote pull */}
+      <section className="bg-[#4A2A43] py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6 md:px-11 text-center">
+          <p className="font-[family-name:var(--font-cormorant)] italic text-[#F6F2E9] text-3xl md:text-4xl lg:text-5xl leading-[1.3] max-w-3xl mx-auto mb-8">
+            &ldquo;The quiet confidence is the sell.&rdquo;
+          </p>
+          <p className="text-[#C9CDD3] text-[13px] tracking-[0.2em] uppercase mb-10">
+            Direct, warm, and unhurried.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center border border-[#F6F2E9] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#F6F2E9] hover:text-[#4A2A43] transition-colors duration-200"
+          >
+            Get in touch
+          </Link>
+        </div>
+      </section>
+
+      {/* Testimonials placeholder */}
+      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6 md:px-11">
+          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
+            Patient stories
+          </div>
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12">
+            What patients say.
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="border border-[rgba(36,28,32,0.14)] rounded-md p-7 bg-[#F1EADD]">
+                <p className="font-[family-name:var(--font-cormorant)] font-[500] text-[#2B2329] text-lg leading-[1.5] mb-6">
+                  &ldquo;[Patient testimonial placeholder — to be replaced with real patient quotes.]&rdquo;
+                </p>
+                <div className="text-[12px] tracking-[0.1em] uppercase text-[#44597A]">
+                  Patient name · Baltimore
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="bg-[#F6F2E9] py-20 md:py-28">
+        <div className="max-w-6xl mx-auto px-6 md:px-11 text-center">
+          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-6">
+            Ready when you are
+          </div>
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl md:text-5xl lg:text-6xl leading-[1.04] tracking-[-0.015em] mb-8 max-w-2xl mx-auto">
+            A different kind of practice.
+          </h2>
+          <p className="text-[#2B2329] text-[16px] max-w-lg mx-auto mb-10 leading-relaxed">
+            Patients 13 and up. No insurance required for membership. Start with a free introductory call.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/membership"
+              className="inline-flex items-center justify-center bg-[#4A2A43] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#3a1f34] transition-colors duration-200"
+            >
+              See membership plans
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center border border-[rgba(36,28,32,0.2)] text-[#2B2329] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#4A2A43] hover:text-[#4A2A43] transition-colors duration-200"
+            >
+              Schedule an intro call
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
