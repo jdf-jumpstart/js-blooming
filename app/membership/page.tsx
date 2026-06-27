@@ -3,53 +3,39 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Membership",
-  description: "Blooming Health membership plans — straightforward monthly pricing for direct primary care in Baltimore.",
+  description: "Blooming Health membership plans — straightforward annual pricing for direct primary care in Baltimore.",
 };
 
 const included = [
-  "Unlimited office visits (no copays)",
-  "Same-day or next-day appointments",
-  "Longer appointments — 30 to 60 minutes",
-  "Direct physician access by phone, text, and email",
-  "After-hours messaging for non-emergency concerns",
-  "Telehealth video visits",
-  "Annual wellness exam",
-  "Preventive screenings and vaccinations",
-  "Chronic disease management",
-  "Nutrition and lifestyle counseling",
-  "Wholesale lab pricing (typically 80–90% below retail)",
-  "Prescription renewal and prior authorization management",
-  "Specialist referral coordination",
-  "Hospital discharge follow-up",
+  "Up to 15 visits per year — primary care and urgent care",
+  "Same-day or next-day appointments, always",
+  "Avi's personal phone number to call or text directly",
+  "Long appointment blocks so there is time to actually talk",
+  "Urgent care visits included (stitches, strep, flu, COVID, and more)",
+  "Natural options explored first, not just a prescription and a goodbye",
+  "A physician who knows you, your history, and your goals",
 ];
 
 const plans = [
   {
     name: "Individual",
-    price: "$[X]",
-    period: "per month",
-    description: "Full membership for one adult, ages 18 and up.",
-    highlight: false,
-  },
-  {
-    name: "Teen Add-On",
-    price: "$[X]",
-    period: "per month",
-    description: "Add a patient aged 13–17 to an existing adult membership.",
+    price: "$1,200",
+    period: "per year  ·  $100 / month",
+    description: "Full membership for one adult. Up to 15 visits, direct access, same-day care.",
     highlight: false,
   },
   {
     name: "Couple",
-    price: "$[X]",
-    period: "per month",
-    description: "Membership for two adults in the same household.",
+    price: "$2,000",
+    period: "per year  ·  ~$167 / month",
+    description: "Membership for two adults in the same household. Both members get the full experience.",
     highlight: true,
   },
   {
-    name: "Family",
-    price: "$[X]",
-    period: "per month",
-    description: "Two adults plus children 13 and up in the same household.",
+    name: "Child Add-On",
+    price: "$500",
+    period: "per child / year  ·  ~$42 / month",
+    description: "Add a child to an existing parent membership. At least one parent must be enrolled.",
     highlight: false,
   },
 ];
@@ -57,23 +43,27 @@ const plans = [
 const faqs = [
   {
     q: "Does membership replace health insurance?",
-    a: "No. Blooming Health covers primary care only. You should maintain insurance for specialist care, hospitalizations, emergency services, and anything beyond what a primary care physician handles. Many members pair this with a high-deductible health plan (HDHP) and an HSA to keep overall costs reasonable.",
+    a: "No. Blooming Health covers primary and urgent care only. You should maintain insurance for specialists, hospitalizations, and emergencies. Many members pair this with a high-deductible plan and an HSA.",
   },
   {
-    q: "Can I use my HSA or FSA to pay?",
-    a: "In many cases, yes. HSA and FSA eligibility for DPC memberships depends on your specific plan type and the IRS rules in effect at the time. We recommend checking with your benefits administrator.",
+    q: "Can I use my HSA or FSA?",
+    a: "In many cases, yes. HSA/FSA eligibility for membership-based primary care depends on your plan type and current IRS rules. Check with your benefits administrator to confirm.",
   },
   {
-    q: "Is there a contract or minimum commitment?",
-    a: "Memberships are month-to-month. Cancel any time with 30 days notice.",
+    q: "Is there a contract?",
+    a: "No long-term contract. Memberships are annual with no penalty for cancelling.",
   },
   {
-    q: "What is the enrollment fee?",
-    a: "There is a one-time enrollment fee of $[X] per person. This covers the setup of your patient profile and your first extended intake visit.",
+    q: "What counts as a visit?",
+    a: "Both primary care appointments and urgent care visits count toward your 15. Most members use a mix — a wellness visit or two, a few sick visits, and ongoing check-ins for chronic conditions.",
   },
   {
-    q: "How quickly can I get an appointment?",
-    a: "Same-day or next-day for acute concerns. Routine visits are typically scheduled within a few days. You are never competing against a panel of 2,000 patients.",
+    q: "How quickly can I get seen?",
+    a: "Same-day or next-day, always. You are not competing with a panel of thousands.",
+  },
+  {
+    q: "What about labs and imaging?",
+    a: "Labs can be ordered and coordinated at significantly reduced cost. Imaging is referred out and we help you find the most affordable path.",
   },
 ];
 
@@ -87,10 +77,10 @@ export default function Membership() {
             Membership
           </div>
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
-            One flat monthly fee. Everything primary care should be.
+            One annual fee. Real access to a doctor who knows you.
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl">
-            No copays. No billing. No waiting three weeks to be seen.
+            No copays. No billing surprises. No waiting three weeks to be seen.
           </p>
         </div>
       </section>
@@ -103,18 +93,18 @@ export default function Membership() {
               What&apos;s included
             </div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
-              Everything, in one number.
+              Everything in one number.
             </h2>
             <p className="text-[#2B2329] text-[15px] leading-relaxed mb-8">
-              Your monthly fee covers all primary care services with no additional billing. Labs are available at wholesale pricing — typically a fraction of what clinics and hospitals charge.
+              Your membership covers up to 15 visits per year — primary care and urgent care both count. Between visits, Avi&apos;s personal number is there when something comes up and you need a real answer fast.
             </p>
             <Link href="/services" className="text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#4A2A43] transition-colors">
-              Full service list →
+              See what we treat →
             </Link>
           </div>
-          <ul className="grid grid-cols-1 gap-2">
+          <ul className="flex flex-col">
             {included.map((item) => (
-              <li key={item} className="flex items-start gap-3 py-3 border-b border-[rgba(36,28,32,0.1)] text-[14.5px] text-[#2B2329]">
+              <li key={item} className="flex items-start gap-3 py-4 border-b border-[rgba(36,28,32,0.1)] text-[14.5px] text-[#2B2329]">
                 <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-[#889A7C] shrink-0" />
                 {item}
               </li>
@@ -129,13 +119,13 @@ export default function Membership() {
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
             Plans
           </div>
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-4">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-3">
             Straightforward pricing.
           </h2>
-          <p className="text-[#2B2329] text-[15px] max-w-xl mb-12">
-            Pricing to be finalized. The placeholders below represent the plan structure — pricing will be listed here once the practice is ready to accept new patients.
+          <p className="text-[#44597A] text-[15px] mb-12 max-w-xl">
+            Billed annually. No enrollment fees, no surprise charges.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {plans.map((plan) => (
               <div
                 key={plan.name}
@@ -147,25 +137,25 @@ export default function Membership() {
               >
                 {plan.highlight && (
                   <div className="text-[10px] tracking-[0.28em] uppercase text-[#889A7C] font-[500] mb-3">
-                    Most popular
+                    Best value
                   </div>
                 )}
-                <div className={`text-[11px] tracking-[0.24em] uppercase font-[500] mb-3 ${plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
+                <div className={`text-[11px] tracking-[0.24em] uppercase font-[500] mb-4 ${plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
                   {plan.name}
                 </div>
-                <div className="font-[family-name:var(--font-fraunces)] text-4xl leading-none mb-1">
+                <div className="font-[family-name:var(--font-fraunces)] text-5xl leading-none mb-2">
                   {plan.price}
                 </div>
-                <div className={`text-[12px] mb-4 ${plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
+                <div className={`text-[12px] mb-5 ${plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
                   {plan.period}
                 </div>
                 <p className={`text-[13.5px] leading-relaxed flex-1 ${plan.highlight ? "text-[#F1EADD]" : "text-[#2B2329]"}`}>
                   {plan.description}
                 </p>
-                <div className="mt-6">
+                <div className="mt-7">
                   <Link
                     href="/contact"
-                    className={`text-[11px] tracking-[0.18em] uppercase font-[500] border px-4 py-2.5 inline-block transition-colors duration-200 ${
+                    className={`text-[11px] tracking-[0.18em] uppercase font-[500] border px-5 py-3 inline-block transition-colors duration-200 ${
                       plan.highlight
                         ? "border-[#F6F2E9] text-[#F6F2E9] hover:bg-[#F6F2E9] hover:text-[#4A2A43]"
                         : "border-[#4A2A43] text-[#4A2A43] hover:bg-[#4A2A43] hover:text-[#F6F2E9]"
@@ -177,9 +167,6 @@ export default function Membership() {
               </div>
             ))}
           </div>
-          <p className="text-[12px] text-[#44597A] mt-6">
-            * A one-time enrollment fee of $[X] per person applies. Membership is month-to-month; cancel with 30 days notice.
-          </p>
         </div>
       </section>
 
@@ -217,13 +204,13 @@ export default function Membership() {
             Start with a conversation.
           </h2>
           <p className="text-[#C9CDD3] text-[15px] max-w-md mx-auto mb-8">
-            Schedule a free 15-minute introductory call. No commitment, no pressure — just an honest conversation about whether this is the right fit.
+            Reach out and we will find a time to talk through whether Blooming Health is the right fit for you and your family.
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center justify-center border border-[#F6F2E9] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#F6F2E9] hover:text-[#1B2A45] transition-colors duration-200"
           >
-            Schedule an intro call
+            Get in touch
           </Link>
         </div>
       </section>

@@ -3,42 +3,36 @@ import Link from "next/link";
 const pillars = [
   { title: "Collaboration", body: "Decisions made with the patient, not handed down to them." },
   { title: "Patient Autonomy", body: "The patient sets the direction. The physician helps them get there." },
-  { title: "Education", body: "Plain explanations that leave people more informed than they came in." },
-  { title: "Access", body: "A direct line to your provider, when you actually need it." },
-  { title: "Prevention", body: "Catching things early and building health, not just treating illness." },
-  { title: "Trust", body: "The same physician over years, who stands behind every visit." },
+  { title: "Natural first", body: "Medications have their place. So do lifestyle, nutrition, and movement. We explore all the options." },
+  { title: "Access", body: "Avi's personal number. Text or call when something comes up." },
+  { title: "Prevention", body: "Catching things early and building health over time, not just treating illness." },
+  { title: "Trust", body: "The same physician over years, who knows you, your history, and what matters." },
 ];
 
 const services = [
   {
-    icon: "◌",
-    title: "Preventive Care",
-    body: "Annual wellness exams, health screenings, vaccinations, and proactive planning for the years ahead.",
+    title: "Primary Care",
+    body: "Wellness exams, chronic disease management, preventive care, nutrition and lifestyle counseling — with time to actually address everything.",
   },
   {
-    icon: "◌",
-    title: "Chronic Condition Management",
-    body: "Ongoing, attentive care for diabetes, hypertension, thyroid disease, high cholesterol, and more.",
+    title: "Urgent Care",
+    body: "Strep, flu, COVID, stitches, UTIs, ear infections, rashes. When something comes up, you get seen same day or next day.",
   },
   {
-    icon: "◌",
-    title: "Same-Day Acute Care",
-    body: "When something comes up, you get seen. No waiting weeks for the next available slot.",
-  },
-  {
-    icon: "◌",
-    title: "Nutrition & Lifestyle",
-    body: "Practical guidance on the things that actually move health over a lifetime — food, movement, sleep, habits.",
-  },
-  {
-    icon: "◌",
-    title: "Mental Health Support",
-    body: "Basic evaluation and support for anxiety, depression, and stress. Referral coordination when more is needed.",
-  },
-  {
-    icon: "◌",
     title: "Direct Physician Access",
-    body: "Text, call, or email your doctor. No phone trees, no gatekeepers, no waiting rooms.",
+    body: "Avi's personal number. Text or call directly — no portal, no phone tree, no waiting for a callback.",
+  },
+  {
+    title: "Natural & Lifestyle Options",
+    body: "Medications when needed. Nutrition, movement, and lifestyle-first approaches when that makes more sense. Always explored together.",
+  },
+  {
+    title: "Long Appointment Blocks",
+    body: "Enough time to talk through everything — not just the chief complaint. Ten-minute visits are not how this practice works.",
+  },
+  {
+    title: "More coming soon",
+    body: "We are starting focused and expanding thoughtfully. Additional services will be added as the practice grows.",
   },
 ];
 
@@ -64,7 +58,7 @@ export default function Home() {
             Your Health. Your Way.
           </p>
           <p className="text-[#2B2329] text-base md:text-lg leading-relaxed max-w-2xl mb-10">
-            Blooming Health is a membership-based primary care practice in Baltimore. Fewer patients, longer visits, and a physician who is available when you need them — not just when the schedule allows.
+            Blooming Health is a membership-based primary care practice in Baltimore. Fewer patients, longer visits, natural options alongside conventional medicine — and a physician who is available when you need them, not just when the schedule allows.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -97,10 +91,10 @@ export default function Home() {
               We built Blooming Health because good medicine takes time, and we were tired of practices that do not give it.
             </p>
             <p className="text-[#2B2329] text-[15px] leading-relaxed mb-4">
-              The model is straightforward. A low monthly membership fee replaces the insurance billing cycle for primary care. You get unlimited office visits, direct access to your physician by phone, text, or email, and appointments that are not capped at ten minutes.
+              The model is straightforward. An annual membership covers up to 15 primary and urgent care visits with no additional billing. Between appointments, Avi's personal number is there for when something comes up and you need a real answer fast.
             </p>
             <p className="text-[#2B2329] text-[15px] leading-relaxed">
-              It is worth being clear about what this is not. It is not functional medicine. It is not a spa. It is modern primary care organized around one honest idea — a meaningful relationship between a patient and a physician who has the time to know them.
+              We look at natural and lifestyle-based options alongside conventional medicine — medications when they make sense, movement and nutrition when those are the better answer. The goal is a real relationship that helps you build health over time, not just treat what is already wrong.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-px bg-[rgba(36,28,32,0.14)] border border-[rgba(36,28,32,0.14)] rounded-md overflow-hidden">
@@ -235,7 +229,7 @@ export default function Home() {
             A different kind of practice.
           </h2>
           <p className="text-[#2B2329] text-[16px] max-w-lg mx-auto mb-10 leading-relaxed">
-            Patients 13 and up. No insurance required for membership. Start with a free introductory call.
+            Patients 13 and up. $1,200/year individual, $2,000/year couple. No insurance required for membership.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
