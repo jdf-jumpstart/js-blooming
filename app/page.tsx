@@ -20,7 +20,7 @@ const services = [
   },
   {
     title: "Direct Provider Access",
-    body: "Avi's personal number. Text or call directly — no portal, no phone tree, no waiting for a callback.",
+    body: "Avi's direct line.",
   },
   {
     title: "Natural & Lifestyle Options",
