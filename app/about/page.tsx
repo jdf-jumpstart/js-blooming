@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Meet Avi, the physician behind Blooming Health — and learn why we built a practice around relationship-based, natural-first primary care in Baltimore.",
+  description: "Meet Avi, the NP behind Blooming Health — and learn why we built a practice around relationship-based, natural-first primary care in Baltimore.",
 };
 
 const values = [
@@ -21,7 +21,7 @@ const values = [
   },
   {
     title: "Access",
-    body: "Your physician's personal number. Text or call when something comes up. No phone tree, no portal message that gets answered in three days.",
+    body: "Your provider's personal number. Text or call when something comes up. No phone tree, no portal message that gets answered in three days.",
   },
   {
     title: "Prevention",
@@ -29,7 +29,7 @@ const values = [
   },
   {
     title: "Trust",
-    body: "The same physician over years, who knows your history, your family, and what matters to you. That relationship is the foundation of everything.",
+    body: "The same NP over years, who knows your history, your family, and what matters to you. That relationship is the foundation of everything.",
   },
 ];
 
@@ -61,13 +61,13 @@ export default function About() {
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
               Collaborating your health.
             </h2>
-            <p className="text-[#2B2329] text-[15px] leading-relaxed mb-5">
+            <p className="text-[#2B2329] text-base leading-relaxed mb-5">
               Most primary care visits run about ten minutes. That is not enough time to understand a person — let alone their full health picture. Blooming Health was built to fix that.
             </p>
-            <p className="text-[#2B2329] text-[15px] leading-relaxed mb-5">
+            <p className="text-[#2B2329] text-base leading-relaxed mb-5">
               We see fewer patients, spend more time with each one, and actually listen. When something needs attention, we look at all the options — natural and lifestyle-based approaches, not just a prescription — and figure out together what makes the most sense for you.
             </p>
-            <p className="text-[#2B2329] text-[15px] leading-relaxed">
+            <p className="text-[#2B2329] text-base leading-relaxed">
               The result is primary care that feels less like a system and more like a relationship. That is the whole point.
             </p>
           </div>
@@ -78,13 +78,13 @@ export default function About() {
             <ul className="flex flex-col gap-4">
               {[
                 "Long appointments — time to actually talk",
-                "Direct access to your physician, not a call center",
+                "Direct access to your provider, not a call center",
                 "Natural options explored alongside conventional medicine",
                 "Same- or next-day care when something comes up",
-                "A physician who knows you and your history",
+                "An NP who knows you and your history",
                 "Decisions made with you, not for you",
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-[14.5px] text-[#2B2329] pb-4 border-b border-[rgba(36,28,32,0.1)] last:border-0 last:pb-0">
+                <li key={item} className="flex items-start gap-3 text-base text-[#2B2329] pb-4 border-b border-[rgba(36,28,32,0.1)] last:border-0 last:pb-0">
                   <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-[#889A7C] shrink-0" />
                   {item}
                 </li>
@@ -99,21 +99,21 @@ export default function About() {
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
           <div>
             <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-5">
-              The physician
+              The provider
             </div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-2">
-              Avi [Last Name], MD
+              Avi Blumenthal, NP
             </h2>
             <p className="text-[#889A7C] text-[13px] tracking-[0.1em] uppercase mb-7">
-              Founder & Primary Care Physician
+              Founder & NP
             </p>
-            <p className="text-[#C9CDD3] text-[15px] leading-relaxed mb-4">
+            <p className="text-[#C9CDD3] text-base leading-relaxed mb-4">
               Avi brings 11 years of healthcare experience to Blooming Health, and a genuine love for helping people — especially when it comes to their health.
             </p>
-            <p className="text-[#C9CDD3] text-[15px] leading-relaxed mb-4">
-              Outside the practice, he is the father of six (and husband of one 😉), which has a way of sharpening your perspective on what actually matters in a family&apos;s health. He stays active, keeps learning, and plays guitar — badly enough to keep him humble, well enough to enjoy it.
+            <p className="text-[#C9CDD3] text-base leading-relaxed mb-4">
+              Outside the practice, he is the father of six, which has a way of sharpening your perspective on what actually matters in a family&apos;s health. He stays active, keeps learning, and plays guitar — badly enough to keep him humble, well enough to enjoy it.
             </p>
-            <p className="text-[#C9CDD3] text-[15px] leading-relaxed">
+            <p className="text-[#C9CDD3] text-base leading-relaxed">
               What drives him is the relationship. Not the paperwork. Not the billing codes. The part where you actually sit down with a person, understand what they are dealing with, and help them figure out what to do about it.
             </p>
           </div>
@@ -145,7 +145,7 @@ export default function About() {
                 <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-xl mb-3">
                   {v.title}
                 </h3>
-                <p className="text-[14px] text-[#2B2329] leading-relaxed">{v.body}</p>
+                <p className="text-base text-[#2B2329] leading-relaxed">{v.body}</p>
               </div>
             ))}
           </div>
@@ -158,7 +158,7 @@ export default function About() {
           <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl md:text-5xl leading-[1.04] tracking-[-0.015em] mb-5 max-w-xl mx-auto">
             Come as a patient. Stay for the relationship.
           </h2>
-          <p className="text-[#2B2329] text-[15px] max-w-md mx-auto mb-8">
+          <p className="text-[#2B2329] text-base max-w-md mx-auto mb-8">
             Reach out to learn more or to set up a free introductory call with Avi.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -13,7 +13,7 @@ const included = [
   "Long appointment blocks so there is time to actually talk",
   "Urgent care visits included (stitches, strep, flu, COVID, and more)",
   "Natural options explored first, not just a prescription and a goodbye",
-  "A physician who knows you, your history, and your goals",
+  "A provider who knows you, your history, and your goals",
 ];
 
 const plans = [
@@ -77,7 +77,7 @@ export default function Membership() {
             Membership
           </div>
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
-            One annual fee. Real access to a doctor who knows you.
+            One annual fee. Real access to a provider who knows you.
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl">
             No copays. No billing surprises. No waiting three weeks to be seen.
@@ -95,7 +95,7 @@ export default function Membership() {
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
               Everything in one number.
             </h2>
-            <p className="text-[#2B2329] text-[15px] leading-relaxed mb-8">
+            <p className="text-[#2B2329] text-base leading-relaxed mb-8">
               Your membership covers up to 15 visits per year — primary care and urgent care both count. Between visits, Avi&apos;s personal number is there when something comes up and you need a real answer fast.
             </p>
             <Link href="/services" className="text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#4A2A43] transition-colors">
@@ -104,7 +104,7 @@ export default function Membership() {
           </div>
           <ul className="flex flex-col">
             {included.map((item) => (
-              <li key={item} className="flex items-start gap-3 py-4 border-b border-[rgba(36,28,32,0.1)] text-[14.5px] text-[#2B2329]">
+              <li key={item} className="flex items-start gap-3 py-4 border-b border-[rgba(36,28,32,0.1)] text-base text-[#2B2329]">
                 <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-[#889A7C] shrink-0" />
                 {item}
               </li>
@@ -122,7 +122,7 @@ export default function Membership() {
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-3">
             Straightforward pricing.
           </h2>
-          <p className="text-[#44597A] text-[15px] mb-12 max-w-xl">
+          <p className="text-[#44597A] text-base mb-12 max-w-xl">
             Billed annually. No enrollment fees, no surprise charges.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
@@ -149,7 +149,7 @@ export default function Membership() {
                 <div className={`text-[12px] mb-5 ${plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
                   {plan.period}
                 </div>
-                <p className={`text-[13.5px] leading-relaxed flex-1 ${plan.highlight ? "text-[#F1EADD]" : "text-[#2B2329]"}`}>
+                <p className={`text-base leading-relaxed flex-1 ${plan.highlight ? "text-[#F1EADD]" : "text-[#2B2329]"}`}>
                   {plan.description}
                 </p>
                 <div className="mt-7">
@@ -185,7 +185,7 @@ export default function Membership() {
                 <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[17px] mb-3">
                   {faq.q}
                 </h3>
-                <p className="text-[14px] text-[#2B2329] leading-relaxed">{faq.a}</p>
+                <p className="text-base text-[#2B2329] leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -203,7 +203,7 @@ export default function Membership() {
           <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] text-4xl md:text-5xl leading-[1.04] tracking-[-0.015em] mb-5 max-w-xl mx-auto">
             Start with a conversation.
           </h2>
-          <p className="text-[#C9CDD3] text-[15px] max-w-md mx-auto mb-8">
+          <p className="text-[#C9CDD3] text-base max-w-md mx-auto mb-8">
             Reach out and we will find a time to talk through whether Blooming Health is the right fit for you and your family.
           </p>
           <Link

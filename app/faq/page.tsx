@@ -12,7 +12,7 @@ const sections = [
     faqs: [
       {
         q: "What is direct primary care (DPC)?",
-        a: "Direct primary care is a membership model for primary care. Instead of billing insurance for every visit, you pay a flat monthly fee that covers all primary care services — unlimited visits, longer appointments, and direct access to your physician. Insurance is still useful for specialists, hospitals, and anything beyond primary care.",
+        a: "Direct primary care is a membership model for primary care. Instead of billing insurance for every visit, you pay a flat monthly fee that covers all primary care services — unlimited visits, longer appointments, and direct access to your provider. Insurance is still useful for specialists, hospitals, and anything beyond primary care.",
       },
       {
         q: "Who is Blooming Health for?",
@@ -24,7 +24,7 @@ const sections = [
       },
       {
         q: "Is this the same as a direct pay clinic?",
-        a: "Similar in spirit. The membership model gives you unlimited visits for a flat monthly fee, rather than paying per visit. It also funds the structural things that make the experience better — smaller patient panels, longer appointments, and real physician availability.",
+        a: "Similar in spirit. The membership model gives you unlimited visits for a flat monthly fee, rather than paying per visit. It also funds the structural things that make the experience better — smaller patient panels, longer appointments, and real provider availability.",
       },
     ],
   },
@@ -61,12 +61,12 @@ const sections = [
         a: "Same-day or next-day for acute concerns. Routine and wellness visits are typically available within a few days. You are not competing against a panel of 2,000 patients.",
       },
       {
-        q: "Can I contact my physician directly?",
-        a: "Yes. Members have direct access to their physician by phone, text, and email. For non-emergency questions, you can expect a response within a few hours during business hours, and same-day for urgent things.",
+        q: "Can I contact my provider directly?",
+        a: "Yes. Members have direct access to their provider by phone, text, and email. For non-emergency questions, you can expect a response within a few hours during business hours, and same-day for urgent things.",
       },
       {
         q: "What about after-hours care?",
-        a: "For non-emergency questions, members can message their physician after hours and expect a response the next morning. For urgent but non-emergency concerns, direct contact is available. True emergencies should go to 911 or the nearest emergency room.",
+        a: "For non-emergency questions, members can message their provider after hours and expect a response the next morning. For urgent but non-emergency concerns, direct contact is available. True emergencies should go to 911 or the nearest emergency room.",
       },
       {
         q: "Are telehealth visits available?",
@@ -95,7 +95,7 @@ const sections = [
       },
       {
         q: "What if I need to be hospitalized?",
-        a: "Hospitalizations are handled by hospital-based physicians (hospitalists). We stay involved, coordinate with the hospital team, and follow up closely when you are discharged.",
+        a: "Hospitalizations are handled by hospital-based providers (hospitalists). We stay involved, coordinate with the hospital team, and follow up closely when you are discharged.",
       },
       {
         q: "When can I enroll?",
@@ -141,7 +141,7 @@ export default function FAQ() {
                       <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[16px] leading-[1.3]">
                         {faq.q}
                       </h3>
-                      <p className="text-[14.5px] text-[#2B2329] leading-relaxed">{faq.a}</p>
+                      <p className="text-base text-[#2B2329] leading-relaxed">{faq.a}</p>
                     </div>
                   ))}
                 </div>
@@ -157,7 +157,7 @@ export default function FAQ() {
           <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl md:text-5xl leading-[1.04] tracking-[-0.015em] mb-5">
             Still have questions?
           </h2>
-          <p className="text-[#2B2329] text-[15px] max-w-md mx-auto mb-8 leading-relaxed">
+          <p className="text-[#2B2329] text-base max-w-md mx-auto mb-8 leading-relaxed">
             Get in touch. We will give you a straight answer and, if it makes sense, set up a free introductory call.
           </p>
           <Link

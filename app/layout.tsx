@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: "%s | Blooming Health",
   },
   description:
-    "Blooming Health is a concierge primary care practice in the Baltimore area. Longer visits, direct physician access, and primary care built around you.",
+    "Blooming Health is a concierge primary care practice in the Baltimore area. Longer visits, direct provider access, and primary care built around you.",
 };
 
 export default function RootLayout({

@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="font-[family-name:var(--font-fraunces)] text-[#4A2A43] text-2xl mb-3">
               Blooming Health
             </div>
-            <p className="text-[#44597A] text-sm leading-relaxed">
+            <p className="text-[#44597A] text-base leading-relaxed">
               Concierge primary care in Baltimore.<br />
               Your health, your way.
             </p>
@@ -30,7 +30,7 @@ export default function Footer() {
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className="text-[13.5px] text-[#2B2329] hover:text-[#4A2A43] transition-colors"
+                    className="text-base text-[#2B2329] hover:text-[#4A2A43] transition-colors"
                   >
                     {l.label}
                   </Link>
@@ -41,7 +41,7 @@ export default function Footer() {
 
           <div>
             <div className="text-[10px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-4">Contact</div>
-            <ul className="flex flex-col gap-2 text-[13.5px] text-[#2B2329]">
+            <ul className="flex flex-col gap-2 text-base text-[#2B2329]">
               <li>[Practice Address], Baltimore, MD</li>
               <li>
                 <a href="tel:+14105550000" className="hover:text-[#4A2A43] transition-colors">

@@ -19,7 +19,7 @@ const services = [
     body: "Strep, flu, COVID, stitches, UTIs, ear infections, rashes. When something comes up, you get seen same day or next day.",
   },
   {
-    title: "Direct Physician Access",
+    title: "Direct Provider Access",
     body: "Avi's personal number. Text or call directly — no portal, no phone tree, no waiting for a callback.",
   },
   {
@@ -37,9 +37,9 @@ const services = [
 ];
 
 const steps = [
-  { number: "01", title: "Choose your membership", body: "Pick the plan that fits your household. Cancel anytime." },
-  { number: "02", title: "Meet your physician", body: "A proper first visit — unhurried — to understand your full picture." },
-  { number: "03", title: "Access care when you need it", body: "Same-day visits, direct messaging, and a doctor who actually knows you." },
+  { number: "1", title: "Choose your membership", body: "Pick the plan that fits your household. Cancel anytime." },
+  { number: "2", title: "Meet your provider", body: "A proper first visit — unhurried — to understand your full picture." },
+  { number: "3", title: "Access care when you need it", body: "Same-day visits, direct messaging, and a provider who actually knows you." },
 ];
 
 export default function Home() {
@@ -54,9 +54,6 @@ export default function Home() {
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] leading-[1.0] tracking-[-0.015em] text-5xl md:text-7xl lg:text-8xl mb-8 max-w-4xl">
             Primary care with the time to actually know you.
           </h1>
-          <p className="font-[family-name:var(--font-cormorant)] italic text-[#6E7F62] text-2xl md:text-3xl mb-8">
-            Your Health. Your Way.
-          </p>
           <p className="text-[#2B2329] text-base md:text-lg leading-relaxed max-w-2xl mb-10">
             Blooming Health is a membership-based primary care practice in Baltimore. Fewer patients, longer visits, natural options alongside conventional medicine — and a physician who is available when you need them, not just when the schedule allows.
           </p>
@@ -90,10 +87,10 @@ export default function Home() {
             <p className="font-[family-name:var(--font-cormorant)] font-[500] text-[#2B2329] text-xl md:text-2xl leading-[1.45] mb-6">
               We built Blooming Health because good medicine takes time, and we were tired of practices that do not give it.
             </p>
-            <p className="text-[#2B2329] text-[15px] leading-relaxed mb-4">
+            <p className="text-[#2B2329] text-base leading-relaxed mb-4">
               The model is straightforward. An annual membership covers up to 15 primary and urgent care visits with no additional billing. Between appointments, Avi's personal number is there for when something comes up and you need a real answer fast.
             </p>
-            <p className="text-[#2B2329] text-[15px] leading-relaxed">
+            <p className="text-[#2B2329] text-base leading-relaxed">
               We look at natural and lifestyle-based options alongside conventional medicine — medications when they make sense, movement and nutrition when those are the better answer. The goal is a real relationship that helps you build health over time, not just treat what is already wrong.
             </p>
           </div>
@@ -103,7 +100,7 @@ export default function Home() {
                 <h4 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[18px] mb-1">
                   {p.title}
                 </h4>
-                <p className="text-[13.5px] text-[#2B2329]">{p.body}</p>
+                <p className="text-base text-[#2B2329]">{p.body}</p>
               </div>
             ))}
           </div>
@@ -119,7 +116,7 @@ export default function Home() {
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-4 max-w-xl">
             Primary care that actually covers the ground.
           </h2>
-          <p className="text-[#C9CDD3] text-[15px] max-w-xl mb-14">
+          <p className="text-[#C9CDD3] text-base max-w-xl mb-14">
             Membership includes comprehensive primary care — from annual physicals to same-day sick visits to chronic disease management. All in one flat monthly fee.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(246,242,233,0.1)]">
@@ -129,7 +126,7 @@ export default function Home() {
                 <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[18px] mb-3">
                   {s.title}
                 </h3>
-                <p className="text-[#C9CDD3] text-[14px] leading-relaxed">{s.body}</p>
+                <p className="text-[#C9CDD3] text-base leading-relaxed">{s.body}</p>
               </div>
             ))}
           </div>
@@ -162,7 +159,7 @@ export default function Home() {
                 <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-xl mb-3">
                   {s.title}
                 </h3>
-                <p className="text-[#2B2329] text-[14.5px] leading-relaxed">{s.body}</p>
+                <p className="text-[#2B2329] text-base leading-relaxed">{s.body}</p>
               </div>
             ))}
           </div>
@@ -174,24 +171,6 @@ export default function Home() {
               View membership plans
             </Link>
           </div>
-        </div>
-      </section>
-
-      {/* Quote pull */}
-      <section className="bg-[#4A2A43] py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <p className="font-[family-name:var(--font-cormorant)] italic text-[#F6F2E9] text-3xl md:text-4xl lg:text-5xl leading-[1.3] max-w-3xl mx-auto mb-8">
-            &ldquo;The quiet confidence is the sell.&rdquo;
-          </p>
-          <p className="text-[#C9CDD3] text-[13px] tracking-[0.2em] uppercase mb-10">
-            Direct, warm, and unhurried.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center border border-[#F6F2E9] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#F6F2E9] hover:text-[#4A2A43] transition-colors duration-200"
-          >
-            Get in touch
-          </Link>
         </div>
       </section>
 

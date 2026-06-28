@@ -41,7 +41,7 @@ export default function Contact() {
                   <input
                     type="text"
                     name="firstName"
-                    className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-[14px] px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3]"
+                    className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3]"
                     placeholder="[First name]"
                   />
                 </div>
@@ -52,7 +52,7 @@ export default function Contact() {
                   <input
                     type="text"
                     name="lastName"
-                    className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-[14px] px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3]"
+                    className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3]"
                     placeholder="[Last name]"
                   />
                 </div>
@@ -65,7 +65,7 @@ export default function Contact() {
                 <input
                   type="email"
                   name="email"
-                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-[14px] px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3]"
+                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3]"
                   placeholder="[your@email.com]"
                 />
               </div>
@@ -77,7 +77,7 @@ export default function Contact() {
                 <input
                   type="tel"
                   name="phone"
-                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-[14px] px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3]"
+                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3]"
                   placeholder="[(000) 000-0000]"
                 />
               </div>
@@ -88,7 +88,7 @@ export default function Contact() {
                 </label>
                 <select
                   name="interest"
-                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-[14px] px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors"
+                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors"
                 >
                   <option value="">Select one</option>
                   <option value="intro-call">Scheduling an introductory call</option>
@@ -105,7 +105,7 @@ export default function Contact() {
                 <textarea
                   name="message"
                   rows={5}
-                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-[14px] px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3] resize-y"
+                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3] resize-y"
                   placeholder="Anything you'd like us to know ahead of time…"
                 />
               </div>
@@ -132,29 +132,29 @@ export default function Contact() {
               <div className="flex flex-col gap-5">
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
                   <div className="text-[11px] tracking-[0.2em] uppercase text-[#889A7C] font-[500] mb-1">Address</div>
-                  <p className="text-[14.5px] text-[#2B2329]">
+                  <p className="text-base text-[#2B2329]">
                     [Street Address]<br />
                     Baltimore, MD [ZIP]
                   </p>
                 </div>
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
                   <div className="text-[11px] tracking-[0.2em] uppercase text-[#889A7C] font-[500] mb-1">Phone</div>
-                  <a href="tel:+14105550000" className="text-[14.5px] text-[#2B2329] hover:text-[#4A2A43] transition-colors">
+                  <a href="tel:+14105550000" className="text-base text-[#2B2329] hover:text-[#4A2A43] transition-colors">
                     (410) 555-0000
                   </a>
                 </div>
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
                   <div className="text-[11px] tracking-[0.2em] uppercase text-[#889A7C] font-[500] mb-1">Email</div>
-                  <a href="mailto:hello@bloominghealth.com" className="text-[14.5px] text-[#2B2329] hover:text-[#4A2A43] transition-colors">
+                  <a href="mailto:hello@bloominghealth.com" className="text-base text-[#2B2329] hover:text-[#4A2A43] transition-colors">
                     hello@bloominghealth.com
                   </a>
                 </div>
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
                   <div className="text-[11px] tracking-[0.2em] uppercase text-[#889A7C] font-[500] mb-1">Office hours</div>
-                  <p className="text-[14.5px] text-[#2B2329]">
+                  <p className="text-base text-[#2B2329]">
                     Monday – Friday: [8am – 5pm]<br />
                     Saturday: [by appointment]<br />
-                    After-hours: direct physician access for members
+                    After-hours: direct provider access for members
                   </p>
                 </div>
               </div>
