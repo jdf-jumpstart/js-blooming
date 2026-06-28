@@ -19,7 +19,7 @@ export default function Footer() {
               Blooming Health
             </div>
             <p className="text-[#44597A] text-base leading-relaxed">
-              Concierge primary care in Baltimore.<br />
+              Direct primary care in Baltimore.<br />
               Your health, your way.
             </p>
           </div>
