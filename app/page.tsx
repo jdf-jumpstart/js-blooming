@@ -57,10 +57,10 @@ export default function Home() {
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0d1117]/80 via-[#0d1117]/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0d1117]/90 via-[#0d1117]/55 to-[#0d1117]/20" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-11 py-20 md:py-28 w-full">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-6">
-            Direct Primary Care Serving Baltimore
+            Direct Primary Care for Baltimore
           </div>
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] leading-[1.0] tracking-[-0.015em] text-5xl md:text-7xl lg:text-8xl mb-8 max-w-4xl">
             Primary care with the time to actually know you.
