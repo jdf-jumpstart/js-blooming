@@ -19,22 +19,25 @@ const included = [
 const plans = [
   {
     name: "Individual",
-    price: "$1,200",
-    period: "per year  ·  $100 / month",
+    monthly: "$100",
+    monthlyLabel: "/mo",
+    annual: "$1,200 billed annually",
     description: "Full membership for one adult. Up to 15 visits, direct access, same-day care.",
     highlight: false,
   },
   {
     name: "Couple",
-    price: "$2,000",
-    period: "per year  ·  ~$167 / month",
+    monthly: "$167",
+    monthlyLabel: "/mo",
+    annual: "~$2,000 billed annually",
     description: "Membership for two adults in the same household. Both members get the full experience.",
     highlight: true,
   },
   {
     name: "Child Add-On",
-    price: "$500",
-    period: "per child / year  ·  ~$42 / month",
+    monthly: "$42",
+    monthlyLabel: "/mo",
+    annual: "~$500 billed annually",
     description: "Add a child to an existing parent membership. At least one parent must be enrolled.",
     highlight: false,
   },
@@ -77,7 +80,7 @@ export default function Membership() {
             Membership
           </div>
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
-            One annual fee. Real access to a provider who knows you.
+            A flat monthly rate. Real access to a provider who knows you.
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl">
             No copays. No billing surprises. No waiting three weeks to be seen.
@@ -123,7 +126,7 @@ export default function Membership() {
             Straightforward pricing.
           </h2>
           <p className="text-[#44597A] text-base mb-12 max-w-xl">
-            Billed annually. No enrollment fees, no surprise charges.
+            Billed annually. No per-visit fees, no surprise charges.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {plans.map((plan) => (
@@ -143,11 +146,16 @@ export default function Membership() {
                 <div className={`text-[11px] tracking-[0.24em] uppercase font-[500] mb-4 ${plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
                   {plan.name}
                 </div>
-                <div className="font-[family-name:var(--font-fraunces)] text-5xl leading-none mb-2">
-                  {plan.price}
+                <div className="flex items-baseline gap-1 mb-2">
+                  <span className="font-[family-name:var(--font-fraunces)] text-5xl leading-none">
+                    {plan.monthly}
+                  </span>
+                  <span className={`text-base font-[500] ${plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
+                    {plan.monthlyLabel}
+                  </span>
                 </div>
-                <div className={`text-[12px] mb-5 ${plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
-                  {plan.period}
+                <div className={`text-[12px] mb-5 ${plan.highlight ? "text-[#889A7C]" : "text-[#889A7C]"}`}>
+                  {plan.annual}
                 </div>
                 <p className={`text-base leading-relaxed flex-1 ${plan.highlight ? "text-[#F1EADD]" : "text-[#2B2329]"}`}>
                   {plan.description}

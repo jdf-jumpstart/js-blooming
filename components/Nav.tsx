@@ -4,10 +4,19 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-const links = [
+type ChildLink = { href: string; label: string };
+type NavLink = { href: string; label: string; children?: never } | { href?: never; label: string; children: ChildLink[] };
+
+const links: NavLink[] = [
   { href: "/services", label: "Services" },
   { href: "/membership", label: "Membership" },
-  { href: "/about", label: "About" },
+  {
+    label: "About",
+    children: [
+      { href: "/about", label: "The Practice" },
+      { href: "/what-is-dpc", label: "What Is DPC?" },
+    ],
+  },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
 ];
@@ -15,28 +24,83 @@ const links = [
 export default function Nav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-40 border-b border-[rgba(36,28,32,0.14)]"
-      style={{ background: "rgba(246,242,233,0.92)", backdropFilter: "blur(12px)" }}>
+    <nav
+      className="sticky top-0 z-40 border-b border-[rgba(36,28,32,0.14)]"
+      style={{ background: "rgba(246,242,233,0.92)", backdropFilter: "blur(12px)" }}
+    >
       <div className="max-w-6xl mx-auto px-6 md:px-11 flex items-center justify-between h-16 gap-6">
-        <Link href="/" className="font-[family-name:var(--font-fraunces)] text-[#4A2A43] text-xl tracking-[-0.01em] shrink-0">
+        <Link
+          href="/"
+          className="font-[family-name:var(--font-fraunces)] text-[#4A2A43] text-xl tracking-[-0.01em] shrink-0"
+        >
           Blooming Health
         </Link>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-7">
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className={`text-[11px] tracking-[0.14em] uppercase font-[family-name:var(--font-jost)] font-[500] transition-colors duration-200 ${
-                pathname === l.href ? "text-[#4A2A43]" : "text-[#44597A] hover:text-[#4A2A43]"
-              }`}
-            >
-              {l.label}
-            </Link>
-          ))}
+          {links.map((l) => {
+            if (l.children) {
+              const isActive = l.children.some((c) => pathname === c.href);
+              return (
+                <div key={l.label} className="relative group">
+                  <button
+                    className={`text-[11px] tracking-[0.14em] uppercase font-[family-name:var(--font-jost)] font-[500] transition-colors duration-200 flex items-center gap-1 ${
+                      isActive ? "text-[#4A2A43]" : "text-[#44597A] hover:text-[#4A2A43]"
+                    }`}
+                  >
+                    {l.label}
+                    <svg
+                      width="10"
+                      height="6"
+                      viewBox="0 0 10 6"
+                      fill="none"
+                      className="mt-[1px] transition-transform duration-200 group-hover:rotate-180"
+                    >
+                      <path
+                        d="M1 1L5 5L9 1"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <div className="absolute top-full left-0 pt-2 opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-150">
+                    <div className="bg-[#F6F2E9] border border-[rgba(36,28,32,0.14)] rounded shadow-sm py-1 min-w-[160px]">
+                      {l.children.map((c) => (
+                        <Link
+                          key={c.href}
+                          href={c.href}
+                          className={`block px-4 py-2.5 text-[11px] tracking-[0.14em] uppercase font-[500] transition-colors duration-150 ${
+                            pathname === c.href
+                              ? "text-[#4A2A43]"
+                              : "text-[#44597A] hover:text-[#4A2A43]"
+                          }`}
+                        >
+                          {c.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            }
+
+            return (
+              <Link
+                key={l.href}
+                href={l.href}
+                className={`text-[11px] tracking-[0.14em] uppercase font-[family-name:var(--font-jost)] font-[500] transition-colors duration-200 ${
+                  pathname === l.href ? "text-[#4A2A43]" : "text-[#44597A] hover:text-[#4A2A43]"
+                }`}
+              >
+                {l.label}
+              </Link>
+            );
+          })}
           <Link
             href="/membership"
             className="text-[11px] tracking-[0.14em] uppercase font-[500] bg-[#4A2A43] text-[#F6F2E9] px-5 py-2.5 rounded hover:bg-[#3a1f34] transition-colors duration-200"
@@ -53,9 +117,19 @@ export default function Nav() {
         >
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
             {open ? (
-              <path d="M4 4L18 18M18 4L4 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+              <path
+                d="M4 4L18 18M18 4L4 18"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+              />
             ) : (
-              <path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+              <path
+                d="M3 6h16M3 11h16M3 16h16"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+              />
             )}
           </svg>
         </button>
@@ -64,18 +138,71 @@ export default function Nav() {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden border-t border-[rgba(36,28,32,0.14)] bg-[#F6F2E9] px-6 py-4 flex flex-col gap-4">
-          {links.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              onClick={() => setOpen(false)}
-              className={`text-[11px] tracking-[0.14em] uppercase font-[500] transition-colors ${
-                pathname === l.href ? "text-[#4A2A43]" : "text-[#44597A]"
-              }`}
-            >
-              {l.label}
-            </Link>
-          ))}
+          {links.map((l) => {
+            if (l.children) {
+              return (
+                <div key={l.label}>
+                  <button
+                    onClick={() => setAboutOpen(!aboutOpen)}
+                    className={`text-[11px] tracking-[0.14em] uppercase font-[500] transition-colors flex items-center gap-1 ${
+                      l.children.some((c) => pathname === c.href)
+                        ? "text-[#4A2A43]"
+                        : "text-[#44597A]"
+                    }`}
+                  >
+                    {l.label}
+                    <svg
+                      width="10"
+                      height="6"
+                      viewBox="0 0 10 6"
+                      fill="none"
+                      className={`mt-[1px] transition-transform ${aboutOpen ? "rotate-180" : ""}`}
+                    >
+                      <path
+                        d="M1 1L5 5L9 1"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  {aboutOpen && (
+                    <div className="ml-4 mt-2 flex flex-col gap-3">
+                      {l.children.map((c) => (
+                        <Link
+                          key={c.href}
+                          href={c.href}
+                          onClick={() => {
+                            setOpen(false);
+                            setAboutOpen(false);
+                          }}
+                          className={`text-[11px] tracking-[0.14em] uppercase font-[500] transition-colors ${
+                            pathname === c.href ? "text-[#4A2A43]" : "text-[#44597A]"
+                          }`}
+                        >
+                          {c.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            }
+
+            return (
+              <Link
+                key={l.href}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className={`text-[11px] tracking-[0.14em] uppercase font-[500] transition-colors ${
+                  pathname === l.href ? "text-[#4A2A43]" : "text-[#44597A]"
+                }`}
+              >
+                {l.label}
+              </Link>
+            );
+          })}
           <Link
             href="/membership"
             onClick={() => setOpen(false)}
