@@ -49,7 +49,7 @@ export default function Home() {
       <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-24 md:py-32">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-6">
-            Concierge Primary Care · Baltimore
+            Concierge Primary Care Serving Baltimore
           </div>
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] leading-[1.0] tracking-[-0.015em] text-5xl md:text-7xl lg:text-8xl mb-8 max-w-4xl">
             Primary care with the time to actually know you.
