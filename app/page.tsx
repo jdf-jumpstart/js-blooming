@@ -107,7 +107,7 @@ export default function Home() {
           </div>
           <div className="relative aspect-[4/5] rounded-md overflow-hidden">
             <Image
-              src="/photo-consultation.jpg"
+              src="/blooming-health-concierge-lounge-scene.png"
               alt="A welcoming consultation space"
               fill
               className="object-cover object-center"
@@ -143,7 +143,7 @@ export default function Home() {
             </div>
             <div className="relative aspect-[16/9] md:aspect-[4/3] rounded-md overflow-hidden">
               <Image
-                src="/photo-exam-room.jpg"
+                src="/blooming-health-exam-room-scene.png"
                 alt="A clean, welcoming exam room"
                 fill
                 className="object-cover object-center"
