@@ -50,7 +50,7 @@ export default function Home() {
       <section className="relative overflow-hidden min-h-[80vh] flex items-end">
         <div className="absolute inset-0 bg-[#1B2A45]">
           <Image
-            src="/hero-placeholder.jpg"
+            src="/Patient-visiting-a-primary-care-doctor-1030x687.jpeg"
             alt=""
             fill
             className="object-cover object-center"
