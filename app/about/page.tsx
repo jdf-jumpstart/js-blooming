@@ -25,7 +25,7 @@ const values = [
   },
   {
     title: "Prevention",
-    body: "The model bets on catching things early and building health over time — not just treating what is already wrong.",
+    body: "The model bets on catching things early and building health over time, not just treating what's already wrong.",
   },
   {
     title: "Trust",
@@ -46,7 +46,7 @@ export default function About() {
             Primary care as a relationship, not a transaction.
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl">
-            We built Blooming Health around one idea — that a meaningful relationship between patient and provider changes everything.
+            We built Blooming Health around one idea: that a meaningful relationship between patient and provider changes everything.
           </p>
         </div>
       </section>
@@ -62,13 +62,13 @@ export default function About() {
               Collaborating your health.
             </h2>
             <p className="text-[#2B2329] text-base leading-relaxed mb-5">
-              Most primary care visits run about ten minutes. That is not enough time to understand a person — let alone their full health picture. Blooming Health was built to fix that.
+              Most primary care visits run about ten minutes. That's not enough time to understand a person, let alone their full health picture. Blooming Health was built to fix that.
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed mb-5">
-              We see fewer patients, spend more time with each one, and actually listen. When something needs attention, we look at all the options — natural and lifestyle-based approaches, not just a prescription — and figure out together what makes the most sense for you.
+              We see fewer patients, spend more time with each one, and actually listen. When something needs attention, we look at all the options (natural and lifestyle-based approaches, not just a prescription) and figure out together what makes the most sense for you.
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed">
-              The result is primary care that feels less like a system and more like a relationship. That is the whole point.
+              The result is primary care that feels less like a system and more like a relationship. That's the whole point.
             </p>
           </div>
           <div className="bg-[#F1EADD] border border-[rgba(36,28,32,0.14)] rounded-md p-8 flex flex-col justify-center">
@@ -77,7 +77,7 @@ export default function About() {
             </div>
             <ul className="flex flex-col gap-4">
               {[
-                "Long appointments — time to actually talk",
+                "Long appointments (time to actually talk)",
                 "Direct access to your provider, not a call center",
                 "Natural options explored alongside conventional medicine",
                 "Same- or next-day care when something comes up",
@@ -111,10 +111,10 @@ export default function About() {
               Avi brings 11 years of healthcare experience to Blooming Health, and a genuine love for helping people — especially when it comes to their health.
             </p>
             <p className="text-[#C9CDD3] text-base leading-relaxed mb-4">
-              Outside the practice, he is the father of six, which has a way of sharpening your perspective on what actually matters in a family&apos;s health. He stays active, keeps learning, and plays guitar — badly enough to keep him humble, well enough to enjoy it.
+              Outside the practice, he's the father of six, which has a way of sharpening your perspective on what actually matters in a family&apos;s health. He stays active, keeps learning, and plays guitar — badly enough to keep him humble, well enough to enjoy it.
             </p>
             <p className="text-[#C9CDD3] text-base leading-relaxed">
-              What drives him is the relationship. Not the paperwork. Not the billing codes. The part where you actually sit down with a person, understand what they are dealing with, and help them figure out what to do about it.
+              What drives him is the relationship. Not the paperwork. Not the billing codes. The part where you actually sit down with a person, understand what they're dealing with, and help them figure out what to do about it.
             </p>
           </div>
           <div className="bg-[rgba(246,242,233,0.06)] border border-[rgba(246,242,233,0.12)] rounded-md aspect-[4/5] flex items-center justify-center">
