@@ -65,12 +65,12 @@ export default function Services() {
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-2xl mb-6">
               Primary Care
             </h2>
-            <p className="text-[14px] text-[#2B2329] leading-relaxed mb-6">
+            <p className="text-base text-[#2B2329] leading-relaxed mb-6">
               Your ongoing relationship with Avi. Wellness visits, chronic disease management, preventive care, and everything in between — with natural options and lifestyle solutions explored alongside conventional medicine.
             </p>
             <ul className="flex flex-col gap-2.5">
               {primaryCare.map((s) => (
-                <li key={s} className="flex items-start gap-3 text-[14px] text-[#2B2329]">
+                <li key={s} className="flex items-start gap-3 text-base text-[#2B2329]">
                   <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-[#889A7C] shrink-0" />
                   {s}
                 </li>
@@ -85,12 +85,12 @@ export default function Services() {
               <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-2xl mb-6">
                 Urgent Care
               </h2>
-              <p className="text-[14px] text-[#2B2329] leading-relaxed mb-6">
+              <p className="text-base text-[#2B2329] leading-relaxed mb-6">
                 When something comes up, you get seen — same day or next day, no separate urgent care copay. These visits count toward your 15 annual visits.
               </p>
               <ul className="flex flex-col gap-2.5">
                 {urgentCare.map((s) => (
-                  <li key={s} className="flex items-start gap-3 text-[14px] text-[#2B2329]">
+                  <li key={s} className="flex items-start gap-3 text-base text-[#2B2329]">
                     <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-[#889A7C] shrink-0" />
                     {s}
                   </li>
@@ -104,12 +104,12 @@ export default function Services() {
               <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-2xl mb-5">
                 More on the way.
               </h2>
-              <p className="text-[14px] text-[#44597A] leading-relaxed mb-5">
+              <p className="text-base text-[#44597A] leading-relaxed mb-5">
                 We are starting focused and expanding thoughtfully. Additional services will be added as the practice grows.
               </p>
               <ul className="flex flex-col gap-2.5">
                 {comingSoon.map((s) => (
-                  <li key={s} className="flex items-start gap-3 text-[13.5px] text-[#44597A]">
+                  <li key={s} className="flex items-start gap-3 text-base text-[#44597A]">
                     <span className="mt-[5px] w-1.5 h-1.5 rounded-full border border-[#889A7C] shrink-0" />
                     {s}
                   </li>
@@ -130,7 +130,7 @@ export default function Services() {
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
               What membership does not cover.
             </h2>
-            <p className="text-[#C9CDD3] text-[15px] leading-relaxed">
+            <p className="text-[#C9CDD3] text-base leading-relaxed">
               Blooming Health handles primary and urgent care. For anything beyond that — specialists, hospitals, imaging, surgeries — your existing insurance still applies. We are glad to help coordinate referrals and navigate the system.
             </p>
           </div>
@@ -143,7 +143,7 @@ export default function Services() {
               "Prescription medications (we help find lowest-cost options)",
               "Mental health therapy beyond basic counseling",
             ].map((item) => (
-              <li key={item} className="flex items-start gap-3 text-[14px] text-[#C9CDD3] border-b border-[rgba(246,242,233,0.1)] pb-4">
+              <li key={item} className="flex items-start gap-3 text-base text-[#C9CDD3] border-b border-[rgba(246,242,233,0.1)] pb-4">
                 <span className="mt-[5px] w-1.5 h-1.5 rounded-full border border-[#44597A] shrink-0" />
                 {item}
               </li>
@@ -158,7 +158,7 @@ export default function Services() {
           <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl md:text-5xl leading-[1.04] tracking-[-0.015em] mb-5">
             Ready to get started?
           </h2>
-          <p className="text-[#2B2329] text-[15px] max-w-md mx-auto mb-8">
+          <p className="text-[#2B2329] text-base max-w-md mx-auto mb-8">
             Reach out and we will talk through whether the practice is a good fit.
           </p>
           <Link
