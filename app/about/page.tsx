@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "The story behind Blooming Health — a concierge primary care practice in Baltimore built on the idea that good medicine takes time.",
+  description: "Meet Avi, the physician behind Blooming Health — and learn why we built a practice around relationship-based, natural-first primary care in Baltimore.",
 };
 
 const values = [
@@ -16,16 +16,16 @@ const values = [
     body: "You set the direction. We give you the information and support to get there. This is your health, and our role is to help you understand it clearly.",
   },
   {
-    title: "Education",
-    body: "We explain things the way a good doctor explains them across a table — plainly, honestly, and without the jargon. You leave each visit more informed than you arrived.",
+    title: "Natural first",
+    body: "Medications have their place. But so do nutrition, movement, sleep, and lifestyle change. We explore all the options and recommend the one that makes the most sense for you.",
   },
   {
     title: "Access",
-    body: "A direct line to your physician. Text, call, or email — with a response you can count on. Not a call center, not a portal, not a stranger.",
+    body: "Your physician's personal number. Text or call when something comes up. No phone tree, no portal message that gets answered in three days.",
   },
   {
     title: "Prevention",
-    body: "The model bets on catching things early and building health over time. Not just treating what is already wrong.",
+    body: "The model bets on catching things early and building health over time — not just treating what is already wrong.",
   },
   {
     title: "Trust",
@@ -43,83 +43,87 @@ export default function About() {
             About
           </div>
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
-            Built by people who got tired of watching medicine get rushed.
+            Primary care as a relationship, not a transaction.
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl">
-            The founding frustration was simple: short visits, no real access, and patients leaving the room feeling unheard.
+            We built Blooming Health around one idea — that a meaningful relationship between patient and provider changes everything.
           </p>
         </div>
       </section>
 
-      {/* Story */}
+      {/* Mission */}
       <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14">
           <div>
             <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-              The story
+              Our mission
             </div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
-              A new kind of practice.
+              Collaborating your health.
             </h2>
             <p className="text-[#2B2329] text-[15px] leading-relaxed mb-5">
-              Blooming Health is a concierge primary care practice in the Baltimore area, built by people who got tired of watching medicine get rushed. The founding frustration was simple: short visits, no real access, and patients leaving the room feeling unheard.
+              Most primary care visits run about ten minutes. That is not enough time to understand a person — let alone their full health picture. Blooming Health was built to fix that.
             </p>
             <p className="text-[#2B2329] text-[15px] leading-relaxed mb-5">
-              The model flips that on its head. Fewer patients, longer visits, and a direct line to your physician — who works as a guide helping you make informed decisions, not a figure dictating them.
+              We see fewer patients, spend more time with each one, and actually listen. When something needs attention, we look at all the options — natural and lifestyle-based approaches, not just a prescription — and figure out together what makes the most sense for you.
             </p>
             <p className="text-[#2B2329] text-[15px] leading-relaxed">
-              Care here is evidence-based, and it pairs real medicine with the practical things that actually move health over a lifetime: nutrition, movement, prevention, and steady habits.
+              The result is primary care that feels less like a system and more like a relationship. That is the whole point.
             </p>
           </div>
           <div className="bg-[#F1EADD] border border-[rgba(36,28,32,0.14)] rounded-md p-8 flex flex-col justify-center">
             <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-              What this is not
+              What makes this different
             </div>
             <ul className="flex flex-col gap-4">
               {[
-                "Not functional medicine",
-                "Not alternative medicine",
-                "Not a spa or wellness center",
-                "Not a replacement for insurance",
+                "Long appointments — time to actually talk",
+                "Direct access to your physician, not a call center",
+                "Natural options explored alongside conventional medicine",
+                "Same- or next-day care when something comes up",
+                "A physician who knows you and your history",
+                "Decisions made with you, not for you",
               ].map((item) => (
-                <li key={item} className="flex items-center gap-3 text-[14.5px] text-[#2B2329] pb-4 border-b border-[rgba(36,28,32,0.1)]">
-                  <span className="w-1.5 h-1.5 rounded-full border border-[#44597A] shrink-0" />
+                <li key={item} className="flex items-start gap-3 text-[14.5px] text-[#2B2329] pb-4 border-b border-[rgba(36,28,32,0.1)] last:border-0 last:pb-0">
+                  <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-[#889A7C] shrink-0" />
                   {item}
                 </li>
               ))}
             </ul>
-            <p className="text-[13.5px] text-[#44597A] mt-5 leading-relaxed">
-              It is modern primary care organized around one honest idea — a meaningful relationship between a patient and a physician who has the time to know them.
-            </p>
           </div>
         </div>
       </section>
 
-      {/* Physician */}
+      {/* Meet Avi */}
       <section className="bg-[#1B2A45] border-b border-[rgba(246,242,233,0.12)] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
           <div>
             <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-5">
               The physician
             </div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
-              [Physician Name], MD
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-2">
+              Avi [Last Name], MD
             </h2>
-            <p className="text-[#C9CDD3] text-[15px] leading-relaxed mb-4">
-              [Physician bio placeholder — to be replaced with the physician&apos;s actual background, training, and philosophy.]
+            <p className="text-[#889A7C] text-[13px] tracking-[0.1em] uppercase mb-7">
+              Founder & Primary Care Physician
             </p>
             <p className="text-[#C9CDD3] text-[15px] leading-relaxed mb-4">
-              Board certified in [specialty]. Trained at [institution]. [X] years of experience in primary care. [Additional credentials and background.]
+              Avi brings 11 years of healthcare experience to Blooming Health, and a genuine love for helping people — especially when it comes to their health.
+            </p>
+            <p className="text-[#C9CDD3] text-[15px] leading-relaxed mb-4">
+              Outside the practice, he is the father of six (and husband of one 😉), which has a way of sharpening your perspective on what actually matters in a family&apos;s health. He stays active, keeps learning, and plays guitar — badly enough to keep him humble, well enough to enjoy it.
             </p>
             <p className="text-[#C9CDD3] text-[15px] leading-relaxed">
-              [Personal note about why they practice this way — 1-2 sentences in their own voice.]
+              What drives him is the relationship. Not the paperwork. Not the billing codes. The part where you actually sit down with a person, understand what they are dealing with, and help them figure out what to do about it.
             </p>
           </div>
           <div className="bg-[rgba(246,242,233,0.06)] border border-[rgba(246,242,233,0.12)] rounded-md aspect-[4/5] flex items-center justify-center">
             <div className="text-center p-8">
-              <div className="w-20 h-20 rounded-full bg-[rgba(136,154,124,0.2)] border border-[#889A7C] mx-auto mb-5" />
+              <div className="w-24 h-24 rounded-full bg-[rgba(136,154,124,0.2)] border border-[#889A7C] mx-auto mb-5 flex items-center justify-center">
+                <span className="font-[family-name:var(--font-fraunces)] text-[#889A7C] text-3xl">A</span>
+              </div>
               <div className="text-[11px] tracking-[0.24em] uppercase text-[#44597A]">
-                Photo placeholder
+                Photo coming soon
               </div>
             </div>
           </div>
@@ -155,7 +159,7 @@ export default function About() {
             Come as a patient. Stay for the relationship.
           </h2>
           <p className="text-[#2B2329] text-[15px] max-w-md mx-auto mb-8">
-            Schedule a free intro call to learn more about how the practice works and whether it&apos;s the right fit.
+            Reach out to learn more or to set up a free introductory call with Avi.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
