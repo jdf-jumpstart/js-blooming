@@ -37,7 +37,7 @@ export default function About() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-20 md:py-28">
+      <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
             About
@@ -52,7 +52,7 @@ export default function About() {
       </section>
 
       {/* Mission */}
-      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-16 md:py-24">
+      <section className="bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14">
           <div>
             <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
@@ -95,7 +95,7 @@ export default function About() {
       </section>
 
       {/* Meet Avi */}
-      <section className="bg-[#1B2A45] border-b border-[rgba(246,242,233,0.12)] py-16 md:py-24">
+      <section className="bg-[#1B2A45] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
           <div>
             <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-5">
@@ -131,7 +131,7 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-16 md:py-24">
+      <section className="bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
             What we stand for

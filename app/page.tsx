@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden border-b border-[rgba(36,28,32,0.14)] min-h-[80vh] flex items-end">
+      <section className="relative overflow-hidden min-h-[80vh] flex items-end">
         <div className="absolute inset-0 bg-[#1B2A45]">
           <Image
             src="/hero-placeholder.jpg"
@@ -86,7 +86,7 @@ export default function Home() {
       </section>
 
       {/* What is this */}
-      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-20 md:py-28">
+      <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
           <div>
             <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
@@ -127,7 +127,7 @@ export default function Home() {
       </section>
 
       {/* Services overview */}
-      <section className="bg-[#1B2A45] border-b border-[rgba(246,242,233,0.12)] py-20 md:py-28">
+      <section className="bg-[#1B2A45] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-5">
             What we cover
@@ -173,7 +173,7 @@ export default function Home() {
       </section>
 
       {/* How it works */}
-      <section className="bg-[#F1EADD] border-b border-[rgba(36,28,32,0.14)] py-20 md:py-28">
+      <section className="bg-[#F1EADD] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
             How it works
@@ -206,7 +206,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials placeholder */}
-      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-20 md:py-28">
+      <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
             Patient stories

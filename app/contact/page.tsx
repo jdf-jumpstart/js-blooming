@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-20 md:py-28">
+      <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
             Contact
