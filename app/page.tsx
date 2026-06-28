@@ -2,22 +2,22 @@ import Image from "next/image";
 import Link from "next/link";
 
 const pillars = [
-  { title: "Collaboration", body: "Decisions made with the patient, not handed down to them." },
-  { title: "Patient Autonomy", body: "The patient sets the direction. The physician helps them get there." },
-  { title: "Natural first", body: "Medications have their place. So do lifestyle, nutrition, and movement. We explore all the options." },
+  { title: "Collaboration", body: "Decisions made with you, not for you." },
+  { title: "Patient Autonomy", body: "You set the direction. Your provider helps you get there." },
+  { title: "Natural first", body: "Medications have their place. So do nutrition, movement, and sleep. We look at everything." },
   { title: "Access", body: "Avi's personal number. Text or call when something comes up." },
-  { title: "Prevention", body: "Catching things early and building health over time, not just treating illness." },
-  { title: "Trust", body: "The same physician over years, who knows you, your history, and what matters." },
+  { title: "Prevention", body: "Catching things early and building health over time, not just treating what's already wrong." },
+  { title: "Trust", body: "The same NP over years, who knows your history, your family, and what matters to you." },
 ];
 
 const services = [
   {
     title: "Primary Care",
-    body: "Wellness exams, chronic disease management, preventive care, nutrition and lifestyle counseling — with time to actually address everything.",
+    body: "Wellness exams, chronic disease management, preventive care, nutrition and lifestyle counseling. Time to actually get through all of it.",
   },
   {
     title: "Urgent Care",
-    body: "Strep, flu, COVID, stitches, UTIs, ear infections, rashes. When something comes up, you get seen same day or next day.",
+    body: "Strep, flu, COVID, stitches, UTIs, ear infections, rashes. Same day or next day, no separate charge.",
   },
   {
     title: "Direct Provider Access",
@@ -25,21 +25,21 @@ const services = [
   },
   {
     title: "Natural & Lifestyle Options",
-    body: "Medications when needed. Nutrition, movement, and lifestyle-first approaches when that makes more sense. Always explored together.",
+    body: "Medications when they're the right call. Nutrition, movement, and lifestyle-first when they're not. Always explored together.",
   },
   {
     title: "Long Appointment Blocks",
-    body: "Enough time to talk through everything — not just the chief complaint. Ten-minute visits are not how this practice works.",
+    body: "Enough time to talk through everything (not just the chief complaint). Ten-minute slots aren't how this works.",
   },
   {
-    title: "More coming soon",
-    body: "We are starting focused and expanding thoughtfully. Additional services will be added as the practice grows.",
+    title: "More on the way",
+    body: "Starting focused. Adding more as we grow.",
   },
 ];
 
 const steps = [
   { number: "1", title: "Choose your membership", body: "Pick the plan that fits your household. Cancel anytime." },
-  { number: "2", title: "Meet your provider", body: "A proper first visit — unhurried — to understand your full picture." },
+  { number: "2", title: "Meet your provider", body: "A proper first visit, no rushing, to understand your full picture." },
   { number: "3", title: "Access care when you need it", body: "Same-day visits, direct messaging, and a provider who actually knows you." },
 ];
 
@@ -48,7 +48,6 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-[rgba(36,28,32,0.14)] min-h-[80vh] flex items-end">
-        {/* Background photo — replace src with real image when ready */}
         <div className="absolute inset-0 bg-[#1B2A45]">
           <Image
             src="/hero-placeholder.jpg"
@@ -58,9 +57,7 @@ export default function Home() {
             priority
           />
         </div>
-        {/* Gradient overlay for text legibility */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0d1117]/80 via-[#0d1117]/30 to-transparent" />
-        {/* Content */}
         <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-11 py-20 md:py-28 w-full">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-6">
             Direct Primary Care Serving Baltimore
@@ -69,7 +66,7 @@ export default function Home() {
             Primary care with the time to actually know you.
           </h1>
           <p className="text-[#C9CDD3] text-base md:text-lg leading-relaxed max-w-2xl mb-10">
-            Blooming Health is a membership-based direct primary care practice in Baltimore. Fewer patients, longer visits, natural options alongside conventional medicine — and a provider who is available when you need them, not just when the schedule allows.
+            Blooming Health is a membership-based direct primary care practice in Baltimore. Fewer patients, longer visits, natural options alongside conventional medicine, with a provider who&apos;s available when you need them, not just when the schedule allows.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -90,7 +87,7 @@ export default function Home() {
 
       {/* What is this */}
       <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
+        <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
           <div>
             <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
               The model
@@ -99,25 +96,33 @@ export default function Home() {
               A guide, not a gatekeeper.
             </h2>
             <p className="font-[family-name:var(--font-cormorant)] font-[500] text-[#2B2329] text-xl md:text-2xl leading-[1.45] mb-6">
-              We built Blooming Health because good medicine takes time, and we were tired of practices that do not give it.
+              We built Blooming Health because good medicine takes time, and we were tired of practices that don&apos;t give it.
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed mb-4">
-              The model is straightforward. An annual membership covers up to 15 primary and urgent care visits with no additional billing. Between appointments, Avi's personal number is there for when something comes up and you need a real answer fast.
+              Your membership covers up to 15 primary and urgent care visits per year, no extra billing per visit. Between appointments, Avi&apos;s personal number is there for when something comes up and you need a real answer fast.
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed">
-              We look at natural and lifestyle-based options alongside conventional medicine — medications when they make sense, movement and nutrition when those are the better answer. The goal is a real relationship that helps you build health over time, not just treat what is already wrong.
+              We look at natural and lifestyle-based options alongside conventional medicine: medications when they make sense, movement and nutrition when those are the better answer. The goal is a real relationship that helps you build health over time.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-px bg-[rgba(36,28,32,0.14)] border border-[rgba(36,28,32,0.14)] rounded-md overflow-hidden">
-            {pillars.map((p) => (
-              <div key={p.title} className="bg-[#F6F2E9] px-6 py-5">
-                <h4 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[18px] mb-1">
-                  {p.title}
-                </h4>
-                <p className="text-base text-[#2B2329]">{p.body}</p>
-              </div>
-            ))}
+          <div className="relative aspect-[4/5] rounded-md overflow-hidden">
+            <Image
+              src="/photo-consultation.jpg"
+              alt="A welcoming consultation space"
+              fill
+              className="object-cover object-center"
+            />
           </div>
+        </div>
+        <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-2 md:grid-cols-3 gap-px bg-[rgba(36,28,32,0.14)] border border-[rgba(36,28,32,0.14)] rounded-md overflow-hidden">
+          {pillars.map((p) => (
+            <div key={p.title} className="bg-[#F6F2E9] px-6 py-5">
+              <h4 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[18px] mb-1">
+                {p.title}
+              </h4>
+              <p className="text-base text-[#2B2329]">{p.body}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -127,12 +132,24 @@ export default function Home() {
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-5">
             What we cover
           </div>
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-4 max-w-xl">
-            Primary care that actually covers the ground.
-          </h2>
-          <p className="text-[#C9CDD3] text-base max-w-xl mb-14">
-            Membership includes comprehensive primary care — from annual physicals to same-day sick visits to chronic disease management. All in one flat monthly fee.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
+            <div>
+              <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-4">
+                Primary care that actually covers the ground.
+              </h2>
+              <p className="text-[#C9CDD3] text-base">
+                Membership covers everything in the primary care lane: annual physicals, same-day sick visits, chronic disease management. One flat monthly fee, no per-visit billing.
+              </p>
+            </div>
+            <div className="relative aspect-[16/9] md:aspect-[4/3] rounded-md overflow-hidden">
+              <Image
+                src="/photo-exam-room.jpg"
+                alt="A clean, welcoming exam room"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(246,242,233,0.1)]">
             {services.map((s) => (
               <div key={s.title} className="bg-[#1B2A45] p-7 hover:bg-[#243555] transition-colors duration-200">
@@ -201,7 +218,7 @@ export default function Home() {
             {[1, 2, 3].map((i) => (
               <div key={i} className="border border-[rgba(36,28,32,0.14)] rounded-md p-7 bg-[#F1EADD]">
                 <p className="font-[family-name:var(--font-cormorant)] font-[500] text-[#2B2329] text-lg leading-[1.5] mb-6">
-                  &ldquo;[Patient testimonial placeholder — to be replaced with real patient quotes.]&rdquo;
+                  &ldquo;[Patient testimonial placeholder]&rdquo;
                 </p>
                 <div className="text-[12px] tracking-[0.1em] uppercase text-[#44597A]">
                   Patient name · Baltimore
@@ -222,7 +239,7 @@ export default function Home() {
             A different kind of practice.
           </h2>
           <p className="text-[#2B2329] text-[16px] max-w-lg mx-auto mb-10 leading-relaxed">
-            Patients 13 and up. $1,200/year individual, $2,000/year couple. No insurance required for membership.
+            Patients 13 and up. $100/mo individual, $167/mo couple. No insurance required.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
