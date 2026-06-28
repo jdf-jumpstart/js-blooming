@@ -56,7 +56,7 @@ export default function WhatIsDPC() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-20 md:py-28">
+      <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
             The model
@@ -71,7 +71,7 @@ export default function WhatIsDPC() {
       </section>
 
       {/* The simple version */}
-      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-16 md:py-24">
+      <section className="bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
             <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
@@ -116,7 +116,7 @@ export default function WhatIsDPC() {
       </section>
 
       {/* Side by side comparison */}
-      <section className="bg-[#F1EADD] border-b border-[rgba(36,28,32,0.14)] py-16 md:py-24">
+      <section className="bg-[#F1EADD] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
             Side by side
@@ -159,7 +159,7 @@ export default function WhatIsDPC() {
       </section>
 
       {/* Common myths */}
-      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-16 md:py-24">
+      <section className="bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
             Common questions
@@ -181,7 +181,7 @@ export default function WhatIsDPC() {
       </section>
 
       {/* What DPC doesn't cover */}
-      <section className="bg-[#1B2A45] border-b border-[rgba(246,242,233,0.12)] py-16 md:py-24">
+      <section className="bg-[#1B2A45] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-5">
@@ -214,7 +214,7 @@ export default function WhatIsDPC() {
       </section>
 
       {/* Who it's for */}
-      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-16 md:py-24">
+      <section className="bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
             Who it's for

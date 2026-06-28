@@ -74,7 +74,7 @@ export default function Membership() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-20 md:py-28">
+      <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
             Membership
@@ -89,7 +89,7 @@ export default function Membership() {
       </section>
 
       {/* What&apos;s included */}
-      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-16 md:py-24">
+      <section className="bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
             <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
@@ -117,7 +117,7 @@ export default function Membership() {
       </section>
 
       {/* Pricing */}
-      <section className="bg-[#F1EADD] border-b border-[rgba(36,28,32,0.14)] py-16 md:py-24">
+      <section className="bg-[#F1EADD] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
             Plans
@@ -179,7 +179,7 @@ export default function Membership() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-16 md:py-24">
+      <section className="bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
             Common questions

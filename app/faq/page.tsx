@@ -109,7 +109,7 @@ export default function FAQ() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#F6F2E9] border-b border-[rgba(36,28,32,0.14)] py-20 md:py-28">
+      <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] max-w-3xl">
             Frequently Asked Questions (FAQ&apos;s)
@@ -123,7 +123,7 @@ export default function FAQ() {
           <div className="flex flex-col gap-16">
             {sections.map((section) => (
               <div key={section.title}>
-                <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-2xl mb-8 pb-4 border-b border-[rgba(36,28,32,0.14)]">
+                <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-2xl mb-8 pb-4">
                   {section.title}
                 </h2>
                 <div className="flex flex-col gap-6">
