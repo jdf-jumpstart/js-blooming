@@ -3,6 +3,7 @@ import Link from "next/link";
 const footerLinks = [
   { href: "/services", label: "Services" },
   { href: "/membership", label: "Membership" },
+  { href: "/what-is-dpc", label: "What Is DPC?" },
   { href: "/about", label: "About" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
