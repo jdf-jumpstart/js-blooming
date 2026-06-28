@@ -65,7 +65,7 @@ export default function WhatIsDPC() {
             What is direct primary care?
           </h1>
           <p className="text-[#2B2329] text-base md:text-lg leading-relaxed max-w-2xl">
-            Direct primary care — DPC — is a membership model for primary care. You pay a flat monthly fee. In return, you get a real relationship with a provider who has time for you, and direct access when something comes up.
+            Direct primary care (DPC) is a membership model for primary care. You pay a flat monthly fee. In return, you get a real relationship with a provider who has time for you, and direct access when something comes up.
           </p>
         </div>
       </section>
