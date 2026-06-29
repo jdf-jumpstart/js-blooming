@@ -57,30 +57,32 @@ export default function Home() {
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0d1117]/90 via-[#0d1117]/55 to-[#0d1117]/20" />
+        <div className="absolute inset-0 bg-[#0d1117]/30" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-11 py-20 md:py-28 w-full">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-6">
-            Direct Primary Care for Baltimore
-          </div>
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] leading-[1.0] tracking-[-0.015em] text-5xl md:text-7xl lg:text-8xl mb-8 max-w-4xl">
-            Primary care with the time to actually know you.
-          </h1>
-          <p className="text-[#C9CDD3] text-base md:text-lg leading-relaxed max-w-2xl mb-10">
-            Blooming Health is a membership-based direct primary care practice in Baltimore. Fewer patients, longer visits, natural options alongside conventional medicine, with a provider who&apos;s available when you need them, not just when the schedule allows.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/membership"
-              className="inline-flex items-center justify-center bg-[#F6F2E9] text-[#1B2A45] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#F1EADD] transition-colors duration-200"
-            >
-              See how membership works
-            </Link>
-            <Link
-              href="/about"
-              className="inline-flex items-center justify-center border border-[rgba(246,242,233,0.4)] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#F6F2E9] transition-colors duration-200"
-            >
-              About the practice
-            </Link>
+          <div className="bg-[#0d1117]/70 backdrop-blur-sm max-w-2xl p-8 md:p-12">
+            <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-6">
+              Direct Primary Care for Baltimore
+            </div>
+            <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] leading-[1.0] tracking-[-0.015em] text-5xl md:text-6xl lg:text-7xl mb-8">
+              Primary care with the time to actually know you.
+            </h1>
+            <p className="text-[#C9CDD3] text-base md:text-lg leading-relaxed mb-10">
+              Blooming Health is a membership-based direct primary care practice in Baltimore. Fewer patients, longer visits, natural options alongside conventional medicine, with a provider who&apos;s available when you need them, not just when the schedule allows.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/membership"
+                className="inline-flex items-center justify-center bg-[#F6F2E9] text-[#1B2A45] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#F1EADD] transition-colors duration-200"
+              >
+                See how membership works
+              </Link>
+              <Link
+                href="/about"
+                className="inline-flex items-center justify-center border border-[rgba(246,242,233,0.4)] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#F6F2E9] transition-colors duration-200"
+              >
+                About the practice
+              </Link>
+            </div>
           </div>
         </div>
       </section>
