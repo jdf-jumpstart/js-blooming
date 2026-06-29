@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden min-h-[80vh] flex items-end">
+      <section className="relative overflow-hidden min-h-[80vh] flex items-center">
         <div className="absolute inset-0 bg-[#1B2A45]">
           <Image
             src="/Patient-visiting-a-primary-care-doctor-1030x687.jpeg"
