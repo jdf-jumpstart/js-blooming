@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Fraunces, Cormorant_Garamond, Jost } from "next/font/google";
+import { Lora, Cormorant_Garamond, Jost } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
-const fraunces = Fraunces({
+const lora = Lora({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
   variable: "--font-fraunces",
   display: "swap",
-  axes: ["opsz"],
 });
 
 const cormorant = Cormorant_Garamond({
@@ -43,7 +44,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${cormorant.variable} ${jost.variable}`}
+      className={`${lora.variable} ${cormorant.variable} ${jost.variable}`}
     >
       <body>
         <Nav />
