@@ -76,9 +76,6 @@ export default function Membership() {
       {/* Header */}
       <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-            Membership
-          </div>
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             A flat monthly rate. Real access to a provider who knows you.
           </h1>
@@ -92,9 +89,6 @@ export default function Membership() {
       <section className="bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
-            <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-              What&apos;s included
-            </div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
               Everything in one number.
             </h2>
@@ -119,9 +113,6 @@ export default function Membership() {
       {/* Pricing */}
       <section className="bg-[#F1EADD] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-            Plans
-          </div>
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-3">
             Straightforward pricing.
           </h2>
@@ -181,9 +172,6 @@ export default function Membership() {
       {/* FAQ */}
       <section className="bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-            Common questions
-          </div>
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12">
             Things people ask first.
           </h2>

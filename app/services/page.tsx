@@ -43,9 +43,6 @@ export default function Services() {
       {/* Header */}
       <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-            Services
-          </div>
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Primary care and urgent care — covered under your membership.
           </h1>
@@ -124,9 +121,6 @@ export default function Services() {
       <section className="bg-[#1B2A45] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-5">
-              Good to know
-            </div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
               What membership does not cover.
             </h2>

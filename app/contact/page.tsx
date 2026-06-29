@@ -11,9 +11,6 @@ export default function Contact() {
       {/* Header */}
       <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-            Contact
-          </div>
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Start with a conversation.
           </h1>
@@ -29,9 +26,6 @@ export default function Contact() {
 
           {/* Form */}
           <div>
-            <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-6">
-              Send a message
-            </div>
             <form className="flex flex-col gap-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
@@ -126,9 +120,6 @@ export default function Contact() {
           {/* Info */}
           <div className="flex flex-col gap-10">
             <div>
-              <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-                Practice information
-              </div>
               <div className="flex flex-col gap-5">
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
                   <div className="text-[11px] tracking-[0.2em] uppercase text-[#889A7C] font-[500] mb-1">Address</div>

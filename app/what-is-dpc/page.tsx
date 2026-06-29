@@ -58,9 +58,6 @@ export default function WhatIsDPC() {
       {/* Header */}
       <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-            The model
-          </div>
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-7xl leading-[1.0] tracking-[-0.015em] mb-8 max-w-4xl">
             What is direct primary care?
           </h1>
@@ -74,9 +71,6 @@ export default function WhatIsDPC() {
       <section className="bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
-            <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-              The short version
-            </div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
               Primary care without the insurance middleman.
             </h2>
@@ -91,9 +85,6 @@ export default function WhatIsDPC() {
             </p>
           </div>
           <div className="bg-[#1B2A45] rounded-md p-8 flex flex-col gap-6">
-            <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500]">
-              How it works
-            </div>
             {[
               { step: "1", heading: "Pay a flat monthly fee", body: "No copays. No per-visit billing. No surprise charges. One number covers all your primary care." },
               { step: "2", heading: "Get a provider who knows you", body: "Longer appointments, fewer patients per panel, and the same face every time — not whoever happened to be available." },
@@ -118,9 +109,6 @@ export default function WhatIsDPC() {
       {/* Side by side comparison */}
       <section className="bg-[#F1EADD] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-            Side by side
-          </div>
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
             What changes when you leave the traditional model.
           </h2>
@@ -161,9 +149,6 @@ export default function WhatIsDPC() {
       {/* Common myths */}
       <section className="bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-            Common questions
-          </div>
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
             Things people get wrong about DPC.
           </h2>
@@ -184,9 +169,6 @@ export default function WhatIsDPC() {
       <section className="bg-[#1B2A45] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-5">
-              Good to know
-            </div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
               DPC is not a replacement for insurance.
             </h2>
@@ -216,9 +198,6 @@ export default function WhatIsDPC() {
       {/* Who it's for */}
       <section className="bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-            Who it's for
-          </div>
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
             DPC works best when primary care actually matters to you.
           </h2>
@@ -245,9 +224,6 @@ export default function WhatIsDPC() {
       {/* CTA */}
       <section className="bg-[#4A2A43] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-6">
-            At Blooming Health
-          </div>
           <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] text-4xl md:text-5xl lg:text-6xl leading-[1.04] tracking-[-0.015em] mb-8 max-w-3xl mx-auto">
             This is the model we practice.
           </h2>
