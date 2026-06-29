@@ -59,9 +59,6 @@ export default function Home() {
         </div>
         <div className="absolute inset-0 bg-[#0d1117]/30" />
         <div className="absolute inset-[10%] z-10 bg-[#0d1117]/70 backdrop-blur-sm flex flex-col justify-center px-10 md:px-16">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-6">
-            Direct Primary Care for Baltimore
-          </div>
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] leading-[1.0] tracking-[-0.015em] text-5xl md:text-6xl lg:text-7xl mb-8 max-w-3xl">
             Primary care with the time to actually know you.
           </h1>
@@ -89,9 +86,6 @@ export default function Home() {
       <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
           <div>
-            <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-              The model
-            </div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
               A guide, not a gatekeeper.
             </h2>
@@ -129,9 +123,6 @@ export default function Home() {
       {/* Services overview */}
       <section className="bg-[#1B2A45] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-5">
-            What we cover
-          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
             <div>
               <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-4">
@@ -175,9 +166,6 @@ export default function Home() {
       {/* How it works */}
       <section className="bg-[#F1EADD] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-            How it works
-          </div>
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-14 max-w-xl">
             Simple to join. Simple to use.
           </h2>
@@ -208,9 +196,6 @@ export default function Home() {
       {/* Testimonials placeholder */}
       <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-            Patient stories
-          </div>
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12">
             What patients say.
           </h2>
@@ -232,9 +217,6 @@ export default function Home() {
       {/* Final CTA */}
       <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-6">
-            Ready when you are
-          </div>
           <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl md:text-5xl lg:text-6xl leading-[1.04] tracking-[-0.015em] mb-8 max-w-2xl mx-auto">
             A different kind of practice.
           </h2>

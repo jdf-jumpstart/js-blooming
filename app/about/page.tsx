@@ -39,9 +39,6 @@ export default function About() {
       {/* Header */}
       <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-            About
-          </div>
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Primary care as a relationship, not a transaction.
           </h1>
@@ -55,9 +52,6 @@ export default function About() {
       <section className="bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14">
           <div>
-            <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-              Our mission
-            </div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
               Collaborating your health.
             </h2>
@@ -72,9 +66,6 @@ export default function About() {
             </p>
           </div>
           <div className="bg-[#F1EADD] border border-[rgba(36,28,32,0.14)] rounded-md p-8 flex flex-col justify-center">
-            <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-              What makes this different
-            </div>
             <ul className="flex flex-col gap-4">
               {[
                 "Long appointments (time to actually talk)",
@@ -98,9 +89,6 @@ export default function About() {
       <section className="bg-[#1B2A45] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
           <div>
-            <div className="text-[11px] tracking-[0.32em] uppercase text-[#889A7C] font-[500] mb-5">
-              The provider
-            </div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-2">
               Avi Blumenthal, NP
             </h2>
@@ -133,9 +121,6 @@ export default function About() {
       {/* Values */}
       <section className="bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <div className="text-[11px] tracking-[0.32em] uppercase text-[#44597A] font-[500] mb-5">
-            What we stand for
-          </div>
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
             The principles behind the practice.
           </h2>
