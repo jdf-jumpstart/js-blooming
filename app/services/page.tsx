@@ -33,7 +33,7 @@ const urgentCare = [
 
 const comingSoon = [
   "In-office lab draws",
-  "Additional procedures (details to come)",
+  "Additional procedures",
   "Extended wellness programs",
 ];
 
@@ -44,7 +44,7 @@ export default function Services() {
       <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
-            Primary care and urgent care — covered under your membership.
+            Primary care and urgent care. Both covered by your membership.
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl">
             Up to 15 visits per year, same- or next-day, with no extra charges.
