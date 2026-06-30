@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./Logo";
 
 const footerLinks = [
   { href: "/services", label: "Services" },
@@ -15,8 +16,8 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 md:px-11 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-14">
           <div>
-            <div className="font-[family-name:var(--font-fraunces)] text-[#4A2A43] text-2xl mb-3">
-              Blooming Health
+            <div className="mb-3">
+              <Logo height={40} />
             </div>
             <p className="text-[#44597A] text-base leading-relaxed">
               Direct primary care in Baltimore.<br />
