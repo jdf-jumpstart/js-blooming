@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Logo from "./Logo";
 
 type ChildLink = { href: string; label: string };
 type NavLink = { href: string; label: string; children?: never } | { href?: never; label: string; children: ChildLink[] };
@@ -32,11 +33,8 @@ export default function Nav() {
       style={{ background: "rgba(246,242,233,0.92)", backdropFilter: "blur(12px)" }}
     >
       <div className="max-w-6xl mx-auto px-6 md:px-11 flex items-center justify-between h-16 gap-6">
-        <Link
-          href="/"
-          className="font-[family-name:var(--font-fraunces)] text-[#4A2A43] text-xl tracking-[-0.01em] shrink-0"
-        >
-          Blooming Health
+        <Link href="/" className="shrink-0">
+          <Logo height={34} />
         </Link>
 
         {/* Desktop links */}
