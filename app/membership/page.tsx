@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PricingToggle from "@/components/PricingToggle";
 
 export const metadata: Metadata = {
   title: "Membership",
@@ -16,32 +17,6 @@ const included = [
   "A provider who knows you, your history, and your goals",
 ];
 
-const plans = [
-  {
-    name: "Individual",
-    monthly: "$100",
-    monthlyLabel: "/mo",
-    annual: "$1,200 billed annually",
-    description: "Full membership for one adult. Up to 15 visits, direct access, same-day care.",
-    highlight: false,
-  },
-  {
-    name: "Couple",
-    monthly: "$167",
-    monthlyLabel: "/mo",
-    annual: "~$2,000 billed annually",
-    description: "Membership for two adults in the same household. Both members get the full experience.",
-    highlight: true,
-  },
-  {
-    name: "Child Add-On",
-    monthly: "$42",
-    monthlyLabel: "/mo",
-    annual: "~$500 billed annually",
-    description: "Add a child to an existing parent membership. At least one parent must be enrolled.",
-    highlight: false,
-  },
-];
 
 const faqs = [
   {
@@ -117,55 +92,9 @@ export default function Membership() {
             Straightforward pricing.
           </h2>
           <p className="text-[#44597A] text-base mb-12 max-w-xl">
-            Billed annually. No per-visit fees, no surprise charges.
+            No per-visit fees, no surprise charges.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            {plans.map((plan) => (
-              <div
-                key={plan.name}
-                className={`rounded-md border p-7 flex flex-col ${
-                  plan.highlight
-                    ? "bg-[#4A2A43] border-[#4A2A43] text-[#F6F2E9]"
-                    : "bg-[#F6F2E9] border-[rgba(36,28,32,0.14)] text-[#2B2329]"
-                }`}
-              >
-                {plan.highlight && (
-                  <div className="text-[10px] tracking-[0.28em] uppercase text-[#889A7C] font-[500] mb-3">
-                    Best value
-                  </div>
-                )}
-                <div className={`text-[11px] tracking-[0.24em] uppercase font-[500] mb-4 ${plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
-                  {plan.name}
-                </div>
-                <div className="flex items-baseline gap-1 mb-2">
-                  <span className="font-[family-name:var(--font-fraunces)] text-5xl leading-none">
-                    {plan.monthly}
-                  </span>
-                  <span className={`text-base font-[500] ${plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
-                    {plan.monthlyLabel}
-                  </span>
-                </div>
-                <div className={`text-[12px] mb-5 ${plan.highlight ? "text-[#889A7C]" : "text-[#889A7C]"}`}>
-                  {plan.annual}
-                </div>
-                <p className={`text-base leading-relaxed flex-1 ${plan.highlight ? "text-[#F1EADD]" : "text-[#2B2329]"}`}>
-                  {plan.description}
-                </p>
-                <div className="mt-7">
-                  <Link
-                    href="/contact"
-                    className={`text-[11px] tracking-[0.18em] uppercase font-[500] border px-5 py-3 inline-block transition-colors duration-200 ${
-                      plan.highlight
-                        ? "border-[#F6F2E9] text-[#F6F2E9] hover:bg-[#F6F2E9] hover:text-[#4A2A43]"
-                        : "border-[#4A2A43] text-[#4A2A43] hover:bg-[#4A2A43] hover:text-[#F6F2E9]"
-                    }`}
-                  >
-                    Get started
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
+          <PricingToggle />
         </div>
       </section>
 
