@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "What Is Direct Primary Care?",
-  description: "Direct primary care (DPC) at Blooming Health combines membership-based access with your existing insurance — a flat monthly fee for direct access, and insurance for the cost of care.",
+  description: "Direct primary care (DPC) at Blooming Health combines membership-based access with your existing insurance: a flat monthly fee for direct access, and insurance for the cost of care.",
 };
 
 const differences = [
@@ -14,7 +14,7 @@ const differences = [
       "Weeks to get in for a routine visit",
       "Provider changes year to year",
       "Call a phone tree when something comes up",
-      "Rushed — next patient is already waiting",
+      "Rushed, because the next patient is already waiting",
     ],
     dark: false,
   },
@@ -25,7 +25,7 @@ const differences = [
       "Same- or next-day when you need it",
       "Same provider, year after year",
       "Text or call your provider directly",
-      "Unhurried — the time is actually yours",
+      "Unhurried, because the time is actually yours",
     ],
     dark: true,
   },
@@ -38,11 +38,11 @@ const myths = [
   },
   {
     myth: "DPC is only for wealthy people.",
-    truth: "At $100/month, it costs less than most gym memberships — on top of the insurance you likely already have.",
+    truth: "At $100/month, it costs less than most gym memberships, on top of the insurance you likely already have.",
   },
   {
     myth: "It's the same as concierge medicine.",
-    truth: "They're similar — both charge a membership fee for direct provider access. What matters most here is a small patient panel and real time with your provider, not the label.",
+    truth: "They're similar: both charge a membership fee for direct provider access. What matters most here is a small patient panel and real time with your provider, not the label.",
   },
   {
     myth: "You still have to wait for appointments.",
@@ -79,7 +79,7 @@ export default function WhatIsDPC() {
               DPC flips the incentive. Your provider charges a flat membership fee on top of billing insurance, and deliberately keeps the patient panel small. That extra time translates into longer appointments, same-day access, and a real relationship built over years.
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed">
-              Your insurance still covers the cost of visits. Membership is what gets you the access — reaching your provider directly by text or phone between appointments, without going through a call center.
+              Your insurance still covers the cost of visits. Membership is what gets you the access: reaching your provider directly by text or phone between appointments, without going through a call center.
             </p>
           </div>
           <div className="bg-[#1B2A45] rounded-md p-8 flex flex-col gap-6">
@@ -171,12 +171,12 @@ export default function WhatIsDPC() {
               DPC is not a replacement for insurance.
             </h2>
             <p className="text-[#C9CDD3] text-base leading-relaxed">
-              Membership gets you direct access to your provider — phone, text, after-hours availability, and priority scheduling. Insurance is what covers the cost of your visits, labs, and referrals, in primary care and beyond. Most members keep the insurance plan they already have.
+              Membership gets you direct access to your provider: phone, text, after-hours availability, and priority scheduling. Insurance is what covers the cost of your visits, labs, and referrals, in primary care and beyond. Most members keep the insurance plan they already have.
             </p>
           </div>
           <ul className="flex flex-col gap-4 mt-2">
             {[
-              { covered: false, label: "Visits, labs, and referrals — billed through your insurance" },
+              { covered: false, label: "Visits, labs, and referrals, billed through your insurance" },
               { covered: false, label: "Specialist care, billed through your insurance as normal" },
               { covered: false, label: "Emergency room and hospital stays" },
               { covered: false, label: "Major surgeries and advanced imaging (we help coordinate)" },

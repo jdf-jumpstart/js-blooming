@@ -72,7 +72,7 @@ export default function PricingToggle() {
               }`}
             >
               {plan.highlight && (
-                <div className="text-[10px] tracking-[0.28em] uppercase text-[#889A7C] font-[500] mb-3">
+                <div className="text-[10px] tracking-[0.28em] uppercase text-[#C9CDD3] font-[500] mb-3">
                   Best value
                 </div>
               )}
@@ -95,7 +95,13 @@ export default function PricingToggle() {
                   {unit}
                 </span>
               </div>
-              <div className="text-[12px] mb-5 text-[#889A7C]">{sub}</div>
+              <div
+                className={`text-[12px] mb-5 ${
+                  plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"
+                }`}
+              >
+                {sub}
+              </div>
               <p
                 className={`text-base leading-relaxed flex-1 ${
                   plan.highlight ? "text-[#F1EADD]" : "text-[#2B2329]"

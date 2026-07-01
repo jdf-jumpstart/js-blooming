@@ -12,7 +12,7 @@ const sections = [
     faqs: [
       {
         q: "What is direct primary care (DPC)?",
-        a: "Blooming Health blends membership-based access with your existing insurance. You pay a flat monthly fee for direct access to your provider — phone, text, after-hours availability, and priority scheduling — while visits, labs, and referrals are billed through insurance, just like they would be anywhere else.",
+        a: "Blooming Health blends membership-based access with your existing insurance. You pay a flat monthly fee for direct access to your provider (phone, text, after-hours availability, priority scheduling), while visits, labs, and referrals are billed through insurance, just like they would be anywhere else.",
       },
       {
         q: "Who is Blooming Health for?",
@@ -20,11 +20,11 @@ const sections = [
       },
       {
         q: "How is this different from a concierge practice?",
-        a: "Concierge and membership practices share the same basic idea: a flat fee for direct access to your provider. What we focus on is keeping that fee simple and worthwhile — a small patient panel, real appointment time, and a provider who actually knows you — while your insurance continues to cover the cost of visits, labs, and referrals like it normally would.",
+        a: "Concierge and membership practices share the same basic idea: a flat fee for direct access to your provider. What we focus on is keeping that fee simple and worthwhile: a small patient panel, real appointment time, and a provider who actually knows you, while your insurance continues to cover the cost of visits, labs, and referrals like it normally would.",
       },
       {
         q: "Is this the same as a direct pay clinic?",
-        a: "Not quite. A direct pay clinic charges you directly for each visit instead of billing insurance. Blooming Health bills insurance for visits, the same as most practices — the membership fee is what funds the extras: a smaller patient panel, longer appointments, and real provider availability between visits.",
+        a: "Not quite. A direct pay clinic charges you directly for each visit instead of billing insurance. Blooming Health bills insurance for visits, the same as most practices. The membership fee is what funds the extras: a smaller patient panel, longer appointments, and real provider availability between visits.",
       },
     ],
   },
@@ -37,7 +37,7 @@ const sections = [
       },
       {
         q: "Does membership replace health insurance?",
-        a: "No — insurance still covers your primary and urgent care visits, plus anything beyond that. Membership is what layers on top: direct provider access, after-hours availability, and priority scheduling.",
+        a: "No. Insurance still covers your primary and urgent care visits, plus anything beyond that. Membership is what layers on top: direct provider access, after-hours availability, and priority scheduling.",
       },
       {
         q: "Can I use my HSA or FSA?",
@@ -45,11 +45,11 @@ const sections = [
       },
       {
         q: "What about labs and imaging?",
-        a: "Routine labs — CBC, CMP, lipid panel, HbA1c, thyroid, vitamin D, iron studies, and more — are collected in-office and billed through insurance. Imaging is referred out, and we will help you find the most affordable path for anything insurance does not fully cover.",
+        a: "Routine labs (CBC, CMP, lipid panel, HbA1c, thyroid, vitamin D, iron studies, and more) are collected in-office and billed through insurance. Imaging is referred out, and we will help you find the most affordable path for anything insurance does not fully cover.",
       },
       {
         q: "Are there any additional fees beyond the monthly membership?",
-        a: "No enrollment fee. Visits, labs, imaging, and specialist care are billed through your insurance (or self-pay while we complete insurance credentialing) — the membership fee itself covers direct provider access, after-hours availability, and priority scheduling.",
+        a: "No enrollment fee. Visits, labs, imaging, and specialist care are billed through your insurance (or self-pay while we complete insurance credentialing). The membership fee itself covers direct provider access, after-hours availability, and priority scheduling.",
       },
     ],
   },
@@ -66,7 +66,7 @@ const sections = [
       },
       {
         q: "What about after-hours care?",
-        a: "Members have on-call phone and text access Sunday through Thursday, and until 3pm on Fridays (no on-call hours Saturday). For true emergencies — chest pain, difficulty breathing, a severe allergic reaction, a major injury — go straight to 911 or the nearest emergency room.",
+        a: "Members have on-call phone and text access Sunday through Thursday, and until 3pm on Fridays (no on-call hours Saturday). For true emergencies, like chest pain, difficulty breathing, a severe allergic reaction, or a major injury, go straight to 911 or the nearest emergency room.",
       },
       {
         q: "Are telehealth visits available?",
@@ -83,11 +83,11 @@ const sections = [
     faqs: [
       {
         q: "Is there a contract?",
-        a: "There's a 6-month minimum commitment. After that, you can cancel anytime — membership fees are non-refundable. Planning an extended trip? Ask us about a temporary pause on your membership.",
+        a: "There's a 6-month minimum commitment. After that, you can cancel anytime, though membership fees are non-refundable. Planning an extended trip? Ask us about a temporary pause on your membership.",
       },
       {
         q: "Can I add family members?",
-        a: "Yes. We offer individual, couple, and family plans — family membership covers a couple plus up to three children in the household.",
+        a: "Yes. We offer individual, couple, and family plans. Family membership covers a couple plus up to three children in the household.",
       },
       {
         q: "What happens if I need to see a specialist?",

@@ -8,15 +8,15 @@ export const metadata: Metadata = {
 
 const primaryCare = [
   "Annual wellness exams and physicals",
-  "Health screenings — blood pressure, cholesterol, diabetes, certain cancers",
+  "Health screenings: blood pressure, cholesterol, diabetes, certain cancers",
   "Vaccinations",
-  "Lifestyle counseling — nutrition, exercise, smoking and alcohol use",
+  "Lifestyle counseling: nutrition, exercise, smoking and alcohol use",
   "Weight management, including GLP-1 medications when appropriate (lifestyle-first approach)",
-  "Diagnosis and treatment of acute illness — colds, flu, sinus infections, ear infections",
-  "Chronic disease management — diabetes, high blood pressure, asthma, cholesterol, heart disease",
+  "Diagnosis and treatment of acute illness: colds, flu, sinus infections, ear infections",
+  "Chronic disease management: diabetes, high blood pressure, asthma, cholesterol, heart disease",
   "Routine labs and testing, collected in-office",
-  "Medication management — prescribing, refills, and monitoring, with the most affordable options (GoodRx and similar programs)",
-  "Care coordination — specialist referrals, reviewing reports, follow-up care",
+  "Medication management: prescribing, refills, and monitoring, with the most affordable options like GoodRx",
+  "Care coordination: specialist referrals, reviewing reports, follow-up care",
   "Mental health counseling, with referral to a specialist when needed",
   "Telehealth visits",
 ];
@@ -50,7 +50,7 @@ export default function Services() {
             Primary care and urgent care. Both covered by your membership.
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl">
-            Same- or next-day scheduling priority for members. [Visit structure and insurance billing details — placeholder]
+            Same- or next-day scheduling priority for members. [Visit structure and insurance billing details, placeholder]
           </p>
         </div>
       </section>
@@ -86,7 +86,7 @@ export default function Services() {
                 Urgent Care
               </h2>
               <p className="text-base text-[#2B2329] leading-relaxed mb-6">
-                When something comes up, you get seen — same day or next day, no separate urgent care copay. These visits count toward your 15 annual visits.
+                When something comes up, you get seen (same day or next day, priority over the general schedule). Visits are billed through your insurance like any other appointment.
               </p>
               <ul className="flex flex-col gap-2.5">
                 {urgentCare.map((s) => (
@@ -100,7 +100,7 @@ export default function Services() {
 
             {/* Coming soon */}
             <div className="border border-[rgba(36,28,32,0.14)] rounded-md bg-[#F6F2E9] p-8">
-              <div className="text-[11px] tracking-[0.28em] uppercase text-[#889A7C] font-[500] mb-2">Coming soon</div>
+              <div className="text-[11px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-2">Coming soon</div>
               <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-2xl mb-5">
                 More on the way.
               </h2>
@@ -128,14 +128,14 @@ export default function Services() {
               What falls outside our scope.
             </h2>
             <p className="text-[#C9CDD3] text-base leading-relaxed">
-              Blooming Health handles primary and urgent care, and visits are billed through your insurance like they would be anywhere else. Some things fall outside what we do entirely — for those, we will refer you to the right specialist and help coordinate care.
+              Blooming Health handles primary and urgent care, and visits are billed through your insurance like they would be anywhere else. Some things fall outside what we do entirely. For those, we will refer you to the right specialist and help coordinate care.
             </p>
           </div>
           <ul className="flex flex-col gap-4">
             {[
               "Hospital and emergency room care",
               "Major surgeries",
-              "Advanced imaging — MRI, CT scans (we refer and help coordinate)",
+              "Advanced imaging like MRI and CT scans (we refer and help coordinate)",
               "Women's gynecological exams and Pap smears",
               "Skin biopsies, mole removal, cryotherapy, and certain nail procedures (e.g., ingrown toenails)",
               "Testosterone therapy and other men's health treatment (not currently offered)",

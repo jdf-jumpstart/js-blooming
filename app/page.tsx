@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden h-[80vh]">
+      <section className="relative overflow-hidden h-[80dvh]">
         <div className="absolute inset-0 bg-[#1B2A45]">
           <Image
             src="/Patient-visiting-a-primary-care-doctor-1030x687.jpeg"
@@ -93,7 +93,7 @@ export default function Home() {
               We built Blooming Health because good medicine takes time, and we were tired of practices that don&apos;t give it.
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed mb-4">
-              Membership gives you Avi&apos;s personal number for direct access between visits, after-hours availability, and priority for same- and next-day appointments. [Visit structure and insurance billing details — placeholder]
+              Membership gives you Avi&apos;s personal number for direct access between visits, after-hours availability, and priority for same- and next-day appointments. [Visit structure and insurance billing details, placeholder]
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed">
               We look at natural and lifestyle-based options alongside conventional medicine: medications when they make sense, movement and nutrition when those are the better answer. The goal is a real relationship that helps you build health over time.
@@ -129,7 +129,7 @@ export default function Home() {
                 Primary care that actually covers the ground.
               </h2>
               <p className="text-[#C9CDD3] text-base">
-                From annual physicals to same-day sick visits to chronic disease management — membership gives you direct access to Avi for all of it. [Visit structure and insurance billing details — placeholder]
+                From annual physicals to same-day sick visits to chronic disease management, membership gives you direct access to Avi for all of it. [Visit structure and insurance billing details, placeholder]
               </p>
             </div>
             <div className="relative aspect-[16/9] md:aspect-[4/3] rounded-md overflow-hidden">
