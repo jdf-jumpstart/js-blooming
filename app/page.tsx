@@ -28,7 +28,7 @@ const services = [
     body: "Medications when they're the right call. Nutrition, movement, and lifestyle-first when they're not. Always explored together.",
   },
   {
-    title: "Long Appointment Blocks",
+    title: "Longer Appointments",
     body: "Enough time to talk through everything (not just the chief complaint). Ten-minute slots aren't how this works.",
   },
   {
@@ -87,11 +87,8 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
-              A guide, not a gatekeeper.
-            </h2>
-            <p className="font-[family-name:var(--font-cormorant)] font-[500] text-[#2B2329] text-xl md:text-2xl leading-[1.45] mb-6">
               We built Blooming Health because good medicine takes time, and we were tired of practices that don&apos;t give it.
-            </p>
+            </h2>
             <p className="text-[#2B2329] text-base leading-relaxed mb-4">
               Membership gives you Avi&apos;s personal number for direct access between visits, after-hours availability, and priority for same- and next-day appointments. [Visit structure and insurance billing details, placeholder]
             </p>
