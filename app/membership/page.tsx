@@ -4,7 +4,7 @@ import PricingToggle from "@/components/PricingToggle";
 
 export const metadata: Metadata = {
   title: "Membership",
-  description: "Blooming Health membership plans — straightforward annual pricing for direct primary care in Baltimore.",
+  description: "Blooming Health membership plans, straightforward annual pricing for concierge care in Baltimore.",
 };
 
 const included = [

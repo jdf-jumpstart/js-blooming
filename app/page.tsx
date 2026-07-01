@@ -10,7 +10,7 @@ const pillars = [
   { title: "Trust", body: "The same NP over years, who knows your history, your family, and what matters to you." },
 ];
 
-const services = [
+const services: { title: string; body?: string; italic?: boolean }[] = [
   {
     title: "Primary Care",
     body: "Wellness exams, chronic disease management, preventive care, nutrition and lifestyle counseling. Time to actually get through all of it.",
@@ -33,7 +33,7 @@ const services = [
   },
   {
     title: "More on the way",
-    body: "Starting focused. Adding more as we grow.",
+    italic: true,
   },
 ];
 
@@ -63,7 +63,7 @@ export default function Home() {
             Primary care with the time to actually know you.
           </h1>
           <p className="text-[#C9CDD3] text-base md:text-lg leading-relaxed mb-10 max-w-2xl">
-            Blooming Health is a membership-based direct primary care practice in Baltimore. Fewer patients, longer visits, natural options alongside conventional medicine, with a provider who&apos;s available when you need them, not just when the schedule allows.
+            Blooming Health is a membership-based concierge care practice in Baltimore. Fewer patients, longer visits, natural options alongside conventional medicine, with a provider who&apos;s available when you need them, not just when the schedule allows.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -142,10 +142,16 @@ export default function Home() {
             {services.map((s) => (
               <div key={s.title} className="bg-[#1B2A45] p-7 hover:bg-[#243555] transition-colors duration-200">
                 <div className="w-8 h-8 rounded-full border border-[#889A7C] mb-5" />
-                <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[18px] mb-3">
+                <h3
+                  className={`font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[18px] ${
+                    s.body ? "mb-3" : ""
+                  } ${s.italic ? "italic" : ""}`}
+                >
                   {s.title}
                 </h3>
-                <p className="text-[#C9CDD3] text-base leading-relaxed">{s.body}</p>
+                {s.body && (
+                  <p className="text-[#C9CDD3] text-base leading-relaxed">{s.body}</p>
+                )}
               </div>
             ))}
           </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "FAQ",
-  description: "Answers to common questions about Blooming Health and the direct primary care model.",
+  description: "Answers to common questions about Blooming Health and the concierge care model.",
 };
 
 const sections = [
@@ -11,7 +11,7 @@ const sections = [
     title: "The basics",
     faqs: [
       {
-        q: "What is direct primary care (DPC)?",
+        q: "What is concierge care?",
         a: "Blooming Health blends membership-based access with your existing insurance. You pay a flat monthly fee for direct access to your provider (phone, text, after-hours availability, priority scheduling), while visits, labs, and referrals are billed through insurance, just like they would be anywhere else.",
       },
       {
@@ -19,8 +19,8 @@ const sections = [
         a: "Patients 13 and up. Teens and their parents, professionals, business owners, and health-conscious adults who are done with rushed, impersonal primary care. We speak to the adults who are choosing and paying for that care.",
       },
       {
-        q: "How is this different from a concierge practice?",
-        a: "Concierge and membership practices share the same basic idea: a flat fee for direct access to your provider. What we focus on is keeping that fee simple and worthwhile: a small patient panel, real appointment time, and a provider who actually knows you, while your insurance continues to cover the cost of visits, labs, and referrals like it normally would.",
+        q: "How is this different from a typical primary care practice?",
+        a: "Most primary care practices see thousands of patients per provider, which means rushed visits and a wait for routine care. Blooming Health keeps a small patient panel on purpose: a flat membership fee funds direct access, longer appointments, and same- or next-day scheduling, while your insurance still covers the cost of visits like it would anywhere else.",
       },
       {
         q: "Is this the same as a direct pay clinic?",
@@ -41,7 +41,7 @@ const sections = [
       },
       {
         q: "Can I use my HSA or FSA?",
-        a: "In many cases, yes. HSA/FSA eligibility for DPC memberships depends on your specific plan type and current IRS guidance. We recommend confirming with your benefits administrator.",
+        a: "In many cases, yes. HSA/FSA eligibility for concierge care memberships depends on your specific plan type and current IRS guidance. We recommend confirming with your benefits administrator.",
       },
       {
         q: "What about labs and imaging?",

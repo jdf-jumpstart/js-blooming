@@ -4,7 +4,7 @@ import Logo from "./Logo";
 const footerLinks = [
   { href: "/services", label: "Services" },
   { href: "/membership", label: "Membership" },
-  { href: "/what-is-dpc", label: "What Is DPC?" },
+  { href: "/what-is-concierge-care", label: "What Is Concierge Care?" },
   { href: "/about", label: "About" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
@@ -20,7 +20,7 @@ export default function Footer() {
               <Logo height={40} />
             </div>
             <p className="text-[#44597A] text-base leading-relaxed">
-              Direct primary care in Baltimore.<br />
+              Concierge care in Baltimore.<br />
               Your health, your way.
             </p>
           </div>

@@ -15,7 +15,7 @@ const links: NavLink[] = [
     label: "About",
     children: [
       { href: "/about", label: "The Practice" },
-      { href: "/what-is-dpc", label: "What Is DPC?" },
+      { href: "/what-is-concierge-care", label: "What Is Concierge Care?" },
     ],
   },
   { href: "/faq", label: "FAQ" },
