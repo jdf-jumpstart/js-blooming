@@ -3,37 +3,40 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Blooming Health offers primary care and urgent care visits in Baltimore — covered under your annual membership.",
+  description: "Blooming Health offers primary care and urgent care visits in Baltimore, with direct provider access through membership.",
 };
 
 const primaryCare = [
-  "Annual wellness and physical exams",
-  "Preventive screenings and vaccinations",
-  "Chronic disease management (diabetes, hypertension, thyroid, cholesterol, and more)",
-  "Medication management and renewals",
-  "Nutrition and lifestyle counseling",
-  "Mental health screening and basic support",
-  "Lab work coordination at reduced cost",
-  "Specialist referral coordination",
-  "Natural and lifestyle-first options explored before jumping to prescriptions",
-  "Follow-up care and ongoing health planning",
+  "Annual wellness exams and physicals",
+  "Health screenings — blood pressure, cholesterol, diabetes, certain cancers",
+  "Vaccinations",
+  "Lifestyle counseling — nutrition, exercise, smoking and alcohol use",
+  "Weight management, including GLP-1 medications when appropriate (lifestyle-first approach)",
+  "Diagnosis and treatment of acute illness — colds, flu, sinus infections, ear infections",
+  "Chronic disease management — diabetes, high blood pressure, asthma, cholesterol, heart disease",
+  "Routine labs and testing, collected in-office",
+  "Medication management — prescribing, refills, and monitoring, with the most affordable options (GoodRx and similar programs)",
+  "Care coordination — specialist referrals, reviewing reports, follow-up care",
+  "Mental health counseling, with referral to a specialist when needed",
+  "Telehealth visits",
 ];
 
 const urgentCare = [
-  "Strep throat testing and treatment",
-  "Flu and COVID testing and treatment",
-  "Ear infections",
+  "Strep throat, flu, and COVID testing and treatment",
+  "Ear infections and ear lavage",
   "Sinus and upper respiratory infections",
-  "Urinary tract infections",
-  "Minor lacerations and stitches",
-  "Rashes and skin infections",
+  "Urinary tract infections and urinalysis",
+  "Minor lacerations, stitches, and wound care",
+  "Abscess treatment and foreign body removal",
+  "Minor burns and drainage of blood beneath the nail",
+  "Rashes, skin infections, and allergic reactions",
   "Minor injuries and sprains",
   "Pink eye and eye irritation",
 ];
 
 const comingSoon = [
-  "In-office lab draws",
-  "Additional procedures",
+  "Expanded specialist referral network",
+  "Additional in-office procedures",
   "Extended wellness programs",
 ];
 
@@ -47,7 +50,7 @@ export default function Services() {
             Primary care and urgent care. Both covered by your membership.
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl">
-            Up to 15 visits per year, same- or next-day, with no extra charges.
+            Same- or next-day scheduling priority for members. [Visit structure and insurance billing details — placeholder]
           </p>
         </div>
       </section>
@@ -122,20 +125,22 @@ export default function Services() {
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
-              What membership does not cover.
+              What falls outside our scope.
             </h2>
             <p className="text-[#C9CDD3] text-base leading-relaxed">
-              Blooming Health handles primary and urgent care. For anything beyond that — specialists, hospitals, imaging, surgeries — your existing insurance still applies. We are glad to help coordinate referrals and navigate the system.
+              Blooming Health handles primary and urgent care, and visits are billed through your insurance like they would be anywhere else. Some things fall outside what we do entirely — for those, we will refer you to the right specialist and help coordinate care.
             </p>
           </div>
           <ul className="flex flex-col gap-4">
             {[
-              "Specialist care (billed through your insurance)",
               "Hospital and emergency room care",
               "Major surgeries",
-              "Advanced imaging — MRI, CT scans (we help coordinate cost)",
-              "Prescription medications (we help find lowest-cost options)",
-              "Mental health therapy beyond basic counseling",
+              "Advanced imaging — MRI, CT scans (we refer and help coordinate)",
+              "Women's gynecological exams and Pap smears",
+              "Skin biopsies, mole removal, cryotherapy, and certain nail procedures (e.g., ingrown toenails)",
+              "Testosterone therapy and other men's health treatment (not currently offered)",
+              "Cosmetic procedures",
+              "Mental health therapy beyond counseling (we refer to a specialist)",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3 text-base text-[#C9CDD3] border-b border-[rgba(246,242,233,0.1)] pb-4">
                 <span className="mt-[5px] w-1.5 h-1.5 rounded-full border border-[#44597A] shrink-0" />

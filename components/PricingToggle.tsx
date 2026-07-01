@@ -19,10 +19,10 @@ const plans = [
     highlight: true,
   },
   {
-    name: "Child Add-On",
-    monthly: 42,
-    annual: 500,
-    description: "Add a child to an existing parent membership. At least one parent must be enrolled.",
+    name: "Family",
+    monthly: 250,
+    annual: 3000,
+    description: "Couple membership plus up to 3 children in the same household.",
     highlight: false,
   },
 ];

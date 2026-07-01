@@ -124,8 +124,8 @@ export default function Contact() {
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
                   <div className="text-[11px] tracking-[0.2em] uppercase text-[#889A7C] font-[500] mb-1">Address</div>
                   <p className="text-base text-[#2B2329]">
-                    [Street Address]<br />
-                    Baltimore, MD [ZIP]
+                    1 Reservoir Cir, Suite 201<br />
+                    Pikesville, MD 21208
                   </p>
                 </div>
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
@@ -143,8 +143,9 @@ export default function Contact() {
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
                   <div className="text-[11px] tracking-[0.2em] uppercase text-[#889A7C] font-[500] mb-1">Office hours</div>
                   <p className="text-base text-[#2B2329]">
-                    Monday – Friday: [8am – 5pm]<br />
-                    Saturday: [by appointment]<br />
+                    Sunday – Thursday: 9:00am – 4:30pm<br />
+                    Friday: 9:00am – 3:00pm<br />
+                    Saturday: Closed<br />
                     After-hours: direct provider access for members
                   </p>
                 </div>

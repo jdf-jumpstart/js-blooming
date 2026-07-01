@@ -17,7 +17,7 @@ const services = [
   },
   {
     title: "Urgent Care",
-    body: "Strep, flu, COVID, stitches, UTIs, ear infections, rashes. Same day or next day, no separate charge.",
+    body: "Strep, flu, COVID, stitches, UTIs, ear infections, rashes. Same day or next day, billed through insurance.",
   },
   {
     title: "Direct Provider Access",
@@ -38,7 +38,7 @@ const services = [
 ];
 
 const steps = [
-  { number: "1", title: "Choose your membership", body: "Pick the plan that fits your household. Cancel anytime." },
+  { number: "1", title: "Choose your membership", body: "Pick the plan that fits your household." },
   { number: "2", title: "Meet your provider", body: "A proper first visit, no rushing, to understand your full picture." },
   { number: "3", title: "Access care when you need it", body: "Same-day visits, direct messaging, and a provider who actually knows you." },
 ];
@@ -93,7 +93,7 @@ export default function Home() {
               We built Blooming Health because good medicine takes time, and we were tired of practices that don&apos;t give it.
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed mb-4">
-              Your membership covers up to 15 primary and urgent care visits per year, no extra billing per visit. Between appointments, Avi&apos;s personal number is there for when something comes up and you need a real answer fast.
+              Membership gives you Avi&apos;s personal number for direct access between visits, after-hours availability, and priority for same- and next-day appointments. [Visit structure and insurance billing details — placeholder]
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed">
               We look at natural and lifestyle-based options alongside conventional medicine: medications when they make sense, movement and nutrition when those are the better answer. The goal is a real relationship that helps you build health over time.
@@ -129,7 +129,7 @@ export default function Home() {
                 Primary care that actually covers the ground.
               </h2>
               <p className="text-[#C9CDD3] text-base">
-                Membership covers everything in the primary care lane: annual physicals, same-day sick visits, chronic disease management. One flat monthly fee, no per-visit billing.
+                From annual physicals to same-day sick visits to chronic disease management — membership gives you direct access to Avi for all of it. [Visit structure and insurance billing details — placeholder]
               </p>
             </div>
             <div className="relative aspect-[16/9] md:aspect-[4/3] rounded-md overflow-hidden">
@@ -221,7 +221,7 @@ export default function Home() {
             A different kind of practice.
           </h2>
           <p className="text-[#2B2329] text-[16px] max-w-lg mx-auto mb-10 leading-relaxed">
-            Patients 13 and up. $100/mo individual, $167/mo couple. No insurance required.
+            Patients 13 and up. $100/mo individual, $167/mo couple, $250/mo family. Works alongside your insurance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

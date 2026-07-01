@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "What Is Direct Primary Care?",
-  description: "Direct primary care (DPC) is a membership model that replaces the traditional insurance-based visit with a flat monthly fee and a real relationship with your provider.",
+  description: "Direct primary care (DPC) at Blooming Health combines membership-based access with your existing insurance — a flat monthly fee for direct access, and insurance for the cost of care.",
 };
 
 const differences = [
@@ -13,7 +13,6 @@ const differences = [
       "8–12 minute appointments",
       "Weeks to get in for a routine visit",
       "Provider changes year to year",
-      "Billed through insurance for every visit",
       "Call a phone tree when something comes up",
       "Rushed — next patient is already waiting",
     ],
@@ -25,7 +24,6 @@ const differences = [
       "30–60 minute appointments",
       "Same- or next-day when you need it",
       "Same provider, year after year",
-      "Flat monthly fee — no per-visit billing",
       "Text or call your provider directly",
       "Unhurried — the time is actually yours",
     ],
@@ -36,15 +34,15 @@ const differences = [
 const myths = [
   {
     myth: "DPC replaces health insurance.",
-    truth: "It replaces the need for insurance in primary care — not for specialists, hospitals, or emergencies. Most members keep a plan for anything beyond primary care.",
+    truth: "Membership works alongside your insurance, not instead of it. Insurance covers the cost of visits, labs, and referrals; membership is what gets you direct access to your provider.",
   },
   {
     myth: "DPC is only for wealthy people.",
-    truth: "At $100/month, it costs less than most gym memberships. Many members drop expensive plans and pair DPC with a high-deductible plan and an HSA.",
+    truth: "At $100/month, it costs less than most gym memberships — on top of the insurance you likely already have.",
   },
   {
     myth: "It's the same as concierge medicine.",
-    truth: "Concierge practices layer a fee on top of insurance billing. DPC drops insurance billing entirely — the membership is the only fee.",
+    truth: "They're similar — both charge a membership fee for direct provider access. What matters most here is a small patient panel and real time with your provider, not the label.",
   },
   {
     myth: "You still have to wait for appointments.",
@@ -72,21 +70,21 @@ export default function WhatIsDPC() {
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
-              Primary care without the insurance middleman.
+              Primary care built around access, not volume.
             </h2>
             <p className="text-[#2B2329] text-base leading-relaxed mb-4">
               In the traditional model, your provider is paid per visit — by your insurance company. That creates pressure to see as many patients as possible. The result: shorter appointments, longer wait times, and a provider who barely knows your name.
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed mb-4">
-              DPC flips the incentive. Instead of billing insurance, your provider charges a flat monthly fee and sees far fewer patients. That extra time translates into longer appointments, same-day access, and a real relationship built over years.
+              DPC flips the incentive. Your provider charges a flat membership fee on top of billing insurance, and deliberately keeps the patient panel small. That extra time translates into longer appointments, same-day access, and a real relationship built over years.
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed">
-              The membership covers all your primary care visits. Between appointments, you can reach your provider directly — by text or phone — without going through a call center.
+              Your insurance still covers the cost of visits. Membership is what gets you the access — reaching your provider directly by text or phone between appointments, without going through a call center.
             </p>
           </div>
           <div className="bg-[#1B2A45] rounded-md p-8 flex flex-col gap-6">
             {[
-              { step: "1", heading: "Pay a flat monthly fee", body: "No copays. No per-visit billing. No surprise charges. One number covers all your primary care." },
+              { step: "1", heading: "Pay a flat monthly fee", body: "For direct access to your provider. Insurance covers the cost of visits, labs, and referrals like it normally would." },
               { step: "2", heading: "Get a provider who knows you", body: "Longer appointments, fewer patients per panel, and the same face every time — not whoever happened to be available." },
               { step: "3", heading: "Reach them when you need it", body: "Direct line to your provider by text or phone. No portal, no phone tree, no waiting three days for a callback." },
             ].map((s) => (
@@ -173,18 +171,18 @@ export default function WhatIsDPC() {
               DPC is not a replacement for insurance.
             </h2>
             <p className="text-[#C9CDD3] text-base leading-relaxed">
-              Membership covers everything in the primary care lane — routine visits, chronic disease management, urgent care, and direct access to your provider. For anything beyond that, you still need coverage. Most DPC members pair their membership with a high-deductible health plan and an HSA, which often costs less combined than traditional insurance alone.
+              Membership gets you direct access to your provider — phone, text, after-hours availability, and priority scheduling. Insurance is what covers the cost of your visits, labs, and referrals, in primary care and beyond. Most members keep the insurance plan they already have.
             </p>
           </div>
           <ul className="flex flex-col gap-4 mt-2">
             {[
-              { covered: false, label: "Specialist care — billed through your insurance as normal" },
+              { covered: false, label: "Visits, labs, and referrals — billed through your insurance" },
+              { covered: false, label: "Specialist care, billed through your insurance as normal" },
               { covered: false, label: "Emergency room and hospital stays" },
-              { covered: false, label: "Major surgeries and procedures" },
-              { covered: false, label: "Advanced imaging — MRI, CT (we help coordinate cost)" },
-              { covered: true, label: "All primary and urgent care visits" },
-              { covered: true, label: "Wholesale lab work at significantly reduced cost" },
+              { covered: false, label: "Major surgeries and advanced imaging (we help coordinate)" },
               { covered: true, label: "Direct access to your provider, any time" },
+              { covered: true, label: "After-hours availability and priority scheduling" },
+              { covered: true, label: "A small patient panel and real appointment time" },
             ].map((item) => (
               <li key={item.label} className={`flex items-start gap-3 text-base pb-4 border-b border-[rgba(246,242,233,0.08)] last:border-0 last:pb-0 ${item.covered ? "text-[#C9CDD3]" : "text-[#889A7C]"}`}>
                 <span className={`mt-[7px] w-1.5 h-1.5 rounded-full shrink-0 ${item.covered ? "bg-[#889A7C]" : "border border-[#44597A]"}`} />
@@ -206,7 +204,7 @@ export default function WhatIsDPC() {
               { title: "People tired of being rushed", body: "If you have ever left an appointment with half your questions unanswered, DPC is built for you." },
               { title: "Those managing chronic conditions", body: "Diabetes, hypertension, thyroid, cholesterol — ongoing management works better with a provider who knows your full picture." },
               { title: "Families who want continuity", body: "The same provider over years. Someone who knows your history, your kids, and what actually matters to your household." },
-              { title: "Self-employed and uninsured", body: "DPC paired with a catastrophic plan is often more affordable than traditional insurance, with far better primary care access." },
+              { title: "Self-employed and between plans", body: "Membership keeps you connected to consistent primary care while you sort out longer-term coverage, with self-pay options for visits in the meantime." },
               { title: "Health-conscious adults", body: "If you think about prevention, lifestyle, and natural options — DPC gives you a provider who thinks the same way." },
               { title: "Anyone who has given up on primary care", body: "If you avoid the doctor because the experience is never worth it, this is the practice that changes that." },
             ].map((card) => (
