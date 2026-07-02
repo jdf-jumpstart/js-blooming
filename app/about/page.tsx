@@ -44,7 +44,7 @@ export default function About() {
           className="pointer-events-none absolute -right-10 top-2 hidden h-52 w-52 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Primary care as a relationship, not a transaction.
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl">
@@ -120,7 +120,7 @@ export default function About() {
               <div className="w-24 h-24 rounded-full bg-[rgba(136,154,124,0.2)] border border-[#889A7C] mx-auto mb-5 flex items-center justify-center">
                 <span className="font-[family-name:var(--font-fraunces)] text-[#889A7C] text-3xl">A</span>
               </div>
-              <div className="text-[11px] tracking-[0.24em] uppercase text-[#44597A]">
+              <div className="text-[12px] tracking-[0.24em] uppercase text-[#C9CDD3]">
                 Photo coming soon
               </div>
             </div>

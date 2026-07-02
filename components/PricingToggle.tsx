@@ -38,7 +38,7 @@ export default function PricingToggle() {
           <button
             key={option}
             onClick={() => setBilling(option)}
-            className={`px-6 py-2 text-[11px] tracking-[0.18em] uppercase font-[500] transition-colors duration-200 rounded-sm ${
+            className={`px-6 py-3 text-[12px] tracking-[0.18em] uppercase font-[500] transition-colors duration-200 rounded-sm ${
               billing === option
                 ? "bg-[#4A2A43] text-[#F6F2E9]"
                 : "text-[#44597A] hover:text-[#2B2329]"
@@ -50,7 +50,7 @@ export default function PricingToggle() {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         {plans.map((plan) => {
           const price =
             billing === "monthly"
@@ -72,12 +72,12 @@ export default function PricingToggle() {
               }`}
             >
               {plan.highlight && (
-                <div className="text-[10px] tracking-[0.28em] uppercase text-[#C9CDD3] font-[500] mb-3">
+                <div className="text-[12px] tracking-[0.28em] uppercase text-[#C9CDD3] font-[500] mb-3">
                   Best value
                 </div>
               )}
               <div
-                className={`text-[11px] tracking-[0.24em] uppercase font-[500] mb-4 ${
+                className={`text-[12px] tracking-[0.24em] uppercase font-[500] mb-4 ${
                   plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"
                 }`}
               >
@@ -112,7 +112,7 @@ export default function PricingToggle() {
               <div className="mt-7">
                 <Link
                   href="/contact"
-                  className={`text-[11px] tracking-[0.18em] uppercase font-[500] border px-5 py-3 inline-block transition-colors duration-200 ${
+                  className={`text-[12px] tracking-[0.18em] uppercase font-[500] border px-5 py-3 inline-block transition-colors duration-200 ${
                     plan.highlight
                       ? "border-[#F6F2E9] text-[#F6F2E9] hover:bg-[#F6F2E9] hover:text-[#4A2A43]"
                       : "border-[#4A2A43] text-[#4A2A43] hover:bg-[#4A2A43] hover:text-[#F6F2E9]"

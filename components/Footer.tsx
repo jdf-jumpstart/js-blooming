@@ -31,7 +31,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <div className="text-[10px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-4">Pages</div>
+            <div className="text-[12px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-4">Pages</div>
             <ul className="flex flex-col gap-2">
               {footerLinks.map((l) => (
                 <li key={l.href}>
@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <div className="text-[10px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-4">Contact</div>
+            <div className="text-[12px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-4">Contact</div>
             <ul className="flex flex-col gap-2 text-base text-[#2B2329]">
               <li>1 Reservoir Cir, Suite 201, Pikesville, MD 21208</li>
               <li>
@@ -69,10 +69,10 @@ export default function Footer() {
             © {new Date().getFullYear()} Blooming Health. All rights reserved.
           </p>
           <div className="flex gap-5">
-            <Link href="/privacy" className="text-[11px] tracking-[0.1em] uppercase text-[#44597A] hover:text-[#4A2A43] transition-colors">
+            <Link href="/privacy" className="text-[12px] tracking-[0.1em] uppercase text-[#44597A] hover:text-[#4A2A43] transition-colors">
               Privacy
             </Link>
-            <Link href="/terms" className="text-[11px] tracking-[0.1em] uppercase text-[#44597A] hover:text-[#4A2A43] transition-colors">
+            <Link href="/terms" className="text-[12px] tracking-[0.1em] uppercase text-[#44597A] hover:text-[#4A2A43] transition-colors">
               Terms
             </Link>
           </div>
