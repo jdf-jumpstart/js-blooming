@@ -28,7 +28,6 @@ export function RingAccent({
       aria-hidden="true"
       viewBox="0 0 220 220"
       className={className}
-      style={{ display: "block" }}
     >
       <circle cx="82" cy="146" r="64" fill="none" stroke={stroke} strokeWidth="1.5" opacity="0.3" />
       <circle cx="138" cy="86" r="40" fill="none" stroke={stroke} strokeWidth="1.5" opacity="0.5" />
@@ -51,7 +50,6 @@ export function BloomMotif({
       aria-hidden="true"
       viewBox="0 0 240 240"
       className={className}
-      style={{ display: "block" }}
     >
       <g fill="none" stroke={stroke} strokeWidth="1.25" opacity="0.4">
         {petals.map((_, i) => {

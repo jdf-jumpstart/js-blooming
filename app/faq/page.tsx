@@ -116,7 +116,7 @@ export default function FAQ() {
           className="pointer-events-none absolute -right-8 top-4 hidden h-52 w-52 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] max-w-3xl">
             Frequently Asked Questions (FAQ&apos;s)
           </h1>
         </div>

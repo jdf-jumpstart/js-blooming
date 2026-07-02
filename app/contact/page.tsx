@@ -16,7 +16,7 @@ export default function Contact() {
           className="pointer-events-none absolute -right-10 top-2 hidden h-52 w-52 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Start with a conversation.
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-xl">
@@ -34,7 +34,7 @@ export default function Contact() {
             <form className="flex flex-col gap-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="text-[11px] tracking-[0.2em] uppercase text-[#44597A] font-[500] block mb-2">
+                  <label className="text-[12px] tracking-[0.2em] uppercase text-[#44597A] font-[500] block mb-2">
                     First name
                   </label>
                   <input
@@ -45,7 +45,7 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="text-[11px] tracking-[0.2em] uppercase text-[#44597A] font-[500] block mb-2">
+                  <label className="text-[12px] tracking-[0.2em] uppercase text-[#44597A] font-[500] block mb-2">
                     Last name
                   </label>
                   <input
@@ -58,7 +58,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="text-[11px] tracking-[0.2em] uppercase text-[#44597A] font-[500] block mb-2">
+                <label className="text-[12px] tracking-[0.2em] uppercase text-[#44597A] font-[500] block mb-2">
                   Email address
                 </label>
                 <input
@@ -70,7 +70,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="text-[11px] tracking-[0.2em] uppercase text-[#44597A] font-[500] block mb-2">
+                <label className="text-[12px] tracking-[0.2em] uppercase text-[#44597A] font-[500] block mb-2">
                   Phone (optional)
                 </label>
                 <input
@@ -82,7 +82,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="text-[11px] tracking-[0.2em] uppercase text-[#44597A] font-[500] block mb-2">
+                <label className="text-[12px] tracking-[0.2em] uppercase text-[#44597A] font-[500] block mb-2">
                   I am interested in
                 </label>
                 <select
@@ -98,7 +98,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label className="text-[11px] tracking-[0.2em] uppercase text-[#44597A] font-[500] block mb-2">
+                <label className="text-[12px] tracking-[0.2em] uppercase text-[#44597A] font-[500] block mb-2">
                   Message (optional)
                 </label>
                 <textarea
@@ -127,26 +127,26 @@ export default function Contact() {
             <div>
               <div className="flex flex-col gap-5">
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
-                  <div className="text-[11px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Address</div>
+                  <div className="text-[12px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Address</div>
                   <p className="text-base text-[#2B2329]">
                     1 Reservoir Cir, Suite 201<br />
                     Pikesville, MD 21208
                   </p>
                 </div>
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
-                  <div className="text-[11px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Phone</div>
+                  <div className="text-[12px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Phone</div>
                   <a href="tel:+14105550000" className="text-base text-[#2B2329] hover:text-[#4A2A43] transition-colors">
                     (410) 555-0000
                   </a>
                 </div>
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
-                  <div className="text-[11px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Email</div>
+                  <div className="text-[12px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Email</div>
                   <a href="mailto:hello@bloominghealth.com" className="text-base text-[#2B2329] hover:text-[#4A2A43] transition-colors">
                     hello@bloominghealth.com
                   </a>
                 </div>
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
-                  <div className="text-[11px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Office hours</div>
+                  <div className="text-[12px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Office hours</div>
                   <p className="text-base text-[#2B2329]">
                     Sunday – Thursday: 9:00am – 4:30pm<br />
                     Friday: 9:00am – 3:00pm<br />
@@ -160,7 +160,7 @@ export default function Contact() {
             {/* Map placeholder */}
             <div className="bg-[#F1EADD] border border-[rgba(36,28,32,0.14)] rounded-md aspect-[4/3] flex items-center justify-center">
               <div className="text-center p-6">
-                <div className="text-[11px] tracking-[0.24em] uppercase text-[#44597A] mb-2">Map placeholder</div>
+                <div className="text-[12px] tracking-[0.24em] uppercase text-[#44597A] mb-2">Map placeholder</div>
                 <p className="text-[13px] text-[#2B2329]">[Practice location map — to be embedded]</p>
               </div>
             </div>

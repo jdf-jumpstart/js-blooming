@@ -51,7 +51,7 @@ export default function Services() {
           className="pointer-events-none absolute -right-10 top-2 hidden h-52 w-52 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Primary care and urgent care. Both covered by your membership.
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl">
@@ -66,7 +66,7 @@ export default function Services() {
 
           {/* Primary care */}
           <div className="border border-[rgba(36,28,32,0.14)] rounded-md bg-[#F1EADD] p-8">
-            <div className="text-[11px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-2">Included</div>
+            <div className="text-[12px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-2">Included</div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-2xl mb-6">
               Primary Care
             </h2>
@@ -86,7 +86,7 @@ export default function Services() {
           {/* Urgent care */}
           <div className="flex flex-col gap-6">
             <div className="border border-[rgba(36,28,32,0.14)] rounded-md bg-[#F1EADD] p-8">
-              <div className="text-[11px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-2">Included</div>
+              <div className="text-[12px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-2">Included</div>
               <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-2xl mb-6">
                 Urgent Care
               </h2>
@@ -105,7 +105,7 @@ export default function Services() {
 
             {/* Coming soon */}
             <div className="border border-[rgba(36,28,32,0.14)] rounded-md bg-[#F6F2E9] p-8">
-              <div className="text-[11px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-2">Coming soon</div>
+              <div className="text-[12px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-2">Coming soon</div>
               <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-2xl mb-5">
                 More on the way.
               </h2>

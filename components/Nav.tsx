@@ -45,7 +45,7 @@ export default function Nav() {
               return (
                 <div key={l.label} className="relative group">
                   <button
-                    className={`text-[11px] tracking-[0.14em] uppercase font-[family-name:var(--font-jost)] font-[500] transition-colors duration-200 flex items-center gap-1 ${
+                    className={`text-[12px] tracking-[0.14em] uppercase font-[family-name:var(--font-jost)] font-[500] transition-colors duration-200 flex items-center gap-1 ${
                       isActive ? "text-[#4A2A43]" : "text-[#44597A] hover:text-[#4A2A43]"
                     }`}
                   >
@@ -72,7 +72,7 @@ export default function Nav() {
                         <Link
                           key={c.href}
                           href={c.href}
-                          className={`block px-4 py-2.5 text-[11px] tracking-[0.14em] uppercase font-[500] transition-colors duration-150 ${
+                          className={`block px-4 py-2.5 text-[12px] tracking-[0.14em] uppercase font-[500] transition-colors duration-150 ${
                             pathname === c.href
                               ? "text-[#4A2A43]"
                               : "text-[#44597A] hover:text-[#4A2A43]"
@@ -91,7 +91,7 @@ export default function Nav() {
               <Link
                 key={l.href}
                 href={l.href}
-                className={`text-[11px] tracking-[0.14em] uppercase font-[family-name:var(--font-jost)] font-[500] transition-colors duration-200 ${
+                className={`text-[12px] tracking-[0.14em] uppercase font-[family-name:var(--font-jost)] font-[500] transition-colors duration-200 ${
                   pathname === l.href ? "text-[#4A2A43]" : "text-[#44597A] hover:text-[#4A2A43]"
                 }`}
               >
@@ -101,7 +101,7 @@ export default function Nav() {
           })}
           <Link
             href="/membership"
-            className="text-[11px] tracking-[0.14em] uppercase font-[500] bg-[#4A2A43] text-[#F6F2E9] px-5 py-2.5 rounded hover:bg-[#3a1f34] transition-colors duration-200"
+            className="text-[12px] tracking-[0.14em] uppercase font-[500] bg-[#4A2A43] text-[#F6F2E9] px-5 py-2.5 rounded hover:bg-[#3a1f34] transition-colors duration-200"
           >
             Become a Member
           </Link>
@@ -109,7 +109,7 @@ export default function Nav() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-[#44597A] p-1"
+          className="md:hidden text-[#44597A] p-3 -mr-3 flex items-center justify-center"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -135,14 +135,14 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-[rgba(36,28,32,0.14)] bg-[#F6F2E9] px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden border-t border-[rgba(36,28,32,0.14)] bg-[#F6F2E9] px-6 py-2 flex flex-col">
           {links.map((l) => {
             if (l.children) {
               return (
                 <div key={l.label}>
                   <button
                     onClick={() => setAboutOpen(!aboutOpen)}
-                    className={`text-[11px] tracking-[0.14em] uppercase font-[500] transition-colors flex items-center gap-1 ${
+                    className={`w-full py-3 text-[12px] tracking-[0.14em] uppercase font-[500] transition-colors flex items-center gap-1 ${
                       l.children.some((c) => pathname === c.href)
                         ? "text-[#4A2A43]"
                         : "text-[#44597A]"
@@ -166,7 +166,7 @@ export default function Nav() {
                     </svg>
                   </button>
                   {aboutOpen && (
-                    <div className="ml-4 mt-2 flex flex-col gap-3">
+                    <div className="ml-4 flex flex-col">
                       {l.children.map((c) => (
                         <Link
                           key={c.href}
@@ -175,7 +175,7 @@ export default function Nav() {
                             setOpen(false);
                             setAboutOpen(false);
                           }}
-                          className={`text-[11px] tracking-[0.14em] uppercase font-[500] transition-colors ${
+                          className={`py-2.5 text-[12px] tracking-[0.14em] uppercase font-[500] transition-colors ${
                             pathname === c.href ? "text-[#4A2A43]" : "text-[#44597A]"
                           }`}
                         >
@@ -193,7 +193,7 @@ export default function Nav() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className={`text-[11px] tracking-[0.14em] uppercase font-[500] transition-colors ${
+                className={`py-3 text-[12px] tracking-[0.14em] uppercase font-[500] transition-colors ${
                   pathname === l.href ? "text-[#4A2A43]" : "text-[#44597A]"
                 }`}
               >
@@ -204,7 +204,7 @@ export default function Nav() {
           <Link
             href="/membership"
             onClick={() => setOpen(false)}
-            className="text-[11px] tracking-[0.14em] uppercase font-[500] bg-[#4A2A43] text-[#F6F2E9] px-5 py-2.5 rounded text-center"
+            className="mt-2 text-[12px] tracking-[0.14em] uppercase font-[500] bg-[#4A2A43] text-[#F6F2E9] px-5 py-3.5 rounded text-center"
           >
             Become a Member
           </Link>

@@ -61,7 +61,7 @@ export default function WhatIsConciergeCare() {
           className="pointer-events-none absolute -right-10 top-2 hidden h-52 w-52 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-7xl leading-[1.0] tracking-[-0.015em] mb-8 max-w-4xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl sm:text-5xl md:text-7xl leading-[1.0] tracking-[-0.015em] mb-8 max-w-4xl">
             What is concierge care?
           </h1>
           <p className="text-[#2B2329] text-base md:text-lg leading-relaxed max-w-2xl">
@@ -130,7 +130,7 @@ export default function WhatIsConciergeCare() {
                     : "bg-[#F6F2E9] border-[rgba(36,28,32,0.14)]"
                 }`}
               >
-                <div className={`text-[11px] tracking-[0.28em] uppercase font-[500] mb-6 ${col.dark ? "text-[#889A7C]" : "text-[#44597A]"}`}>
+                <div className={`text-[12px] tracking-[0.28em] uppercase font-[500] mb-6 ${col.dark ? "text-[#889A7C]" : "text-[#44597A]"}`}>
                   {col.label}
                 </div>
                 <ul className="flex flex-col gap-4">
