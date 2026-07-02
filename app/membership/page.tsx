@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PricingToggle from "@/components/PricingToggle";
+import { BloomMotif, FlowDivider, RingAccent } from "@/components/Motifs";
 
 export const metadata: Metadata = {
   title: "Membership",
@@ -49,8 +50,12 @@ export default function Membership() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#F6F2E9] py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-11">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+        <BloomMotif
+          tone="plum"
+          className="pointer-events-none absolute -right-10 top-2 hidden h-52 w-52 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             A flat monthly rate. Real access to a provider who knows you.
           </h1>
@@ -61,7 +66,7 @@ export default function Membership() {
       </section>
 
       {/* What&apos;s included */}
-      <section className="bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
@@ -83,11 +88,16 @@ export default function Membership() {
             ))}
           </ul>
         </div>
+        <FlowDivider fill="#F1EADD" />
       </section>
 
       {/* Pricing */}
-      <section className="bg-[#F1EADD] py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 md:px-11">
+      <section className="relative overflow-hidden bg-[#F1EADD] py-16 md:py-24">
+        <RingAccent
+          tone="plum"
+          className="pointer-events-none absolute -left-12 -top-8 hidden h-52 w-52 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-3">
             Straightforward pricing.
           </h2>
@@ -96,10 +106,11 @@ export default function Membership() {
           </p>
           <PricingToggle />
         </div>
+        <FlowDivider fill="#F6F2E9" />
       </section>
 
       {/* FAQ */}
-      <section className="bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12">
             Things people ask first.
@@ -120,11 +131,16 @@ export default function Membership() {
             </Link>
           </div>
         </div>
+        <FlowDivider fill="#1B2A45" />
       </section>
 
       {/* CTA */}
-      <section className="bg-[#1B2A45] py-20">
-        <div className="max-w-6xl mx-auto px-6 md:px-11 text-center">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-20">
+        <BloomMotif
+          tone="sage"
+          className="pointer-events-none absolute -top-6 right-6 hidden h-40 w-40 md:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] text-4xl md:text-5xl leading-[1.04] tracking-[-0.015em] mb-5 max-w-xl mx-auto">
             Start with a conversation.
           </h2>

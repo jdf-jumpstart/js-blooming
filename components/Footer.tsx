@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import { RingAccent } from "./Motifs";
 
 const footerLinks = [
   { href: "/services", label: "Services" },
@@ -12,8 +13,12 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[rgba(36,28,32,0.14)] bg-[#F1EADD]">
-      <div className="max-w-6xl mx-auto px-6 md:px-11 py-16">
+    <footer className="relative overflow-hidden border-t border-[rgba(36,28,32,0.14)] bg-[#F1EADD]">
+      <RingAccent
+        tone="plum"
+        className="pointer-events-none absolute -bottom-16 -left-10 hidden h-56 w-56 md:block"
+      />
+      <div className="relative max-w-6xl mx-auto px-6 md:px-11 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-14">
           <div>
             <div className="mb-3">

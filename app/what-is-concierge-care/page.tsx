@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BloomMotif, FlowDivider, RingAccent } from "@/components/Motifs";
 
 export const metadata: Metadata = {
   title: "What Is Concierge Care?",
@@ -54,8 +55,12 @@ export default function WhatIsConciergeCare() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#F6F2E9] py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-11">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+        <BloomMotif
+          tone="plum"
+          className="pointer-events-none absolute -right-10 top-2 hidden h-52 w-52 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-7xl leading-[1.0] tracking-[-0.015em] mb-8 max-w-4xl">
             What is concierge care?
           </h1>
@@ -66,7 +71,7 @@ export default function WhatIsConciergeCare() {
       </section>
 
       {/* The simple version */}
-      <section className="bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
@@ -102,11 +107,16 @@ export default function WhatIsConciergeCare() {
             ))}
           </div>
         </div>
+        <FlowDivider fill="#F1EADD" />
       </section>
 
       {/* Side by side comparison */}
-      <section className="bg-[#F1EADD] py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 md:px-11">
+      <section className="relative overflow-hidden bg-[#F1EADD] py-16 md:py-24">
+        <RingAccent
+          tone="plum"
+          className="pointer-events-none absolute -left-12 -top-8 hidden h-52 w-52 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
             What changes when you leave the traditional model.
           </h2>
@@ -142,10 +152,11 @@ export default function WhatIsConciergeCare() {
             ))}
           </div>
         </div>
+        <FlowDivider fill="#F6F2E9" />
       </section>
 
       {/* Common myths */}
-      <section className="bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
             Things people get wrong about concierge care.
@@ -161,11 +172,16 @@ export default function WhatIsConciergeCare() {
             ))}
           </div>
         </div>
+        <FlowDivider fill="#1B2A45" />
       </section>
 
       {/* What concierge care doesn't cover */}
-      <section className="bg-[#1B2A45] py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
+        <BloomMotif
+          tone="sage"
+          className="pointer-events-none absolute -left-14 -bottom-14 hidden h-64 w-64 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
               Concierge care is not a replacement for insurance.
@@ -191,11 +207,16 @@ export default function WhatIsConciergeCare() {
             ))}
           </ul>
         </div>
+        <FlowDivider fill="#F6F2E9" />
       </section>
 
       {/* Who it's for */}
-      <section className="bg-[#F6F2E9] py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 md:px-11">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
+        <RingAccent
+          tone="plum"
+          className="pointer-events-none absolute -right-10 top-10 hidden h-48 w-48 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
             Concierge care works best when primary care actually matters to you.
           </h2>
@@ -217,11 +238,16 @@ export default function WhatIsConciergeCare() {
             ))}
           </div>
         </div>
+        <FlowDivider fill="#4A2A43" />
       </section>
 
       {/* CTA */}
-      <section className="bg-[#4A2A43] py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-11 text-center">
+      <section className="relative overflow-hidden bg-[#4A2A43] py-20 md:py-28">
+        <BloomMotif
+          tone="ivory"
+          className="pointer-events-none absolute -top-6 right-6 hidden h-40 w-40 md:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] text-4xl md:text-5xl lg:text-6xl leading-[1.04] tracking-[-0.015em] mb-8 max-w-3xl mx-auto">
             This is the model we practice.
           </h2>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BloomMotif, FlowDivider, RingAccent } from "@/components/Motifs";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -109,8 +110,12 @@ export default function FAQ() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#F6F2E9] py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-11">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+        <BloomMotif
+          tone="sage"
+          className="pointer-events-none absolute -right-8 top-4 hidden h-52 w-52 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] max-w-3xl">
             Frequently Asked Questions (FAQ&apos;s)
           </h1>
@@ -118,7 +123,7 @@ export default function FAQ() {
       </section>
 
       {/* FAQ sections */}
-      <section className="bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="flex flex-col gap-16">
             {sections.map((section) => (
@@ -143,11 +148,16 @@ export default function FAQ() {
             ))}
           </div>
         </div>
+        <FlowDivider fill="#F1EADD" />
       </section>
 
       {/* Still have questions */}
-      <section className="bg-[#F1EADD] border-t border-[rgba(36,28,32,0.14)] py-20">
-        <div className="max-w-6xl mx-auto px-6 md:px-11 text-center">
+      <section className="relative overflow-hidden bg-[#F1EADD] border-t border-[rgba(36,28,32,0.14)] py-20">
+        <RingAccent
+          tone="plum"
+          className="pointer-events-none absolute -left-10 -bottom-10 hidden h-48 w-48 md:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl md:text-5xl leading-[1.04] tracking-[-0.015em] mb-5">
             Still have questions?
           </h2>
