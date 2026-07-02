@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BloomMotif, FlowDivider, RingAccent } from "@/components/Motifs";
 
 export const metadata: Metadata = {
   title: "About",
@@ -37,8 +38,12 @@ export default function About() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#F6F2E9] py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-11">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+        <BloomMotif
+          tone="plum"
+          className="pointer-events-none absolute -right-10 top-2 hidden h-52 w-52 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Primary care as a relationship, not a transaction.
           </h1>
@@ -49,7 +54,7 @@ export default function About() {
       </section>
 
       {/* Mission */}
-      <section className="bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
@@ -83,11 +88,16 @@ export default function About() {
             </ul>
           </div>
         </div>
+        <FlowDivider fill="#1B2A45" />
       </section>
 
       {/* Meet Avi */}
-      <section className="bg-[#1B2A45] py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
+        <BloomMotif
+          tone="sage"
+          className="pointer-events-none absolute -left-14 -bottom-14 hidden h-64 w-64 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-2">
               Avi Blumenthal, NP
@@ -116,11 +126,16 @@ export default function About() {
             </div>
           </div>
         </div>
+        <FlowDivider fill="#F6F2E9" />
       </section>
 
       {/* Values */}
-      <section className="bg-[#F6F2E9] py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 md:px-11">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
+        <RingAccent
+          tone="plum"
+          className="pointer-events-none absolute -right-10 top-10 hidden h-48 w-48 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
             The principles behind the practice.
           </h2>

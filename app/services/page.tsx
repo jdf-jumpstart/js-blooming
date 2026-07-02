@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BloomMotif, FlowDivider, RingAccent } from "@/components/Motifs";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -41,8 +42,12 @@ export default function Services() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#F6F2E9] py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-11">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+        <BloomMotif
+          tone="plum"
+          className="pointer-events-none absolute -right-10 top-2 hidden h-52 w-52 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Primary care and urgent care. Both covered by your membership.
           </h1>
@@ -53,7 +58,7 @@ export default function Services() {
       </section>
 
       {/* Services */}
-      <section className="bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-10">
 
           {/* Primary care */}
@@ -115,11 +120,16 @@ export default function Services() {
             </div>
           </div>
         </div>
+        <FlowDivider fill="#1B2A45" />
       </section>
 
       {/* What we don't cover */}
-      <section className="bg-[#1B2A45] py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
+        <BloomMotif
+          tone="sage"
+          className="pointer-events-none absolute -left-14 -bottom-14 hidden h-64 w-64 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
               What membership does not cover.
@@ -144,11 +154,16 @@ export default function Services() {
             ))}
           </ul>
         </div>
+        <FlowDivider fill="#F6F2E9" />
       </section>
 
       {/* CTA */}
-      <section className="bg-[#F6F2E9] py-20 border-t border-[rgba(36,28,32,0.14)]">
-        <div className="max-w-6xl mx-auto px-6 md:px-11 text-center">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 border-t border-[rgba(36,28,32,0.14)]">
+        <RingAccent
+          tone="plum"
+          className="pointer-events-none absolute -top-6 right-6 hidden h-40 w-40 md:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl md:text-5xl leading-[1.04] tracking-[-0.015em] mb-5">
             Ready to get started?
           </h2>

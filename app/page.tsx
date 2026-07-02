@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { BloomMotif, FlowDivider, RingAccent } from "@/components/Motifs";
 
 const pillars = [
   { title: "Collaboration", body: "Decisions made with you, not for you." },
@@ -58,6 +59,11 @@ export default function Home() {
           />
         </div>
         <div className="absolute inset-0 bg-[#0d1117]/30" />
+        <BloomMotif
+          tone="ivory"
+          className="absolute top-8 right-8 z-[5] hidden h-44 w-44 md:block"
+        />
+        <FlowDivider fill="#F6F2E9" />
         <div className="absolute inset-[10%] z-10 bg-[#0d1117]/70 backdrop-blur-sm flex flex-col justify-center px-10 md:px-16">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] leading-[1.0] tracking-[-0.015em] text-5xl md:text-6xl lg:text-7xl mb-8 max-w-3xl">
             Primary care with the time to actually know you.
@@ -83,9 +89,13 @@ export default function Home() {
       </section>
 
       {/* What is this */}
-      <section className="bg-[#F6F2E9] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+        <RingAccent
+          tone="plum"
+          className="pointer-events-none absolute -left-10 top-10 hidden h-56 w-56 lg:block"
+        />
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
-          <div>
+          <div className="relative">
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
               A guide, not a gatekeeper.
             </h2>
@@ -99,13 +109,16 @@ export default function Home() {
               We look at natural and lifestyle-based options alongside conventional medicine: medications when they make sense, movement and nutrition when those are the better answer. The goal is a real relationship that helps you build health over time.
             </p>
           </div>
-          <div className="relative aspect-[4/5] rounded-md overflow-hidden">
-            <Image
-              src="/blooming-health-concierge-lounge-scene.png"
-              alt="A welcoming consultation space"
-              fill
-              className="object-cover object-center"
-            />
+          <div className="relative">
+            <div className="relative aspect-[4/5] rounded-md overflow-hidden">
+              <Image
+                src="/blooming-health-concierge-lounge-scene.png"
+                alt="A welcoming consultation space"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
+            <div className="absolute -bottom-6 -right-6 -z-10 h-24 w-24 rounded-full border border-[#889A7C] opacity-40" />
           </div>
         </div>
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-2 md:grid-cols-3 gap-px bg-[rgba(36,28,32,0.14)] border border-[rgba(36,28,32,0.14)] rounded-md overflow-hidden">
@@ -118,11 +131,16 @@ export default function Home() {
             </div>
           ))}
         </div>
+        <FlowDivider fill="#1B2A45" />
       </section>
 
       {/* Services overview */}
-      <section className="bg-[#1B2A45] py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-11">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-20 md:py-28">
+        <BloomMotif
+          tone="sage"
+          className="pointer-events-none absolute -bottom-16 -right-16 hidden h-72 w-72 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
             <div>
               <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-4">
@@ -161,11 +179,16 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <FlowDivider fill="#F1EADD" />
       </section>
 
       {/* How it works */}
-      <section className="bg-[#F1EADD] py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-11">
+      <section className="relative overflow-hidden bg-[#F1EADD] py-20 md:py-28">
+        <RingAccent
+          tone="plum"
+          className="pointer-events-none absolute -right-12 top-16 hidden h-52 w-52 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-14 max-w-xl">
             Simple to join. Simple to use.
           </h2>
@@ -191,6 +214,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <FlowDivider fill="#F6F2E9" />
       </section>
 
       {/* Testimonials placeholder */}
@@ -215,8 +239,12 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-[#F6F2E9] py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-11 text-center">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+        <BloomMotif
+          tone="plum"
+          className="pointer-events-none absolute -top-6 right-6 hidden h-40 w-40 opacity-70 md:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl md:text-5xl lg:text-6xl leading-[1.04] tracking-[-0.015em] mb-8 max-w-2xl mx-auto">
             A different kind of practice.
           </h2>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BloomMotif } from "@/components/Motifs";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -9,8 +10,12 @@ export default function Contact() {
   return (
     <>
       {/* Header */}
-      <section className="bg-[#F6F2E9] py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-11">
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+        <BloomMotif
+          tone="plum"
+          className="pointer-events-none absolute -right-10 top-2 hidden h-52 w-52 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Start with a conversation.
           </h1>
