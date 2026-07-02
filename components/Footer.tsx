@@ -5,7 +5,7 @@ import { RingAccent } from "./Motifs";
 const footerLinks = [
   { href: "/services", label: "Services" },
   { href: "/membership", label: "Membership" },
-  { href: "/what-is-dpc", label: "What Is DPC?" },
+  { href: "/what-is-concierge-care", label: "What Is Concierge Care?" },
   { href: "/about", label: "About" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
@@ -25,7 +25,7 @@ export default function Footer() {
               <Logo height={40} />
             </div>
             <p className="text-[#44597A] text-base leading-relaxed">
-              Direct primary care in Baltimore.<br />
+              Concierge care in Baltimore.<br />
               Your health, your way.
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function Footer() {
           <div>
             <div className="text-[10px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-4">Contact</div>
             <ul className="flex flex-col gap-2 text-base text-[#2B2329]">
-              <li>[Practice Address], Baltimore, MD</li>
+              <li>1 Reservoir Cir, Suite 201, Pikesville, MD 21208</li>
               <li>
                 <a href="tel:+14105550000" className="hover:text-[#4A2A43] transition-colors">
                   (410) 555-0000

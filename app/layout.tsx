@@ -29,11 +29,11 @@ const jost = Jost({
 
 export const metadata: Metadata = {
   title: {
-    default: "Blooming Health — Direct Primary Care, Baltimore",
+    default: "Blooming Health: Concierge Care, Baltimore",
     template: "%s | Blooming Health",
   },
   description:
-    "Blooming Health is a direct primary care (DPC) practice in the Baltimore area. Longer visits, direct provider access, and primary care built around you.",
+    "Blooming Health is a concierge care practice in the Baltimore area. Longer visits, direct provider access, and primary care built around you.",
 };
 
 export default function RootLayout({

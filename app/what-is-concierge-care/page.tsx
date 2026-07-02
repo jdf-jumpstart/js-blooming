@@ -3,8 +3,8 @@ import Link from "next/link";
 import { BloomMotif, FlowDivider, RingAccent } from "@/components/Motifs";
 
 export const metadata: Metadata = {
-  title: "What Is Direct Primary Care?",
-  description: "Direct primary care (DPC) is a membership model that replaces the traditional insurance-based visit with a flat monthly fee and a real relationship with your provider.",
+  title: "What Is Concierge Care?",
+  description: "Concierge care at Blooming Health combines membership-based access with your existing insurance: a flat monthly fee for direct access, and insurance for the cost of care.",
 };
 
 const differences = [
@@ -14,21 +14,19 @@ const differences = [
       "8–12 minute appointments",
       "Weeks to get in for a routine visit",
       "Provider changes year to year",
-      "Billed through insurance for every visit",
       "Call a phone tree when something comes up",
-      "Rushed — next patient is already waiting",
+      "Rushed, because the next patient is already waiting",
     ],
     dark: false,
   },
   {
-    label: "Direct primary care",
+    label: "Concierge care",
     items: [
       "30–60 minute appointments",
       "Same- or next-day when you need it",
       "Same provider, year after year",
-      "Flat monthly fee — no per-visit billing",
       "Text or call your provider directly",
-      "Unhurried — the time is actually yours",
+      "Unhurried, because the time is actually yours",
     ],
     dark: true,
   },
@@ -36,24 +34,24 @@ const differences = [
 
 const myths = [
   {
-    myth: "DPC replaces health insurance.",
-    truth: "It replaces the need for insurance in primary care — not for specialists, hospitals, or emergencies. Most members keep a plan for anything beyond primary care.",
+    myth: "Concierge care replaces health insurance.",
+    truth: "Membership works alongside your insurance, not instead of it. Insurance covers the cost of visits, labs, and referrals; membership is what gets you direct access to your provider.",
   },
   {
-    myth: "DPC is only for wealthy people.",
-    truth: "At $100/month, it costs less than most gym memberships. Many members drop expensive plans and pair DPC with a high-deductible plan and an HSA.",
+    myth: "Concierge care is only for wealthy people.",
+    truth: "At $100/month, it costs less than most gym memberships, on top of the insurance you likely already have.",
   },
   {
-    myth: "It's the same as concierge medicine.",
-    truth: "Concierge practices layer a fee on top of insurance billing. DPC drops insurance billing entirely — the membership is the only fee.",
+    myth: "It's just glorified telehealth.",
+    truth: "Telehealth is one piece of it. Concierge care means an ongoing relationship with one provider, in-person visits when you need them, and direct access between appointments, not just a video call when something's wrong.",
   },
   {
     myth: "You still have to wait for appointments.",
-    truth: "DPC providers carry a fraction of the patient panel of a traditional practice. Same-day and next-day access is the norm, not the exception.",
+    truth: "Concierge providers carry a fraction of the patient panel of a traditional practice. Same-day and next-day access is the norm, not the exception.",
   },
 ];
 
-export default function WhatIsDPC() {
+export default function WhatIsConciergeCare() {
   return (
     <>
       {/* Header */}
@@ -64,10 +62,10 @@ export default function WhatIsDPC() {
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-5xl md:text-7xl leading-[1.0] tracking-[-0.015em] mb-8 max-w-4xl">
-            What is direct primary care?
+            What is concierge care?
           </h1>
           <p className="text-[#2B2329] text-base md:text-lg leading-relaxed max-w-2xl">
-            Direct primary care (DPC) is a membership model for primary care. You pay a flat monthly fee. In return, you get a real relationship with a provider who has time for you, and direct access when something comes up.
+            Concierge care is a membership model for primary care. You pay a flat monthly fee. In return, you get a real relationship with a provider who has time for you, and direct access when something comes up.
           </p>
         </div>
       </section>
@@ -77,21 +75,21 @@ export default function WhatIsDPC() {
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
-              Primary care without the insurance middleman.
+              Primary care built around access, not volume.
             </h2>
             <p className="text-[#2B2329] text-base leading-relaxed mb-4">
               In the traditional model, your provider is paid per visit — by your insurance company. That creates pressure to see as many patients as possible. The result: shorter appointments, longer wait times, and a provider who barely knows your name.
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed mb-4">
-              DPC flips the incentive. Instead of billing insurance, your provider charges a flat monthly fee and sees far fewer patients. That extra time translates into longer appointments, same-day access, and a real relationship built over years.
+              Concierge care flips the incentive. Your provider charges a flat membership fee on top of billing insurance, and deliberately keeps the patient panel small. That extra time translates into longer appointments, same-day access, and a real relationship built over years.
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed">
-              The membership covers all your primary care visits. Between appointments, you can reach your provider directly — by text or phone — without going through a call center.
+              Your insurance still covers the cost of visits. Membership is what gets you the access: reaching your provider directly by text or phone between appointments, without going through a call center.
             </p>
           </div>
           <div className="bg-[#1B2A45] rounded-md p-8 flex flex-col gap-6">
             {[
-              { step: "1", heading: "Pay a flat monthly fee", body: "No copays. No per-visit billing. No surprise charges. One number covers all your primary care." },
+              { step: "1", heading: "Pay a flat monthly fee", body: "For direct access to your provider. Insurance covers the cost of visits, labs, and referrals like it normally would." },
               { step: "2", heading: "Get a provider who knows you", body: "Longer appointments, fewer patients per panel, and the same face every time — not whoever happened to be available." },
               { step: "3", heading: "Reach them when you need it", body: "Direct line to your provider by text or phone. No portal, no phone tree, no waiting three days for a callback." },
             ].map((s) => (
@@ -161,7 +159,7 @@ export default function WhatIsDPC() {
       <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
-            Things people get wrong about DPC.
+            Things people get wrong about concierge care.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {myths.map((m) => (
@@ -177,7 +175,7 @@ export default function WhatIsDPC() {
         <FlowDivider fill="#1B2A45" />
       </section>
 
-      {/* What DPC doesn't cover */}
+      {/* What concierge care doesn't cover */}
       <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
         <BloomMotif
           tone="sage"
@@ -186,21 +184,21 @@ export default function WhatIsDPC() {
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
-              DPC is not a replacement for insurance.
+              Concierge care is not a replacement for insurance.
             </h2>
             <p className="text-[#C9CDD3] text-base leading-relaxed">
-              Membership covers everything in the primary care lane — routine visits, chronic disease management, urgent care, and direct access to your provider. For anything beyond that, you still need coverage. Most DPC members pair their membership with a high-deductible health plan and an HSA, which often costs less combined than traditional insurance alone.
+              Membership gets you direct access to your provider: phone, text, after-hours availability, and priority scheduling. Insurance is what covers the cost of your visits, labs, and referrals, in primary care and beyond. Most members keep the insurance plan they already have.
             </p>
           </div>
           <ul className="flex flex-col gap-4 mt-2">
             {[
-              { covered: false, label: "Specialist care — billed through your insurance as normal" },
+              { covered: false, label: "Visits, labs, and referrals, billed through your insurance" },
+              { covered: false, label: "Specialist care, billed through your insurance as normal" },
               { covered: false, label: "Emergency room and hospital stays" },
-              { covered: false, label: "Major surgeries and procedures" },
-              { covered: false, label: "Advanced imaging — MRI, CT (we help coordinate cost)" },
-              { covered: true, label: "All primary and urgent care visits" },
-              { covered: true, label: "Wholesale lab work at significantly reduced cost" },
+              { covered: false, label: "Major surgeries and advanced imaging (we help coordinate)" },
               { covered: true, label: "Direct access to your provider, any time" },
+              { covered: true, label: "After-hours availability and priority scheduling" },
+              { covered: true, label: "A small patient panel and real appointment time" },
             ].map((item) => (
               <li key={item.label} className={`flex items-start gap-3 text-base pb-4 border-b border-[rgba(246,242,233,0.08)] last:border-0 last:pb-0 ${item.covered ? "text-[#C9CDD3]" : "text-[#889A7C]"}`}>
                 <span className={`mt-[7px] w-1.5 h-1.5 rounded-full shrink-0 ${item.covered ? "bg-[#889A7C]" : "border border-[#44597A]"}`} />
@@ -220,15 +218,15 @@ export default function WhatIsDPC() {
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
-            DPC works best when primary care actually matters to you.
+            Concierge care works best when primary care actually matters to you.
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "People tired of being rushed", body: "If you have ever left an appointment with half your questions unanswered, DPC is built for you." },
+              { title: "People tired of being rushed", body: "If you have ever left an appointment with half your questions unanswered, concierge care is built for you." },
               { title: "Those managing chronic conditions", body: "Diabetes, hypertension, thyroid, cholesterol — ongoing management works better with a provider who knows your full picture." },
               { title: "Families who want continuity", body: "The same provider over years. Someone who knows your history, your kids, and what actually matters to your household." },
-              { title: "Self-employed and uninsured", body: "DPC paired with a catastrophic plan is often more affordable than traditional insurance, with far better primary care access." },
-              { title: "Health-conscious adults", body: "If you think about prevention, lifestyle, and natural options — DPC gives you a provider who thinks the same way." },
+              { title: "Self-employed and between plans", body: "Membership keeps you connected to consistent primary care while you sort out longer-term coverage, with self-pay options for visits in the meantime." },
+              { title: "Health-conscious adults", body: "If you think about prevention, lifestyle, and natural options, concierge care gives you a provider who thinks the same way." },
               { title: "Anyone who has given up on primary care", body: "If you avoid the doctor because the experience is never worth it, this is the practice that changes that." },
             ].map((card) => (
               <div key={card.title} className="bg-[#F1EADD] border border-[rgba(36,28,32,0.14)] rounded-md p-7">
@@ -254,7 +252,7 @@ export default function WhatIsDPC() {
             This is the model we practice.
           </h2>
           <p className="text-[#C9CDD3] text-base max-w-lg mx-auto mb-10 leading-relaxed">
-            Blooming Health is a DPC practice in Baltimore. Avi Blumenthal, NP sees a small panel of patients, spends real time with each one, and is reachable directly when something comes up.
+            Blooming Health is a concierge care practice in Baltimore. Avi Blumenthal, NP sees a small panel of patients, spends real time with each one, and is reachable directly when something comes up.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

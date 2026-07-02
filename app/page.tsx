@@ -11,14 +11,14 @@ const pillars = [
   { title: "Trust", body: "The same NP over years, who knows your history, your family, and what matters to you." },
 ];
 
-const services = [
+const services: { title: string; body?: string; italic?: boolean }[] = [
   {
     title: "Primary Care",
     body: "Wellness exams, chronic disease management, preventive care, nutrition and lifestyle counseling. Time to actually get through all of it.",
   },
   {
     title: "Urgent Care",
-    body: "Strep, flu, COVID, stitches, UTIs, ear infections, rashes. Same day or next day, no separate charge.",
+    body: "Strep, flu, COVID, stitches, UTIs, ear infections, rashes. Same day or next day, billed through insurance.",
   },
   {
     title: "Direct Provider Access",
@@ -29,17 +29,17 @@ const services = [
     body: "Medications when they're the right call. Nutrition, movement, and lifestyle-first when they're not. Always explored together.",
   },
   {
-    title: "Long Appointment Blocks",
+    title: "Longer Appointments",
     body: "Enough time to talk through everything (not just the chief complaint). Ten-minute slots aren't how this works.",
   },
   {
     title: "More on the way",
-    body: "Starting focused. Adding more as we grow.",
+    italic: true,
   },
 ];
 
 const steps = [
-  { number: "1", title: "Choose your membership", body: "Pick the plan that fits your household. Cancel anytime." },
+  { number: "1", title: "Choose your membership", body: "Pick the plan that fits your household." },
   { number: "2", title: "Meet your provider", body: "A proper first visit, no rushing, to understand your full picture." },
   { number: "3", title: "Access care when you need it", body: "Same-day visits, direct messaging, and a provider who actually knows you." },
 ];
@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden h-[80vh]">
+      <section className="relative overflow-hidden h-[80dvh]">
         <div className="absolute inset-0 bg-[#1B2A45]">
           <Image
             src="/Patient-visiting-a-primary-care-doctor-1030x687.jpeg"
@@ -69,7 +69,7 @@ export default function Home() {
             Primary care with the time to actually know you.
           </h1>
           <p className="text-[#C9CDD3] text-base md:text-lg leading-relaxed mb-10 max-w-2xl">
-            Blooming Health is a membership-based direct primary care practice in Baltimore. Fewer patients, longer visits, natural options alongside conventional medicine, with a provider who&apos;s available when you need them, not just when the schedule allows.
+            Blooming Health is a membership-based concierge care practice in Baltimore. Fewer patients, longer visits, natural options alongside conventional medicine, with a provider who&apos;s available when you need them, not just when the schedule allows.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -97,13 +97,10 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
           <div className="relative">
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
-              A guide, not a gatekeeper.
-            </h2>
-            <p className="font-[family-name:var(--font-cormorant)] font-[500] text-[#2B2329] text-xl md:text-2xl leading-[1.45] mb-6">
               We built Blooming Health because good medicine takes time, and we were tired of practices that don&apos;t give it.
-            </p>
+            </h2>
             <p className="text-[#2B2329] text-base leading-relaxed mb-4">
-              Your membership covers up to 15 primary and urgent care visits per year, no extra billing per visit. Between appointments, Avi&apos;s personal number is there for when something comes up and you need a real answer fast.
+              Membership gives you Avi&apos;s personal number for direct access between visits, after-hours availability, and priority for same- and next-day appointments. [Visit structure and insurance billing details, placeholder]
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed">
               We look at natural and lifestyle-based options alongside conventional medicine: medications when they make sense, movement and nutrition when those are the better answer. The goal is a real relationship that helps you build health over time.
@@ -147,7 +144,7 @@ export default function Home() {
                 Primary care that actually covers the ground.
               </h2>
               <p className="text-[#C9CDD3] text-base">
-                Membership covers everything in the primary care lane: annual physicals, same-day sick visits, chronic disease management. One flat monthly fee, no per-visit billing.
+                From annual physicals to same-day sick visits to chronic disease management, membership gives you direct access to Avi for all of it. [Visit structure and insurance billing details, placeholder]
               </p>
             </div>
             <div className="relative aspect-[16/9] md:aspect-[4/3] rounded-md overflow-hidden">
@@ -163,10 +160,16 @@ export default function Home() {
             {services.map((s) => (
               <div key={s.title} className="bg-[#1B2A45] p-7 hover:bg-[#243555] transition-colors duration-200">
                 <div className="w-8 h-8 rounded-full border border-[#889A7C] mb-5" />
-                <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[18px] mb-3">
+                <h3
+                  className={`font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[18px] ${
+                    s.body ? "mb-3" : ""
+                  } ${s.italic ? "italic" : ""}`}
+                >
                   {s.title}
                 </h3>
-                <p className="text-[#C9CDD3] text-base leading-relaxed">{s.body}</p>
+                {s.body && (
+                  <p className="text-[#C9CDD3] text-base leading-relaxed">{s.body}</p>
+                )}
               </div>
             ))}
           </div>
@@ -249,7 +252,7 @@ export default function Home() {
             A different kind of practice.
           </h2>
           <p className="text-[#2B2329] text-[16px] max-w-lg mx-auto mb-10 leading-relaxed">
-            Patients 13 and up. $100/mo individual, $167/mo couple. No insurance required.
+            Patients 13 and up. $100/mo individual, $167/mo couple, $250/mo family. Works alongside your insurance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

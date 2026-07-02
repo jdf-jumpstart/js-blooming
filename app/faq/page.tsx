@@ -4,7 +4,7 @@ import { BloomMotif, FlowDivider, RingAccent } from "@/components/Motifs";
 
 export const metadata: Metadata = {
   title: "FAQ",
-  description: "Answers to common questions about Blooming Health and the direct primary care model.",
+  description: "Answers to common questions about Blooming Health and the concierge care model.",
 };
 
 const sections = [
@@ -12,20 +12,20 @@ const sections = [
     title: "The basics",
     faqs: [
       {
-        q: "What is direct primary care (DPC)?",
-        a: "Direct primary care is a membership model for primary care. Instead of billing insurance for every visit, you pay a flat monthly fee that covers all primary care services — unlimited visits, longer appointments, and direct access to your provider. Insurance is still useful for specialists, hospitals, and anything beyond primary care.",
+        q: "What is concierge care?",
+        a: "Blooming Health blends membership-based access with your existing insurance. You pay a flat monthly fee for direct access to your provider (phone, text, after-hours availability, priority scheduling), while visits, labs, and referrals are billed through insurance, just like they would be anywhere else.",
       },
       {
         q: "Who is Blooming Health for?",
         a: "Patients 13 and up. Teens and their parents, professionals, business owners, and health-conscious adults who are done with rushed, impersonal primary care. We speak to the adults who are choosing and paying for that care.",
       },
       {
-        q: "How is this different from a concierge practice?",
-        a: "Concierge medicine often layers fees on top of insurance billing. We do not bill insurance for primary care at all — the membership fee is it. That keeps the relationship simple and the experience clean.",
+        q: "How is this different from a typical primary care practice?",
+        a: "Most primary care practices see thousands of patients per provider, which means rushed visits and a wait for routine care. Blooming Health keeps a small patient panel on purpose: a flat membership fee funds direct access, longer appointments, and same- or next-day scheduling, while your insurance still covers the cost of visits like it would anywhere else.",
       },
       {
         q: "Is this the same as a direct pay clinic?",
-        a: "Similar in spirit. The membership model gives you unlimited visits for a flat monthly fee, rather than paying per visit. It also funds the structural things that make the experience better — smaller patient panels, longer appointments, and real provider availability.",
+        a: "Not quite. A direct pay clinic charges you directly for each visit instead of billing insurance. Blooming Health bills insurance for visits, the same as most practices. The membership fee is what funds the extras: a smaller patient panel, longer appointments, and real provider availability between visits.",
       },
     ],
   },
@@ -34,23 +34,23 @@ const sections = [
     faqs: [
       {
         q: "Do I need health insurance to join?",
-        a: "No. Membership does not require insurance. However, we recommend maintaining insurance (or a health-sharing plan) for coverage beyond primary care — specialists, hospitalizations, and emergencies.",
+        a: "We recommend it. We are currently building out our insurance network and are not yet credentialed with plans, so visits are self-pay in the meantime. Once credentialing is complete, insurance will help cover the cost of visits, labs, and referrals.",
       },
       {
         q: "Does membership replace health insurance?",
-        a: "It replaces the need for insurance in primary care, but not for everything else. Many members use a high-deductible health plan (HDHP) paired with an HSA for the things Blooming Health does not cover.",
+        a: "No. Insurance still covers your primary and urgent care visits, plus anything beyond that. Membership is what layers on top: direct provider access, after-hours availability, and priority scheduling.",
       },
       {
         q: "Can I use my HSA or FSA?",
-        a: "In many cases, yes. HSA/FSA eligibility for DPC memberships depends on your specific plan type and current IRS guidance. We recommend confirming with your benefits administrator.",
+        a: "In many cases, yes. HSA/FSA eligibility for concierge care memberships depends on your specific plan type and current IRS guidance. We recommend confirming with your benefits administrator.",
       },
       {
         q: "What about labs and imaging?",
-        a: "Basic lab work is included. For more comprehensive labs, we have access to wholesale pricing — often 80–90% below retail and hospital rates. We will help you find the most affordable path for any imaging or tests that are needed.",
+        a: "Routine labs (CBC, CMP, lipid panel, HbA1c, thyroid, vitamin D, iron studies, and more) are collected in-office and billed through insurance. Imaging is referred out, and we will help you find the most affordable path for anything insurance does not fully cover.",
       },
       {
         q: "Are there any additional fees beyond the monthly membership?",
-        a: "There is a one-time enrollment fee per person. Beyond that, in-office primary care visits have no additional copays or charges. Wholesale labs, imaging, and specialist care are outside the membership.",
+        a: "No enrollment fee. Visits, labs, imaging, and specialist care are billed through your insurance (or self-pay while we complete insurance credentialing). The membership fee itself covers direct provider access, after-hours availability, and priority scheduling.",
       },
     ],
   },
@@ -63,11 +63,11 @@ const sections = [
       },
       {
         q: "Can I contact my provider directly?",
-        a: "Yes. Members have direct access to their provider by phone, text, and email. For non-emergency questions, you can expect a response within a few hours during business hours, and same-day for urgent things.",
+        a: "Yes. Members have direct access to their provider by phone, text, and email. For non-emergency messages, expect a response within about 2 hours during business hours, and same-day for urgent things.",
       },
       {
         q: "What about after-hours care?",
-        a: "For non-emergency questions, members can message their provider after hours and expect a response the next morning. For urgent but non-emergency concerns, direct contact is available. True emergencies should go to 911 or the nearest emergency room.",
+        a: "Members have on-call phone and text access Sunday through Thursday, and until 3pm on Fridays (no on-call hours Saturday). For true emergencies, like chest pain, difficulty breathing, a severe allergic reaction, or a major injury, go straight to 911 or the nearest emergency room.",
       },
       {
         q: "Are telehealth visits available?",
@@ -84,11 +84,11 @@ const sections = [
     faqs: [
       {
         q: "Is there a contract?",
-        a: "No long-term contract. Memberships are month-to-month and can be cancelled with 30 days written notice.",
+        a: "There's a 6-month minimum commitment. After that, you can cancel anytime, though membership fees are non-refundable. Planning an extended trip? Ask us about a temporary pause on your membership.",
       },
       {
         q: "Can I add family members?",
-        a: "Yes. We offer individual, couple, teen add-on, and family plans. Children under 13 should remain with their pediatrician.",
+        a: "Yes. We offer individual, couple, and family plans. Family membership covers a couple plus up to three children in the household.",
       },
       {
         q: "What happens if I need to see a specialist?",

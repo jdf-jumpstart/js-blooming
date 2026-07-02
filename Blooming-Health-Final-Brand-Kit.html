@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blooming Health — Brand Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --plum:#4A2A43; --navy:#1B2A45; --slate:#44597A; --sage:#889A7C; --sage-deep:#6E7F62;
+    --gray:#C9CDD3; --ivory:#F6F2E9; --card:#F1EADD; --line:rgba(36,28,32,.14); --ink:#2B2329;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--ivory);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 44px;}
+  .sec-eyebrow{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--slate);font-weight:500;margin-bottom:16px;}
+  h2.section{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(28px,4vw,42px);color:var(--plum);letter-spacing:-.01em;line-height:1.04;margin-bottom:20px;}
+  section{padding:58px 0;border-bottom:1px solid var(--line);}
+  p.lead{font-family:'Cormorant Garamond',serif;font-size:clamp(19px,2.3vw,25px);line-height:1.45;color:var(--ink);font-weight:500;max-width:760px;}
+  p.body{font-size:15.5px;color:var(--ink);max-width:720px;margin-bottom:14px;}
+  nav{position:sticky;top:0;z-index:40;background:rgba(246,242,233,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  nav .inner{max-width:1100px;margin:0 auto;padding:13px 44px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+  nav .brand{font-family:'Fraunces',serif;font-size:18px;color:var(--plum);}
+  nav .links{display:flex;gap:18px;flex-wrap:wrap;}
+  nav a{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--slate);text-decoration:none;transition:color .2s;}
+  nav a:hover{color:var(--plum);}
+  .cover{padding:96px 0 78px;text-align:center;border-bottom:1px solid var(--line);}
+  .cover .kit{font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:var(--slate);font-weight:500;margin-bottom:26px;}
+  .cover h1{font-family:'Fraunces',serif;font-weight:400;font-size:clamp(52px,8.4vw,104px);line-height:.94;color:var(--plum);letter-spacing:-.015em;margin-bottom:20px;}
+  .cover h1 em{font-style:italic;color:var(--navy);}
+  .cover .tag{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(19px,2.5vw,28px);color:var(--sage-deep);margin-bottom:16px;}
+  .cover .sub{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--navy);}
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-top:34px;}
+  .pillar{background:var(--ivory);padding:22px;}
+  .pillar h4{font-family:'Fraunces',serif;font-weight:500;font-size:18px;color:var(--navy);margin-bottom:6px;}
+  .pillar p{font-size:13.5px;color:var(--ink);}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:30px;}
+  .panel h4{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--slate);margin-bottom:14px;}
+  .taglist{display:flex;flex-wrap:wrap;gap:9px;}
+  .taglist span{font-size:13px;padding:7px 15px;border:1px solid var(--line);border-radius:40px;color:var(--navy);background:#fff8;}
+  .avoid span{color:#7a5a5a;border-color:rgba(122,90,90,.3);}
+  .swatches{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:10px;}
+  .sw{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff6;}
+  .sw .chip{height:104px;}
+  .sw .meta{padding:14px 16px;}
+  .sw b{font-family:'Cormorant Garamond',serif;font-size:19px;font-weight:600;color:var(--ink);display:block;}
+  .sw .role{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--slate);margin:3px 0 8px;}
+  .sw code{display:block;font-size:12px;color:var(--ink);font-family:'Jost';letter-spacing:.03em;}
+  .ratio{display:flex;height:44px;border-radius:8px;overflow:hidden;margin-top:26px;border:1px solid var(--line);}
+  .ratio div{display:flex;align-items:center;justify-content:center;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;}
+  .ratio-note{font-size:12px;color:var(--slate);margin-top:10px;}
+  .specimen{border:1px solid var(--line);border-radius:8px;padding:26px 28px;margin-top:16px;background:#fff5;}
+  .specimen .role{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--slate);margin-bottom:5px;}
+  .specimen .fname{font-size:14px;color:var(--navy);margin-bottom:15px;}
+  .specimen .big{line-height:1;color:var(--plum);margin-bottom:12px;}
+  .sp-fraunces .big{font-family:'Fraunces',serif;font-weight:500;font-size:52px;}
+  .sp-cormorant .big{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:54px;}
+  .sp-jost .big{font-family:'Jost',sans-serif;font-weight:400;font-size:46px;}
+  .specimen .sample{font-size:15px;color:var(--ink);max-width:640px;}
+  .sp-cormorant .sample{font-family:'Cormorant Garamond',serif;font-size:18px;}
+  .sp-fraunces .sample{font-family:'Fraunces',serif;}
+  .glyphs{font-size:13px;color:var(--slate);margin-top:9px;letter-spacing:.06em;}
+  .voice-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:10px;}
+  .vcard{border:1px solid var(--line);border-radius:8px;padding:20px 24px;background:#fff6;}
+  .vcard h4{font-family:'Fraunces',serif;font-weight:500;font-size:19px;color:var(--navy);margin-bottom:5px;}
+  .vcard .vs{font-size:13px;color:var(--slate);margin-bottom:8px;font-style:italic;}
+  .vcard p{font-size:14px;color:var(--ink);}
+  .words{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:26px;}
+  .words h4{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--slate);margin-bottom:12px;}
+  .words ul{list-style:none;}
+  .words li{font-size:14px;padding:5px 0;border-bottom:1px solid var(--line);color:var(--ink);}
+  .samples{margin-top:28px;border-left:2px solid var(--sage);padding-left:20px;}
+  .samples .s{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--navy);margin-bottom:12px;line-height:1.4;}
+  .samples .s b{color:var(--plum);font-weight:600;}
+  .opt-block{padding:40px 0 46px;border-bottom:1px solid var(--line);}
+  .opt-block:last-of-type{border-bottom:none;}
+  .logo-row{display:grid;grid-template-columns:320px 1fr;gap:46px;align-items:center;}
+  .logo-art{display:flex;align-items:center;justify-content:center;min-height:190px;}
+  .logo-art img{max-width:100%;max-height:320px;}
+  .logo-art.wide img{max-height:125px;}
+  .family{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--slate);margin-bottom:10px;}
+  .cname{font-family:'Fraunces',serif;font-weight:500;font-size:28px;color:var(--plum);margin-bottom:12px;letter-spacing:-.01em;}
+  .meaning{font-size:14.5px;color:var(--ink);max-width:580px;}
+  .board-line{font-size:13.5px;color:var(--ink);margin:26px 0 12px;}
+  .board-line span{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--sage-deep);margin-right:12px;font-weight:500;}
+  .mood{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;grid-auto-flow:dense;}
+  .mood.mini{grid-auto-rows:124px;}
+  .tile{border-radius:6px;overflow:hidden;position:relative;display:flex;align-items:flex-end;padding:15px;color:#fff;font-size:12px;letter-spacing:.04em;}
+  .tile .lab{position:relative;z-index:2;}
+  .tile .lab small{display:block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;opacity:.8;margin-bottom:3px;}
+  .t-span2{grid-column:span 2;}
+  .t-plum{background:var(--plum);} .t-navy{background:var(--navy);} .t-slate{background:var(--slate);}
+  .t-sage{background:var(--sage);color:var(--navy);} .t-gray{background:var(--gray);color:var(--navy);}
+  .t-ivory{background:var(--card);color:var(--plum);border:1px solid var(--line);}
+  .t-center{align-items:center;justify-content:center;}
+  .t-type{background:var(--ivory);color:var(--plum);border:1px solid var(--line);}
+  .t-abs{color:#f3ede2;}
+  .t-abs:after{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='80' height='80' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");mix-blend-mode:overlay;z-index:1;}
+  .ab1{background:radial-gradient(120% 90% at 25% 20%, rgba(136,154,124,.55), transparent 55%), linear-gradient(150deg,#3a2238,#1b2a45);}
+  .ab2{background:radial-gradient(110% 80% at 75% 25%, rgba(201,205,211,.4), transparent 60%), linear-gradient(150deg,#2c3c5c,#16223a);}
+  .ab3{background:radial-gradient(120% 90% at 30% 80%, rgba(110,127,98,.5), transparent 55%), linear-gradient(150deg,#4a2a43,#2a1726);}
+  .ab4{background:radial-gradient(120% 90% at 70% 70%, rgba(136,154,124,.4), transparent 55%), linear-gradient(150deg,#314a4a,#1b2a45);}
+  .usage{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-top:40px;}
+  .usage .u{background:var(--ivory);padding:20px;}
+  .usage h4{font-family:'Fraunces',serif;font-weight:500;font-size:16px;color:var(--navy);margin-bottom:6px;}
+  .usage p{font-size:13px;color:var(--ink);}
+  footer{padding:56px 0 80px;text-align:center;}
+  footer .fmark{font-family:'Fraunces',serif;font-size:23px;color:var(--plum);margin-bottom:10px;}
+  footer p{font-size:13px;color:var(--slate);letter-spacing:.04em;}
+  @media(max-width:860px){
+    .wrap{padding:0 22px;} nav .inner{padding:12px 22px;} nav .links{display:none;}
+    .pillars,.swatches,.usage{grid-template-columns:1fr 1fr;}
+    .two-col,.voice-grid,.words{grid-template-columns:1fr;gap:22px;}
+    .mood{grid-template-columns:repeat(2,1fr);}
+    .logo-row{grid-template-columns:1fr;gap:20px;}
+  }
+</style>
+</head>
+<body>
+<nav><div class="inner">
+  <div class="brand">Blooming Health</div>
+  <div class="links">
+    <a href="#identity">Identity</a>
+    <a href="#personality">Personality</a>
+    <a href="#color">Color</a>
+    <a href="#type">Type</a>
+    <a href="#voice">Voice</a>
+    <a href="#logos">Logo</a>
+  </div>
+</div></nav>
+
+<div class="cover">
+  <div class="wrap">
+    <div class="kit">Final Brand Kit</div>
+    <h1>Blooming<br>Health<em>.</em></h1>
+    <div class="tag">Your Health. Your Way.</div>
+    <div class="sub">Concierge Primary Care · Baltimore</div>
+  </div>
+</div>
+
+<section id="identity"><div class="wrap">
+  <div class="sec-eyebrow">01 · Brand Identity</div>
+  <h2 class="section">A guide, not a gatekeeper.</h2>
+  <p class="lead">Blooming Health is a concierge primary care practice in the Baltimore area, built by a clinician who got tired of watching medicine get rushed. The founding frustration was simple: short visits, no real access, and patients leaving the room feeling unheard.</p>
+  <p class="body" style="margin-top:20px;">The practice is led by a nurse practitioner trained in emergency medicine, with more than a decade spent caring for this community, most recently in urgent care. Primary care is the natural next chapter: the same clinical steadiness that handles the worst day of someone's life, now applied before the emergency instead of after it.</p>
+  <p class="body">The model is built around that idea. Fewer patients, longer visits, and a direct line to a provider who works as a guide helping you make informed decisions, not a figure dictating them. Care is evidence based, and it pairs real medicine with the practical things that actually move health over a lifetime: nutrition, movement, prevention, and steady habits.</p>
+  <p class="body">It is worth being clear about what this is not. It is not functional medicine. It is not alternative medicine. It is not a spa. It is modern primary care organized around one honest idea, a meaningful relationship between a patient and a provider who has the time to know them.</p>
+  <div class="pillars">
+    <div class="pillar"><h4>Collaboration</h4><p>Decisions made with the patient, not handed down to them.</p></div>
+    <div class="pillar"><h4>Patient Autonomy</h4><p>The patient sets the direction. The provider helps them get there.</p></div>
+    <div class="pillar"><h4>Education</h4><p>Plain explanations that leave people more informed than they came in.</p></div>
+    <div class="pillar"><h4>Access</h4><p>A direct line to your provider, when you actually need it.</p></div>
+    <div class="pillar"><h4>Prevention</h4><p>Catching things early and building health, not just treating illness.</p></div>
+    <div class="pillar"><h4>Trust</h4><p>The same provider over years, who stands behind every visit.</p></div>
+  </div>
+  <div class="two-col">
+    <div class="panel"><h4>Who it is for</h4>
+      <p class="body">Patients 13 and up. Teens and their parents, professionals, business owners, and health conscious adults, anyone done with rushed, impersonal primary care. The brand itself speaks to the adults choosing and paying for that care, so it stays refined and grown up.</p></div>
+    <div class="panel"><h4>What they want</h4>
+      <p class="body">Direct access to their provider, longer visits, personalized care, thoughtful decisions made together, and medicine that looks ahead at prevention, for themselves and for their families.</p></div>
+  </div>
+</div></section>
+
+<section id="personality"><div class="wrap">
+  <div class="sec-eyebrow">02 · Personality &amp; Mandate</div>
+  <h2 class="section">Calm, intelligent, and quietly premium.</h2>
+  <p class="body">The brand should feel like a private advisory firm that happens to practice medicine. Refined without being cold, approachable without being casual. It needs to land equally with men and women, which rules out anything that reads as feminine wellness or as a corporate hospital.</p>
+  <div class="panel" style="margin-top:24px;">
+    <h4>The personality, in eight words</h4>
+    <div class="taglist">
+      <span>Professional</span><span>Refined</span><span>Modern</span><span>Intelligent</span>
+      <span>Approachable</span><span>Trustworthy</span><span>Calm</span><span>Confident</span>
+    </div>
+  </div>
+  <div class="panel avoid" style="margin-top:26px;">
+    <h4>The mandate · what we never do</h4>
+    <div class="taglist avoid">
+      <span>No medical crosses</span><span>No stethoscopes</span><span>No hearts or caduceus</span><span>No ECG lines</span>
+      <span>No hospital imagery</span><span>No feminine wellness clichés</span><span>No overt florals</span><span>No spa branding</span>
+      <span>No holistic clichés</span><span>No bright or neon palettes</span><span>No trendy startup looks</span>
+    </div>
+  </div>
+  <p class="body" style="margin-top:24px;"><b style="color:var(--plum);font-weight:500;">The north star:</b> timeless over trendy, premium over loud. If a choice would look dated in five years, it is the wrong choice.</p>
+</div></section>
+
+<section id="color"><div class="wrap">
+  <div class="sec-eyebrow">03 · Color</div>
+  <h2 class="section">Jewel tones on warm ivory.</h2>
+  <p class="body">Three deep primaries do the heavy lifting, a single sage accent carries the idea of growth, and warm ivory keeps the whole system from ever feeling clinical. Bright, neon, and trendy are off the table on purpose.</p>
+  <div class="swatches">
+    <div class="sw"><div class="chip" style="background:#4A2A43"></div><div class="meta"><b>Deep Plum</b><div class="role">Primary · Authority</div><code>HEX #4A2A43</code><code>RGB 74 · 42 · 67</code></div></div>
+    <div class="sw"><div class="chip" style="background:#1B2A45"></div><div class="meta"><b>Rich Navy</b><div class="role">Primary · Trust</div><code>HEX #1B2A45</code><code>RGB 27 · 42 · 69</code></div></div>
+    <div class="sw"><div class="chip" style="background:#44597A"></div><div class="meta"><b>Slate Blue</b><div class="role">Secondary · Calm</div><code>HEX #44597A</code><code>RGB 68 · 89 · 122</code></div></div>
+    <div class="sw"><div class="chip" style="background:#889A7C"></div><div class="meta"><b>Sage Green</b><div class="role">Accent · Growth</div><code>HEX #889A7C</code><code>Deep text variant #6E7F62</code></div></div>
+    <div class="sw"><div class="chip" style="background:#C9CDD3"></div><div class="meta"><b>Soft Gray</b><div class="role">Utility · Rules &amp; UI</div><code>HEX #C9CDD3</code><code>RGB 201 · 205 · 211</code></div></div>
+    <div class="sw"><div class="chip" style="background:#F6F2E9;border-bottom:1px solid var(--line)"></div><div class="meta"><b>Warm Ivory</b><div class="role">Ground · Background</div><code>HEX #F6F2E9</code><code>RGB 246 · 242 · 233</code></div></div>
+  </div>
+  <div class="ratio">
+    <div style="background:#F6F2E9;color:#4A2A43;flex:5">Ivory ground</div>
+    <div style="background:#4A2A43;color:#F6F2E9;flex:3">Plum</div>
+    <div style="background:#1B2A45;color:#F6F2E9;flex:3">Navy</div>
+    <div style="background:#44597A;color:#F6F2E9;flex:1.4">Slate</div>
+    <div style="background:#889A7C;color:#1B2A45;flex:1">Sage</div>
+  </div>
+  <div class="ratio-note">Rough working balance. Let ivory carry the space, plum and navy lead, slate supports, and sage stays the rare accent.</div>
+</div></section>
+
+<section id="type"><div class="wrap">
+  <div class="sec-eyebrow">04 · Typography</div>
+  <h2 class="section">Editorial serif, clean sans.</h2>
+  <p class="body">Two serifs for character and one geometric sans for everything functional. All three are free and load anywhere, including Canva and the web, so the system stays consistent across whoever is building.</p>
+  <div class="specimen sp-fraunces">
+    <div class="role">Display · Headlines</div>
+    <div class="fname">Fraunces · Medium / SemiBold</div>
+    <div class="big">Prevention is the long game.</div>
+    <div class="sample">For headlines, the practice name, and any moment that needs warmth and authority. A modern serif with real character that keeps the brand from feeling generic.</div>
+  </div>
+  <div class="specimen sp-cormorant">
+    <div class="role">Accent · Pull Quotes &amp; Tagline</div>
+    <div class="fname">Cormorant Garamond · SemiBold / Italic</div>
+    <div class="big">Your Health. Your Way.</div>
+    <div class="sample">An elegant high contrast serif for taglines, pull quotes, and the rare flourish. Used sparingly, it adds the maison feel without taking over.</div>
+  </div>
+  <div class="specimen sp-jost">
+    <div class="role">Body · UI &amp; Captions</div>
+    <div class="fname">Jost · Light / Regular / Medium</div>
+    <div class="big">Clear, plain, and easy to read.</div>
+    <div class="sample">The workhorse for body copy, navigation, forms, captions, and anything a patient actually has to read. Calm, geometric, and quietly modern.</div>
+    <div class="glyphs">ABCDEFGHIJKLMNOPQRSTUVWXYZ · abcdefghijklmnopqrstuvwxyz · 0123456789</div>
+  </div>
+</div></section>
+
+<section id="voice"><div class="wrap">
+  <div class="sec-eyebrow">05 · Brand Voice</div>
+  <h2 class="section">How Blooming Health talks.</h2>
+  <p class="body">The voice is the personality written down. Say the thing plainly, treat the reader as intelligent, and never oversell. The practice earns trust by sounding like a calm expert who has time for you, because that is exactly what it is.</p>
+  <div class="voice-grid">
+    <div class="vcard"><h4>Direct, not curt</h4><div class="vs">Respect the reader&rsquo;s time.</div><p>Lead with the point. Short sentences are fine. Clarity is a form of respect, and patients are tired of vague.</p></div>
+    <div class="vcard"><h4>Warm, not soft</h4><div class="vs">Human, without losing authority.</div><p>Write like a real person who knows their stuff. Kind and plainspoken, never gushing or performative.</p></div>
+    <div class="vcard"><h4>Intelligent, not clinical</h4><div class="vs">Smart, never jargon for its own sake.</div><p>Explain things the way a good clinician explains them across a table. Informed, never cold or coded.</p></div>
+    <div class="vcard"><h4>Calm, not loud</h4><div class="vs">Confident enough not to shout.</div><p>No hype, no fear, no exclamation pileups. The quiet confidence is the sell.</p></div>
+  </div>
+  <div class="words">
+    <div><h4>Words and moves we use</h4><ul>
+      <li>Guide, partner, together, with you</li>
+      <li>Time, access, unhurried, reachable</li>
+      <li>Prevention, ahead of it, build, long term</li>
+      <li>Clear, plain, informed, your decision</li>
+      <li>Plain periods and commas for rhythm</li>
+    </ul></div>
+    <div><h4>Words and moves we avoid</h4><ul>
+      <li>Holistic, journey, wellness buzzwords</li>
+      <li>Revolutionary, game changing, cutting edge</li>
+      <li>Fear based lines and scare tactics</li>
+      <li>Exclamation marks and hard sell CTAs</li>
+      <li>Em dashes and anything that sounds like a brochure</li>
+    </ul></div>
+  </div>
+  <div class="samples">
+    <div class="s"><b>Hero:</b> Primary care with the time to actually know you.</div>
+    <div class="s"><b>About:</b> We built Blooming Health because good medicine takes time, and we were tired of practices that do not give it.</div>
+    <div class="s"><b>Call to action:</b> See how membership works.</div>
+  </div>
+</div></section>
+
+<section id="logos"><div class="wrap">
+  <div class="sec-eyebrow">06 · Logo</div>
+  <h2 class="section">The mark.</h2>
+  <p class="body">The Counsel is the chosen mark. Two circles sit in conversation, a grounded plum disc and a lighter sage ring, neither one ruling the other. That is the founding idea of the practice in a single image: the patient is the second half of the decision, not a smaller version of the provider. The system is simple enough to hold up from a favicon to a building sign. Below is the primary lockup, the reversed versions for dark grounds, and the mark on its own.</p>
+            <style>
+        #logos .fl-stack{display:flex;flex-direction:column;gap:8px;margin-top:32px;}
+        #logos .fl-panel{border:1px solid var(--line);border-radius:14px;display:flex;align-items:center;justify-content:center;padding:56px 44px;}
+        #logos .fl-panel.ivory{background:var(--ivory);}
+        #logos .fl-panel.card{background:var(--card);}
+        #logos .fl-panel.plum{background:var(--plum);}
+        #logos .fl-panel.navy{background:var(--navy);}
+        #logos .fl-panel svg{width:100%;max-width:460px;height:auto;}
+        #logos .fl-cap{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--slate);font-weight:500;margin:12px 2px 22px;}
+        #logos .fl-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;}
+        #logos .fl-grid .fl-panel svg{max-width:340px;}
+        #logos .fl-mark .fl-panel{padding:40px;}
+        #logos .fl-mark .fl-panel svg{max-width:108px;}
+        @media(max-width:760px){#logos .fl-grid{grid-template-columns:1fr;}}
+      </style>
+      <div class="fl-stack">
+        <div><div class="fl-panel ivory"><svg viewBox="0 0 639 190" xmlns="http://www.w3.org/2000/svg"><circle cx="68.0" cy="118.0" r="38.0" fill="#4A2A43"/><circle cx="97.6" cy="94.4" r="24.0" fill="none" stroke="#889A7C" stroke-width="8.5"/><text x="159.9" y="132.0" text-anchor="start" font-family="Jost, sans-serif" font-weight="500" font-size="60" letter-spacing="1.5" fill="#1B2A45">blooming health</text><text x="384.2" y="166.0" text-anchor="middle" font-family="Jost, sans-serif" font-weight="400" font-size="14.5" letter-spacing="12.080772727272729" fill="#44597A">CONCIERGE PRIMARY CARE</text></svg></div><div class="fl-cap">Primary lockup</div></div>
+      </div>
+      <div class="fl-grid">
+        <div><div class="fl-panel plum"><svg viewBox="0 0 639 190" xmlns="http://www.w3.org/2000/svg"><circle cx="68.0" cy="118.0" r="38.0" fill="#F6F2E9"/><circle cx="97.6" cy="94.4" r="24.0" fill="none" stroke="#889A7C" stroke-width="8.5"/><text x="159.9" y="132.0" text-anchor="start" font-family="Jost, sans-serif" font-weight="500" font-size="60" letter-spacing="1.5" fill="#F6F2E9">blooming health</text><text x="384.2" y="166.0" text-anchor="middle" font-family="Jost, sans-serif" font-weight="400" font-size="14.5" letter-spacing="12.080772727272729" fill="#C9CDD3">CONCIERGE PRIMARY CARE</text></svg></div><div class="fl-cap">Reversed · Plum</div></div>
+        <div><div class="fl-panel navy"><svg viewBox="0 0 639 190" xmlns="http://www.w3.org/2000/svg"><circle cx="68.0" cy="118.0" r="38.0" fill="#F6F2E9"/><circle cx="97.6" cy="94.4" r="24.0" fill="none" stroke="#889A7C" stroke-width="8.5"/><text x="159.9" y="132.0" text-anchor="start" font-family="Jost, sans-serif" font-weight="500" font-size="60" letter-spacing="1.5" fill="#F6F2E9">blooming health</text><text x="384.2" y="166.0" text-anchor="middle" font-family="Jost, sans-serif" font-weight="400" font-size="14.5" letter-spacing="12.080772727272729" fill="#C9CDD3">CONCIERGE PRIMARY CARE</text></svg></div><div class="fl-cap">Reversed · Navy</div></div>
+      </div>
+      <div class="fl-grid fl-mark">
+        <div><div class="fl-panel ivory"><svg viewBox="0 0 116 110" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-20.0,-56.2)"><circle cx="68.0" cy="118.0" r="38.0" fill="#4A2A43"/><circle cx="97.6" cy="94.4" r="24.0" fill="none" stroke="#889A7C" stroke-width="8.5"/></g></svg></div><div class="fl-cap">The mark · favicon &amp; avatar</div></div>
+        <div><div class="fl-panel navy"><svg viewBox="0 0 116 110" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-20.0,-56.2)"><circle cx="68.0" cy="118.0" r="38.0" fill="#F6F2E9"/><circle cx="97.6" cy="94.4" r="24.0" fill="none" stroke="#889A7C" stroke-width="8.5"/></g></svg></div><div class="fl-cap">The mark · reversed</div></div>
+      </div>
+  <div class="usage">
+    <div class="u"><h4>Clear space</h4><p>Keep open space around the mark equal to the height of the B. Let it breathe, especially on signage.</p></div>
+    <div class="u"><h4>Minimum size</h4><p>Wordmark stays legible to about 120px wide on screen. Below that, switch to the icon or badge version.</p></div>
+    <div class="u"><h4>What not to do</h4><p>No recoloring outside the palette, no stretching, no drop shadows or gradients, no busy photo backgrounds behind it.</p></div>
+  </div>
+</div></section>
+
+<footer>
+  <div class="wrap">
+    <div class="fmark">Blooming Health</div>
+    <p>Final Brand Kit · Concierge Primary Care, Baltimore</p>
+  </div>
+</footer>
+</body>
+</html>

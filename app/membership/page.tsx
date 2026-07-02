@@ -5,15 +5,15 @@ import { BloomMotif, FlowDivider, RingAccent } from "@/components/Motifs";
 
 export const metadata: Metadata = {
   title: "Membership",
-  description: "Blooming Health membership plans — straightforward annual pricing for direct primary care in Baltimore.",
+  description: "Blooming Health membership plans, straightforward annual pricing for concierge care in Baltimore.",
 };
 
 const included = [
-  "Up to 15 visits per year — primary care and urgent care",
-  "Same-day or next-day appointments, always",
   "Avi's personal phone number to call or text directly",
+  "After-hours availability, evenings and most weekends",
+  "Priority for same-day or next-day appointments",
   "Long appointment blocks so there is time to actually talk",
-  "Urgent care visits included (stitches, strep, flu, COVID, and more)",
+  "Primary and urgent care visits, billed through your insurance",
   "Natural options explored first, not just a prescription and a goodbye",
   "A provider who knows you, your history, and your goals",
 ];
@@ -22,7 +22,7 @@ const included = [
 const faqs = [
   {
     q: "Does membership replace health insurance?",
-    a: "No. Blooming Health covers primary and urgent care only. You should maintain insurance for specialists, hospitalizations, and emergencies. Many members pair this with a high-deductible plan and an HSA.",
+    a: "No. Insurance still covers your primary and urgent care visits, plus anything beyond that. Membership is what layers on top: direct provider access, after-hours availability, and priority scheduling.",
   },
   {
     q: "Can I use my HSA or FSA?",
@@ -30,11 +30,11 @@ const faqs = [
   },
   {
     q: "Is there a contract?",
-    a: "No long-term contract. Memberships are annual with no penalty for cancelling.",
+    a: "There's a 6-month minimum commitment. After that, you can cancel anytime, though membership fees are non-refundable.",
   },
   {
-    q: "What counts as a visit?",
-    a: "Both primary care appointments and urgent care visits count toward your 15. Most members use a mix — a wellness visit or two, a few sick visits, and ongoing check-ins for chronic conditions.",
+    q: "How does billing work with insurance?",
+    a: "We bill insurance for visits, labs, and referrals. The membership fee covers direct access, after-hours availability, and priority scheduling. We're still building out our insurance network, so reach out to confirm your plan.",
   },
   {
     q: "How quickly can I get seen?",
@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: "What about labs and imaging?",
-    a: "Labs can be ordered and coordinated at significantly reduced cost. Imaging is referred out and we help you find the most affordable path.",
+    a: "Labs (CBC, CMP, lipid panel, HbA1c, thyroid, vitamin D, and more) are collected in-office and billed through insurance. Imaging is referred out, and we'll help you find the most affordable path for anything not fully covered.",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function Membership() {
               Everything in one number.
             </h2>
             <p className="text-[#2B2329] text-base leading-relaxed mb-8">
-              Your membership covers up to 15 visits per year — primary care and urgent care both count. Between visits, Avi&apos;s personal number is there when something comes up and you need a real answer fast.
+              Membership gives you direct access to Avi. Call or text when something comes up, with after-hours availability and priority for same- and next-day appointments. [Visit structure and insurance billing details, placeholder]
             </p>
             <Link href="/services" className="text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#4A2A43] transition-colors">
               See what we treat →
