@@ -123,6 +123,15 @@ export default function Services() {
             </div>
           </div>
         </div>
+
+        <div className="max-w-6xl mx-auto px-6 md:px-11 mt-10">
+          <Link
+            href="/membership"
+            className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#4A2A43] transition-colors duration-200"
+          >
+            See membership plans →
+          </Link>
+        </div>
         <FlowDivider fill="#1B2A45" />
       </section>
 
@@ -137,9 +146,15 @@ export default function Services() {
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
               What falls outside our scope.
             </h2>
-            <p className="text-[#C9CDD3] text-base leading-relaxed">
+            <p className="text-[#C9CDD3] text-base leading-relaxed mb-6">
               Blooming Health handles primary and urgent care, and visits are billed through your insurance like they would be anywhere else. Some things fall outside what we do entirely. For those, we will refer you to the right specialist and help coordinate care.
             </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#889A7C] hover:text-[#F6F2E9] transition-colors duration-200"
+            >
+              Talk to us about your case →
+            </Link>
           </div>
           <ul className="flex flex-col gap-4">
             {[

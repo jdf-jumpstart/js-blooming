@@ -19,6 +19,22 @@ export default function Footer() {
         className="pointer-events-none absolute -bottom-16 -left-10 hidden h-56 w-56 md:block"
       />
       <div className="relative max-w-6xl mx-auto px-6 md:px-11 py-16">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-14 mb-14 border-b border-[rgba(36,28,32,0.14)]">
+          <div>
+            <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-2xl md:text-3xl leading-[1.1] mb-1">
+              Ready to talk?
+            </h3>
+            <p className="text-[#44597A] text-base">
+              Fifteen minutes, no obligation. We&apos;ll tell you honestly if it&apos;s a fit.
+            </p>
+          </div>
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center bg-[#4A2A43] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#3a1f34] transition-colors duration-200 shrink-0"
+          >
+            Schedule a free intro call
+          </Link>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-14">
           <div>
             <div className="mb-3">

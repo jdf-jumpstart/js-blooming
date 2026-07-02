@@ -126,7 +126,7 @@ export default function FAQ() {
       <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="flex flex-col gap-16">
-            {sections.map((section) => (
+            {sections.map((section, i) => (
               <div key={section.title}>
                 <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-2xl mb-8 pb-4">
                   {section.title}
@@ -144,6 +144,22 @@ export default function FAQ() {
                     </div>
                   ))}
                 </div>
+                {i === 1 && (
+                  <div className="mt-8 border-l-2 border-[#889A7C] pl-6 py-1">
+                    <p className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[17px] mb-2">
+                      Not sure what it&apos;ll cost you?
+                    </p>
+                    <p className="text-base text-[#2B2329] leading-relaxed mb-3">
+                      Everyone&apos;s coverage is different. Tell us yours and we&apos;ll walk you through the numbers.
+                    </p>
+                    <Link
+                      href="/contact"
+                      className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#4A2A43] transition-colors duration-200"
+                    >
+                      Contact us →
+                    </Link>
+                  </div>
+                )}
               </div>
             ))}
           </div>

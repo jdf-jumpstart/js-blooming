@@ -111,9 +111,15 @@ export default function About() {
             <p className="text-[#C9CDD3] text-base leading-relaxed mb-4">
               Outside the practice, he's the father of six, which has a way of sharpening your perspective on what actually matters in a family&apos;s health. He stays active, keeps learning, and plays guitar — badly enough to keep him humble, well enough to enjoy it.
             </p>
-            <p className="text-[#C9CDD3] text-base leading-relaxed">
+            <p className="text-[#C9CDD3] text-base leading-relaxed mb-6">
               What drives him is the relationship. Not the paperwork. Not the billing codes. The part where you actually sit down with a person, understand what they're dealing with, and help them figure out what to do about it.
             </p>
+            <Link
+              href="/membership"
+              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#889A7C] hover:text-[#F6F2E9] transition-colors duration-200"
+            >
+              See how membership works →
+            </Link>
           </div>
           <div className="bg-[rgba(246,242,233,0.06)] border border-[rgba(246,242,233,0.12)] rounded-md aspect-[4/5] flex items-center justify-center">
             <div className="text-center p-8">

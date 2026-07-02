@@ -59,9 +59,23 @@ export default function Membership() {
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             A flat monthly rate. Real access to a provider who knows you.
           </h1>
-          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl">
+          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl mb-8">
             No visit copays. No billing surprises. No waiting three weeks to be seen.
           </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href="#pricing"
+              className="inline-flex items-center justify-center bg-[#4A2A43] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#3a1f34] transition-colors duration-200"
+            >
+              See pricing
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center border border-[rgba(36,28,32,0.2)] text-[#2B2329] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#4A2A43] hover:text-[#4A2A43] transition-colors duration-200"
+            >
+              Talk to us first
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -92,7 +106,7 @@ export default function Membership() {
       </section>
 
       {/* Pricing */}
-      <section className="relative overflow-hidden bg-[#F1EADD] py-16 md:py-24">
+      <section id="pricing" className="relative overflow-hidden bg-[#F1EADD] py-16 md:py-24 scroll-mt-16">
         <RingAccent
           tone="plum"
           className="pointer-events-none absolute -left-12 -top-8 hidden h-52 w-52 lg:block"

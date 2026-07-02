@@ -102,9 +102,15 @@ export default function Home() {
             <p className="text-[#2B2329] text-base leading-relaxed mb-4">
               Membership gives you Avi&apos;s personal number for direct access between visits, after-hours availability, and priority for same- and next-day appointments. [Visit structure and insurance billing details, placeholder]
             </p>
-            <p className="text-[#2B2329] text-base leading-relaxed">
+            <p className="text-[#2B2329] text-base leading-relaxed mb-6">
               We look at natural and lifestyle-based options alongside conventional medicine: medications when they make sense, movement and nutrition when those are the better answer. The goal is a real relationship that helps you build health over time.
             </p>
+            <Link
+              href="/what-is-concierge-care"
+              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#4A2A43] transition-colors duration-200"
+            >
+              More on concierge care →
+            </Link>
           </div>
           <div className="relative">
             <div className="relative aspect-[4/5] rounded-md overflow-hidden">

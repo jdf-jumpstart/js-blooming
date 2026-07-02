@@ -151,6 +151,14 @@ export default function WhatIsConciergeCare() {
               </div>
             ))}
           </div>
+          <div className="mt-10">
+            <Link
+              href="/membership"
+              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#4A2A43] transition-colors duration-200"
+            >
+              See membership plans →
+            </Link>
+          </div>
         </div>
         <FlowDivider fill="#F6F2E9" />
       </section>
