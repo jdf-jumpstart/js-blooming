@@ -67,7 +67,7 @@ export default function Home() {
         <FlowDivider fill="#889A7C" />
         <div className="absolute inset-[6%] md:inset-[10%] z-10 bg-[#1B2A45]/85 backdrop-blur-sm flex flex-col justify-center px-6 md:px-16">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] leading-[1.0] tracking-[-0.015em] text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-5 md:mb-8 max-w-3xl">
-            Primary care with the time to actually know you.
+            Primary care with the time to actually know you
           </h1>
           <p className="text-[#C9CDD3] text-base md:text-lg leading-relaxed mb-6 md:mb-10 max-w-2xl">
             Blooming Health is a membership-based concierge care practice in Baltimore. Fewer patients, longer visits, natural options alongside conventional medicine, with a provider who&apos;s available when you need them, not just when the schedule allows.
@@ -96,9 +96,9 @@ export default function Home() {
           className="pointer-events-none absolute -left-10 top-10 hidden h-56 w-56 lg:block"
         />
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
-          <div className="relative">
+          <div className="relative bg-[#F6F2E9] border border-[rgba(36,28,32,0.14)] rounded-md p-8 md:p-10">
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
-              Blooming Health was founded on a simple premise: good medicine takes time.
+              Blooming Health was founded on a simple premise: good medicine takes time
             </h2>
             <p className="text-[#2B2329] text-base leading-relaxed mb-4">
               Your existing insurance continues to cover the cost of visits, labs, and referrals, just as it would anywhere else. Membership layers direct access on top of that: Avi&apos;s personal number, after-hours availability, and priority scheduling for same- and next-day appointments.
@@ -148,7 +148,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
             <div>
               <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-4">
-                Primary care that actually covers the ground.
+                Primary care that actually covers the ground
               </h2>
               <p className="text-[#C9CDD3] text-base">
                 From annual physicals to same-day sick visits to chronic disease management, your insurance covers the visit and membership gives you direct access to Avi in between.
@@ -246,7 +246,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
             <div>
               <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-3">
-                Membership, priced simply.
+                Membership, priced simply
               </h2>
               <p className="text-[#2B2329] text-base max-w-xl">
                 One flat rate for concierge access, with things like labs billed to your existing insurance.
@@ -303,7 +303,7 @@ export default function Home() {
       <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12">
-            What patients say.
+            What patients say
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[1, 2, 3].map((i) => (
@@ -328,7 +328,7 @@ export default function Home() {
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-4xl md:text-5xl lg:text-6xl leading-[1.04] tracking-[-0.015em] mb-8 max-w-2xl mx-auto">
-            A different kind of practice.
+            A different kind of practice
           </h2>
           <p className="text-[#2B2329] text-[16px] max-w-lg mx-auto mb-10 leading-relaxed">
             Patients 13 and up. $100/mo individual, $167/mo couple, $250/mo family. Works alongside your insurance.
