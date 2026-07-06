@@ -52,20 +52,20 @@ export default function Home() {
       <section className="relative overflow-hidden h-[80dvh]">
         <div className="absolute inset-0 bg-[#1B2A45]">
           <Image
-            src="/Patient-visiting-a-primary-care-doctor-1030x687.jpeg"
+            src="/blooming-health-hero-bloom.png"
             alt=""
             fill
             className="object-cover object-center"
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-[#0d1117]/30" />
+        <div className="absolute inset-0 bg-[#1B2A45]/35" />
         <BloomMotif
           tone="ivory"
           className="absolute top-8 right-8 z-[5] hidden h-44 w-44 md:block"
         />
         <FlowDivider fill="#F6F2E9" />
-        <div className="absolute inset-[6%] md:inset-[10%] z-10 bg-[#0d1117]/70 backdrop-blur-sm flex flex-col justify-center px-6 md:px-16">
+        <div className="absolute inset-[6%] md:inset-[10%] z-10 bg-[#1B2A45]/85 backdrop-blur-sm flex flex-col justify-center px-6 md:px-16">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] leading-[1.0] tracking-[-0.015em] text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-5 md:mb-8 max-w-3xl">
             Primary care with the time to actually know you.
           </h1>
