@@ -58,10 +58,11 @@ export default function Services() {
             Visits are billed through your insurance. Membership adds same- or next-day scheduling priority and direct access between appointments.
           </p>
         </div>
+        <FlowDivider fill="#889A7C" />
       </section>
 
       {/* Services */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#889A7C] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-10">
 
           {/* Primary care */}

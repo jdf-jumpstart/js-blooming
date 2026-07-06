@@ -51,10 +51,11 @@ export default function About() {
             We built Blooming Health around one idea: that a meaningful relationship between patient and provider changes everything.
           </p>
         </div>
+        <FlowDivider fill="#889A7C" />
       </section>
 
       {/* Mission */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#889A7C] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
@@ -132,17 +133,17 @@ export default function About() {
             </div>
           </div>
         </div>
-        <FlowDivider fill="#F6F2E9" />
+        <FlowDivider fill="#1B2A45" />
       </section>
 
       {/* Values */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
         <RingAccent
-          tone="plum"
+          tone="sage"
           className="pointer-events-none absolute -right-10 top-10 hidden h-48 w-48 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
             The principles behind the practice.
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -156,6 +157,7 @@ export default function About() {
             ))}
           </div>
         </div>
+        <FlowDivider fill="#F6F2E9" />
       </section>
 
       {/* CTA */}
