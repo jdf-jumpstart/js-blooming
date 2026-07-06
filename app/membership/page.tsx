@@ -57,7 +57,7 @@ export default function Membership() {
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
-            A flat monthly rate. Real access to a provider who knows you.
+            A flat monthly rate. Real access to a provider who knows you
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl mb-8">
             No visit copays. No billing surprises. No waiting three weeks to be seen.
@@ -85,7 +85,7 @@ export default function Membership() {
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
-              Everything in one number.
+              Everything in one number
             </h2>
             <p className="text-[#C9CDD3] text-base leading-relaxed mb-8">
               Your insurance continues to cover the cost of visits, labs, and referrals. Membership adds direct access to Avi: call or text when something comes up, with after-hours availability and priority for same- and next-day appointments.
@@ -114,7 +114,7 @@ export default function Membership() {
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-3">
-            Straightforward pricing.
+            Straightforward pricing
           </h2>
           <p className="text-[#44597A] text-base mb-12 max-w-xl">
             No per-visit fees, no surprise charges.
@@ -128,7 +128,7 @@ export default function Membership() {
       <section className="relative overflow-hidden bg-[#889A7C] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12">
-            Common questions.
+            Common questions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {faqs.map((faq) => (

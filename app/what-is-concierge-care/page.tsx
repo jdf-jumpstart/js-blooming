@@ -76,7 +76,7 @@ export default function WhatIsConciergeCare() {
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
-              Primary care built around access, not volume.
+              Primary care built around access, not volume
             </h2>
             <p className="text-[#2B2329] text-base leading-relaxed mb-4">
               In the traditional model, your provider is paid per visit — by your insurance company. That creates pressure to see as many patients as possible. The result: shorter appointments, longer wait times, and a provider who barely knows your name.
@@ -119,7 +119,7 @@ export default function WhatIsConciergeCare() {
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
-            What changes when you leave the traditional model.
+            What changes when you leave the traditional model
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {differences.map((col) => (
@@ -168,7 +168,7 @@ export default function WhatIsConciergeCare() {
       <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
-            Things people get wrong about concierge care.
+            Things people get wrong about concierge care
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {myths.map((m) => (

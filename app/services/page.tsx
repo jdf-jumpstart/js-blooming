@@ -52,7 +52,7 @@ export default function Services() {
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
-            Primary care and urgent care, with direct access to your provider.
+            Primary care and urgent care, with direct access to your provider
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl">
             Visits are billed through your insurance. Membership adds same- or next-day scheduling priority and direct access between appointments.
