@@ -110,20 +110,21 @@ export default function FAQ() {
   return (
     <>
       {/* Header */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-20 md:py-28">
         <BloomMotif
           tone="sage"
           className="pointer-events-none absolute -right-8 top-4 hidden h-52 w-52 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] max-w-3xl">
             Frequently Asked Questions (FAQ&apos;s)
           </h1>
         </div>
+        <FlowDivider fill="#889A7C" />
       </section>
 
       {/* FAQ sections */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#889A7C] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="flex flex-col gap-16">
             {sections.map((section, i) => (
@@ -145,7 +146,7 @@ export default function FAQ() {
                   ))}
                 </div>
                 {i === 1 && (
-                  <div className="mt-8 border-l-2 border-[#889A7C] pl-6 py-1">
+                  <div className="mt-8 border-l-2 border-[#1B2A45] pl-6 py-1">
                     <p className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[17px] mb-2">
                       Not sure what it&apos;ll cost you?
                     </p>
@@ -154,7 +155,7 @@ export default function FAQ() {
                     </p>
                     <Link
                       href="/contact"
-                      className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#1B2A45] transition-colors duration-200"
+                      className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#1B2A45] hover:text-[#162237] transition-colors duration-200"
                     >
                       Contact us →
                     </Link>

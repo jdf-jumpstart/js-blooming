@@ -68,10 +68,11 @@ export default function WhatIsConciergeCare() {
             Concierge care is a membership model for primary care. You pay a flat monthly fee. In return, you get a real relationship with a provider who has time for you, and direct access when something comes up.
           </p>
         </div>
+        <FlowDivider fill="#889A7C" />
       </section>
 
       {/* The simple version */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#889A7C] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">

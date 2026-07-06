@@ -64,7 +64,7 @@ export default function Home() {
           tone="ivory"
           className="absolute top-8 right-8 z-[5] hidden h-44 w-44 md:block"
         />
-        <FlowDivider fill="#F6F2E9" />
+        <FlowDivider fill="#889A7C" />
         <div className="absolute inset-[6%] md:inset-[10%] z-10 bg-[#1B2A45]/85 backdrop-blur-sm flex flex-col justify-center px-6 md:px-16">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] leading-[1.0] tracking-[-0.015em] text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-5 md:mb-8 max-w-3xl">
             Primary care with the time to actually know you.
@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* What is this */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#889A7C] py-20 md:py-28">
         <RingAccent
           tone="plum"
           className="pointer-events-none absolute -left-10 top-10 hidden h-56 w-56 lg:block"
@@ -108,7 +108,7 @@ export default function Home() {
             </p>
             <Link
               href="/what-is-concierge-care"
-              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#1B2A45] transition-colors duration-200"
+              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#1B2A45] hover:text-[#162237] transition-colors duration-200"
             >
               More on concierge care →
             </Link>
@@ -122,7 +122,7 @@ export default function Home() {
                 className="object-cover object-center"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 -z-10 h-24 w-24 rounded-full border border-[#889A7C] opacity-40" />
+            <div className="absolute -bottom-6 -right-6 -z-10 h-24 w-24 rounded-full border border-[#1B2A45] opacity-40" />
           </div>
         </div>
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-px bg-[rgba(36,28,32,0.14)] border border-[rgba(36,28,32,0.14)] rounded-md overflow-hidden">
@@ -189,17 +189,17 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <FlowDivider fill="#F1EADD" />
+        <FlowDivider fill="#889A7C" />
       </section>
 
       {/* Meet your provider */}
-      <section className="relative overflow-hidden bg-[#F1EADD] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#889A7C] py-20 md:py-28">
         <RingAccent
           tone="navy"
           className="pointer-events-none absolute -left-10 -bottom-10 hidden h-56 w-56 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-14 items-center">
-          <div className="bg-[rgba(27,42,69,0.05)] border border-[rgba(36,28,32,0.14)] rounded-md aspect-[4/5] flex items-center justify-center">
+          <div className="bg-[#F6F2E9] border border-[rgba(36,28,32,0.14)] rounded-md aspect-[4/5] flex items-center justify-center">
             <div className="text-center p-8">
               <div className="w-20 h-20 rounded-full bg-[rgba(136,154,124,0.2)] border border-[#889A7C] mx-auto mb-4 flex items-center justify-center">
                 <span className="font-[family-name:var(--font-fraunces)] text-[#889A7C] text-2xl">A</span>
@@ -210,13 +210,13 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div className="text-[12px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-3">
+            <div className="text-[12px] tracking-[0.28em] uppercase text-[#1B2A45] font-[500] mb-3">
               Your Provider
             </div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-2">
               Avi Blumenthal, NP
             </h2>
-            <p className="text-[#889A7C] text-[13px] tracking-[0.1em] uppercase mb-6">
+            <p className="text-[#1B2A45] text-[13px] tracking-[0.1em] uppercase mb-6">
               Founder &amp; Nurse Practitioner
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed mb-4">
@@ -227,7 +227,7 @@ export default function Home() {
             </p>
             <Link
               href="/about"
-              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#1B2A45] transition-colors duration-200"
+              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#1B2A45] hover:text-[#162237] transition-colors duration-200"
             >
               Meet Avi →
             </Link>
@@ -249,7 +249,7 @@ export default function Home() {
                 Membership, priced simply.
               </h2>
               <p className="text-[#2B2329] text-base max-w-xl">
-                One flat monthly rate on top of the insurance you already carry.
+                One flat rate for concierge access, with things like labs billed to your existing insurance.
               </p>
             </div>
             <Link
