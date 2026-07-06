@@ -116,7 +116,7 @@ export default function FAQ() {
           className="pointer-events-none absolute -right-8 top-4 hidden h-52 w-52 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] max-w-3xl">
             Frequently Asked Questions (FAQ&apos;s)
           </h1>
         </div>
@@ -137,7 +137,7 @@ export default function FAQ() {
                       key={faq.q}
                       className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-10 pb-6 border-b border-[rgba(36,28,32,0.1)]"
                     >
-                      <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[16px] leading-[1.3]">
+                      <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[16px] leading-[1.3]">
                         {faq.q}
                       </h3>
                       <p className="text-base text-[#2B2329] leading-relaxed">{faq.a}</p>
@@ -146,7 +146,7 @@ export default function FAQ() {
                 </div>
                 {i === 1 && (
                   <div className="mt-8 border-l-2 border-[#889A7C] pl-6 py-1">
-                    <p className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[17px] mb-2">
+                    <p className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[17px] mb-2">
                       Not sure what it&apos;ll cost you?
                     </p>
                     <p className="text-base text-[#2B2329] leading-relaxed mb-3">
@@ -154,7 +154,7 @@ export default function FAQ() {
                     </p>
                     <Link
                       href="/contact"
-                      className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#4A2A43] transition-colors duration-200"
+                      className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#1B2A45] transition-colors duration-200"
                     >
                       Contact us →
                     </Link>
@@ -174,15 +174,15 @@ export default function FAQ() {
           className="pointer-events-none absolute -left-10 -bottom-10 hidden h-48 w-48 md:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl md:text-5xl leading-[1.04] tracking-[-0.015em] mb-5">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-4xl md:text-5xl leading-[1.04] tracking-[-0.015em] mb-5">
             Still have questions?
           </h2>
           <p className="text-[#2B2329] text-base max-w-md mx-auto mb-8 leading-relaxed">
-            Get in touch. We will give you a straight answer and, if it makes sense, set up a free introductory call.
+            Reach out for a direct answer and, when appropriate, a complimentary introductory call.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center bg-[#4A2A43] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#3a1f34] transition-colors duration-200"
+            className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
           >
             Contact us
           </Link>

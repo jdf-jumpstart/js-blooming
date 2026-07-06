@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BloomMotif, FlowDivider, RingAccent } from "@/components/Motifs";
+import PricingToggle from "@/components/PricingToggle";
 
 const pillars = [
   { title: "Collaboration", body: "Decisions made with you, not for you." },
@@ -22,7 +23,7 @@ const services: { title: string; body?: string; italic?: boolean }[] = [
   },
   {
     title: "Direct Provider Access",
-    body: "Avi's direct line.",
+    body: "Direct access to Avi Blumenthal, NP, between visits.",
   },
   {
     title: "Natural & Lifestyle Options",
@@ -30,7 +31,7 @@ const services: { title: string; body?: string; italic?: boolean }[] = [
   },
   {
     title: "Longer Appointments",
-    body: "Enough time to talk through everything (not just the chief complaint). Ten-minute slots aren't how this works.",
+    body: "Enough time to talk through everything, not just the chief complaint. Ten-minute appointments are not part of how we practice.",
   },
   {
     title: "More on the way",
@@ -40,8 +41,8 @@ const services: { title: string; body?: string; italic?: boolean }[] = [
 
 const steps = [
   { number: "1", title: "Choose your membership", body: "Pick the plan that fits your household." },
-  { number: "2", title: "Meet your provider", body: "A proper first visit, no rushing, to understand your full picture." },
-  { number: "3", title: "Access care when you need it", body: "Same-day visits, direct messaging, and a provider who actually knows you." },
+  { number: "2", title: "Meet your provider", body: "An unhurried first visit to understand your complete health picture." },
+  { number: "3", title: "Access care when you need it", body: "Same-day visits, direct messaging, and continuity with a provider who knows your history." },
 ];
 
 export default function Home() {
@@ -96,18 +97,18 @@ export default function Home() {
         />
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
           <div className="relative">
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
-              We built Blooming Health because good medicine takes time, and we were tired of practices that don&apos;t give it.
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
+              Blooming Health was founded on a simple premise: good medicine takes time.
             </h2>
             <p className="text-[#2B2329] text-base leading-relaxed mb-4">
-              Membership gives you Avi&apos;s personal number for direct access between visits, after-hours availability, and priority for same- and next-day appointments. [Visit structure and insurance billing details, placeholder]
+              Your existing insurance continues to cover the cost of visits, labs, and referrals, just as it would anywhere else. Membership layers direct access on top of that: Avi&apos;s personal number, after-hours availability, and priority scheduling for same- and next-day appointments.
             </p>
             <p className="text-[#2B2329] text-base leading-relaxed mb-6">
               We look at natural and lifestyle-based options alongside conventional medicine: medications when they make sense, movement and nutrition when those are the better answer. The goal is a real relationship that helps you build health over time.
             </p>
             <Link
               href="/what-is-concierge-care"
-              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#4A2A43] transition-colors duration-200"
+              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#1B2A45] transition-colors duration-200"
             >
               More on concierge care →
             </Link>
@@ -150,7 +151,7 @@ export default function Home() {
                 Primary care that actually covers the ground.
               </h2>
               <p className="text-[#C9CDD3] text-base">
-                From annual physicals to same-day sick visits to chronic disease management, membership gives you direct access to Avi for all of it. [Visit structure and insurance billing details, placeholder]
+                From annual physicals to same-day sick visits to chronic disease management, your insurance covers the visit and membership gives you direct access to Avi in between.
               </p>
             </div>
             <div className="relative aspect-[16/9] md:aspect-[4/3] rounded-md overflow-hidden">
@@ -165,7 +166,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(246,242,233,0.1)]">
             {services.map((s) => (
               <div key={s.title} className="bg-[#1B2A45] p-7 hover:bg-[#243555] transition-colors duration-200">
-                <div className="w-8 h-8 rounded-full border border-[#889A7C] mb-5" />
+                <div className="w-8 h-8 rounded-full bg-[rgba(136,154,124,0.25)] border border-[#889A7C] mb-5" />
                 <h3
                   className={`font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[18px] ${
                     s.body ? "mb-3" : ""
@@ -191,20 +192,92 @@ export default function Home() {
         <FlowDivider fill="#F1EADD" />
       </section>
 
+      {/* Meet your provider */}
+      <section className="relative overflow-hidden bg-[#F1EADD] py-20 md:py-28">
+        <RingAccent
+          tone="navy"
+          className="pointer-events-none absolute -left-10 -bottom-10 hidden h-56 w-56 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-14 items-center">
+          <div className="bg-[rgba(27,42,69,0.05)] border border-[rgba(36,28,32,0.14)] rounded-md aspect-[4/5] flex items-center justify-center">
+            <div className="text-center p-8">
+              <div className="w-20 h-20 rounded-full bg-[rgba(136,154,124,0.2)] border border-[#889A7C] mx-auto mb-4 flex items-center justify-center">
+                <span className="font-[family-name:var(--font-fraunces)] text-[#889A7C] text-2xl">A</span>
+              </div>
+              <div className="text-[12px] tracking-[0.24em] uppercase text-[#44597A]">
+                Photo coming soon
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="text-[12px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-3">
+              Your Provider
+            </div>
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-2">
+              Avi Blumenthal, NP
+            </h2>
+            <p className="text-[#889A7C] text-[13px] tracking-[0.1em] uppercase mb-6">
+              Founder &amp; Nurse Practitioner
+            </p>
+            <p className="text-[#2B2329] text-base leading-relaxed mb-4">
+              Avi brings more than a decade of healthcare experience to Blooming Health, trained in emergency medicine and most recently practicing in urgent care. Primary care is the next chapter: the same clinical steadiness, now applied before a health issue becomes an emergency, not just after.
+            </p>
+            <p className="text-[#2B2329] text-base leading-relaxed mb-6">
+              He maintains a deliberately small patient panel so every visit gets the time it requires, and remains directly reachable between appointments.
+            </p>
+            <Link
+              href="/about"
+              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#1B2A45] transition-colors duration-200"
+            >
+              Meet Avi →
+            </Link>
+          </div>
+        </div>
+        <FlowDivider fill="#F6F2E9" />
+      </section>
+
+      {/* Pricing snapshot */}
+      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+        <RingAccent
+          tone="sage"
+          className="pointer-events-none absolute -right-10 top-10 hidden h-52 w-52 lg:block"
+        />
+        <div className="relative max-w-6xl mx-auto px-6 md:px-11">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+            <div>
+              <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-3">
+                Membership, priced simply.
+              </h2>
+              <p className="text-[#2B2329] text-base max-w-xl">
+                One flat monthly rate on top of the insurance you already carry.
+              </p>
+            </div>
+            <Link
+              href="/membership"
+              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#1B2A45] transition-colors duration-200 shrink-0"
+            >
+              Full membership details →
+            </Link>
+          </div>
+          <PricingToggle />
+        </div>
+        <FlowDivider fill="#F1EADD" />
+      </section>
+
       {/* How it works */}
       <section className="relative overflow-hidden bg-[#F1EADD] py-20 md:py-28">
         <RingAccent
-          tone="plum"
+          tone="navy"
           className="pointer-events-none absolute -right-12 top-16 hidden h-52 w-52 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-14 max-w-xl">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-14 max-w-xl">
             Simple to join. Simple to use.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {steps.map((s) => (
               <div key={s.number}>
-                <div className="font-[family-name:var(--font-fraunces)] text-[#C9CDD3] text-5xl mb-5 leading-none">
+                <div className="font-[family-name:var(--font-fraunces)] text-[#889A7C] text-5xl mb-5 leading-none">
                   {s.number}
                 </div>
                 <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-xl mb-3">
@@ -217,7 +290,7 @@ export default function Home() {
           <div className="mt-14">
             <Link
               href="/membership"
-              className="inline-flex items-center justify-center bg-[#4A2A43] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#3a1f34] transition-colors duration-200"
+              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
             >
               View membership plans
             </Link>
@@ -229,7 +302,7 @@ export default function Home() {
       {/* Testimonials placeholder */}
       <section className="bg-[#F6F2E9] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12">
             What patients say.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -254,7 +327,7 @@ export default function Home() {
           className="pointer-events-none absolute -top-6 right-6 hidden h-40 w-40 opacity-70 md:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl md:text-5xl lg:text-6xl leading-[1.04] tracking-[-0.015em] mb-8 max-w-2xl mx-auto">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-4xl md:text-5xl lg:text-6xl leading-[1.04] tracking-[-0.015em] mb-8 max-w-2xl mx-auto">
             A different kind of practice.
           </h2>
           <p className="text-[#2B2329] text-[16px] max-w-lg mx-auto mb-10 leading-relaxed">
@@ -263,13 +336,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/membership"
-              className="inline-flex items-center justify-center bg-[#4A2A43] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#3a1f34] transition-colors duration-200"
+              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
             >
               See membership plans
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center border border-[rgba(36,28,32,0.2)] text-[#2B2329] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#4A2A43] hover:text-[#4A2A43] transition-colors duration-200"
+              className="inline-flex items-center justify-center border border-[rgba(36,28,32,0.2)] text-[#2B2329] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#1B2A45] hover:text-[#1B2A45] transition-colors duration-200"
             >
               Schedule an intro call
             </Link>

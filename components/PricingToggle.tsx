@@ -40,7 +40,7 @@ export default function PricingToggle() {
             onClick={() => setBilling(option)}
             className={`px-6 py-3 text-[12px] tracking-[0.18em] uppercase font-[500] transition-colors duration-200 rounded-sm ${
               billing === option
-                ? "bg-[#4A2A43] text-[#F6F2E9]"
+                ? "bg-[#1B2A45] text-[#F6F2E9]"
                 : "text-[#44597A] hover:text-[#2B2329]"
             }`}
           >
@@ -72,7 +72,7 @@ export default function PricingToggle() {
               }`}
             >
               {plan.highlight && (
-                <div className="text-[12px] tracking-[0.28em] uppercase text-[#C9CDD3] font-[500] mb-3">
+                <div className="text-[12px] tracking-[0.28em] uppercase text-[#889A7C] font-[500] mb-3">
                   Best value
                 </div>
               )}
@@ -115,7 +115,7 @@ export default function PricingToggle() {
                   className={`text-[12px] tracking-[0.18em] uppercase font-[500] border px-5 py-3 inline-block transition-colors duration-200 ${
                     plan.highlight
                       ? "border-[#F6F2E9] text-[#F6F2E9] hover:bg-[#F6F2E9] hover:text-[#4A2A43]"
-                      : "border-[#4A2A43] text-[#4A2A43] hover:bg-[#4A2A43] hover:text-[#F6F2E9]"
+                      : "border-[#1B2A45] text-[#1B2A45] hover:bg-[#1B2A45] hover:text-[#F6F2E9]"
                   }`}
                 >
                   Get started
