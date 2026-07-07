@@ -60,7 +60,7 @@ export default function Membership() {
             A flat monthly rate. Real access to a provider who knows you.
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl mb-8">
-            No visit copays. No billing surprises. No waiting three weeks to be seen.
+            No billing surprises. No waiting three weeks to be seen.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link

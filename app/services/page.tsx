@@ -20,6 +20,7 @@ const primaryCare = [
   "Care coordination: specialist referrals, reviewing reports, follow-up care",
   "Mental health counseling, with referral to a specialist when needed",
   "Telehealth visits",
+  "Pre-op clearances, school forms, camp forms, and CDL licensing",
 ];
 
 const urgentCare = [

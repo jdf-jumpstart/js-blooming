@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Logo from "./Logo";
 
 type ChildLink = { href: string; label: string };
@@ -26,8 +26,23 @@ export default function Nav() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const [bookingNoticeOpen, setBookingNoticeOpen] = useState(false);
+  const noticeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleBookClick = () => {
+    setBookingNoticeOpen(true);
+    if (noticeTimeout.current) clearTimeout(noticeTimeout.current);
+    noticeTimeout.current = setTimeout(() => setBookingNoticeOpen(false), 6000);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (noticeTimeout.current) clearTimeout(noticeTimeout.current);
+    };
+  }, []);
 
   return (
+    <>
     <nav
       className="sticky top-0 z-40 border-b border-[rgba(36,28,32,0.14)]"
       style={{ background: "rgba(246,242,233,0.92)", backdropFilter: "blur(12px)" }}
@@ -38,7 +53,7 @@ export default function Nav() {
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-7">
+        <div className="hidden xl:flex items-center gap-6">
           {links.map((l) => {
             if (l.children) {
               const isActive = l.children.some((c) => pathname === c.href);
@@ -99,9 +114,15 @@ export default function Nav() {
               </Link>
             );
           })}
+          <button
+            onClick={handleBookClick}
+            className="whitespace-nowrap shrink-0 text-[12px] tracking-[0.14em] uppercase font-[500] border border-[#4A2A43] text-[#4A2A43] px-5 py-2.5 rounded hover:bg-[#4A2A43] hover:text-[#F6F2E9] transition-colors duration-200"
+          >
+            Book an Appointment
+          </button>
           <Link
             href="/membership"
-            className="text-[12px] tracking-[0.14em] uppercase font-[500] bg-[#4A2A43] text-[#F6F2E9] px-5 py-2.5 rounded hover:bg-[#3a1f34] transition-colors duration-200"
+            className="whitespace-nowrap shrink-0 text-[12px] tracking-[0.14em] uppercase font-[500] bg-[#4A2A43] text-[#F6F2E9] px-5 py-2.5 rounded hover:bg-[#3a1f34] transition-colors duration-200"
           >
             Become a Member
           </Link>
@@ -109,7 +130,7 @@ export default function Nav() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-[#44597A] p-3 -mr-3 flex items-center justify-center"
+          className="xl:hidden text-[#44597A] p-3 -mr-3 flex items-center justify-center"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -135,7 +156,7 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-[rgba(36,28,32,0.14)] bg-[#F6F2E9] px-6 py-2 flex flex-col">
+        <div className="xl:hidden border-t border-[rgba(36,28,32,0.14)] bg-[#F6F2E9] px-6 py-2 flex flex-col">
           {links.map((l) => {
             if (l.children) {
               return (
@@ -201,6 +222,15 @@ export default function Nav() {
               </Link>
             );
           })}
+          <button
+            onClick={() => {
+              handleBookClick();
+              setOpen(false);
+            }}
+            className="mt-3 text-[12px] tracking-[0.14em] uppercase font-[500] border border-[#4A2A43] text-[#4A2A43] px-5 py-3.5 rounded text-center"
+          >
+            Book an Appointment
+          </button>
           <Link
             href="/membership"
             onClick={() => setOpen(false)}
@@ -210,6 +240,32 @@ export default function Nav() {
           </Link>
         </div>
       )}
-    </nav>
+      </nav>
+
+      {bookingNoticeOpen && (
+        <div className="fixed inset-x-0 bottom-6 z-50 flex justify-center px-6 pointer-events-none">
+          <div className="pointer-events-auto max-w-sm w-full bg-[#1B2A45] text-[#F6F2E9] rounded-md shadow-lg px-5 py-4 flex items-start gap-4">
+            <p className="text-[14px] leading-relaxed flex-1">
+              Online booking is on the way. For now,{" "}
+              <Link
+                href="/contact"
+                onClick={() => setBookingNoticeOpen(false)}
+                className="underline underline-offset-2 hover:text-[#889A7C] transition-colors duration-200"
+              >
+                schedule a free intro call
+              </Link>
+              .
+            </p>
+            <button
+              onClick={() => setBookingNoticeOpen(false)}
+              aria-label="Dismiss"
+              className="shrink-0 text-[#C9CDD3] hover:text-[#F6F2E9] transition-colors duration-200"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
