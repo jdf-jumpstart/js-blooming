@@ -61,7 +61,7 @@ export default function Nav() {
                 <div key={l.label} className="relative group">
                   <button
                     className={`text-[12px] tracking-[0.14em] uppercase font-[family-name:var(--font-jost)] font-[500] transition-colors duration-200 flex items-center gap-1 ${
-                      isActive ? "text-[#4A2A43]" : "text-[#44597A] hover:text-[#4A2A43]"
+                      isActive ? "text-[#1B2A45]" : "text-[#44597A] hover:text-[#1B2A45]"
                     }`}
                   >
                     {l.label}
@@ -89,8 +89,8 @@ export default function Nav() {
                           href={c.href}
                           className={`block px-4 py-2.5 text-[12px] tracking-[0.14em] uppercase font-[500] transition-colors duration-150 ${
                             pathname === c.href
-                              ? "text-[#4A2A43]"
-                              : "text-[#44597A] hover:text-[#4A2A43]"
+                              ? "text-[#1B2A45]"
+                              : "text-[#44597A] hover:text-[#1B2A45]"
                           }`}
                         >
                           {c.label}
@@ -107,7 +107,7 @@ export default function Nav() {
                 key={l.href}
                 href={l.href}
                 className={`text-[12px] tracking-[0.14em] uppercase font-[family-name:var(--font-jost)] font-[500] transition-colors duration-200 ${
-                  pathname === l.href ? "text-[#4A2A43]" : "text-[#44597A] hover:text-[#4A2A43]"
+                  pathname === l.href ? "text-[#1B2A45]" : "text-[#44597A] hover:text-[#1B2A45]"
                 }`}
               >
                 {l.label}
@@ -116,13 +116,13 @@ export default function Nav() {
           })}
           <button
             onClick={handleBookClick}
-            className="whitespace-nowrap shrink-0 text-[12px] tracking-[0.14em] uppercase font-[500] border border-[#4A2A43] text-[#4A2A43] px-5 py-2.5 rounded hover:bg-[#4A2A43] hover:text-[#F6F2E9] transition-colors duration-200"
+            className="whitespace-nowrap shrink-0 text-[12px] tracking-[0.14em] uppercase font-[500] border border-[#1B2A45] text-[#1B2A45] px-5 py-2.5 rounded hover:bg-[#1B2A45] hover:text-[#F6F2E9] transition-colors duration-200"
           >
             Book an Appointment
           </button>
           <Link
             href="/membership"
-            className="whitespace-nowrap shrink-0 text-[12px] tracking-[0.14em] uppercase font-[500] bg-[#4A2A43] text-[#F6F2E9] px-5 py-2.5 rounded hover:bg-[#3a1f34] transition-colors duration-200"
+            className="whitespace-nowrap shrink-0 text-[12px] tracking-[0.14em] uppercase font-[500] bg-[#1B2A45] text-[#F6F2E9] px-5 py-2.5 rounded hover:bg-[#162237] transition-colors duration-200"
           >
             Become a Member
           </Link>
@@ -165,7 +165,7 @@ export default function Nav() {
                     onClick={() => setAboutOpen(!aboutOpen)}
                     className={`w-full py-3 text-[12px] tracking-[0.14em] uppercase font-[500] transition-colors flex items-center gap-1 ${
                       l.children.some((c) => pathname === c.href)
-                        ? "text-[#4A2A43]"
+                        ? "text-[#1B2A45]"
                         : "text-[#44597A]"
                     }`}
                   >
@@ -197,7 +197,7 @@ export default function Nav() {
                             setAboutOpen(false);
                           }}
                           className={`py-2.5 text-[12px] tracking-[0.14em] uppercase font-[500] transition-colors ${
-                            pathname === c.href ? "text-[#4A2A43]" : "text-[#44597A]"
+                            pathname === c.href ? "text-[#1B2A45]" : "text-[#44597A]"
                           }`}
                         >
                           {c.label}
@@ -215,7 +215,7 @@ export default function Nav() {
                 href={l.href}
                 onClick={() => setOpen(false)}
                 className={`py-3 text-[12px] tracking-[0.14em] uppercase font-[500] transition-colors ${
-                  pathname === l.href ? "text-[#4A2A43]" : "text-[#44597A]"
+                  pathname === l.href ? "text-[#1B2A45]" : "text-[#44597A]"
                 }`}
               >
                 {l.label}
@@ -227,14 +227,14 @@ export default function Nav() {
               handleBookClick();
               setOpen(false);
             }}
-            className="mt-3 text-[12px] tracking-[0.14em] uppercase font-[500] border border-[#4A2A43] text-[#4A2A43] px-5 py-3.5 rounded text-center"
+            className="mt-3 text-[12px] tracking-[0.14em] uppercase font-[500] border border-[#1B2A45] text-[#1B2A45] px-5 py-3.5 rounded text-center"
           >
             Book an Appointment
           </button>
           <Link
             href="/membership"
             onClick={() => setOpen(false)}
-            className="mt-2 text-[12px] tracking-[0.14em] uppercase font-[500] bg-[#4A2A43] text-[#F6F2E9] px-5 py-3.5 rounded text-center"
+            className="mt-2 text-[12px] tracking-[0.14em] uppercase font-[500] bg-[#1B2A45] text-[#F6F2E9] px-5 py-3.5 rounded text-center"
           >
             Become a Member
           </Link>

@@ -1,28 +1,29 @@
 import type { Metadata } from "next";
-import { BloomMotif } from "@/components/Motifs";
+import { BloomMotif, FlowDivider } from "@/components/Motifs";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with Blooming Health. Schedule a free introductory call or ask a question.",
+  description: "Get in touch with Blooming Health. Schedule a complimentary introductory call or ask a question.",
 };
 
 export default function Contact() {
   return (
     <>
       {/* Header */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-20 md:py-28">
         <BloomMotif
-          tone="plum"
+          tone="sage"
           className="pointer-events-none absolute -right-10 top-2 hidden h-52 w-52 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Start with a conversation.
           </h1>
-          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-xl">
-            No commitment. No pressure. Just an honest call about whether Blooming Health is the right fit.
+          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#C9CDD3] text-xl md:text-2xl leading-[1.45] max-w-xl">
+            No commitment. A straightforward conversation about whether Blooming Health is the right fit for your care.
           </p>
         </div>
+        <FlowDivider fill="#F6F2E9" />
       </section>
 
       {/* Contact content */}
@@ -40,7 +41,7 @@ export default function Contact() {
                   <input
                     type="text"
                     name="firstName"
-                    className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3]"
+                    className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#1B2A45] transition-colors placeholder:text-[#C9CDD3]"
                     placeholder="[First name]"
                   />
                 </div>
@@ -51,7 +52,7 @@ export default function Contact() {
                   <input
                     type="text"
                     name="lastName"
-                    className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3]"
+                    className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#1B2A45] transition-colors placeholder:text-[#C9CDD3]"
                     placeholder="[Last name]"
                   />
                 </div>
@@ -64,7 +65,7 @@ export default function Contact() {
                 <input
                   type="email"
                   name="email"
-                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3]"
+                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#1B2A45] transition-colors placeholder:text-[#C9CDD3]"
                   placeholder="[your@email.com]"
                 />
               </div>
@@ -76,7 +77,7 @@ export default function Contact() {
                 <input
                   type="tel"
                   name="phone"
-                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3]"
+                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#1B2A45] transition-colors placeholder:text-[#C9CDD3]"
                   placeholder="[(000) 000-0000]"
                 />
               </div>
@@ -87,7 +88,7 @@ export default function Contact() {
                 </label>
                 <select
                   name="interest"
-                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors"
+                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#1B2A45] transition-colors"
                 >
                   <option value="">Select one</option>
                   <option value="intro-call">Scheduling an introductory call</option>
@@ -104,14 +105,14 @@ export default function Contact() {
                 <textarea
                   name="message"
                   rows={5}
-                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#4A2A43] transition-colors placeholder:text-[#C9CDD3] resize-y"
+                  className="w-full border border-[rgba(36,28,32,0.2)] bg-white text-[#2B2329] text-base px-4 py-3 rounded focus:outline-none focus:border-[#1B2A45] transition-colors placeholder:text-[#C9CDD3] resize-y"
                   placeholder="Anything you'd like us to know ahead of time…"
                 />
               </div>
 
               <button
                 type="submit"
-                className="self-start bg-[#4A2A43] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#3a1f34] transition-colors duration-200"
+                className="self-start bg-[#1B2A45] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
               >
                 Send message
               </button>
@@ -135,13 +136,13 @@ export default function Contact() {
                 </div>
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
                   <div className="text-[12px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Phone</div>
-                  <a href="tel:+14105550000" className="text-base text-[#2B2329] hover:text-[#4A2A43] transition-colors">
+                  <a href="tel:+14105550000" className="text-base text-[#2B2329] hover:text-[#1B2A45] transition-colors">
                     (410) 555-0000
                   </a>
                 </div>
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
                   <div className="text-[12px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Email</div>
-                  <a href="mailto:hello@bloominghealth.com" className="text-base text-[#2B2329] hover:text-[#4A2A43] transition-colors">
+                  <a href="mailto:hello@bloominghealth.com" className="text-base text-[#2B2329] hover:text-[#1B2A45] transition-colors">
                     hello@bloominghealth.com
                   </a>
                 </div>

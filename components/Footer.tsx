@@ -25,14 +25,14 @@ export default function Footer() {
               Ready to talk?
             </h3>
             <p className="text-[#44597A] text-base">
-              Fifteen minutes, no obligation. We&apos;ll tell you honestly if it&apos;s a fit.
+              Fifteen minutes, no obligation. A candid conversation about whether Blooming Health is the right fit.
             </p>
           </div>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center bg-[#4A2A43] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#3a1f34] transition-colors duration-200 shrink-0"
+            className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200 shrink-0"
           >
-            Schedule a free intro call
+            Schedule a complimentary intro call
           </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-14">
@@ -53,7 +53,7 @@ export default function Footer() {
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className="text-base text-[#2B2329] hover:text-[#4A2A43] transition-colors"
+                    className="text-base text-[#2B2329] hover:text-[#1B2A45] transition-colors"
                   >
                     {l.label}
                   </Link>
@@ -67,12 +67,12 @@ export default function Footer() {
             <ul className="flex flex-col gap-2 text-base text-[#2B2329]">
               <li>1 Reservoir Cir, Suite 201, Pikesville, MD 21208</li>
               <li>
-                <a href="tel:+14105550000" className="hover:text-[#4A2A43] transition-colors">
+                <a href="tel:+14105550000" className="hover:text-[#1B2A45] transition-colors">
                   (410) 555-0000
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@bloominghealth.com" className="hover:text-[#4A2A43] transition-colors">
+                <a href="mailto:hello@bloominghealth.com" className="hover:text-[#1B2A45] transition-colors">
                   hello@bloominghealth.com
                 </a>
               </li>
@@ -85,10 +85,10 @@ export default function Footer() {
             © {new Date().getFullYear()} Blooming Health. All rights reserved.
           </p>
           <div className="flex gap-5">
-            <Link href="/privacy" className="text-[12px] tracking-[0.1em] uppercase text-[#44597A] hover:text-[#4A2A43] transition-colors">
+            <Link href="/privacy" className="text-[12px] tracking-[0.1em] uppercase text-[#44597A] hover:text-[#1B2A45] transition-colors">
               Privacy
             </Link>
-            <Link href="/terms" className="text-[12px] tracking-[0.1em] uppercase text-[#44597A] hover:text-[#4A2A43] transition-colors">
+            <Link href="/terms" className="text-[12px] tracking-[0.1em] uppercase text-[#44597A] hover:text-[#1B2A45] transition-colors">
               Terms
             </Link>
           </div>

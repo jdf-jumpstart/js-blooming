@@ -14,6 +14,14 @@ const TONES: Record<Tone, string> = {
   navy: "#1B2A45",
 };
 
+/** Each tone drifts along its own slow, looping path so instances don't move in lockstep. */
+const DRIFT: Record<Tone, string> = {
+  sage: "motif-drift-a",
+  plum: "motif-drift-b",
+  navy: "motif-drift-c",
+  ivory: "motif-drift-a",
+};
+
 /** Two overlapping circles echoing the logo mark — a corner/watermark accent. */
 export function RingAccent({
   className = "",
@@ -27,7 +35,7 @@ export function RingAccent({
     <svg
       aria-hidden="true"
       viewBox="0 0 220 220"
-      className={className}
+      className={`${DRIFT[tone]} ${className}`}
     >
       <circle cx="82" cy="146" r="64" fill="none" stroke={stroke} strokeWidth="1.5" opacity="0.3" />
       <circle cx="138" cy="86" r="40" fill="none" stroke={stroke} strokeWidth="1.5" opacity="0.5" />
@@ -49,7 +57,7 @@ export function BloomMotif({
     <svg
       aria-hidden="true"
       viewBox="0 0 240 240"
-      className={className}
+      className={`${DRIFT[tone]} ${className}`}
     >
       <g fill="none" stroke={stroke} strokeWidth="1.25" opacity="0.4">
         {petals.map((_, i) => {

@@ -34,3 +34,27 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-fraunces), serif;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes drift-a {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25%      { transform: translate(9px, -16px) rotate(3deg); }
+    50%      { transform: translate(-7px, -24px) rotate(-2deg); }
+    75%      { transform: translate(-15px, -6px) rotate(2deg); }
+  }
+  @keyframes drift-b {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25%      { transform: translate(-13px, 11px) rotate(-3deg); }
+    50%      { transform: translate(-4px, 22px) rotate(2deg); }
+    75%      { transform: translate(13px, 9px) rotate(-2deg); }
+  }
+  @keyframes drift-c {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33%      { transform: translate(15px, 13px) rotate(2deg); }
+    66%      { transform: translate(-11px, -11px) rotate(-3deg); }
+  }
+
+  .motif-drift-a { animation: drift-a 17s ease-in-out infinite; }
+  .motif-drift-b { animation: drift-b 21s ease-in-out infinite; }
+  .motif-drift-c { animation: drift-c 14s ease-in-out infinite; }
+}

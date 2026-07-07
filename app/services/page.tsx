@@ -52,17 +52,18 @@ export default function Services() {
           className="pointer-events-none absolute -right-10 top-2 hidden h-52 w-52 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
-            Primary care and urgent care. Both covered by your membership.
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
+            Primary care and urgent care, with direct access to your provider
           </h1>
           <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl">
-            Same- or next-day scheduling priority for members. [Visit structure and insurance billing details, placeholder]
+            Visits are billed through your insurance. Membership adds same- or next-day scheduling priority and direct access between appointments.
           </p>
         </div>
+        <FlowDivider fill="#889A7C" />
       </section>
 
       {/* Services */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#889A7C] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-10">
 
           {/* Primary care */}
@@ -128,7 +129,7 @@ export default function Services() {
         <div className="max-w-6xl mx-auto px-6 md:px-11 mt-10">
           <Link
             href="/membership"
-            className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#4A2A43] transition-colors duration-200"
+            className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#1B2A45] transition-colors duration-200"
           >
             See membership plans →
           </Link>
@@ -185,7 +186,7 @@ export default function Services() {
           className="pointer-events-none absolute -top-6 right-6 hidden h-40 w-40 md:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#4A2A43] text-4xl md:text-5xl leading-[1.04] tracking-[-0.015em] mb-5">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-4xl md:text-5xl leading-[1.04] tracking-[-0.015em] mb-5">
             Ready to get started?
           </h2>
           <p className="text-[#2B2329] text-base max-w-md mx-auto mb-8">
@@ -193,7 +194,7 @@ export default function Services() {
           </p>
           <Link
             href="/membership"
-            className="inline-flex items-center justify-center bg-[#4A2A43] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#3a1f34] transition-colors duration-200"
+            className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
           >
             See membership plans
           </Link>
