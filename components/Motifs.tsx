@@ -5,13 +5,14 @@
  * client feedback — never as literal clipart or gradient decoration.
  */
 
-type Tone = "plum" | "ivory" | "navy" | "gray";
+type Tone = "plum" | "ivory" | "navy" | "gray" | "sage";
 
 const TONES: Record<Tone, string> = {
   plum: "#4A2A43",
   ivory: "#F6F2E9",
   navy: "#1B2A45",
   gray: "#C9CDD3",
+  sage: "#889A7C",
 };
 
 /** Each tone drifts along its own slow, looping path so instances don't move in lockstep. */
@@ -20,6 +21,7 @@ const DRIFT: Record<Tone, string> = {
   navy: "motif-drift-c",
   ivory: "motif-drift-a",
   gray: "motif-drift-a",
+  sage: "motif-drift-a",
 };
 
 /** Two overlapping circles echoing the logo mark — a corner/watermark accent. */

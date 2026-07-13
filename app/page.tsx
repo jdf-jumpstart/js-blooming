@@ -148,7 +148,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(246,242,233,0.1)]">
             {services.map((s) => (
               <div key={s.title} className="bg-[#1B2A45] p-7 hover:bg-[#243555] transition-colors duration-200">
-                <div className="w-8 h-8 rounded-full bg-[rgba(201,205,211,0.15)] border border-[#C9CDD3] mb-5" />
+                <div className="w-8 h-8 rounded-full bg-[rgba(136,154,124,0.25)] border border-[#889A7C] mb-5" />
                 <h3
                   className={`font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[18px] ${
                     s.body ? "mb-3" : ""

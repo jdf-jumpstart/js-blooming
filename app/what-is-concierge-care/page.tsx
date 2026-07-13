@@ -214,7 +214,7 @@ export default function WhatIsConciergeCare() {
       {/* Who it's for */}
       <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
         <RingAccent
-          tone="plum"
+          tone="sage"
           className="pointer-events-none absolute -right-10 top-10 hidden h-48 w-48 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">

@@ -167,7 +167,7 @@ export default function FAQ() {
       {/* Still have questions */}
       <section className="relative overflow-hidden bg-[#F1EADD] border-t border-[rgba(36,28,32,0.14)] py-20">
         <RingAccent
-          tone="plum"
+          tone="sage"
           className="pointer-events-none absolute -left-10 -bottom-10 hidden h-48 w-48 md:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
