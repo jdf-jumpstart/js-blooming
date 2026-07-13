@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BloomMotif, FlowDivider, RingAccent } from "@/components/Motifs";
+import { FlowDivider, RingAccent } from "@/components/Motifs";
 
 export const metadata: Metadata = {
   title: "About",
@@ -39,10 +39,6 @@ export default function About() {
     <>
       {/* Header */}
       <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
-        <BloomMotif
-          tone="plum"
-          className="pointer-events-none absolute -right-10 top-2 hidden h-52 w-52 lg:block"
-        />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Primary care as a relationship, not a transaction
@@ -51,23 +47,23 @@ export default function About() {
             We built Blooming Health around one idea: that a meaningful relationship between patient and provider changes everything.
           </p>
         </div>
-        <FlowDivider fill="#889A7C" />
+        <FlowDivider fill="#4A2A43" />
       </section>
 
       {/* Mission */}
-      <section className="relative overflow-hidden bg-[#889A7C] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#4A2A43] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14">
           <div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
               Collaborating your health
             </h2>
-            <p className="text-[#2B2329] text-base leading-relaxed mb-5">
+            <p className="text-[#C9CDD3] text-base leading-relaxed mb-5">
               Most primary care visits run about ten minutes. That's not enough time to understand a person, let alone their full health picture. Blooming Health was built to fix that.
             </p>
-            <p className="text-[#2B2329] text-base leading-relaxed mb-5">
+            <p className="text-[#C9CDD3] text-base leading-relaxed mb-5">
               We see fewer patients, spend more time with each one, and actually listen. When something needs attention, we look at all the options (natural and lifestyle-based approaches, not just a prescription) and figure out together what makes the most sense for you.
             </p>
-            <p className="text-[#2B2329] text-base leading-relaxed">
+            <p className="text-[#C9CDD3] text-base leading-relaxed">
               The result is primary care that feels less like a system and more like a relationship. That's the whole point.
             </p>
           </div>
@@ -82,7 +78,7 @@ export default function About() {
                 "Decisions made with you, not for you",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-base text-[#2B2329] pb-4 border-b border-[rgba(36,28,32,0.1)] last:border-0 last:pb-0">
-                  <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-[#889A7C] shrink-0" />
+                  <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-[#44597A] shrink-0" />
                   {item}
                 </li>
               ))}
@@ -94,16 +90,12 @@ export default function About() {
 
       {/* Meet Avi */}
       <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
-        <BloomMotif
-          tone="sage"
-          className="pointer-events-none absolute -left-14 -bottom-14 hidden h-64 w-64 lg:block"
-        />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-2">
               Avi Blumenthal, NP
             </h2>
-            <p className="text-[#889A7C] text-[13px] tracking-[0.1em] uppercase mb-7">
+            <p className="text-[#C9CDD3] text-[13px] tracking-[0.1em] uppercase mb-7">
               Founder & NP
             </p>
             <p className="text-[#C9CDD3] text-base leading-relaxed mb-4">
@@ -117,15 +109,15 @@ export default function About() {
             </p>
             <Link
               href="/membership"
-              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#889A7C] hover:text-[#F6F2E9] transition-colors duration-200"
+              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#C9CDD3] hover:text-[#F6F2E9] transition-colors duration-200"
             >
               See how membership works →
             </Link>
           </div>
           <div className="bg-[rgba(246,242,233,0.06)] border border-[rgba(246,242,233,0.12)] rounded-md aspect-[4/5] flex items-center justify-center">
             <div className="text-center p-8">
-              <div className="w-24 h-24 rounded-full bg-[rgba(136,154,124,0.2)] border border-[#889A7C] mx-auto mb-5 flex items-center justify-center">
-                <span className="font-[family-name:var(--font-fraunces)] text-[#889A7C] text-3xl">A</span>
+              <div className="w-24 h-24 rounded-full bg-[rgba(201,205,211,0.15)] border border-[#C9CDD3] mx-auto mb-5 flex items-center justify-center">
+                <span className="font-[family-name:var(--font-fraunces)] text-[#C9CDD3] text-3xl">A</span>
               </div>
               <div className="text-[12px] tracking-[0.24em] uppercase text-[#C9CDD3]">
                 Photo coming soon
@@ -139,7 +131,7 @@ export default function About() {
       {/* Values */}
       <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
         <RingAccent
-          tone="sage"
+          tone="ivory"
           className="pointer-events-none absolute -right-10 top-10 hidden h-48 w-48 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">

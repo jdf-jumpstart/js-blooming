@@ -5,27 +5,27 @@
  * client feedback — never as literal clipart or gradient decoration.
  */
 
-type Tone = "sage" | "plum" | "ivory" | "navy";
+type Tone = "plum" | "ivory" | "navy" | "gray";
 
 const TONES: Record<Tone, string> = {
-  sage: "#889A7C",
   plum: "#4A2A43",
   ivory: "#F6F2E9",
   navy: "#1B2A45",
+  gray: "#C9CDD3",
 };
 
 /** Each tone drifts along its own slow, looping path so instances don't move in lockstep. */
 const DRIFT: Record<Tone, string> = {
-  sage: "motif-drift-a",
   plum: "motif-drift-b",
   navy: "motif-drift-c",
   ivory: "motif-drift-a",
+  gray: "motif-drift-a",
 };
 
 /** Two overlapping circles echoing the logo mark — a corner/watermark accent. */
 export function RingAccent({
   className = "",
-  tone = "sage",
+  tone = "plum",
 }: {
   className?: string;
   tone?: Tone;
@@ -39,35 +39,6 @@ export function RingAccent({
     >
       <circle cx="82" cy="146" r="64" fill="none" stroke={stroke} strokeWidth="1.5" opacity="0.3" />
       <circle cx="138" cy="86" r="40" fill="none" stroke={stroke} strokeWidth="1.5" opacity="0.5" />
-    </svg>
-  );
-}
-
-/** A flower-of-life style bloom built from overlapping ring circles — the "blooming" motif. */
-export function BloomMotif({
-  className = "",
-  tone = "sage",
-}: {
-  className?: string;
-  tone?: Tone;
-}) {
-  const stroke = TONES[tone];
-  const petals = Array.from({ length: 6 });
-  return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 240 240"
-      className={`${DRIFT[tone]} ${className}`}
-    >
-      <g fill="none" stroke={stroke} strokeWidth="1.25" opacity="0.4">
-        {petals.map((_, i) => {
-          const angle = (i * 60 * Math.PI) / 180;
-          const cx = 120 + Math.cos(angle) * 44;
-          const cy = 120 + Math.sin(angle) * 44;
-          return <circle key={i} cx={cx} cy={cy} r="40" />;
-        })}
-        <circle cx="120" cy="120" r="19" />
-      </g>
     </svg>
   );
 }

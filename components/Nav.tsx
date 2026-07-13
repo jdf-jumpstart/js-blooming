@@ -250,7 +250,7 @@ export default function Nav() {
               <Link
                 href="/contact"
                 onClick={() => setBookingNoticeOpen(false)}
-                className="underline underline-offset-2 hover:text-[#889A7C] transition-colors duration-200"
+                className="underline underline-offset-2 hover:text-[#C9CDD3] transition-colors duration-200"
               >
                 schedule a free intro call
               </Link>

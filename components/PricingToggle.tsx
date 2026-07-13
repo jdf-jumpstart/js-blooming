@@ -72,7 +72,7 @@ export default function PricingToggle() {
               }`}
             >
               {plan.highlight && (
-                <div className="text-[12px] tracking-[0.28em] uppercase text-[#889A7C] font-[500] mb-3">
+                <div className="text-[12px] tracking-[0.28em] uppercase text-[#C9CDD3] font-[500] mb-3">
                   Best value
                 </div>
               )}

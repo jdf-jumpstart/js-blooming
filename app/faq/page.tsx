@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BloomMotif, FlowDivider, RingAccent } from "@/components/Motifs";
+import { FlowDivider, RingAccent } from "@/components/Motifs";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -111,51 +111,47 @@ export default function FAQ() {
     <>
       {/* Header */}
       <section className="relative overflow-hidden bg-[#1B2A45] py-20 md:py-28">
-        <BloomMotif
-          tone="sage"
-          className="pointer-events-none absolute -right-8 top-4 hidden h-52 w-52 lg:block"
-        />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] max-w-3xl">
             Frequently Asked Questions (FAQ&apos;s)
           </h1>
         </div>
-        <FlowDivider fill="#889A7C" />
+        <FlowDivider fill="#4A2A43" />
       </section>
 
       {/* FAQ sections */}
-      <section className="relative overflow-hidden bg-[#889A7C] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#4A2A43] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="flex flex-col gap-16">
             {sections.map((section, i) => (
               <div key={section.title}>
-                <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-2xl mb-8 pb-4">
+                <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-2xl mb-8 pb-4">
                   {section.title}
                 </h2>
                 <div className="flex flex-col gap-6">
                   {section.faqs.map((faq) => (
                     <div
                       key={faq.q}
-                      className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-10 pb-6 border-b border-[rgba(36,28,32,0.1)]"
+                      className="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-4 md:gap-10 pb-6 border-b border-[rgba(246,242,233,0.14)]"
                     >
-                      <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[16px] leading-[1.3]">
+                      <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[16px] leading-[1.3]">
                         {faq.q}
                       </h3>
-                      <p className="text-base text-[#2B2329] leading-relaxed">{faq.a}</p>
+                      <p className="text-base text-[#C9CDD3] leading-relaxed">{faq.a}</p>
                     </div>
                   ))}
                 </div>
                 {i === 1 && (
-                  <div className="mt-8 border-l-2 border-[#1B2A45] pl-6 py-1">
-                    <p className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[17px] mb-2">
+                  <div className="mt-8 border-l-2 border-[#C9CDD3] pl-6 py-1">
+                    <p className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[17px] mb-2">
                       Not sure what it&apos;ll cost you?
                     </p>
-                    <p className="text-base text-[#2B2329] leading-relaxed mb-3">
+                    <p className="text-base text-[#C9CDD3] leading-relaxed mb-3">
                       Everyone&apos;s coverage is different. Tell us yours and we&apos;ll walk you through the numbers.
                     </p>
                     <Link
                       href="/contact"
-                      className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#1B2A45] hover:text-[#162237] transition-colors duration-200"
+                      className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#C9CDD3] hover:text-[#F6F2E9] transition-colors duration-200"
                     >
                       Contact us →
                     </Link>

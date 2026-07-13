@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BloomMotif, FlowDivider, RingAccent } from "@/components/Motifs";
+import { FlowDivider, RingAccent } from "@/components/Motifs";
 
 export const metadata: Metadata = {
   title: "What Is Concierge Care?",
@@ -56,10 +56,6 @@ export default function WhatIsConciergeCare() {
     <>
       {/* Header */}
       <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
-        <BloomMotif
-          tone="plum"
-          className="pointer-events-none absolute -right-10 top-2 hidden h-52 w-52 lg:block"
-        />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-4xl sm:text-5xl md:text-7xl leading-[1.0] tracking-[-0.015em] mb-8 max-w-4xl">
             What is concierge care?
@@ -68,23 +64,23 @@ export default function WhatIsConciergeCare() {
             Concierge care is a membership model for primary care. You pay a flat monthly fee. In return, you get a real relationship with a provider who has time for you, and direct access when something comes up.
           </p>
         </div>
-        <FlowDivider fill="#889A7C" />
+        <FlowDivider fill="#4A2A43" />
       </section>
 
       {/* The simple version */}
-      <section className="relative overflow-hidden bg-[#889A7C] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#4A2A43] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-6">
               Primary care built around access, not volume
             </h2>
-            <p className="text-[#2B2329] text-base leading-relaxed mb-4">
+            <p className="text-[#C9CDD3] text-base leading-relaxed mb-4">
               In the traditional model, your provider is paid per visit — by your insurance company. That creates pressure to see as many patients as possible. The result: shorter appointments, longer wait times, and a provider who barely knows your name.
             </p>
-            <p className="text-[#2B2329] text-base leading-relaxed mb-4">
+            <p className="text-[#C9CDD3] text-base leading-relaxed mb-4">
               Concierge care flips the incentive. Your provider charges a flat membership fee on top of billing insurance, and deliberately keeps the patient panel small. That extra time translates into longer appointments, same-day access, and a real relationship built over years.
             </p>
-            <p className="text-[#2B2329] text-base leading-relaxed">
+            <p className="text-[#C9CDD3] text-base leading-relaxed">
               Your insurance still covers the cost of visits. Membership is what gets you the access: reaching your provider directly by text or phone between appointments, without going through a call center.
             </p>
           </div>
@@ -95,7 +91,7 @@ export default function WhatIsConciergeCare() {
               { step: "3", heading: "Reach them when you need it", body: "Direct line to your provider by text or phone. No portal, no phone tree, no waiting three days for a callback." },
             ].map((s) => (
               <div key={s.step} className="flex gap-5">
-                <div className="font-[family-name:var(--font-fraunces)] text-[#889A7C] text-2xl leading-none shrink-0 mt-0.5">
+                <div className="font-[family-name:var(--font-fraunces)] text-[#C9CDD3] text-2xl leading-none shrink-0 mt-0.5">
                   {s.step}
                 </div>
                 <div>
@@ -131,7 +127,7 @@ export default function WhatIsConciergeCare() {
                     : "bg-[#F6F2E9] border-[rgba(36,28,32,0.14)]"
                 }`}
               >
-                <div className={`text-[12px] tracking-[0.28em] uppercase font-[500] mb-6 ${col.dark ? "text-[#889A7C]" : "text-[#44597A]"}`}>
+                <div className={`text-[12px] tracking-[0.28em] uppercase font-[500] mb-6 ${col.dark ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
                   {col.label}
                 </div>
                 <ul className="flex flex-col gap-4">
@@ -144,7 +140,7 @@ export default function WhatIsConciergeCare() {
                           : "text-[#2B2329] border-[rgba(36,28,32,0.08)]"
                       }`}
                     >
-                      <span className={`mt-[7px] w-1.5 h-1.5 rounded-full shrink-0 ${col.dark ? "bg-[#889A7C]" : "border border-[rgba(36,28,32,0.3)]"}`} />
+                      <span className={`mt-[7px] w-1.5 h-1.5 rounded-full shrink-0 ${col.dark ? "bg-[#C9CDD3]" : "border border-[rgba(36,28,32,0.3)]"}`} />
                       {item}
                     </li>
                   ))}
@@ -172,7 +168,7 @@ export default function WhatIsConciergeCare() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {myths.map((m) => (
-              <div key={m.myth} className="border-l-2 border-[#889A7C] pl-6">
+              <div key={m.myth} className="border-l-2 border-[#4A2A43] pl-6">
                 <p className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[17px] mb-3 line-through decoration-[#C9CDD3]">
                   {m.myth}
                 </p>
@@ -186,10 +182,6 @@ export default function WhatIsConciergeCare() {
 
       {/* What concierge care doesn't cover */}
       <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
-        <BloomMotif
-          tone="sage"
-          className="pointer-events-none absolute -left-14 -bottom-14 hidden h-64 w-64 lg:block"
-        />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
@@ -209,8 +201,8 @@ export default function WhatIsConciergeCare() {
               { covered: true, label: "After-hours availability and priority scheduling" },
               { covered: true, label: "A small patient panel and real appointment time" },
             ].map((item) => (
-              <li key={item.label} className={`flex items-start gap-3 text-base pb-4 border-b border-[rgba(246,242,233,0.08)] last:border-0 last:pb-0 ${item.covered ? "text-[#C9CDD3]" : "text-[#889A7C]"}`}>
-                <span className={`mt-[7px] w-1.5 h-1.5 rounded-full shrink-0 ${item.covered ? "bg-[#889A7C]" : "border border-[#44597A]"}`} />
+              <li key={item.label} className={`flex items-start gap-3 text-base pb-4 border-b border-[rgba(246,242,233,0.08)] last:border-0 last:pb-0 ${item.covered ? "text-[#C9CDD3]" : "text-[rgba(201,205,211,0.5)]"}`}>
+                <span className={`mt-[7px] w-1.5 h-1.5 rounded-full shrink-0 ${item.covered ? "bg-[#C9CDD3]" : "border border-[#44597A]"}`} />
                 {item.label}
               </li>
             ))}
@@ -252,10 +244,6 @@ export default function WhatIsConciergeCare() {
 
       {/* CTA */}
       <section className="relative overflow-hidden bg-[#4A2A43] py-20 md:py-28">
-        <BloomMotif
-          tone="ivory"
-          className="pointer-events-none absolute -top-6 right-6 hidden h-40 w-40 md:block"
-        />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] text-4xl md:text-5xl lg:text-6xl leading-[1.04] tracking-[-0.015em] mb-8 max-w-3xl mx-auto">
             This is the model we practice.

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BloomMotif, FlowDivider, RingAccent } from "@/components/Motifs";
+import { FlowDivider, RingAccent } from "@/components/Motifs";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -47,10 +47,6 @@ export default function Services() {
     <>
       {/* Header */}
       <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
-        <BloomMotif
-          tone="plum"
-          className="pointer-events-none absolute -right-10 top-2 hidden h-52 w-52 lg:block"
-        />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Primary care and urgent care, with direct access to your provider
@@ -59,11 +55,11 @@ export default function Services() {
             Visits are billed through your insurance. Membership adds same- or next-day scheduling priority and direct access between appointments.
           </p>
         </div>
-        <FlowDivider fill="#889A7C" />
+        <FlowDivider fill="#4A2A43" />
       </section>
 
       {/* Services */}
-      <section className="relative overflow-hidden bg-[#889A7C] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#4A2A43] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-10">
 
           {/* Primary care */}
@@ -78,7 +74,7 @@ export default function Services() {
             <ul className="flex flex-col gap-2.5">
               {primaryCare.map((s) => (
                 <li key={s} className="flex items-start gap-3 text-base text-[#2B2329]">
-                  <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-[#889A7C] shrink-0" />
+                  <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-[#44597A] shrink-0" />
                   {s}
                 </li>
               ))}
@@ -98,7 +94,7 @@ export default function Services() {
               <ul className="flex flex-col gap-2.5">
                 {urgentCare.map((s) => (
                   <li key={s} className="flex items-start gap-3 text-base text-[#2B2329]">
-                    <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-[#889A7C] shrink-0" />
+                    <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-[#44597A] shrink-0" />
                     {s}
                   </li>
                 ))}
@@ -117,7 +113,7 @@ export default function Services() {
               <ul className="flex flex-col gap-2.5">
                 {comingSoon.map((s) => (
                   <li key={s} className="flex items-start gap-3 text-base text-[#44597A]">
-                    <span className="mt-[5px] w-1.5 h-1.5 rounded-full border border-[#889A7C] shrink-0" />
+                    <span className="mt-[5px] w-1.5 h-1.5 rounded-full border border-[#44597A] shrink-0" />
                     {s}
                   </li>
                 ))}
@@ -129,7 +125,7 @@ export default function Services() {
         <div className="max-w-6xl mx-auto px-6 md:px-11 mt-10">
           <Link
             href="/membership"
-            className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#1B2A45] transition-colors duration-200"
+            className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#C9CDD3] hover:text-[#F6F2E9] transition-colors duration-200"
           >
             See membership plans →
           </Link>
@@ -139,10 +135,6 @@ export default function Services() {
 
       {/* What we don't cover */}
       <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
-        <BloomMotif
-          tone="sage"
-          className="pointer-events-none absolute -left-14 -bottom-14 hidden h-64 w-64 lg:block"
-        />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
@@ -153,7 +145,7 @@ export default function Services() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#889A7C] hover:text-[#F6F2E9] transition-colors duration-200"
+              className="inline-flex items-center text-[12px] tracking-[0.18em] uppercase font-[500] text-[#C9CDD3] hover:text-[#F6F2E9] transition-colors duration-200"
             >
               Talk to us about your case →
             </Link>
