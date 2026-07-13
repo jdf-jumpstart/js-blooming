@@ -35,7 +35,7 @@ export default function PricingToggle() {
           <button
             key={option}
             onClick={() => setBilling(option)}
-            className={`px-6 py-3 text-[12px] tracking-[0.18em] uppercase font-[500] transition-colors duration-200 rounded-sm ${
+            className={`px-6 py-3 text-[16px] tracking-[0.18em] uppercase font-[500] transition-colors duration-200 rounded-sm ${
               billing === option
                 ? "bg-[#1B2A45] text-[#F6F2E9]"
                 : "text-[#44597A] hover:text-[#2B2329]"
@@ -64,27 +64,27 @@ export default function PricingToggle() {
               key={plan.name}
               className="rounded-md border bg-[#F6F2E9] border-[rgba(36,28,32,0.14)] text-[#2B2329] p-7 flex flex-col"
             >
-              <div className="text-[12px] tracking-[0.24em] uppercase font-[500] mb-4 text-[#44597A]">
+              <div className="text-[16px] tracking-[0.24em] uppercase font-[500] mb-4 text-[#44597A]">
                 {plan.name}
               </div>
               <div className="flex items-baseline gap-1 mb-2">
-                <span className="font-[family-name:var(--font-fraunces)] text-5xl leading-none">
+                <span className="font-[family-name:var(--font-fraunces)] text-[64px] leading-none">
                   {price}
                 </span>
-                <span className="text-base font-[500] text-[#44597A]">
+                <span className="text-[21px] font-[500] text-[#44597A]">
                   {unit}
                 </span>
               </div>
-              <div className="text-[12px] mb-5 text-[#44597A]">
+              <div className="text-[16px] mb-5 text-[#44597A]">
                 {sub}
               </div>
-              <p className="text-base leading-relaxed flex-1 text-[#2B2329]">
+              <p className="text-[21px] leading-relaxed flex-1 text-[#2B2329]">
                 {plan.description}
               </p>
               <div className="mt-7">
                 <Link
                   href="/contact"
-                  className="text-[12px] tracking-[0.18em] uppercase font-[500] border px-5 py-3 inline-block transition-colors duration-200 border-[#1B2A45] text-[#1B2A45] hover:bg-[#1B2A45] hover:text-[#F6F2E9]"
+                  className="text-[16px] tracking-[0.18em] uppercase font-[500] border px-5 py-3 inline-block transition-colors duration-200 border-[#1B2A45] text-[#1B2A45] hover:bg-[#1B2A45] hover:text-[#F6F2E9]"
                 >
                   Get started
                 </Link>

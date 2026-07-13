@@ -53,14 +53,14 @@ export default function Nav() {
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden xl:flex items-center gap-6">
+        <div className="hidden xl:flex items-center gap-4">
           {links.map((l) => {
             if (l.children) {
               const isActive = l.children.some((c) => pathname === c.href);
               return (
                 <div key={l.label} className="relative group">
                   <button
-                    className={`text-[12px] tracking-[0.14em] uppercase font-[family-name:var(--font-jost)] font-[500] transition-colors duration-200 flex items-center gap-1 ${
+                    className={`text-[16px] tracking-[0.14em] uppercase font-[family-name:var(--font-jost)] font-[500] transition-colors duration-200 flex items-center gap-1 ${
                       isActive ? "text-[#1B2A45]" : "text-[#44597A] hover:text-[#1B2A45]"
                     }`}
                   >
@@ -87,7 +87,7 @@ export default function Nav() {
                         <Link
                           key={c.href}
                           href={c.href}
-                          className={`block px-4 py-2.5 text-[12px] tracking-[0.14em] uppercase font-[500] transition-colors duration-150 ${
+                          className={`block px-4 py-2.5 text-[16px] tracking-[0.14em] uppercase font-[500] transition-colors duration-150 ${
                             pathname === c.href
                               ? "text-[#1B2A45]"
                               : "text-[#44597A] hover:text-[#1B2A45]"
@@ -106,7 +106,7 @@ export default function Nav() {
               <Link
                 key={l.href}
                 href={l.href}
-                className={`text-[12px] tracking-[0.14em] uppercase font-[family-name:var(--font-jost)] font-[500] transition-colors duration-200 ${
+                className={`text-[16px] tracking-[0.14em] uppercase font-[family-name:var(--font-jost)] font-[500] transition-colors duration-200 ${
                   pathname === l.href ? "text-[#1B2A45]" : "text-[#44597A] hover:text-[#1B2A45]"
                 }`}
               >
@@ -116,13 +116,13 @@ export default function Nav() {
           })}
           <button
             onClick={handleBookClick}
-            className="whitespace-nowrap shrink-0 text-[12px] tracking-[0.14em] uppercase font-[500] border border-[#1B2A45] text-[#1B2A45] px-5 py-2.5 rounded hover:bg-[#1B2A45] hover:text-[#F6F2E9] transition-colors duration-200"
+            className="whitespace-nowrap shrink-0 text-[16px] tracking-[0.1em] uppercase font-[500] border border-[#1B2A45] text-[#1B2A45] px-4 py-2.5 rounded hover:bg-[#1B2A45] hover:text-[#F6F2E9] transition-colors duration-200"
           >
-            Book an Appointment
+            Book Now
           </button>
           <Link
             href="/membership"
-            className="whitespace-nowrap shrink-0 text-[12px] tracking-[0.14em] uppercase font-[500] bg-[#1B2A45] text-[#F6F2E9] px-5 py-2.5 rounded hover:bg-[#162237] transition-colors duration-200"
+            className="whitespace-nowrap shrink-0 text-[16px] tracking-[0.1em] uppercase font-[500] bg-[#1B2A45] text-[#F6F2E9] px-4 py-2.5 rounded hover:bg-[#162237] transition-colors duration-200"
           >
             Become a Member
           </Link>
@@ -163,7 +163,7 @@ export default function Nav() {
                 <div key={l.label}>
                   <button
                     onClick={() => setAboutOpen(!aboutOpen)}
-                    className={`w-full py-3 text-[12px] tracking-[0.14em] uppercase font-[500] transition-colors flex items-center gap-1 ${
+                    className={`w-full py-3 text-[16px] tracking-[0.14em] uppercase font-[500] transition-colors flex items-center gap-1 ${
                       l.children.some((c) => pathname === c.href)
                         ? "text-[#1B2A45]"
                         : "text-[#44597A]"
@@ -196,7 +196,7 @@ export default function Nav() {
                             setOpen(false);
                             setAboutOpen(false);
                           }}
-                          className={`py-2.5 text-[12px] tracking-[0.14em] uppercase font-[500] transition-colors ${
+                          className={`py-2.5 text-[16px] tracking-[0.14em] uppercase font-[500] transition-colors ${
                             pathname === c.href ? "text-[#1B2A45]" : "text-[#44597A]"
                           }`}
                         >
@@ -214,7 +214,7 @@ export default function Nav() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className={`py-3 text-[12px] tracking-[0.14em] uppercase font-[500] transition-colors ${
+                className={`py-3 text-[16px] tracking-[0.14em] uppercase font-[500] transition-colors ${
                   pathname === l.href ? "text-[#1B2A45]" : "text-[#44597A]"
                 }`}
               >
@@ -227,14 +227,14 @@ export default function Nav() {
               handleBookClick();
               setOpen(false);
             }}
-            className="mt-3 text-[12px] tracking-[0.14em] uppercase font-[500] border border-[#1B2A45] text-[#1B2A45] px-5 py-3.5 rounded text-center"
+            className="mt-3 text-[16px] tracking-[0.14em] uppercase font-[500] border border-[#1B2A45] text-[#1B2A45] px-5 py-3.5 rounded text-center"
           >
-            Book an Appointment
+            Book Now
           </button>
           <Link
             href="/membership"
             onClick={() => setOpen(false)}
-            className="mt-2 text-[12px] tracking-[0.14em] uppercase font-[500] bg-[#1B2A45] text-[#F6F2E9] px-5 py-3.5 rounded text-center"
+            className="mt-2 text-[16px] tracking-[0.14em] uppercase font-[500] bg-[#1B2A45] text-[#F6F2E9] px-5 py-3.5 rounded text-center"
           >
             Become a Member
           </Link>
@@ -245,7 +245,7 @@ export default function Nav() {
       {bookingNoticeOpen && (
         <div className="fixed inset-x-0 bottom-6 z-50 flex justify-center px-6 pointer-events-none">
           <div className="pointer-events-auto max-w-sm w-full bg-[#1B2A45] text-[#F6F2E9] rounded-md shadow-lg px-5 py-4 flex items-start gap-4">
-            <p className="text-[14px] leading-relaxed flex-1">
+            <p className="text-[19px] leading-relaxed flex-1">
               Online booking is on the way. For now,{" "}
               <Link
                 href="/contact"

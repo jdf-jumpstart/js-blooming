@@ -52,22 +52,22 @@ export default function Membership() {
       {/* Header */}
       <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-4xl sm:text-5xl md:text-6xl leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[48px] sm:text-[64px] md:text-[80px] leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             A flat monthly rate. Real access to a provider who knows you
           </h1>
-          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-xl md:text-2xl leading-[1.45] max-w-2xl mb-8">
+          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-[27px] md:text-[32px] leading-[1.45] max-w-2xl mb-8">
             No billing surprises. No waiting three weeks to be seen.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="#pricing"
-              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
+              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
             >
               See pricing
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center border border-[rgba(36,28,32,0.2)] text-[#2B2329] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#1B2A45] hover:text-[#1B2A45] transition-colors duration-200"
+              className="inline-flex items-center justify-center border border-[rgba(36,28,32,0.2)] text-[#2B2329] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#1B2A45] hover:text-[#1B2A45] transition-colors duration-200"
             >
               Talk to us first
             </Link>
@@ -80,19 +80,19 @@ export default function Membership() {
       <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-5">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-5">
               Everything in one number
             </h2>
-            <p className="text-[#C9CDD3] text-base leading-relaxed mb-8">
+            <p className="text-[#C9CDD3] text-[21px] leading-relaxed mb-8">
               Your insurance continues to cover the cost of visits, labs, and referrals. Membership adds direct access to Avi: call or text when something comes up, with after-hours availability and priority for same- and next-day appointments.
             </p>
-            <Link href="/services" className="text-[12px] tracking-[0.18em] uppercase font-[500] text-[#C9CDD3] hover:text-[#F6F2E9] transition-colors">
+            <Link href="/services" className="text-[16px] tracking-[0.18em] uppercase font-[500] text-[#C9CDD3] hover:text-[#F6F2E9] transition-colors">
               See what we treat →
             </Link>
           </div>
           <ul className="flex flex-col">
             {included.map((item) => (
-              <li key={item} className="flex items-start gap-3 py-4 border-b border-[rgba(246,242,233,0.1)] text-base text-[#C9CDD3]">
+              <li key={item} className="flex items-start gap-3 py-4 border-b border-[rgba(246,242,233,0.1)] text-[21px] text-[#C9CDD3]">
                 <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-[#C9CDD3] shrink-0" />
                 {item}
               </li>
@@ -109,10 +109,10 @@ export default function Membership() {
           className="pointer-events-none absolute -left-12 -top-8 hidden h-52 w-52 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-3">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-3">
             Straightforward pricing
           </h2>
-          <p className="text-[#44597A] text-base mb-12 max-w-xl">
+          <p className="text-[#44597A] text-[21px] mb-12 max-w-xl">
             No per-visit fees, no surprise charges.
           </p>
           <PricingToggle />
@@ -123,21 +123,21 @@ export default function Membership() {
       {/* FAQ */}
       <section className="relative overflow-hidden bg-[#4A2A43] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-3xl md:text-4xl leading-[1.04] tracking-[-0.01em] mb-12">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-12">
             Common questions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {faqs.map((faq) => (
               <div key={faq.q} className="border-l-2 border-[#C9CDD3] pl-5">
-                <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[17px] mb-3">
+                <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[23px] mb-3">
                   {faq.q}
                 </h3>
-                <p className="text-base text-[#C9CDD3] leading-relaxed">{faq.a}</p>
+                <p className="text-[21px] text-[#C9CDD3] leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
           <div className="mt-12">
-            <Link href="/faq" className="text-[12px] tracking-[0.18em] uppercase font-[500] text-[#C9CDD3] hover:text-[#F6F2E9] transition-colors">
+            <Link href="/faq" className="text-[16px] tracking-[0.18em] uppercase font-[500] text-[#C9CDD3] hover:text-[#F6F2E9] transition-colors">
               Full FAQ →
             </Link>
           </div>
@@ -148,15 +148,15 @@ export default function Membership() {
       {/* CTA */}
       <section className="relative overflow-hidden bg-[#1B2A45] py-20">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] text-4xl md:text-5xl leading-[1.04] tracking-[-0.015em] mb-5 max-w-xl mx-auto">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] text-[48px] md:text-[64px] leading-[1.04] tracking-[-0.015em] mb-5 max-w-xl mx-auto">
             Start with a conversation.
           </h2>
-          <p className="text-[#C9CDD3] text-base max-w-md mx-auto mb-8">
+          <p className="text-[#C9CDD3] text-[21px] max-w-md mx-auto mb-8">
             Reach out and we will find a time to talk through whether Blooming Health is the right fit for you and your family.
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center border border-[#F6F2E9] text-[#F6F2E9] text-[12px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#F6F2E9] hover:text-[#1B2A45] transition-colors duration-200"
+            className="inline-flex items-center justify-center border border-[#F6F2E9] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#F6F2E9] hover:text-[#1B2A45] transition-colors duration-200"
           >
             Get in touch
           </Link>
