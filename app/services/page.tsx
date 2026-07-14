@@ -55,11 +55,11 @@ export default function Services() {
             Visits are billed through your insurance. Membership adds same- or next-day scheduling priority and direct access between appointments.
           </p>
         </div>
-        <FlowDivider fill="#4A2A43" />
+        <FlowDivider fill="#E7ECF5" />
       </section>
 
       {/* Services */}
-      <section className="relative overflow-hidden bg-[#4A2A43] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-10">
 
           {/* Primary care */}
@@ -125,27 +125,27 @@ export default function Services() {
         <div className="max-w-6xl mx-auto px-6 md:px-11 mt-10">
           <Link
             href="/membership"
-            className="inline-flex items-center text-[16px] tracking-[0.18em] uppercase font-[500] text-[#C9CDD3] hover:text-[#F6F2E9] transition-colors duration-200"
+            className="inline-flex items-center text-[16px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#1B2A45] transition-colors duration-200"
           >
             See membership plans →
           </Link>
         </div>
-        <FlowDivider fill="#1B2A45" />
+        <FlowDivider fill="#F3EAF1" />
       </section>
 
       {/* What we don't cover */}
-      <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#F3EAF1] py-16 md:py-24">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-5">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-5">
               What falls outside our scope.
             </h2>
-            <p className="text-[#C9CDD3] text-[21px] leading-relaxed mb-6">
+            <p className="text-[#2B2329] text-[21px] leading-relaxed mb-6">
               Blooming Health handles primary and urgent care, and visits are billed through your insurance like they would be anywhere else. Some things fall outside what we do entirely. For those, we will refer you to the right specialist and help coordinate care.
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center text-[16px] tracking-[0.18em] uppercase font-[500] text-[#C9CDD3] hover:text-[#F6F2E9] transition-colors duration-200"
+              className="inline-flex items-center text-[16px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#4A2A43] transition-colors duration-200"
             >
               Talk to us about your case →
             </Link>
@@ -161,7 +161,7 @@ export default function Services() {
               "Cosmetic procedures",
               "Mental health therapy beyond counseling (we refer to a specialist)",
             ].map((item) => (
-              <li key={item} className="flex items-start gap-3 text-[21px] text-[#C9CDD3] border-b border-[rgba(246,242,233,0.1)] pb-4">
+              <li key={item} className="flex items-start gap-3 text-[21px] text-[#2B2329] border-b border-[rgba(36,28,32,0.1)] pb-4">
                 <span className="mt-[5px] w-1.5 h-1.5 rounded-full border border-[#44597A] shrink-0" />
                 {item}
               </li>

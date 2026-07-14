@@ -41,7 +41,7 @@ const services: { title: string; body?: string; italic?: boolean }[] = [
 
 const steps = [
   { number: "1", title: "Choose your membership", body: "Pick the plan that fits your household." },
-  { number: "2", title: "Meet your provider", body: "An unhurried first visit to understand your complete health picture." },
+  { number: "2", title: "Meet your provider, Avi", body: "An unhurried first visit to understand your complete health picture." },
   { number: "3", title: "Access care when you need it", body: "Same-day visits, direct messaging, and continuity with a provider who knows your history." },
 ];
 
@@ -49,36 +49,36 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[#1B2A45] py-28 md:py-40">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#D8E1EF] via-[#E7ECF5] to-[#F6F2E9] py-28 md:py-40">
         <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-16">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] leading-[1.0] tracking-[-0.015em] text-[48px] sm:text-[64px] md:text-[80px] lg:text-[96px] mb-5 md:mb-8 max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] leading-[1.0] tracking-[-0.015em] text-[48px] sm:text-[64px] md:text-[80px] lg:text-[96px] mb-5 md:mb-8 max-w-3xl">
             Primary care with the time to get to know you
           </h1>
-          <p className="text-[#C9CDD3] text-[21px] md:text-[24px] leading-relaxed mb-6 md:mb-10 max-w-2xl">
+          <p className="text-[#44597A] text-[21px] md:text-[24px] leading-relaxed mb-6 md:mb-10 max-w-2xl">
             Blooming Health is a membership-based concierge care practice in Baltimore. Fewer patients, longer visits, natural options alongside conventional medicine, with a provider who&apos;s available when you need them, not just when the schedule allows.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/membership"
-              className="inline-flex items-center justify-center bg-[#F6F2E9] text-[#1B2A45] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#F1EADD] transition-colors duration-200"
+              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
             >
               See how membership works
             </Link>
             <Link
               href="/about"
-              className="inline-flex items-center justify-center border border-[rgba(246,242,233,0.4)] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#F6F2E9] transition-colors duration-200"
+              className="inline-flex items-center justify-center border border-[rgba(36,28,32,0.2)] text-[#2B2329] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#1B2A45] hover:text-[#1B2A45] transition-colors duration-200"
             >
               About the practice
             </Link>
           </div>
         </div>
-        <FlowDivider fill="#4A2A43" />
+        <FlowDivider fill="#F3EAF1" />
       </section>
 
       {/* What is this */}
-      <section className="relative overflow-hidden bg-[#4A2A43] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#F3EAF1] py-20 md:py-28">
         <RingAccent
-          tone="ivory"
+          tone="plum"
           className="pointer-events-none absolute -left-10 top-10 hidden h-56 w-56 lg:block"
         />
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
@@ -108,10 +108,10 @@ export default function Home() {
                 className="object-cover object-center"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 -z-10 h-24 w-24 rounded-full border border-[#C9CDD3] opacity-40" />
+            <div className="absolute -bottom-6 -right-6 -z-10 h-24 w-24 rounded-full border border-[#4A2A43] opacity-30" />
           </div>
         </div>
-        <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-px bg-[rgba(36,28,32,0.14)] border border-[rgba(36,28,32,0.14)] rounded-md overflow-hidden">
+        <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-px bg-[rgba(36,28,32,0.1)] border border-[rgba(36,28,32,0.1)] rounded-md overflow-hidden">
           {pillars.map((p) => (
             <div key={p.title} className="bg-[#F6F2E9] px-6 py-5">
               <h4 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[24px] mb-1">
@@ -121,18 +121,18 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <FlowDivider fill="#1B2A45" />
+        <FlowDivider fill="#E7ECF5" />
       </section>
 
       {/* Services overview */}
-      <section className="relative overflow-hidden bg-[#1B2A45] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#E7ECF5] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
             <div>
-              <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-4">
+              <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-4">
                 Primary care that actually covers the ground
               </h2>
-              <p className="text-[#C9CDD3] text-[21px]">
+              <p className="text-[#44597A] text-[21px]">
                 From annual physicals to same-day sick visits to chronic disease management, your insurance covers the visit and membership gives you direct access to Avi in between.
               </p>
             </div>
@@ -145,19 +145,19 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(246,242,233,0.1)]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(36,28,32,0.08)]">
             {services.map((s) => (
-              <div key={s.title} className="bg-[#1B2A45] p-7 hover:bg-[#243555] transition-colors duration-200">
+              <div key={s.title} className="bg-[#F6F2E9] p-7 hover:bg-white transition-colors duration-200">
                 <div className="w-8 h-8 rounded-full bg-[rgba(136,154,124,0.25)] border border-[#889A7C] mb-5" />
                 <h3
-                  className={`font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[24px] ${
+                  className={`font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[24px] ${
                     s.body ? "mb-3" : ""
                   } ${s.italic ? "italic" : ""}`}
                 >
                   {s.title}
                 </h3>
                 {s.body && (
-                  <p className="text-[#C9CDD3] text-[21px] leading-relaxed">{s.body}</p>
+                  <p className="text-[#2B2329] text-[21px] leading-relaxed">{s.body}</p>
                 )}
               </div>
             ))}
@@ -165,19 +165,19 @@ export default function Home() {
           <div className="mt-10">
             <Link
               href="/services"
-              className="inline-flex items-center text-[#C9CDD3] text-[16px] tracking-[0.18em] uppercase font-[500] hover:text-[#F6F2E9] transition-colors duration-200"
+              className="inline-flex items-center text-[#44597A] text-[16px] tracking-[0.18em] uppercase font-[500] hover:text-[#1B2A45] transition-colors duration-200"
             >
               Full list of services →
             </Link>
           </div>
         </div>
-        <FlowDivider fill="#4A2A43" />
+        <FlowDivider fill="#F3EAF1" />
       </section>
 
       {/* Meet your provider */}
-      <section className="relative overflow-hidden bg-[#4A2A43] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#F3EAF1] py-20 md:py-28">
         <RingAccent
-          tone="ivory"
+          tone="navy"
           className="pointer-events-none absolute -left-10 -bottom-10 hidden h-56 w-56 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-14 items-center">
@@ -192,24 +192,24 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div className="text-[16px] tracking-[0.28em] uppercase text-[#C9CDD3] font-[500] mb-3">
+            <div className="text-[16px] tracking-[0.28em] uppercase text-[#4A2A43] font-[500] mb-3">
               Your Provider
             </div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-2">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-2">
               Avi Blumenthal, NP
             </h2>
-            <p className="text-[#C9CDD3] text-[17px] tracking-[0.1em] uppercase mb-6">
+            <p className="text-[#44597A] text-[17px] tracking-[0.1em] uppercase mb-6">
               Founder &amp; Nurse Practitioner
             </p>
-            <p className="text-[#C9CDD3] text-[21px] leading-relaxed mb-4">
+            <p className="text-[#2B2329] text-[21px] leading-relaxed mb-4">
               Avi brings more than a decade of healthcare experience to Blooming Health, trained in emergency medicine and most recently practicing in urgent care. Primary care is the next chapter: the same clinical steadiness, now applied before a health issue becomes an emergency, not just after.
             </p>
-            <p className="text-[#C9CDD3] text-[21px] leading-relaxed mb-6">
+            <p className="text-[#2B2329] text-[21px] leading-relaxed mb-6">
               He maintains a deliberately small patient panel so every visit gets the time it requires, and remains directly reachable between appointments.
             </p>
             <Link
               href="/about"
-              className="inline-flex items-center text-[16px] tracking-[0.18em] uppercase font-[500] text-[#C9CDD3] hover:text-[#F6F2E9] transition-colors duration-200"
+              className="inline-flex items-center text-[16px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#1B2A45] transition-colors duration-200"
             >
               Meet Avi →
             </Link>

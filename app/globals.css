@@ -10,6 +10,9 @@
   --color-card: #F1EADD;
   --color-ink: #2B2329;
   --color-line: rgba(36, 28, 32, 0.14);
+  --color-blue-tint: #E7ECF5;
+  --color-blue-tint-deep: #D8E1EF;
+  --color-purple-tint: #F3EAF1;
 
   --font-heading: var(--font-fraunces);
   --font-accent: var(--font-cormorant);

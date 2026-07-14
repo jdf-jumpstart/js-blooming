@@ -64,23 +64,23 @@ export default function WhatIsConciergeCare() {
             Concierge care is a membership model for primary care. You pay a flat monthly fee. In return, you get a real relationship with a provider who has time for you, and direct access when something comes up.
           </p>
         </div>
-        <FlowDivider fill="#4A2A43" />
+        <FlowDivider fill="#E7ECF5" />
       </section>
 
       {/* The simple version */}
-      <section className="relative overflow-hidden bg-[#4A2A43] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-6">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-6">
               Primary care built around access, not volume
             </h2>
-            <p className="text-[#C9CDD3] text-[21px] leading-relaxed mb-4">
+            <p className="text-[#2B2329] text-[21px] leading-relaxed mb-4">
               In the traditional model, your provider is paid per visit — by your insurance company. That creates pressure to see as many patients as possible. The result: shorter appointments, longer wait times, and a provider who barely knows your name.
             </p>
-            <p className="text-[#C9CDD3] text-[21px] leading-relaxed mb-4">
+            <p className="text-[#2B2329] text-[21px] leading-relaxed mb-4">
               Concierge care flips the incentive. Your provider charges a flat membership fee on top of billing insurance, and deliberately keeps the patient panel small. That extra time translates into longer appointments, same-day access, and a real relationship built over years.
             </p>
-            <p className="text-[#C9CDD3] text-[21px] leading-relaxed">
+            <p className="text-[#2B2329] text-[21px] leading-relaxed">
               Your insurance still covers the cost of visits. Membership is what gets you the access: reaching your provider directly by text or phone between appointments, without going through a call center.
             </p>
           </div>
@@ -181,13 +181,13 @@ export default function WhatIsConciergeCare() {
       </section>
 
       {/* What concierge care doesn't cover */}
-      <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#F3EAF1] py-16 md:py-24">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-5">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-5">
               Concierge care is not a replacement for insurance.
             </h2>
-            <p className="text-[#C9CDD3] text-[21px] leading-relaxed">
+            <p className="text-[#2B2329] text-[21px] leading-relaxed">
               Membership gets you direct access to your provider: phone, text, after-hours availability, and priority scheduling. Insurance is what covers the cost of your visits, labs, and referrals, in primary care and beyond. Most members keep the insurance plan they already have.
             </p>
           </div>
@@ -201,8 +201,8 @@ export default function WhatIsConciergeCare() {
               { covered: true, label: "After-hours availability and priority scheduling" },
               { covered: true, label: "A small patient panel and real appointment time" },
             ].map((item) => (
-              <li key={item.label} className={`flex items-start gap-3 text-[21px] pb-4 border-b border-[rgba(246,242,233,0.08)] last:border-0 last:pb-0 ${item.covered ? "text-[#C9CDD3]" : "text-[rgba(201,205,211,0.5)]"}`}>
-                <span className={`mt-[7px] w-1.5 h-1.5 rounded-full shrink-0 ${item.covered ? "bg-[#C9CDD3]" : "border border-[#44597A]"}`} />
+              <li key={item.label} className={`flex items-start gap-3 text-[21px] pb-4 border-b border-[rgba(36,28,32,0.08)] last:border-0 last:pb-0 ${item.covered ? "text-[#2B2329]" : "text-[rgba(43,35,41,0.4)]"}`}>
+                <span className={`mt-[7px] w-1.5 h-1.5 rounded-full shrink-0 ${item.covered ? "bg-[#4A2A43]" : "border border-[#44597A]"}`} />
                 {item.label}
               </li>
             ))}
@@ -239,28 +239,28 @@ export default function WhatIsConciergeCare() {
             ))}
           </div>
         </div>
-        <FlowDivider fill="#4A2A43" />
+        <FlowDivider fill="#E7ECF5" />
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden bg-[#4A2A43] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#E7ECF5] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#F6F2E9] text-[48px] md:text-[64px] lg:text-[80px] leading-[1.04] tracking-[-0.015em] mb-8 max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[48px] md:text-[64px] lg:text-[80px] leading-[1.04] tracking-[-0.015em] mb-8 max-w-3xl mx-auto">
             This is the model we practice.
           </h2>
-          <p className="text-[#C9CDD3] text-[21px] max-w-lg mx-auto mb-10 leading-relaxed">
+          <p className="text-[#44597A] text-[21px] max-w-lg mx-auto mb-10 leading-relaxed">
             Blooming Health is a concierge care practice in Baltimore. Avi Blumenthal, NP sees a small panel of patients, spends real time with each one, and is reachable directly when something comes up.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/membership"
-              className="inline-flex items-center justify-center bg-[#F6F2E9] text-[#4A2A43] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#F1EADD] transition-colors duration-200"
+              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
             >
               See membership plans
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center border border-[rgba(246,242,233,0.4)] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#F6F2E9] transition-colors duration-200"
+              className="inline-flex items-center justify-center border border-[rgba(36,28,32,0.2)] text-[#2B2329] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#1B2A45] hover:text-[#1B2A45] transition-colors duration-200"
             >
               Get in touch
             </Link>

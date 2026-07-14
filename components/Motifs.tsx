@@ -62,12 +62,12 @@ export function FlowDivider({
   return (
     <div
       aria-hidden="true"
-      className={`pointer-events-none absolute inset-x-0 bottom-0 z-10 ${className}`}
+      className={`pointer-events-none absolute inset-x-0 -bottom-px z-10 ${className}`}
     >
       <svg
         viewBox="0 0 1440 100"
         preserveAspectRatio="none"
-        className="block h-[42px] w-full md:h-[76px]"
+        className="block h-[43px] w-full md:h-[77px]"
         style={flip ? { transform: "scaleY(-1)" } : undefined}
       >
         <path
