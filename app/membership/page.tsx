@@ -74,27 +74,27 @@ export default function Membership() {
             </Link>
           </div>
         </div>
-        <FlowDivider fill="#E7ECF5" />
+        <FlowDivider fill="#1B2A45" />
       </section>
 
       {/* What&apos;s included */}
-      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-5">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#FAF8F3] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-5">
               Everything in one number
             </h2>
-            <p className="text-[#2B2329] text-[21px] leading-relaxed mb-8">
+            <p className="text-[#C9CDD3] text-[21px] leading-relaxed mb-8">
               Your insurance continues to cover the cost of visits, labs, and referrals. Membership adds direct access to Avi: call or text when something comes up, with after-hours availability and priority for same- and next-day appointments.
             </p>
-            <Link href="/services" className="text-[16px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#1B2A45] transition-colors">
+            <Link href="/services" className="text-[16px] tracking-[0.18em] uppercase font-[500] text-[#C9CDD3] hover:text-[#FAF8F3] transition-colors">
               See what we treat →
             </Link>
           </div>
           <ul className="flex flex-col">
             {included.map((item) => (
-              <li key={item} className="flex items-start gap-3 py-4 border-b border-[rgba(36,28,32,0.1)] text-[21px] text-[#2B2329]">
-                <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-[#44597A] shrink-0" />
+              <li key={item} className="flex items-start gap-3 py-4 border-b border-[rgba(250,248,243,0.12)] text-[21px] text-[#C9CDD3]">
+                <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-[#C9CDD3] shrink-0" />
                 {item}
               </li>
             ))}
@@ -118,36 +118,36 @@ export default function Membership() {
           </p>
           <PricingToggle />
         </div>
-        <FlowDivider fill="#E7ECF5" />
+        <FlowDivider fill="#1B2A45" />
       </section>
 
       {/* FAQ */}
-      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-12">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#FAF8F3] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-12">
             Common questions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {faqs.map((faq) => (
-              <div key={faq.q} className="border-l-2 border-[#4A2A43] pl-5">
-                <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[23px] mb-3">
+              <div key={faq.q} className="border-l-2 border-[#C9CDD3] pl-5">
+                <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#FAF8F3] text-[23px] mb-3">
                   {faq.q}
                 </h3>
-                <p className="text-[21px] text-[#2B2329] leading-relaxed">{faq.a}</p>
+                <p className="text-[21px] text-[#C9CDD3] leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
           <div className="mt-12">
-            <Link href="/faq" className="text-[16px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#4A2A43] transition-colors">
+            <Link href="/faq" className="text-[16px] tracking-[0.18em] uppercase font-[500] text-[#C9CDD3] hover:text-[#FAF8F3] transition-colors">
               Full FAQ →
             </Link>
           </div>
         </div>
-        <FlowDivider fill="#E7ECF5" />
+        <FlowDivider fill="#FAF8F3" />
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden bg-[#E7ECF5] py-20">
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-20">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
           <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] md:text-[52px] leading-[1.04] tracking-[-0.015em] mb-5 max-w-xl mx-auto">
             Start with a conversation.

@@ -110,17 +110,17 @@ export default function FAQ() {
   return (
     <>
       {/* Header */}
-      <section className="relative overflow-hidden bg-[#E7ECF5] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] sm:text-[52px] md:text-[64px] leading-[1.0] tracking-[-0.015em] max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#FAF8F3] text-[40px] sm:text-[52px] md:text-[64px] leading-[1.0] tracking-[-0.015em] max-w-3xl">
             Frequently Asked Questions (FAQ&apos;s)
           </h1>
         </div>
-        <FlowDivider fill="#E7ECF5" />
+        <FlowDivider fill="#F5F1E8" />
       </section>
 
       {/* FAQ sections */}
-      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#F5F1E8] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="flex flex-col gap-16">
             {sections.map((section, i) => (

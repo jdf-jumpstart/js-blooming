@@ -47,23 +47,23 @@ export default function About() {
             We built Blooming Health around one idea: that a meaningful relationship between patient and provider changes everything.
           </p>
         </div>
-        <FlowDivider fill="#E7ECF5" />
+        <FlowDivider fill="#1B2A45" />
       </section>
 
       {/* Mission */}
-      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14">
           <div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-5">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#FAF8F3] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-5">
               Collaborating your health
             </h2>
-            <p className="text-[#2B2329] text-[21px] leading-relaxed mb-5">
+            <p className="text-[#C9CDD3] text-[21px] leading-relaxed mb-5">
               Most primary care visits run about ten minutes. That&apos;s not enough time to understand a person, let alone their full health picture. Blooming Health was built to fix that.
             </p>
-            <p className="text-[#2B2329] text-[21px] leading-relaxed mb-5">
+            <p className="text-[#C9CDD3] text-[21px] leading-relaxed mb-5">
               We see fewer patients, spend more time with each one, and listen. When something needs attention, we look at all the options (natural and lifestyle-based approaches, not just a prescription) and figure out together what makes the most sense for you.
             </p>
-            <p className="text-[#2B2329] text-[21px] leading-relaxed">
+            <p className="text-[#C9CDD3] text-[21px] leading-relaxed">
               The result is primary care that feels less like a system and more like a relationship. That&apos;s the whole point.
             </p>
           </div>
@@ -85,11 +85,11 @@ export default function About() {
             </ul>
           </div>
         </div>
-        <FlowDivider fill="#E7ECF5" />
+        <FlowDivider fill="#FAF8F3" />
       </section>
 
       {/* Meet Avi */}
-      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-16 md:py-24">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-2">
@@ -125,17 +125,17 @@ export default function About() {
             </div>
           </div>
         </div>
-        <FlowDivider fill="#E7ECF5" />
+        <FlowDivider fill="#1B2A45" />
       </section>
 
       {/* Values */}
-      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
         <RingAccent
-          tone="navy"
+          tone="ivory"
           className="pointer-events-none absolute -right-10 top-10 hidden h-48 w-48 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#FAF8F3] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
             The principles behind the practice
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

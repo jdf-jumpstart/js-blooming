@@ -55,11 +55,11 @@ export default function Services() {
             Visits are billed through your insurance. Membership adds same- or next-day scheduling priority and direct access between appointments.
           </p>
         </div>
-        <FlowDivider fill="#E7ECF5" />
+        <FlowDivider fill="#1B2A45" />
       </section>
 
       {/* Services */}
-      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-10">
 
           {/* Primary care */}
@@ -125,16 +125,16 @@ export default function Services() {
         <div className="max-w-6xl mx-auto px-6 md:px-11 mt-10">
           <Link
             href="/membership"
-            className="inline-flex items-center text-[16px] tracking-[0.18em] uppercase font-[500] text-[#44597A] hover:text-[#1B2A45] transition-colors duration-200"
+            className="inline-flex items-center text-[16px] tracking-[0.18em] uppercase font-[500] text-[#C9CDD3] hover:text-[#FAF8F3] transition-colors duration-200"
           >
             See membership plans →
           </Link>
         </div>
-        <FlowDivider fill="#E7ECF5" />
+        <FlowDivider fill="#FAF8F3" />
       </section>
 
       {/* What we don't cover */}
-      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-16 md:py-24">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-5">

@@ -10,12 +10,12 @@ export default function Contact() {
   return (
     <>
       {/* Header */}
-      <section className="relative overflow-hidden bg-[#E7ECF5] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] sm:text-[52px] md:text-[64px] leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#FAF8F3] text-[40px] sm:text-[52px] md:text-[64px] leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Start with a conversation.
           </h1>
-          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#44597A] text-[24px] md:text-[28px] leading-[1.45] max-w-xl">
+          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#C9CDD3] text-[24px] md:text-[28px] leading-[1.45] max-w-xl">
             No commitment. A straightforward conversation about whether Blooming Health is the right fit for your care.
           </p>
         </div>

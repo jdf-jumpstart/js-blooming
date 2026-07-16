@@ -49,40 +49,40 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#D8E1EF] via-[#E7ECF5] to-[#FAF8F3] py-28 md:py-40">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-28 md:py-40">
         <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-16">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] leading-[1.0] tracking-[-0.015em] text-[40px] sm:text-[52px] md:text-[64px] lg:text-[72px] mb-5 md:mb-8 max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#FAF8F3] leading-[1.0] tracking-[-0.015em] text-[40px] sm:text-[52px] md:text-[64px] lg:text-[72px] mb-5 md:mb-8 max-w-3xl">
             Primary care with the time to get to know you
           </h1>
-          <p className="text-[#44597A] text-[21px] md:text-[24px] leading-relaxed mb-6 md:mb-10 max-w-2xl">
+          <p className="text-[#C9CDD3] text-[21px] md:text-[24px] leading-relaxed mb-6 md:mb-10 max-w-2xl">
             Blooming Health is a membership-based concierge care practice in Baltimore. Fewer patients, longer visits, natural options alongside conventional medicine, with a provider who&apos;s available when you need them, not just when the schedule allows.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/membership"
-              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
+              className="inline-flex items-center justify-center bg-[#FAF8F3] text-[#1B2A45] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#F5F1E8] transition-colors duration-200"
             >
               See how membership works
             </Link>
             <Link
               href="/about"
-              className="inline-flex items-center justify-center border border-[rgba(36,28,32,0.2)] text-[#2B2329] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#1B2A45] hover:text-[#1B2A45] transition-colors duration-200"
+              className="inline-flex items-center justify-center border border-[rgba(250,248,243,0.4)] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#FAF8F3] transition-colors duration-200"
             >
               About the practice
             </Link>
           </div>
         </div>
-        <FlowDivider fill="#E7ECF5" />
+        <FlowDivider fill="#FAF8F3" />
       </section>
 
       {/* What is this */}
-      <section className="relative overflow-hidden bg-[#E7ECF5] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-20 md:py-28">
         <RingAccent
           tone="plum"
           className="pointer-events-none absolute -left-10 top-10 hidden h-56 w-56 lg:block"
         />
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
-          <div className="relative bg-[#FAF8F3] border border-[rgba(36,28,32,0.14)] rounded-md p-8 md:p-10">
+          <div className="relative bg-[#F5F1E8] border border-[rgba(36,28,32,0.14)] rounded-md p-8 md:p-10">
             <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-6">
               Blooming Health was founded on a simple premise: good medicine takes time
             </h2>
@@ -121,18 +121,18 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <FlowDivider fill="#E7ECF5" />
+        <FlowDivider fill="#1B2A45" />
       </section>
 
       {/* Services overview */}
-      <section className="relative overflow-hidden bg-[#E7ECF5] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
             <div>
-              <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-4">
+              <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#FAF8F3] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-4">
                 Primary care that covers the ground
               </h2>
-              <p className="text-[#44597A] text-[21px]">
+              <p className="text-[#C9CDD3] text-[21px]">
                 From annual physicals to same-day sick visits to chronic disease management, your insurance covers the visit and membership gives you direct access to Avi in between.
               </p>
             </div>
@@ -145,19 +145,19 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(36,28,32,0.08)]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(250,248,243,0.1)]">
             {services.map((s) => (
-              <div key={s.title} className="bg-[#FAF8F3] p-7 hover:bg-white transition-colors duration-200">
+              <div key={s.title} className="bg-[#1B2A45] p-7 hover:bg-[#243555] transition-colors duration-200">
                 <div className="w-8 h-8 rounded-full bg-[rgba(136,154,124,0.25)] border border-[#889A7C] mb-5" />
                 <h3
-                  className={`font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[24px] ${
+                  className={`font-[family-name:var(--font-fraunces)] font-[500] text-[#FAF8F3] text-[24px] ${
                     s.body ? "mb-3" : ""
                   } ${s.italic ? "italic" : ""}`}
                 >
                   {s.title}
                 </h3>
                 {s.body && (
-                  <p className="text-[#2B2329] text-[21px] leading-relaxed">{s.body}</p>
+                  <p className="text-[#C9CDD3] text-[21px] leading-relaxed">{s.body}</p>
                 )}
               </div>
             ))}
@@ -165,23 +165,23 @@ export default function Home() {
           <div className="mt-10">
             <Link
               href="/services"
-              className="inline-flex items-center text-[#44597A] text-[16px] tracking-[0.18em] uppercase font-[500] hover:text-[#1B2A45] transition-colors duration-200"
+              className="inline-flex items-center text-[#C9CDD3] text-[16px] tracking-[0.18em] uppercase font-[500] hover:text-[#FAF8F3] transition-colors duration-200"
             >
               Full list of services →
             </Link>
           </div>
         </div>
-        <FlowDivider fill="#E7ECF5" />
+        <FlowDivider fill="#FAF8F3" />
       </section>
 
       {/* Meet your provider */}
-      <section className="relative overflow-hidden bg-[#E7ECF5] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-20 md:py-28">
         <RingAccent
           tone="navy"
           className="pointer-events-none absolute -left-10 -bottom-10 hidden h-56 w-56 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-14 items-center">
-          <div className="bg-[#FAF8F3] border border-[rgba(36,28,32,0.14)] rounded-md aspect-[4/5] flex items-center justify-center">
+          <div className="bg-[#F5F1E8] border border-[rgba(36,28,32,0.14)] rounded-md aspect-[4/5] flex items-center justify-center">
             <div className="text-center p-8">
               <div className="w-20 h-20 rounded-full bg-[rgba(68,89,122,0.12)] border border-[#44597A] mx-auto mb-4 flex items-center justify-center">
                 <span className="font-[family-name:var(--font-fraunces)] text-[#44597A] text-[28px]">A</span>
@@ -300,24 +300,24 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="relative overflow-hidden bg-[#FAF8F3] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#1B2A45] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] md:text-[52px] lg:text-[64px] leading-[1.04] tracking-[-0.015em] mb-8 max-w-2xl mx-auto">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#FAF8F3] text-[40px] md:text-[52px] lg:text-[64px] leading-[1.04] tracking-[-0.015em] mb-8 max-w-2xl mx-auto">
             A different kind of practice
           </h2>
-          <p className="text-[#2B2329] text-[21px] max-w-lg mx-auto mb-10 leading-relaxed">
+          <p className="text-[#C9CDD3] text-[21px] max-w-lg mx-auto mb-10 leading-relaxed">
             Patients 13 and up. $100/mo individual, $167/mo couple, $250/mo family. Works alongside your insurance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/membership"
-              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
+              className="inline-flex items-center justify-center bg-[#FAF8F3] text-[#1B2A45] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#F5F1E8] transition-colors duration-200"
             >
               See membership plans
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center border border-[rgba(36,28,32,0.2)] text-[#2B2329] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#1B2A45] hover:text-[#1B2A45] transition-colors duration-200"
+              className="inline-flex items-center justify-center border border-[rgba(250,248,243,0.4)] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#FAF8F3] transition-colors duration-200"
             >
               Schedule an intro call
             </Link>
