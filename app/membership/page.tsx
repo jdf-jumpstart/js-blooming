@@ -12,8 +12,9 @@ const included = [
   "Avi's personal phone number to call or text directly",
   "After-hours availability, evenings and most weekends",
   "Priority for same-day or next-day appointments",
-  "Long appointment blocks so there is time to actually talk",
+  "Long appointment blocks so there is time to talk",
   "Primary and urgent care visits, billed through your insurance",
+  "Coordination with specialists, with results explained in plain terms",
   "Natural options explored first, not just a prescription and a goodbye",
   "A provider who knows you, your history, and your goals",
 ];
@@ -22,7 +23,7 @@ const included = [
 const faqs = [
   {
     q: "Does membership replace health insurance?",
-    a: "No. Insurance still covers your primary and urgent care visits, plus anything beyond that. Membership is what layers on top: direct provider access, after-hours availability, and priority scheduling.",
+    a: "No, it works alongside whatever coverage you already have. Membership adds direct access, after-hours availability, and priority scheduling on top of it.",
   },
   {
     q: "Can I use my HSA or FSA?",
@@ -34,11 +35,11 @@ const faqs = [
   },
   {
     q: "How does billing work with insurance?",
-    a: "We bill insurance for visits, labs, and referrals. The membership fee covers direct access, after-hours availability, and priority scheduling. We're still building out our insurance network, so reach out to confirm your plan.",
+    a: "We bill insurance for visits, labs, and referrals. The membership fee covers direct access, after-hours availability, and priority scheduling. We're completing insurance credentialing, so reach out to confirm we accept your plan.",
   },
   {
     q: "How quickly can I get seen?",
-    a: "Same-day or next-day, always. You are not competing with a panel of thousands.",
+    a: "Typically same-day or next-day. You are not competing with a panel of thousands.",
   },
   {
     q: "What about labs and imaging?",
@@ -50,18 +51,18 @@ export default function Membership() {
   return (
     <>
       {/* Header */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[48px] sm:text-[64px] md:text-[80px] leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] sm:text-[52px] md:text-[64px] leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             A flat monthly rate. Real access to a provider who knows you
           </h1>
-          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-[27px] md:text-[32px] leading-[1.45] max-w-2xl mb-8">
+          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-[24px] md:text-[28px] leading-[1.45] max-w-2xl mb-8">
             No billing surprises. No waiting three weeks to be seen.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="#pricing"
-              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
+              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
             >
               See pricing
             </Link>
@@ -80,7 +81,7 @@ export default function Membership() {
       <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-5">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-5">
               Everything in one number
             </h2>
             <p className="text-[#2B2329] text-[21px] leading-relaxed mb-8">
@@ -99,17 +100,17 @@ export default function Membership() {
             ))}
           </ul>
         </div>
-        <FlowDivider fill="#F1EADD" />
+        <FlowDivider fill="#F5F1E8" />
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="relative overflow-hidden bg-[#F1EADD] py-16 md:py-24 scroll-mt-16">
+      <section id="pricing" className="relative overflow-hidden bg-[#F5F1E8] py-16 md:py-24 scroll-mt-16">
         <RingAccent
           tone="plum"
           className="pointer-events-none absolute -left-12 -top-8 hidden h-52 w-52 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-3">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-3">
             Straightforward pricing
           </h2>
           <p className="text-[#44597A] text-[21px] mb-12 max-w-xl">
@@ -117,13 +118,13 @@ export default function Membership() {
           </p>
           <PricingToggle />
         </div>
-        <FlowDivider fill="#F3EAF1" />
+        <FlowDivider fill="#E7ECF5" />
       </section>
 
       {/* FAQ */}
-      <section className="relative overflow-hidden bg-[#F3EAF1] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-12">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-12">
             Common questions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -148,7 +149,7 @@ export default function Membership() {
       {/* CTA */}
       <section className="relative overflow-hidden bg-[#E7ECF5] py-20">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[48px] md:text-[64px] leading-[1.04] tracking-[-0.015em] mb-5 max-w-xl mx-auto">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] md:text-[52px] leading-[1.04] tracking-[-0.015em] mb-5 max-w-xl mx-auto">
             Start with a conversation.
           </h2>
           <p className="text-[#44597A] text-[21px] max-w-md mx-auto mb-8">
@@ -156,7 +157,7 @@ export default function Membership() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center border border-[#1B2A45] text-[#1B2A45] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#1B2A45] hover:text-[#F6F2E9] transition-colors duration-200"
+            className="inline-flex items-center justify-center border border-[#1B2A45] text-[#1B2A45] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#1B2A45] hover:text-[#FAF8F3] transition-colors duration-200"
           >
             Get in touch
           </Link>

@@ -5,8 +5,8 @@ export default function Logo({
   height?: number;
   reversed?: boolean;
 }) {
-  const disc = reversed ? "#F6F2E9" : "#4A2A43";
-  const wordmark = reversed ? "#F6F2E9" : "#1B2A45";
+  const disc = reversed ? "#FAF8F3" : "#4A2A43";
+  const wordmark = reversed ? "#FAF8F3" : "#1B2A45";
 
   return (
     <svg

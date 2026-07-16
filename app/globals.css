@@ -6,13 +6,12 @@
   --color-slate: #44597A;
   --color-sage: #889A7C;
   --color-gray-soft: #C9CDD3;
-  --color-ivory: #F6F2E9;
-  --color-card: #F1EADD;
+  --color-ivory: #FAF8F3;
+  --color-card: #F5F1E8;
   --color-ink: #2B2329;
   --color-line: rgba(36, 28, 32, 0.14);
   --color-blue-tint: #E7ECF5;
   --color-blue-tint-deep: #D8E1EF;
-  --color-purple-tint: #F3EAF1;
 
   --font-heading: var(--font-fraunces);
   --font-accent: var(--font-cormorant);
@@ -20,7 +19,7 @@
 }
 
 :root {
-  --background: #F6F2E9;
+  --background: #FAF8F3;
   --foreground: #2B2329;
 }
 

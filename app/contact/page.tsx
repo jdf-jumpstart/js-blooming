@@ -12,18 +12,18 @@ export default function Contact() {
       {/* Header */}
       <section className="relative overflow-hidden bg-[#E7ECF5] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[48px] sm:text-[64px] md:text-[80px] leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] sm:text-[52px] md:text-[64px] leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Start with a conversation.
           </h1>
-          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#44597A] text-[27px] md:text-[32px] leading-[1.45] max-w-xl">
+          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#44597A] text-[24px] md:text-[28px] leading-[1.45] max-w-xl">
             No commitment. A straightforward conversation about whether Blooming Health is the right fit for your care.
           </p>
         </div>
-        <FlowDivider fill="#F6F2E9" />
+        <FlowDivider fill="#FAF8F3" />
       </section>
 
       {/* Contact content */}
-      <section className="bg-[#F6F2E9] py-16 md:py-24">
+      <section className="bg-[#FAF8F3] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14">
 
           {/* Form */}
@@ -108,7 +108,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="self-start bg-[#1B2A45] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
+                className="self-start bg-[#1B2A45] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
               >
                 Send message
               </button>
@@ -155,7 +155,7 @@ export default function Contact() {
             </div>
 
             {/* Map placeholder */}
-            <div className="bg-[#F1EADD] border border-[rgba(36,28,32,0.14)] rounded-md aspect-[4/3] flex items-center justify-center">
+            <div className="bg-[#F5F1E8] border border-[rgba(36,28,32,0.14)] rounded-md aspect-[4/3] flex items-center justify-center">
               <div className="text-center p-6">
                 <div className="text-[16px] tracking-[0.24em] uppercase text-[#44597A] mb-2">Map placeholder</div>
                 <p className="text-[17px] text-[#2B2329]">[Practice location map — to be embedded]</p>

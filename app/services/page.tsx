@@ -17,7 +17,7 @@ const primaryCare = [
   "Chronic disease management: diabetes, high blood pressure, asthma, cholesterol, heart disease",
   "Routine labs and testing, collected in-office",
   "Medication management: prescribing, refills, and monitoring, with the most affordable options like GoodRx",
-  "Care coordination: specialist referrals, reviewing reports, follow-up care",
+  "Care coordination: specialist referrals, explaining results in plain terms, follow-up care",
   "Mental health counseling, with referral to a specialist when needed",
   "Telehealth visits",
   "Pre-op clearances, school forms, camp forms, and CDL licensing",
@@ -46,12 +46,12 @@ export default function Services() {
   return (
     <>
       {/* Header */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[48px] sm:text-[64px] md:text-[80px] leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] sm:text-[52px] md:text-[64px] leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Primary care and urgent care, with direct access to your provider
           </h1>
-          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-[27px] md:text-[32px] leading-[1.45] max-w-2xl">
+          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-[24px] md:text-[28px] leading-[1.45] max-w-2xl">
             Visits are billed through your insurance. Membership adds same- or next-day scheduling priority and direct access between appointments.
           </p>
         </div>
@@ -63,9 +63,9 @@ export default function Services() {
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-10">
 
           {/* Primary care */}
-          <div className="border border-[rgba(36,28,32,0.14)] rounded-md bg-[#F1EADD] p-8">
+          <div className="border border-[rgba(36,28,32,0.14)] rounded-md bg-[#F5F1E8] p-8">
             <div className="text-[16px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-2">Included</div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[32px] mb-6">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[28px] mb-6">
               Primary Care
             </h2>
             <p className="text-[21px] text-[#2B2329] leading-relaxed mb-6">
@@ -83,9 +83,9 @@ export default function Services() {
 
           {/* Urgent care */}
           <div className="flex flex-col gap-6">
-            <div className="border border-[rgba(36,28,32,0.14)] rounded-md bg-[#F1EADD] p-8">
+            <div className="border border-[rgba(36,28,32,0.14)] rounded-md bg-[#F5F1E8] p-8">
               <div className="text-[16px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-2">Included</div>
-              <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[32px] mb-6">
+              <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[28px] mb-6">
                 Urgent Care
               </h2>
               <p className="text-[21px] text-[#2B2329] leading-relaxed mb-6">
@@ -102,9 +102,9 @@ export default function Services() {
             </div>
 
             {/* Coming soon */}
-            <div className="border border-[rgba(36,28,32,0.14)] rounded-md bg-[#F6F2E9] p-8">
+            <div className="border border-[rgba(36,28,32,0.14)] rounded-md bg-[#FAF8F3] p-8">
               <div className="text-[16px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-2">Coming soon</div>
-              <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[32px] mb-5">
+              <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[28px] mb-5">
                 More on the way.
               </h2>
               <p className="text-[21px] text-[#44597A] leading-relaxed mb-5">
@@ -130,14 +130,14 @@ export default function Services() {
             See membership plans →
           </Link>
         </div>
-        <FlowDivider fill="#F3EAF1" />
+        <FlowDivider fill="#E7ECF5" />
       </section>
 
       {/* What we don't cover */}
-      <section className="relative overflow-hidden bg-[#F3EAF1] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-5">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-5">
               What falls outside our scope.
             </h2>
             <p className="text-[#2B2329] text-[21px] leading-relaxed mb-6">
@@ -168,17 +168,17 @@ export default function Services() {
             ))}
           </ul>
         </div>
-        <FlowDivider fill="#F6F2E9" />
+        <FlowDivider fill="#FAF8F3" />
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 border-t border-[rgba(36,28,32,0.14)]">
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-20 border-t border-[rgba(36,28,32,0.14)]">
         <RingAccent
           tone="plum"
           className="pointer-events-none absolute -top-6 right-6 hidden h-40 w-40 md:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[48px] md:text-[64px] leading-[1.04] tracking-[-0.015em] mb-5">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] md:text-[52px] leading-[1.04] tracking-[-0.015em] mb-5">
             Ready to get started?
           </h2>
           <p className="text-[#2B2329] text-[21px] max-w-md mx-auto mb-8">
@@ -186,7 +186,7 @@ export default function Services() {
           </p>
           <Link
             href="/membership"
-            className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
+            className="inline-flex items-center justify-center bg-[#1B2A45] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
           >
             See membership plans
           </Link>

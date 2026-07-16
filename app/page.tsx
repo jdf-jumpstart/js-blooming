@@ -15,7 +15,7 @@ const pillars = [
 const services: { title: string; body?: string; italic?: boolean }[] = [
   {
     title: "Primary Care",
-    body: "Wellness exams, chronic disease management, preventive care, nutrition and lifestyle counseling. Time to actually get through all of it.",
+    body: "Wellness exams, chronic disease management, preventive care, nutrition and lifestyle counseling, with time to get through all of it.",
   },
   {
     title: "Urgent Care",
@@ -49,9 +49,9 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#D8E1EF] via-[#E7ECF5] to-[#F6F2E9] py-28 md:py-40">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#D8E1EF] via-[#E7ECF5] to-[#FAF8F3] py-28 md:py-40">
         <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-16">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] leading-[1.0] tracking-[-0.015em] text-[48px] sm:text-[64px] md:text-[80px] lg:text-[96px] mb-5 md:mb-8 max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] leading-[1.0] tracking-[-0.015em] text-[40px] sm:text-[52px] md:text-[64px] lg:text-[72px] mb-5 md:mb-8 max-w-3xl">
             Primary care with the time to get to know you
           </h1>
           <p className="text-[#44597A] text-[21px] md:text-[24px] leading-relaxed mb-6 md:mb-10 max-w-2xl">
@@ -60,7 +60,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/membership"
-              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
+              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
             >
               See how membership works
             </Link>
@@ -72,18 +72,18 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <FlowDivider fill="#F3EAF1" />
+        <FlowDivider fill="#E7ECF5" />
       </section>
 
       {/* What is this */}
-      <section className="relative overflow-hidden bg-[#F3EAF1] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#E7ECF5] py-20 md:py-28">
         <RingAccent
           tone="plum"
           className="pointer-events-none absolute -left-10 top-10 hidden h-56 w-56 lg:block"
         />
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
-          <div className="relative bg-[#F6F2E9] border border-[rgba(36,28,32,0.14)] rounded-md p-8 md:p-10">
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-6">
+          <div className="relative bg-[#FAF8F3] border border-[rgba(36,28,32,0.14)] rounded-md p-8 md:p-10">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-6">
               Blooming Health was founded on a simple premise: good medicine takes time
             </h2>
             <p className="text-[#2B2329] text-[21px] leading-relaxed mb-4">
@@ -113,7 +113,7 @@ export default function Home() {
         </div>
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-px bg-[rgba(36,28,32,0.1)] border border-[rgba(36,28,32,0.1)] rounded-md overflow-hidden">
           {pillars.map((p) => (
-            <div key={p.title} className="bg-[#F6F2E9] px-6 py-5">
+            <div key={p.title} className="bg-[#FAF8F3] px-6 py-5">
               <h4 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[24px] mb-1">
                 {p.title}
               </h4>
@@ -129,8 +129,8 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-14">
             <div>
-              <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-4">
-                Primary care that actually covers the ground
+              <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-4">
+                Primary care that covers the ground
               </h2>
               <p className="text-[#44597A] text-[21px]">
                 From annual physicals to same-day sick visits to chronic disease management, your insurance covers the visit and membership gives you direct access to Avi in between.
@@ -147,7 +147,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[rgba(36,28,32,0.08)]">
             {services.map((s) => (
-              <div key={s.title} className="bg-[#F6F2E9] p-7 hover:bg-white transition-colors duration-200">
+              <div key={s.title} className="bg-[#FAF8F3] p-7 hover:bg-white transition-colors duration-200">
                 <div className="w-8 h-8 rounded-full bg-[rgba(136,154,124,0.25)] border border-[#889A7C] mb-5" />
                 <h3
                   className={`font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[24px] ${
@@ -171,20 +171,20 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <FlowDivider fill="#F3EAF1" />
+        <FlowDivider fill="#E7ECF5" />
       </section>
 
       {/* Meet your provider */}
-      <section className="relative overflow-hidden bg-[#F3EAF1] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#E7ECF5] py-20 md:py-28">
         <RingAccent
           tone="navy"
           className="pointer-events-none absolute -left-10 -bottom-10 hidden h-56 w-56 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-14 items-center">
-          <div className="bg-[#F6F2E9] border border-[rgba(36,28,32,0.14)] rounded-md aspect-[4/5] flex items-center justify-center">
+          <div className="bg-[#FAF8F3] border border-[rgba(36,28,32,0.14)] rounded-md aspect-[4/5] flex items-center justify-center">
             <div className="text-center p-8">
               <div className="w-20 h-20 rounded-full bg-[rgba(68,89,122,0.12)] border border-[#44597A] mx-auto mb-4 flex items-center justify-center">
-                <span className="font-[family-name:var(--font-fraunces)] text-[#44597A] text-[32px]">A</span>
+                <span className="font-[family-name:var(--font-fraunces)] text-[#44597A] text-[28px]">A</span>
               </div>
               <div className="text-[16px] tracking-[0.24em] uppercase text-[#44597A]">
                 Photo coming soon
@@ -195,17 +195,14 @@ export default function Home() {
             <div className="text-[16px] tracking-[0.28em] uppercase text-[#4A2A43] font-[500] mb-3">
               Your Provider
             </div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-2">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-2">
               Avi Blumenthal, NP
             </h2>
             <p className="text-[#44597A] text-[17px] tracking-[0.1em] uppercase mb-6">
               Founder &amp; Nurse Practitioner
             </p>
-            <p className="text-[#2B2329] text-[21px] leading-relaxed mb-4">
-              Avi brings more than a decade of healthcare experience to Blooming Health, trained in emergency medicine and most recently practicing in urgent care. Primary care is the next chapter: the same clinical steadiness, now applied before a health issue becomes an emergency, not just after.
-            </p>
             <p className="text-[#2B2329] text-[21px] leading-relaxed mb-6">
-              He maintains a deliberately small patient panel so every visit gets the time it requires, and remains directly reachable between appointments.
+              Avi brings more than a decade of healthcare experience, trained in emergency medicine and most recently practicing in urgent care. He keeps a small patient panel by design, so every visit gets the time it needs.
             </p>
             <Link
               href="/about"
@@ -215,11 +212,11 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <FlowDivider fill="#F6F2E9" />
+        <FlowDivider fill="#FAF8F3" />
       </section>
 
       {/* Pricing snapshot */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-20 md:py-28">
         <RingAccent
           tone="plum"
           className="pointer-events-none absolute -right-10 top-10 hidden h-52 w-52 lg:block"
@@ -227,7 +224,7 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
             <div>
-              <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-3">
+              <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-3">
                 Membership, priced simply
               </h2>
               <p className="text-[#2B2329] text-[21px] max-w-xl">
@@ -243,26 +240,26 @@ export default function Home() {
           </div>
           <PricingToggle />
         </div>
-        <FlowDivider fill="#F1EADD" />
+        <FlowDivider fill="#F5F1E8" />
       </section>
 
       {/* How it works */}
-      <section className="relative overflow-hidden bg-[#F1EADD] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#F5F1E8] py-20 md:py-28">
         <RingAccent
           tone="navy"
           className="pointer-events-none absolute -right-12 top-16 hidden h-52 w-52 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-14 max-w-xl">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-14 max-w-xl">
             Simple to join. Simple to use.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {steps.map((s) => (
               <div key={s.number}>
-                <div className="font-[family-name:var(--font-fraunces)] text-[#44597A] text-[64px] mb-5 leading-none">
+                <div className="font-[family-name:var(--font-fraunces)] text-[#44597A] text-[52px] mb-5 leading-none">
                   {s.number}
                 </div>
-                <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[27px] mb-3">
+                <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[24px] mb-3">
                   {s.title}
                 </h3>
                 <p className="text-[#2B2329] text-[21px] leading-relaxed">{s.body}</p>
@@ -272,24 +269,24 @@ export default function Home() {
           <div className="mt-14">
             <Link
               href="/membership"
-              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
+              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
             >
               View membership plans
             </Link>
           </div>
         </div>
-        <FlowDivider fill="#F6F2E9" />
+        <FlowDivider fill="#FAF8F3" />
       </section>
 
       {/* Testimonials placeholder */}
-      <section className="bg-[#F6F2E9] py-20 md:py-28">
+      <section className="bg-[#FAF8F3] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-12">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-12">
             What patients say
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="border border-[rgba(36,28,32,0.14)] rounded-md p-7 bg-[#F1EADD]">
+              <div key={i} className="border border-[rgba(36,28,32,0.14)] rounded-md p-7 bg-[#F5F1E8]">
                 <p className="font-[family-name:var(--font-cormorant)] font-[500] text-[#2B2329] text-[24px] leading-[1.5] mb-6">
                   &ldquo;[Patient testimonial placeholder]&rdquo;
                 </p>
@@ -303,9 +300,9 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[48px] md:text-[64px] lg:text-[80px] leading-[1.04] tracking-[-0.015em] mb-8 max-w-2xl mx-auto">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] md:text-[52px] lg:text-[64px] leading-[1.04] tracking-[-0.015em] mb-8 max-w-2xl mx-auto">
             A different kind of practice
           </h2>
           <p className="text-[#2B2329] text-[21px] max-w-lg mx-auto mb-10 leading-relaxed">
@@ -314,7 +311,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/membership"
-              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
+              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
             >
               See membership plans
             </Link>

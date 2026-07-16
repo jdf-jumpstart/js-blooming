@@ -9,7 +9,7 @@ type Tone = "plum" | "ivory" | "navy" | "gray" | "sage";
 
 const TONES: Record<Tone, string> = {
   plum: "#4A2A43",
-  ivory: "#F6F2E9",
+  ivory: "#FAF8F3",
   navy: "#1B2A45",
   gray: "#C9CDD3",
   sage: "#889A7C",

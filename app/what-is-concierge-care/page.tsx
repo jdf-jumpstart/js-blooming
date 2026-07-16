@@ -26,7 +26,7 @@ const differences = [
       "Same- or next-day when you need it",
       "Same provider, year after year",
       "Text or call your provider directly",
-      "Unhurried, because the time is actually yours",
+      "Unhurried, because the time is yours",
     ],
     dark: true,
   },
@@ -55,9 +55,9 @@ export default function WhatIsConciergeCare() {
   return (
     <>
       {/* Header */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[48px] sm:text-[64px] md:text-[96px] leading-[1.0] tracking-[-0.015em] mb-8 max-w-4xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] sm:text-[52px] md:text-[72px] leading-[1.0] tracking-[-0.015em] mb-8 max-w-4xl">
             What is concierge care?
           </h1>
           <p className="text-[#2B2329] text-[21px] md:text-[24px] leading-relaxed max-w-2xl">
@@ -71,7 +71,7 @@ export default function WhatIsConciergeCare() {
       <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
           <div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-6">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-6">
               Primary care built around access, not volume
             </h2>
             <p className="text-[#2B2329] text-[21px] leading-relaxed mb-4">
@@ -91,11 +91,11 @@ export default function WhatIsConciergeCare() {
               { step: "3", heading: "Reach them when you need it", body: "Direct line to your provider by text or phone. No portal, no phone tree, no waiting three days for a callback." },
             ].map((s) => (
               <div key={s.step} className="flex gap-5">
-                <div className="font-[family-name:var(--font-fraunces)] text-[#C9CDD3] text-[32px] leading-none shrink-0 mt-0.5">
+                <div className="font-[family-name:var(--font-fraunces)] text-[#C9CDD3] text-[28px] leading-none shrink-0 mt-0.5">
                   {s.step}
                 </div>
                 <div>
-                  <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#F6F2E9] text-[24px] mb-1">
+                  <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#FAF8F3] text-[24px] mb-1">
                     {s.heading}
                   </h3>
                   <p className="text-[#C9CDD3] text-[21px] leading-relaxed">{s.body}</p>
@@ -104,17 +104,17 @@ export default function WhatIsConciergeCare() {
             ))}
           </div>
         </div>
-        <FlowDivider fill="#F1EADD" />
+        <FlowDivider fill="#F5F1E8" />
       </section>
 
       {/* Side by side comparison */}
-      <section className="relative overflow-hidden bg-[#F1EADD] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#F5F1E8] py-16 md:py-24">
         <RingAccent
           tone="plum"
           className="pointer-events-none absolute -left-12 -top-8 hidden h-52 w-52 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
             What changes when you leave the traditional model
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -124,7 +124,7 @@ export default function WhatIsConciergeCare() {
                 className={`rounded-md border p-8 ${
                   col.dark
                     ? "bg-[#1B2A45] border-[rgba(246,242,233,0.12)]"
-                    : "bg-[#F6F2E9] border-[rgba(36,28,32,0.14)]"
+                    : "bg-[#FAF8F3] border-[rgba(36,28,32,0.14)]"
                 }`}
               >
                 <div className={`text-[16px] tracking-[0.28em] uppercase font-[500] mb-6 ${col.dark ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
@@ -157,13 +157,13 @@ export default function WhatIsConciergeCare() {
             </Link>
           </div>
         </div>
-        <FlowDivider fill="#F6F2E9" />
+        <FlowDivider fill="#FAF8F3" />
       </section>
 
       {/* Common myths */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
             Things people get wrong about concierge care
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -181,10 +181,10 @@ export default function WhatIsConciergeCare() {
       </section>
 
       {/* What concierge care doesn't cover */}
-      <section className="relative overflow-hidden bg-[#F3EAF1] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-5">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-5">
               Concierge care is not a replacement for insurance.
             </h2>
             <p className="text-[#2B2329] text-[21px] leading-relaxed">
@@ -208,30 +208,30 @@ export default function WhatIsConciergeCare() {
             ))}
           </ul>
         </div>
-        <FlowDivider fill="#F6F2E9" />
+        <FlowDivider fill="#FAF8F3" />
       </section>
 
       {/* Who it's for */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-16 md:py-24">
         <RingAccent
           tone="sage"
           className="pointer-events-none absolute -right-10 top-10 hidden h-48 w-48 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
-            Concierge care works best when primary care actually matters to you.
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
+            Concierge care works best when primary care matters to you.
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { title: "People tired of being rushed", body: "If you have ever left an appointment with half your questions unanswered, concierge care is built for you." },
               { title: "Those managing chronic conditions", body: "Diabetes, hypertension, thyroid, cholesterol — ongoing management works better with a provider who knows your full picture." },
-              { title: "Families who want continuity", body: "The same provider over years. Someone who knows your history, your kids, and what actually matters to your household." },
-              { title: "Self-employed and between plans", body: "Membership keeps you connected to consistent primary care while you sort out longer-term coverage, with self-pay options for visits in the meantime." },
+              { title: "Families who want continuity", body: "The same provider over years. Someone who knows your history, your kids, and what matters to your household." },
+              { title: "Self-employed professionals", body: "Membership keeps you connected to one provider for continuity, with direct access whenever something comes up." },
               { title: "Health-conscious adults", body: "If you think about prevention, lifestyle, and natural options, concierge care gives you a provider who thinks the same way." },
               { title: "Anyone who has given up on primary care", body: "If you avoid the doctor because the experience is never worth it, this is the practice that changes that." },
             ].map((card) => (
-              <div key={card.title} className="bg-[#F1EADD] border border-[rgba(36,28,32,0.14)] rounded-md p-7">
-                <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[27px] mb-3">
+              <div key={card.title} className="bg-[#F5F1E8] border border-[rgba(36,28,32,0.14)] rounded-md p-7">
+                <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[24px] mb-3">
                   {card.title}
                 </h3>
                 <p className="text-[21px] text-[#2B2329] leading-relaxed">{card.body}</p>
@@ -245,7 +245,7 @@ export default function WhatIsConciergeCare() {
       {/* CTA */}
       <section className="relative overflow-hidden bg-[#E7ECF5] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[48px] md:text-[64px] lg:text-[80px] leading-[1.04] tracking-[-0.015em] mb-8 max-w-3xl mx-auto">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] md:text-[52px] lg:text-[64px] leading-[1.04] tracking-[-0.015em] mb-8 max-w-3xl mx-auto">
             This is the model we practice.
           </h2>
           <p className="text-[#44597A] text-[21px] max-w-lg mx-auto mb-10 leading-relaxed">
@@ -254,7 +254,7 @@ export default function WhatIsConciergeCare() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/membership"
-              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
+              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
             >
               See membership plans
             </Link>

@@ -9,18 +9,21 @@ const plans = [
     monthly: 100,
     annual: 1200,
     description: "Full membership for one adult. Up to 15 visits, direct access, same-day care.",
-  },
-  {
-    name: "Couple",
-    monthly: 167,
-    annual: 2000,
-    description: "Membership for two adults in the same household. Both members get the full experience.",
+    highlight: false,
   },
   {
     name: "Family",
     monthly: 250,
     annual: 3000,
     description: "Couple membership plus up to 3 children in the same household.",
+    highlight: true,
+  },
+  {
+    name: "Couple",
+    monthly: 167,
+    annual: 2000,
+    description: "Membership for two adults in the same household. Both members get the full experience.",
+    highlight: false,
   },
 ];
 
@@ -37,7 +40,7 @@ export default function PricingToggle() {
             onClick={() => setBilling(option)}
             className={`px-6 py-3 text-[16px] tracking-[0.18em] uppercase font-[500] transition-colors duration-200 rounded-sm ${
               billing === option
-                ? "bg-[#1B2A45] text-[#F6F2E9]"
+                ? "bg-[#1B2A45] text-[#FAF8F3]"
                 : "text-[#44597A] hover:text-[#2B2329]"
             }`}
           >
@@ -62,29 +65,42 @@ export default function PricingToggle() {
           return (
             <div
               key={plan.name}
-              className="rounded-md border bg-[#F6F2E9] border-[rgba(36,28,32,0.14)] text-[#2B2329] p-7 flex flex-col"
+              className={`rounded-md border p-7 flex flex-col transition-transform duration-300 hover:-translate-y-2 ${
+                plan.highlight
+                  ? "bg-[#1B2A45] border-[#1B2A45] text-[#FAF8F3] md:-mt-4 md:mb-4 shadow-lg"
+                  : "bg-[#FAF8F3] border-[rgba(36,28,32,0.14)] text-[#2B2329]"
+              }`}
             >
-              <div className="text-[16px] tracking-[0.24em] uppercase font-[500] mb-4 text-[#44597A]">
+              {plan.highlight && (
+                <div className="text-[16px] tracking-[0.24em] uppercase font-[500] mb-3 text-[#889A7C]">
+                  Most popular
+                </div>
+              )}
+              <div className={`text-[16px] tracking-[0.24em] uppercase font-[500] mb-4 ${plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
                 {plan.name}
               </div>
               <div className="flex items-baseline gap-1 mb-2">
-                <span className="font-[family-name:var(--font-fraunces)] text-[64px] leading-none">
+                <span className="font-[family-name:var(--font-fraunces)] text-[52px] leading-none">
                   {price}
                 </span>
-                <span className="text-[21px] font-[500] text-[#44597A]">
+                <span className={`text-[21px] font-[500] ${plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
                   {unit}
                 </span>
               </div>
-              <div className="text-[16px] mb-5 text-[#44597A]">
+              <div className={`text-[16px] mb-5 ${plan.highlight ? "text-[#C9CDD3]" : "text-[#44597A]"}`}>
                 {sub}
               </div>
-              <p className="text-[21px] leading-relaxed flex-1 text-[#2B2329]">
+              <p className={`text-[21px] leading-relaxed flex-1 ${plan.highlight ? "text-[#F5F1E8]" : "text-[#2B2329]"}`}>
                 {plan.description}
               </p>
               <div className="mt-7">
                 <Link
                   href="/contact"
-                  className="text-[16px] tracking-[0.18em] uppercase font-[500] border px-5 py-3 inline-block transition-colors duration-200 border-[#1B2A45] text-[#1B2A45] hover:bg-[#1B2A45] hover:text-[#F6F2E9]"
+                  className={`text-[16px] tracking-[0.18em] uppercase font-[500] border px-5 py-3 inline-block transition-colors duration-200 ${
+                    plan.highlight
+                      ? "border-[#FAF8F3] text-[#FAF8F3] hover:bg-[#FAF8F3] hover:text-[#1B2A45]"
+                      : "border-[#1B2A45] text-[#1B2A45] hover:bg-[#1B2A45] hover:text-[#FAF8F3]"
+                  }`}
                 >
                   Get started
                 </Link>

@@ -38,39 +38,39 @@ export default function About() {
   return (
     <>
       {/* Header */}
-      <section className="relative overflow-hidden bg-[#F6F2E9] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[48px] sm:text-[64px] md:text-[80px] leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] sm:text-[52px] md:text-[64px] leading-[1.0] tracking-[-0.015em] mb-6 max-w-3xl">
             Primary care as a relationship, not a transaction
           </h1>
-          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-[27px] md:text-[32px] leading-[1.45] max-w-2xl">
+          <p className="font-[family-name:var(--font-cormorant)] font-[500] italic text-[#2B2329] text-[24px] md:text-[28px] leading-[1.45] max-w-2xl">
             We built Blooming Health around one idea: that a meaningful relationship between patient and provider changes everything.
           </p>
         </div>
-        <FlowDivider fill="#F3EAF1" />
+        <FlowDivider fill="#E7ECF5" />
       </section>
 
       {/* Mission */}
-      <section className="relative overflow-hidden bg-[#F3EAF1] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14">
           <div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-5">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-5">
               Collaborating your health
             </h2>
             <p className="text-[#2B2329] text-[21px] leading-relaxed mb-5">
-              Most primary care visits run about ten minutes. That's not enough time to understand a person, let alone their full health picture. Blooming Health was built to fix that.
+              Most primary care visits run about ten minutes. That&apos;s not enough time to understand a person, let alone their full health picture. Blooming Health was built to fix that.
             </p>
             <p className="text-[#2B2329] text-[21px] leading-relaxed mb-5">
-              We see fewer patients, spend more time with each one, and actually listen. When something needs attention, we look at all the options (natural and lifestyle-based approaches, not just a prescription) and figure out together what makes the most sense for you.
+              We see fewer patients, spend more time with each one, and listen. When something needs attention, we look at all the options (natural and lifestyle-based approaches, not just a prescription) and figure out together what makes the most sense for you.
             </p>
             <p className="text-[#2B2329] text-[21px] leading-relaxed">
-              The result is primary care that feels less like a system and more like a relationship. That's the whole point.
+              The result is primary care that feels less like a system and more like a relationship. That&apos;s the whole point.
             </p>
           </div>
-          <div className="bg-[#F1EADD] border border-[rgba(36,28,32,0.14)] rounded-md p-8 flex flex-col justify-center">
+          <div className="bg-[#F5F1E8] border border-[rgba(36,28,32,0.14)] rounded-md p-8 flex flex-col justify-center">
             <ul className="flex flex-col gap-4">
               {[
-                "Long appointments (time to actually talk)",
+                "Long appointments, with time to talk",
                 "Direct access to your provider, not a call center",
                 "Natural options explored alongside conventional medicine",
                 "Same- or next-day care when something comes up",
@@ -92,20 +92,20 @@ export default function About() {
       <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
           <div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-2">
+            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-2">
               Avi Blumenthal, NP
             </h2>
             <p className="text-[#44597A] text-[17px] tracking-[0.1em] uppercase mb-7">
               Founder & NP
             </p>
             <p className="text-[#2B2329] text-[21px] leading-relaxed mb-4">
-              Avi brings 11 years of healthcare experience to Blooming Health, and a genuine love for helping people — especially when it comes to their health.
+              Avi brings 11 years of healthcare experience to Blooming Health and a genuine commitment to patient-centered care.
             </p>
             <p className="text-[#2B2329] text-[21px] leading-relaxed mb-4">
-              Outside the practice, he's the father of six, which has a way of sharpening your perspective on what actually matters in a family&apos;s health. He stays active, keeps learning, and plays guitar — badly enough to keep him humble, well enough to enjoy it.
+              Outside the practice, he&apos;s the father of six, a skilled guitar player, and someone who stays active and keeps learning.
             </p>
             <p className="text-[#2B2329] text-[21px] leading-relaxed mb-6">
-              What drives him is the relationship. Not the paperwork. Not the billing codes. The part where you actually sit down with a person, understand what they're dealing with, and help them figure out what to do about it.
+              What drives him is the relationship, not the paperwork: sitting down with someone, understanding what they&apos;re dealing with, and helping them figure out what to do about it.
             </p>
             <Link
               href="/membership"
@@ -114,10 +114,10 @@ export default function About() {
               See how membership works →
             </Link>
           </div>
-          <div className="bg-[#F6F2E9] border border-[rgba(36,28,32,0.12)] rounded-md aspect-[4/5] flex items-center justify-center">
+          <div className="bg-[#FAF8F3] border border-[rgba(36,28,32,0.12)] rounded-md aspect-[4/5] flex items-center justify-center">
             <div className="text-center p-8">
               <div className="w-24 h-24 rounded-full bg-[rgba(68,89,122,0.1)] border border-[#44597A] mx-auto mb-5 flex items-center justify-center">
-                <span className="font-[family-name:var(--font-fraunces)] text-[#44597A] text-[40px]">A</span>
+                <span className="font-[family-name:var(--font-fraunces)] text-[#44597A] text-[34px]">A</span>
               </div>
               <div className="text-[16px] tracking-[0.24em] uppercase text-[#44597A]">
                 Photo coming soon
@@ -125,23 +125,23 @@ export default function About() {
             </div>
           </div>
         </div>
-        <FlowDivider fill="#F3EAF1" />
+        <FlowDivider fill="#E7ECF5" />
       </section>
 
       {/* Values */}
-      <section className="relative overflow-hidden bg-[#F3EAF1] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
         <RingAccent
           tone="navy"
           className="pointer-events-none absolute -right-10 top-10 hidden h-48 w-48 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[40px] md:text-[48px] leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-12 max-w-xl">
             The principles behind the practice
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {values.map((v) => (
-              <div key={v.title} className="bg-[#F1EADD] border border-[rgba(36,28,32,0.14)] rounded-md p-7">
-                <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[27px] mb-3">
+              <div key={v.title} className="bg-[#F5F1E8] border border-[rgba(36,28,32,0.14)] rounded-md p-7">
+                <h3 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[24px] mb-3">
                   {v.title}
                 </h3>
                 <p className="text-[21px] text-[#2B2329] leading-relaxed">{v.body}</p>
@@ -149,13 +149,13 @@ export default function About() {
             ))}
           </div>
         </div>
-        <FlowDivider fill="#F6F2E9" />
+        <FlowDivider fill="#FAF8F3" />
       </section>
 
       {/* CTA */}
-      <section className="bg-[#F6F2E9] py-20">
+      <section className="bg-[#FAF8F3] py-20">
         <div className="max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[48px] md:text-[64px] leading-[1.04] tracking-[-0.015em] mb-5 max-w-xl mx-auto">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] md:text-[52px] leading-[1.04] tracking-[-0.015em] mb-5 max-w-xl mx-auto">
             Come as a patient. Stay for the relationship.
           </h2>
           <p className="text-[#2B2329] text-[21px] max-w-md mx-auto mb-8">
@@ -164,7 +164,7 @@ export default function About() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/membership"
-              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
+              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
             >
               See membership plans
             </Link>

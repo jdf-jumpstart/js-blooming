@@ -34,7 +34,7 @@ const sections = [
     faqs: [
       {
         q: "Do I need health insurance to join?",
-        a: "We recommend it. We are currently building out our insurance network and are not yet credentialed with plans, so visits are self-pay in the meantime. Once credentialing is complete, insurance will help cover the cost of visits, labs, and referrals.",
+        a: "Yes. We're completing insurance credentialing now, so we're currently enrolling members whose insurance we plan to accept. Until credentialing is finalized, we'll waive the visit fee rather than bill you directly.",
       },
       {
         q: "Does membership replace health insurance?",
@@ -50,7 +50,7 @@ const sections = [
       },
       {
         q: "Are there any additional fees beyond the monthly membership?",
-        a: "No enrollment fee. Visits, labs, imaging, and specialist care are billed through your insurance (or self-pay while we complete insurance credentialing). The membership fee itself covers direct provider access, after-hours availability, and priority scheduling.",
+        a: "No enrollment fee. Visits, labs, imaging, and specialist care are billed through your insurance. While we finish credentialing, the visit fee is waived rather than billed to you. The membership fee itself covers direct provider access, after-hours availability, and priority scheduling.",
       },
     ],
   },
@@ -75,7 +75,7 @@ const sections = [
       },
       {
         q: "How long are appointments?",
-        a: "Appointments are 30 to 60 minutes depending on complexity. Annual physicals and new patient visits are always longer. There is no rushing to the next patient.",
+        a: "Appointments run 30 to 60 minutes depending on complexity. Annual physicals and new patient visits are allotted extra time, so nothing feels rushed.",
       },
     ],
   },
@@ -92,7 +92,7 @@ const sections = [
       },
       {
         q: "What happens if I need to see a specialist?",
-        a: "We will refer you and coordinate. Your specialist visits are billed through your insurance as they normally would be. We handle the paperwork side and stay in the loop.",
+        a: "We'll refer you, coordinate the visit, and walk you through what the results mean once they come back. Your specialist visits are billed through insurance as they normally would be.",
       },
       {
         q: "What if I need to be hospitalized?",
@@ -112,20 +112,20 @@ export default function FAQ() {
       {/* Header */}
       <section className="relative overflow-hidden bg-[#E7ECF5] py-20 md:py-28">
         <div className="relative max-w-6xl mx-auto px-6 md:px-11">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[48px] sm:text-[64px] md:text-[80px] leading-[1.0] tracking-[-0.015em] max-w-3xl">
+          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] sm:text-[52px] md:text-[64px] leading-[1.0] tracking-[-0.015em] max-w-3xl">
             Frequently Asked Questions (FAQ&apos;s)
           </h1>
         </div>
-        <FlowDivider fill="#F3EAF1" />
+        <FlowDivider fill="#E7ECF5" />
       </section>
 
       {/* FAQ sections */}
-      <section className="relative overflow-hidden bg-[#F3EAF1] py-16 md:py-24">
+      <section className="relative overflow-hidden bg-[#E7ECF5] py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 md:px-11">
           <div className="flex flex-col gap-16">
             {sections.map((section, i) => (
               <div key={section.title}>
-                <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[32px] mb-8 pb-4">
+                <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#4A2A43] text-[28px] mb-8 pb-4">
                   {section.title}
                 </h2>
                 <div className="flex flex-col gap-6">
@@ -161,17 +161,17 @@ export default function FAQ() {
             ))}
           </div>
         </div>
-        <FlowDivider fill="#F1EADD" />
+        <FlowDivider fill="#F5F1E8" />
       </section>
 
       {/* Still have questions */}
-      <section className="relative overflow-hidden bg-[#F1EADD] border-t border-[rgba(36,28,32,0.14)] py-20">
+      <section className="relative overflow-hidden bg-[#F5F1E8] border-t border-[rgba(36,28,32,0.14)] py-20">
         <RingAccent
           tone="sage"
           className="pointer-events-none absolute -left-10 -bottom-10 hidden h-48 w-48 md:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 text-center">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[48px] md:text-[64px] leading-[1.04] tracking-[-0.015em] mb-5">
+          <h2 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#1B2A45] text-[40px] md:text-[52px] leading-[1.04] tracking-[-0.015em] mb-5">
             Still have questions?
           </h2>
           <p className="text-[#2B2329] text-[21px] max-w-md mx-auto mb-8 leading-relaxed">
@@ -179,7 +179,7 @@ export default function FAQ() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center bg-[#1B2A45] text-[#F6F2E9] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
+            className="inline-flex items-center justify-center bg-[#1B2A45] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
           >
             Contact us
           </Link>
