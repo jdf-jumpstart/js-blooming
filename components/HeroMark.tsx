@@ -6,7 +6,12 @@
  */
 export default function HeroMark({ className = "" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 220 190" className={className} aria-hidden="true">
+    <svg
+      viewBox="0 0 220 190"
+      className={className}
+      aria-hidden="true"
+      style={{ overflow: "visible" }}
+    >
       <circle className="hero-mark-disc" cx="90" cy="110" r="50" fill="#FAF8F3" />
       <circle
         className="hero-mark-ring"

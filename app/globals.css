@@ -41,14 +41,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  /* The two halves start oversized and off past the edges of the frame, then
+     rush inward as they shrink — reads as a camera pulling back until the
+     mark resolves. The 82% frame undershoots slightly so they settle. */
   @keyframes hero-mark-disc-in {
-    0%   { transform: translate(-64px, 30px) scale(0.5); opacity: 0; }
-    55%  { opacity: 1; }
+    0%   { transform: translate(-190px, 90px) scale(2.6); opacity: 0; }
+    35%  { opacity: 1; }
+    82%  { transform: translate(0, 0) scale(0.94); opacity: 1; }
     100% { transform: translate(0, 0) scale(1); opacity: 1; }
   }
   @keyframes hero-mark-ring-in {
-    0%   { transform: translate(64px, -30px) scale(0.5) rotate(-50deg); opacity: 0; }
-    55%  { opacity: 1; }
+    0%   { transform: translate(190px, -100px) scale(2.6) rotate(-105deg); opacity: 0; }
+    35%  { opacity: 1; }
+    82%  { transform: translate(0, 0) scale(0.94) rotate(4deg); opacity: 1; }
     100% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 1; }
   }
   @keyframes hero-fade-up {
@@ -56,11 +61,11 @@ h1, h2, h3, h4, h5, h6 {
     100% { opacity: 1; transform: translateY(0); }
   }
 
-  .hero-mark-disc { animation: hero-mark-disc-in 1.3s cubic-bezier(0.16, 1, 0.3, 1) both; }
-  .hero-mark-ring { animation: hero-mark-ring-in 1.3s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  .hero-mark-disc { animation: hero-mark-disc-in 1.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  .hero-mark-ring { animation: hero-mark-ring-in 1.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
   .hero-fade-up { animation: hero-fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) both; }
-  .hero-fade-up-delay-1 { animation-delay: 0.95s; }
-  .hero-fade-up-delay-2 { animation-delay: 1.15s; }
+  .hero-fade-up-delay-1 { animation-delay: 1.35s; }
+  .hero-fade-up-delay-2 { animation-delay: 1.55s; }
 
   @keyframes drift-a {
     0%, 100% { transform: translate(0, 0) rotate(0deg); }
