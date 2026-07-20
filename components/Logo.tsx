@@ -17,7 +17,7 @@ export default function Logo({
       aria-label="Blooming Health"
     >
       <circle cx="68" cy="118" r="38" fill={disc} />
-      <circle cx="97.6" cy="94.4" r="24" fill="none" stroke="#1B2A45" strokeWidth="8.5" />
+      <circle cx="97.6" cy="94.4" r="24" fill="none" stroke="#889A7C" strokeWidth="8.5" />
       <text
         x="159.9"
         y="132"
