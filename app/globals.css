@@ -10,8 +10,6 @@
   --color-card: #F5F1E8;
   --color-ink: #2B2329;
   --color-line: rgba(36, 28, 32, 0.14);
-  --color-blue-tint: #E7ECF5;
-  --color-blue-tint-deep: #D8E1EF;
 
   --font-heading: var(--font-fraunces);
   --font-accent: var(--font-cormorant);
@@ -36,7 +34,34 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-fraunces), serif;
 }
 
+.hero-mark-disc,
+.hero-mark-ring {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
 @media (prefers-reduced-motion: no-preference) {
+  @keyframes hero-mark-disc-in {
+    0%   { transform: translate(-64px, 30px) scale(0.5); opacity: 0; }
+    55%  { opacity: 1; }
+    100% { transform: translate(0, 0) scale(1); opacity: 1; }
+  }
+  @keyframes hero-mark-ring-in {
+    0%   { transform: translate(64px, -30px) scale(0.5) rotate(-50deg); opacity: 0; }
+    55%  { opacity: 1; }
+    100% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 1; }
+  }
+  @keyframes hero-fade-up {
+    0%   { opacity: 0; transform: translateY(18px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-mark-disc { animation: hero-mark-disc-in 1.3s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  .hero-mark-ring { animation: hero-mark-ring-in 1.3s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  .hero-fade-up { animation: hero-fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  .hero-fade-up-delay-1 { animation-delay: 0.95s; }
+  .hero-fade-up-delay-2 { animation-delay: 1.15s; }
+
   @keyframes drift-a {
     0%, 100% { transform: translate(0, 0) rotate(0deg); }
     25%      { transform: translate(9px, -16px) rotate(3deg); }

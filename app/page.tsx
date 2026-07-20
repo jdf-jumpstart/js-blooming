@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FlowDivider, RingAccent } from "@/components/Motifs";
+import HeroMark from "@/components/HeroMark";
 import PricingToggle from "@/components/PricingToggle";
 
 const pillars = [
@@ -49,24 +50,35 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[#1B2A45] py-28 md:py-40">
-        <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-16">
-          <h1 className="font-[family-name:var(--font-fraunces)] font-[400] text-[#FAF8F3] leading-[1.0] tracking-[-0.015em] text-[40px] sm:text-[52px] md:text-[64px] lg:text-[72px] mb-5 md:mb-8 max-w-3xl">
-            Primary care with the time to get to know you
+      <section className="relative overflow-hidden bg-[#1B2A45] py-32 md:py-44">
+        <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center text-center px-6">
+          <HeroMark className="w-36 h-auto md:w-44" />
+          <h1 className="hero-fade-up hero-fade-up-delay-1 mt-6 md:mt-8 font-[family-name:var(--font-jost)] font-[500] text-[#FAF8F3] text-[40px] md:text-[52px] tracking-[0.01em]">
+            blooming health
           </h1>
-          <p className="text-[#C9CDD3] text-[21px] md:text-[24px] leading-relaxed mb-6 md:mb-10 max-w-2xl">
+          <p className="hero-fade-up hero-fade-up-delay-2 mt-4 font-[family-name:var(--font-cormorant)] italic font-[500] text-[#C9CDD3] text-[22px] md:text-[26px] leading-[1.4] max-w-xl">
+            Primary care with the time to get to know you.
+          </p>
+        </div>
+        <FlowDivider fill="#FAF8F3" />
+      </section>
+
+      {/* Intro */}
+      <section className="relative overflow-hidden bg-[#FAF8F3] py-16 md:py-20">
+        <div className="max-w-2xl mx-auto px-6 md:px-11 text-center">
+          <p className="text-[#44597A] text-[21px] md:text-[24px] leading-relaxed mb-8">
             Blooming Health is a membership-based concierge care practice in Baltimore. Fewer patients, longer visits, natural options alongside conventional medicine, with a provider who&apos;s available when you need them, not just when the schedule allows.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/membership"
-              className="inline-flex items-center justify-center bg-[#FAF8F3] text-[#1B2A45] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#F5F1E8] transition-colors duration-200"
+              className="inline-flex items-center justify-center bg-[#1B2A45] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:bg-[#162237] transition-colors duration-200"
             >
               See how membership works
             </Link>
             <Link
               href="/about"
-              className="inline-flex items-center justify-center border border-[rgba(250,248,243,0.4)] text-[#FAF8F3] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#FAF8F3] transition-colors duration-200"
+              className="inline-flex items-center justify-center border border-[rgba(36,28,32,0.2)] text-[#2B2329] text-[16px] tracking-[0.18em] uppercase font-[500] px-8 py-4 hover:border-[#1B2A45] hover:text-[#1B2A45] transition-colors duration-200"
             >
               About the practice
             </Link>
@@ -181,15 +193,13 @@ export default function Home() {
           className="pointer-events-none absolute -left-10 -bottom-10 hidden h-56 w-56 lg:block"
         />
         <div className="relative max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-14 items-center">
-          <div className="bg-[#F5F1E8] border border-[rgba(36,28,32,0.14)] rounded-md aspect-[4/5] flex items-center justify-center">
-            <div className="text-center p-8">
-              <div className="w-20 h-20 rounded-full bg-[rgba(68,89,122,0.12)] border border-[#44597A] mx-auto mb-4 flex items-center justify-center">
-                <span className="font-[family-name:var(--font-fraunces)] text-[#44597A] text-[28px]">A</span>
-              </div>
-              <div className="text-[16px] tracking-[0.24em] uppercase text-[#44597A]">
-                Photo coming soon
-              </div>
-            </div>
+          <div className="relative bg-[#F5F1E8] border border-[rgba(36,28,32,0.14)] rounded-md aspect-[4/5] overflow-hidden">
+            <Image
+              src="/avi-headshot.jpg"
+              alt="Avi Blumenthal, NP"
+              fill
+              className="object-cover object-top"
+            />
           </div>
           <div>
             <div className="text-[16px] tracking-[0.28em] uppercase text-[#4A2A43] font-[500] mb-3">

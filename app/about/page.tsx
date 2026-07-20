@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { FlowDivider, RingAccent } from "@/components/Motifs";
 
@@ -114,15 +115,13 @@ export default function About() {
               See how membership works →
             </Link>
           </div>
-          <div className="bg-[#FAF8F3] border border-[rgba(36,28,32,0.12)] rounded-md aspect-[4/5] flex items-center justify-center">
-            <div className="text-center p-8">
-              <div className="w-24 h-24 rounded-full bg-[rgba(68,89,122,0.1)] border border-[#44597A] mx-auto mb-5 flex items-center justify-center">
-                <span className="font-[family-name:var(--font-fraunces)] text-[#44597A] text-[34px]">A</span>
-              </div>
-              <div className="text-[16px] tracking-[0.24em] uppercase text-[#44597A]">
-                Photo coming soon
-              </div>
-            </div>
+          <div className="relative bg-[#FAF8F3] border border-[rgba(36,28,32,0.12)] rounded-md aspect-[4/5] overflow-hidden">
+            <Image
+              src="/avi-ear-exam.jpg"
+              alt="Avi Blumenthal, NP, examining a young patient"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
         <FlowDivider fill="#1B2A45" />
