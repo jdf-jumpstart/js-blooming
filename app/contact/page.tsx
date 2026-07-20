@@ -126,21 +126,9 @@ export default function Contact() {
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
                   <div className="text-[16px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Address</div>
                   <p className="text-[21px] text-[#2B2329]">
-                    1 Reservoir Cir, Suite 201<br />
+                    1 Reservoir Circle<br />
                     Pikesville, MD 21208
                   </p>
-                </div>
-                <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
-                  <div className="text-[16px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Phone</div>
-                  <a href="tel:+14105550000" className="text-[21px] text-[#2B2329] hover:text-[#1B2A45] transition-colors">
-                    (410) 555-0000
-                  </a>
-                </div>
-                <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
-                  <div className="text-[16px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Email</div>
-                  <a href="mailto:hello@bloominghealth.com" className="text-[21px] text-[#2B2329] hover:text-[#1B2A45] transition-colors">
-                    hello@bloominghealth.com
-                  </a>
                 </div>
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
                   <div className="text-[16px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Office hours</div>

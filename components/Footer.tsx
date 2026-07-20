@@ -65,17 +65,7 @@ export default function Footer() {
           <div>
             <div className="text-[16px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-4">Contact</div>
             <ul className="flex flex-col gap-2 text-[21px] text-[#2B2329]">
-              <li>1 Reservoir Cir, Suite 201, Pikesville, MD 21208</li>
-              <li>
-                <a href="tel:+14105550000" className="hover:text-[#1B2A45] transition-colors">
-                  (410) 555-0000
-                </a>
-              </li>
-              <li>
-                <a href="mailto:hello@bloominghealth.com" className="hover:text-[#1B2A45] transition-colors">
-                  hello@bloominghealth.com
-                </a>
-              </li>
+              <li>1 Reservoir Circle, Pikesville, MD 21208</li>
             </ul>
           </div>
         </div>
