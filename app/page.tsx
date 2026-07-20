@@ -285,29 +285,11 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <FlowDivider fill="#FAF8F3" />
+        <FlowDivider fill="#1B2A45" />
       </section>
 
-      {/* Testimonials placeholder */}
-      <section className="bg-[#FAF8F3] py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-11">
-          <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#1B2A45] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-12">
-            What patients say
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="border border-[rgba(36,28,32,0.14)] rounded-md p-7 bg-[#F5F1E8]">
-                <p className="font-[family-name:var(--font-cormorant)] font-[500] text-[#2B2329] text-[24px] leading-[1.5] mb-6">
-                  &ldquo;[Patient testimonial placeholder]&rdquo;
-                </p>
-                <div className="text-[16px] tracking-[0.1em] uppercase text-[#44597A]">
-                  Patient name · Baltimore
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* A "What patients say" section sat here. Pulled until there are real
+         testimonials to put in it — see git history for the markup. */}
 
       {/* Final CTA */}
       <section className="relative overflow-hidden bg-[#1B2A45] py-20 md:py-28">
