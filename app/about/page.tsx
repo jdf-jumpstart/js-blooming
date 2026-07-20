@@ -79,7 +79,7 @@ export default function About() {
                 "Decisions made with you, not for you",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-[21px] text-[#2B2329] pb-4 border-b border-[rgba(36,28,32,0.1)] last:border-0 last:pb-0">
-                  <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-[#44597A] shrink-0" />
+                  <span className="mt-[calc((1.6em-0.375rem)/2)] w-1.5 h-1.5 rounded-full bg-[#44597A] shrink-0" />
                   {item}
                 </li>
               ))}

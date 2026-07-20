@@ -74,7 +74,7 @@ export default function Services() {
             <ul className="flex flex-col gap-2.5">
               {primaryCare.map((s) => (
                 <li key={s} className="flex items-start gap-3 text-[21px] text-[#2B2329]">
-                  <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-[#44597A] shrink-0" />
+                  <span className="mt-[calc((1.6em-0.375rem)/2)] w-1.5 h-1.5 rounded-full bg-[#44597A] shrink-0" />
                   {s}
                 </li>
               ))}
@@ -94,7 +94,7 @@ export default function Services() {
               <ul className="flex flex-col gap-2.5">
                 {urgentCare.map((s) => (
                   <li key={s} className="flex items-start gap-3 text-[21px] text-[#2B2329]">
-                    <span className="mt-[5px] w-1.5 h-1.5 rounded-full bg-[#44597A] shrink-0" />
+                    <span className="mt-[calc((1.6em-0.375rem)/2)] w-1.5 h-1.5 rounded-full bg-[#44597A] shrink-0" />
                     {s}
                   </li>
                 ))}
@@ -113,7 +113,7 @@ export default function Services() {
               <ul className="flex flex-col gap-2.5">
                 {comingSoon.map((s) => (
                   <li key={s} className="flex items-start gap-3 text-[21px] text-[#44597A]">
-                    <span className="mt-[5px] w-1.5 h-1.5 rounded-full border border-[#44597A] shrink-0" />
+                    <span className="mt-[calc((1.6em-0.375rem)/2)] w-1.5 h-1.5 rounded-full border border-[#44597A] shrink-0" />
                     {s}
                   </li>
                 ))}
@@ -162,7 +162,7 @@ export default function Services() {
               "Mental health therapy beyond counseling (we refer to a specialist)",
             ].map((item) => (
               <li key={item} className="flex items-start gap-3 text-[21px] text-[#2B2329] border-b border-[rgba(36,28,32,0.1)] pb-4">
-                <span className="mt-[5px] w-1.5 h-1.5 rounded-full border border-[#44597A] shrink-0" />
+                <span className="mt-[calc((1.6em-0.375rem)/2)] w-1.5 h-1.5 rounded-full border border-[#44597A] shrink-0" />
                 {item}
               </li>
             ))}

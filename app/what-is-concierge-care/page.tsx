@@ -140,7 +140,7 @@ export default function WhatIsConciergeCare() {
                           : "text-[#2B2329] border-[rgba(36,28,32,0.08)]"
                       }`}
                     >
-                      <span className={`mt-[7px] w-1.5 h-1.5 rounded-full shrink-0 ${col.dark ? "bg-[#C9CDD3]" : "border border-[rgba(36,28,32,0.3)]"}`} />
+                      <span className={`mt-[calc((1.6em-0.375rem)/2)] w-1.5 h-1.5 rounded-full shrink-0 ${col.dark ? "bg-[#C9CDD3]" : "border border-[rgba(36,28,32,0.3)]"}`} />
                       {item}
                     </li>
                   ))}
@@ -202,7 +202,7 @@ export default function WhatIsConciergeCare() {
               { covered: true, label: "A small patient panel and real appointment time" },
             ].map((item) => (
               <li key={item.label} className={`flex items-start gap-3 text-[21px] pb-4 border-b border-[rgba(250,248,243,0.08)] last:border-0 last:pb-0 ${item.covered ? "text-[#C9CDD3]" : "text-[rgba(201,205,211,0.45)]"}`}>
-                <span className={`mt-[7px] w-1.5 h-1.5 rounded-full shrink-0 ${item.covered ? "bg-[#C9CDD3]" : "border border-[#44597A]"}`} />
+                <span className={`mt-[calc((1.6em-0.375rem)/2)] w-1.5 h-1.5 rounded-full shrink-0 ${item.covered ? "bg-[#C9CDD3]" : "border border-[#44597A]"}`} />
                 {item.label}
               </li>
             ))}

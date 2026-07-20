@@ -94,7 +94,7 @@ export default function Membership() {
           <ul className="flex flex-col">
             {included.map((item) => (
               <li key={item} className="flex items-start gap-3 py-4 border-b border-[rgba(250,248,243,0.12)] text-[21px] text-[#C9CDD3]">
-                <span className="mt-[6px] w-1.5 h-1.5 rounded-full bg-[#C9CDD3] shrink-0" />
+                <span className="mt-[calc((1.6em-0.375rem)/2)] w-1.5 h-1.5 rounded-full bg-[#C9CDD3] shrink-0" />
                 {item}
               </li>
             ))}
