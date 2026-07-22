@@ -12,7 +12,7 @@ export default function HeroMark({ className = "" }: { className?: string }) {
       aria-hidden="true"
       style={{ overflow: "visible" }}
     >
-      <circle className="hero-mark-disc" cx="90" cy="110" r="50" fill="#FAF8F3" />
+      <circle className="hero-mark-disc" cx="90" cy="110" r="50" fill="#4A2A43" />
       <circle
         className="hero-mark-ring"
         cx="129"

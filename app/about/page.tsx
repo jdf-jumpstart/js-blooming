@@ -124,43 +124,7 @@ export default function About() {
             />
           </div>
         </div>
-        <FlowDivider fill="#162237" />
-      </section>
-
-      {/*
-        Family band. Deliberately deeper navy than the Values section below it:
-        the flat seam between the two is the floor the cutout stands on, so this
-        section carries no FlowDivider (a curve here would cut off the feet) and
-        no bottom padding on the image column.
-      */}
-      <section className="relative overflow-hidden bg-[#162237] pt-16 md:pt-24">
-        <div className="max-w-6xl mx-auto px-6 md:px-11 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-end">
-          <div className="pb-16 md:pb-24">
-            <div className="text-[16px] tracking-[0.28em] uppercase text-[#889A7C] font-[500] mb-4">
-              Outside the practice
-            </div>
-            <h2 className="font-[family-name:var(--font-fraunces)] font-[500] text-[#FAF8F3] text-[34px] md:text-[40px] leading-[1.04] tracking-[-0.01em] mb-5">
-              He knows what a full house looks like
-            </h2>
-            <p className="text-[#C9CDD3] text-[21px] leading-relaxed mb-5">
-              Avi is a father of six. He has spent his share of evenings waiting on a callback, weighing whether something can hold until morning, and wondering if a ten-minute visit really got to the bottom of it.
-            </p>
-            <p className="text-[#C9CDD3] text-[21px] leading-relaxed">
-              That is a good part of why the practice works the way it does. The access he offers members is the access he wanted as a parent.
-            </p>
-          </div>
-          <div className="relative flex justify-center md:justify-end">
-            {/* Trimmed to the subject's alpha bounds, so the bottom edge of the
-                file is the soles of their shoes and they stand on the seam. */}
-            <Image
-              src="/avi-family.webp"
-              alt="Avi Blumenthal, NP, with his family"
-              width={681}
-              height={1090}
-              className="h-auto w-full max-w-[300px] md:max-w-[420px]"
-            />
-          </div>
-        </div>
+        <FlowDivider fill="#1B2A45" />
       </section>
 
       {/* Values */}
