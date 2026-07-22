@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
+import SocialLinks from "./Social";
 import { RingAccent } from "./Motifs";
 
 const footerLinks = [
@@ -44,6 +45,7 @@ export default function Footer() {
               Concierge care in Baltimore.<br />
               Your health, your way.
             </p>
+            <SocialLinks className="mt-5" />
           </div>
 
           <div>
@@ -66,6 +68,12 @@ export default function Footer() {
             <div className="text-[16px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-4">Contact</div>
             <ul className="flex flex-col gap-2 text-[21px] text-[#2B2329]">
               <li>1 Reservoir Circle, Pikesville, MD 21208</li>
+              <li>
+                <a href="tel:+14436456836" className="hover:text-[#1B2A45] transition-colors">
+                  (443) 645-6836
+                </a>
+              </li>
+              <li className="text-[17px] text-[#44597A]">Fax: (443) 308-5380</li>
             </ul>
           </div>
         </div>

@@ -19,6 +19,10 @@
 :root {
   --background: #FAF8F3;
   --foreground: #2B2329;
+
+  /* Gentle deceleration with no snap at the head and no overshoot at the tail.
+     Deliberately not an expo curve — that reads as a UI transition. */
+  --ease-settle: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 body {
@@ -41,31 +45,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  /* The two halves start oversized and off past the edges of the frame, then
-     rush inward as they shrink — reads as a camera pulling back until the
-     mark resolves. The 82% frame undershoots slightly so they settle. */
+  /* Each half opens from just short of its settled position — a small bloom
+     rather than a flight across the frame. No spin and no overshoot: both
+     read as mechanism, and the mark should look like it was always there and
+     is only now coming into focus. The ring trails the disc so the two arrive
+     in sequence instead of landing together. Opacity carries most of the
+     entrance; the transform is nearly subliminal. */
   @keyframes hero-mark-disc-in {
-    0%   { transform: translate(-190px, 90px) scale(2.6); opacity: 0; }
-    35%  { opacity: 1; }
-    82%  { transform: translate(0, 0) scale(0.94); opacity: 1; }
+    0%   { transform: translate(-12px, 10px) scale(0.92); opacity: 0; }
     100% { transform: translate(0, 0) scale(1); opacity: 1; }
   }
   @keyframes hero-mark-ring-in {
-    0%   { transform: translate(190px, -100px) scale(2.6) rotate(-105deg); opacity: 0; }
-    35%  { opacity: 1; }
-    82%  { transform: translate(0, 0) scale(0.94) rotate(4deg); opacity: 1; }
-    100% { transform: translate(0, 0) scale(1) rotate(0deg); opacity: 1; }
+    0%   { transform: translate(12px, -10px) scale(0.92); opacity: 0; }
+    100% { transform: translate(0, 0) scale(1); opacity: 1; }
   }
   @keyframes hero-fade-up {
-    0%   { opacity: 0; transform: translateY(18px); }
+    0%   { opacity: 0; transform: translateY(10px); }
     100% { opacity: 1; transform: translateY(0); }
   }
 
-  .hero-mark-disc { animation: hero-mark-disc-in 1.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
-  .hero-mark-ring { animation: hero-mark-ring-in 1.7s cubic-bezier(0.16, 1, 0.3, 1) both; }
-  .hero-fade-up { animation: hero-fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) both; }
-  .hero-fade-up-delay-1 { animation-delay: 1.35s; }
-  .hero-fade-up-delay-2 { animation-delay: 1.55s; }
+  .hero-mark-disc { animation: hero-mark-disc-in 2.2s var(--ease-settle) both; }
+  .hero-mark-ring { animation: hero-mark-ring-in 2.2s var(--ease-settle) 0.35s both; }
+  /* The copy overlaps the tail of the mark's settle rather than waiting it
+     out — a full stop before the headline starts reads as a slow page. */
+  .hero-fade-up { animation: hero-fade-up 1.5s var(--ease-settle) both; }
+  .hero-fade-up-delay-1 { animation-delay: 1s; }
+  .hero-fade-up-delay-2 { animation-delay: 1.35s; }
 
   @keyframes drift-a {
     0%, 100% { transform: translate(0, 0) rotate(0deg); }
