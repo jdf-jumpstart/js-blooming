@@ -132,7 +132,8 @@ export default function Contact() {
                 </div>
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
                   <div className="text-[16px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Phone</div>
-                  <p className="text-[21px] text-[#2B2329]">
+                  <p className="text-[17px] text-[#44597A]">
+                    Office:{" "}
                     <a href="tel:+14436456836" className="hover:text-[#1B2A45] transition-colors">
                       (443) 645-6836
                     </a>

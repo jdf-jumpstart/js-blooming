@@ -68,7 +68,8 @@ export default function Footer() {
             <div className="text-[16px] tracking-[0.28em] uppercase text-[#44597A] font-[500] mb-4">Contact</div>
             <ul className="flex flex-col gap-2 text-[21px] text-[#2B2329]">
               <li>1 Reservoir Circle, Pikesville, MD 21208</li>
-              <li>
+              <li className="text-[17px] text-[#44597A]">
+                Office:{" "}
                 <a href="tel:+14436456836" className="hover:text-[#1B2A45] transition-colors">
                   (443) 645-6836
                 </a>
