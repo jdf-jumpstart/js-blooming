@@ -137,21 +137,7 @@ export default function Contact() {
                       (443) 645-6836
                     </a>
                   </p>
-                  <ul className="mt-2 flex flex-col gap-1 text-[17px] text-[#44597A]">
-                    <li>
-                      Elana: ext. 1001, or direct{" "}
-                      <a href="tel:+14436456837" className="hover:text-[#1B2A45] transition-colors">
-                        (443) 645-6837
-                      </a>
-                    </li>
-                    <li>
-                      Avi: ext. 1002, or direct{" "}
-                      <a href="tel:+14436456838" className="hover:text-[#1B2A45] transition-colors">
-                        (443) 645-6838
-                      </a>
-                    </li>
-                    <li className="mt-2">Fax: (443) 308-5380</li>
-                  </ul>
+                  <p className="mt-2 text-[17px] text-[#44597A]">Fax: (443) 308-5380</p>
                 </div>
                 <div className="border-b border-[rgba(36,28,32,0.1)] pb-5">
                   <div className="text-[16px] tracking-[0.2em] uppercase text-[#44597A] font-[500] mb-1">Office hours</div>
